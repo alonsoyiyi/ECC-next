@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Mensaje Predefinido App',
+  title: 'EasyChat Claro',
   description: 'Aplicación para gestionar mensajes predefinidos',
 }
 

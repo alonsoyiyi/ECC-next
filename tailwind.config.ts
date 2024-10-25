@@ -33,11 +33,11 @@ const config: Config = {
   				foreground: 'hsl(var(--muted-foreground))'
   			},
   			accent: {
-  				DEFAULT: 'hsl(var(--accent))',
+  				DEFAULT: '#fa2424',
   				foreground: 'hsl(var(--accent-foreground))'
   			},
   			destructive: {
-  				DEFAULT: 'hsl(var(--destructive))',
+  				DEFAULT: '#fa2424',
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
   			border: 'hsl(var(--border))',
@@ -49,7 +49,11 @@ const config: Config = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+			  tertiary: {
+				DEFAULT: '#fa2424', // Puedes usar un valor hex, rgb o hsl
+				foreground: '#ffffff',
+			  },
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
