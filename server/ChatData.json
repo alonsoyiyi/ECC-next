@@ -1,0 +1,875 @@
+{
+    "saludo": {
+        "outbound": {
+            "masculino": {
+                "ruta": "/chats/saludo/outbound/masculino",
+                "id": 1,
+                "labels": [
+                    "Nombre del Asesor"
+                ],
+                "variables": [
+                    "userName"
+                ],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [
+                    "Introduce tu nombre"
+                ],
+                "message": "¡Hola! 🙋🏻‍♂ Soy *{{userName}}*, asesor comercial de Renovaciones en Claro, América Móvil Perú SAC con RUC 20467534026 📱.\n\n🤩 Aprovecha nuestro canal WhatsApp y obtén un teléfono de última generación con precios exclusivos para ti. 😱 ¡Solo por ser cliente de Claro!\n\n¿Estás interesado en algún equipo en específico? o si gustas te puedo dar una recomendación."
+            },
+            "femenino": {
+                "ruta": "/chats/saludo/outbound/femenino",
+                "id": 2,
+                "labels": [
+                    "Nombre de la Asesora"
+                ],
+                "variables": [
+                    "userName"
+                ],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [
+                    "Introduce tu nombre"
+                ],
+                "message": "¡Hola! 🙋🏻‍♀ Soy {{userName}}, asesora comercial de Renovaciones en Claro, América Móvil Perú SAC con RUC 20467534026 📱.\n\n🤩 Aprovecha nuestro canal WhatsApp y obtén un teléfono de última generación con precios exclusivos para ti. 😱 ¡Solo por ser cliente de Claro!\n\n¿Estás interesado en algún equipo en específico? o si gustas te puedo dar una recomendación."
+            }
+        },
+        "inbound": {
+            "masculino": {
+                "ruta": "/chats/saludo/inbound/masculino",
+                "id": 3,
+                "labels": [
+                    "Nombre del Asesor"
+                ],
+                "variables": [
+                    "userName"
+                ],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [
+                    "Introduce tu nombre"
+                ],
+                "message": "¡Hola! Gracias por volver a comunicarte 🙋🏻‍♂ Soy *{{userName}}*, asesor comercial de Renovaciones en Claro, América Móvil Perú SAC con RUC 20467534026 📱 \n\n🤩 Aprovecha nuestro canal *WhatsApp* y obtén un teléfono de última generación con precios exclusivos para ti. 😱 *¡Solo por ser cliente de Claro!* \n\n*¿Estás interesado en algún equipo en específico?* o si gustas te puedo dar *una recomendación.*"
+            },
+            "femenino": {
+                "ruta": "/chats/saludo/inbound/femenino",
+                "id": 4,
+                "labels": [
+                    "Nombre de la Asesora"
+                ],
+                "variables": [
+                    "userName"
+                ],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [
+                    "Introduce tu nombre"
+                ],
+                "message": "¡Hola! Gracias por volver a comunicarte 🙋🏻‍♀ Soy *{{userName}}*, asesora comercial de Renovaciones en Claro, América Móvil Perú SAC con RUC 20467534026 📱 \n\n🤩 Aprovecha nuestro canal *WhatsApp* y obtén un teléfono de última generación con precios exclusivos para ti. 😱 *¡Solo por ser cliente de Claro!* \n\n*¿Estás interesada en algún equipo en específico?* o si gustas te puedo dar *una recomendación.*"
+            }
+        }
+    },
+    "preguntasFiltro": {
+        "equipoCliente": {
+            "ruta": "/preguntasFiltro/equipoCliente",
+            "id": 5,
+            "labels": [
+                "Marca y Modelo Actual"
+            ],
+            "variables": [
+                "customerName"
+            ],
+            "type": [
+                "text"
+            ],
+            "placeholder": [
+                "Introduce la marca y modelo"
+            ],
+            "message": "¿Coméntame cuál es la marca y modelo que estás usando actualmente? 📲"
+        },
+        "ubicacionCliente": {
+            "ruta": "/preguntasFiltro/ubicacionCliente",
+            "id": 6,
+            "labels": [
+                "Ubicación Actual"
+            ],
+            "variables": [],
+            "type": [
+                "text"
+            ],
+            "placeholder": [
+                "Introduce tu dirección con departamento, provincia y distrito"
+            ],
+            "message": "¡Genial! 😁 Actualmente, ¿te encuentras en *Lima* o *Provincia*? \n\n📍Indícame tu dirección, con el departamento, provincia y distrito 🗺"
+        },
+        "lineasAdicionales": {
+            "ruta": "/preguntasFiltro/lineasAdicionales",
+            "id": 7,
+            "labels": [
+                "Número de Líneas"
+            ],
+            "variables": [],
+            "type": [
+                "text"
+            ],
+            "placeholder": [
+                "Introduce el número de líneas"
+            ],
+            "message": "*{{customerName}}* Mientras te evalúo, ¿sabías que puedes ahorrar dinero en tu línea móvil? 📲\n\n📌Si adquieres una línea adicional *nueva* o en *portabilidad* desde S/ 55.90\n\n📌Obtendrás un *50% de descuento* en la línea de menor plan durante *todo 1 año* 😱🙌 \n\n¿Aparte de este número, tienes otras líneas que *NO sean de CLARO*?"
+        },
+        "preferenciasCliente": {
+            "ruta": "/preguntasFiltro/preferenciasCliente",
+            "id": 8,
+            "labels": [
+                "Marcas Preferidas",
+                "Características a Mejorar"
+            ],
+            "variables": [],
+            "type": [
+                "text"
+            ],
+            "placeholder": [
+                "Introduce tus preferencias de marca y características"
+            ],
+            "message": "Perfecto, y dígame, ¿tiene alguna marca de su agrado como: Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi?\n\n¿Qué *características* te gustaría mejorar? Tal vez buscas mejor *cámara* 📷, más *RAM* 🧠 o más *memoria interna* 📲 o ¿Alguna otra *característica*?"
+        },
+        "presupuestoCliente": {
+            "ruta": "/preguntasFiltro/presupuestoCliente",
+            "id": 9,
+            "labels": [
+                "Presupuesto para Nuevo Equipo"
+            ],
+            "variables": [
+                "customerName"
+            ],
+            "type": [
+                "text"
+            ],
+            "placeholder": [
+                "Introduce tu presupuesto"
+            ],
+            "message": "Gracias, *{{customerName}}* coméntame:\n\n💰 ¿Cuál es el monto que tienes en mente para obtener tu *nuevo equipo*? _y con ello no excederme en tu presupuesto_ 🙌.\n\n_Recuerda que un equipo de calidad puede ser una inversión muy conveniente a largo plazo._"
+        },
+        "adicionales": {
+            "modeloAdicional": {
+                "ruta": "/preguntasFiltro/adicionales/modeloAdicional",
+                "id": 10,
+                "labels": [
+                    "Modelo Adicional"
+                ],
+                "variables": [],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [
+                    "Introduce el modelo adicional"
+                ],
+                "message": "Además del modelo que me comentó, ¿ha tenido otro modelo más en mente? 📱 🤔"
+            },
+            "alternativa": {
+                "ruta": "/preguntasFiltro/adicionales/alternativa",
+                "id": 11,
+                "labels": [
+                    "Alternativa Presupuestaria"
+                ],
+                "variables": [],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [
+                    "Introduce la alternativa que buscas"
+                ],
+                "message": "Basándonos en el presupuesto que me mencionas, voy a buscar una alternativa que esté acorde al monto 🔍, por favor bríndame un momento ⏳"
+            },
+            "gama": {
+                "ruta": "/preguntasFiltro/adicionales/gama",
+                "id": 12,
+                "labels": [
+                    "Gama del Equipo"
+                ],
+                "variables": [],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [
+                    "Introduce la gama deseada"
+                ],
+                "message": "¿Deseas una gama media superior o gama top?🙌\n\n¿Deseas una gama económica o quizás una gama media?🙌\n\n¿Deseas una gama económica, una gama media o quizás una gama superior?🙌"
+            }
+        }
+    },
+    "tiempoEspera": {
+        "ruta": "/ofrecimiento/tiempoEspera",
+        "id": 13,
+        "labels": [
+            "Tiempo de Espera"
+        ],
+        "variables": [
+            "customerName"
+        ],
+        "type": [
+            "text"
+        ],
+        "placeholder": [
+            "Introduce el nombre del cliente"
+        ],
+        "message": "El financiamiento en cuotas o al contado depende de una evaluación crediticia, permíteme un momento para realizarla⏱️⏳.\n\nMuy bien, permíteme un momento por favor 😎.\n\n¡Vamos a averiguarlo!, permíteme un momento por favor 🙌.\n\n⏱️⏳ Permíteme unos minutos y enseguida estaré de vuelta contigo. ¡Muchas gracias! 🙌\n\n⏳🔍 Permíteme un momento más continuo evaluándote. ¡Gracias por tu paciencia! 🙌\n\n*¡{{customerName}}!* 📱⏱️ Por favor, dame unos minutos y en breve estaré listo para ayudarte. ¡Gracias por tu paciencia! 🙌\n\n¡Gracias por tu espera! 😄 En estos momentos estamos experimentando dificultades técnicas en nuestro sistema. En cuanto se solucionen, nos comunicaremos contigo para poder ayudarte con la evaluación. ¡Apreciamos mucho tu comprensión! 🙏🔧"
+    },
+    "ofrecimiento": {
+        "cuotas": {
+            "ruta": "/ofrecimiento/cuotas",
+            "id": 14,
+            "labels": [
+                "Ofrecimiento Cuotas"
+            ],
+            "variables": [
+                "customerName",
+                "customerGear",
+                "firstPayment",
+                "monthlyPayment",
+                "customerPlan",
+                "gbPlan",
+                "totalPlan",
+                "totalGearPrice"
+            ],
+            "type": [
+                "text"
+            ],
+            "placeholder": [
+                "Introduce los detalles del cliente y equipo"
+            ],
+            "message": "Gracias por tu espera, *{{customerName}}*\n\nRealizando la evaluación, aplicas al beneficio de *pago en cuotas*:\n📱Equipo: {{customerGear}}\n📌 Cuota inicial: S/. {{firstPayment}}\n🧾 Cuota mensual: S/. {{monthlyPayment}}\n💳 Financiamiento: 12 cuotas\n📈 Plan: S/. {{customerPlan}} 🌐 {{gbPlan}} GB de internet para que navegues en “alta velocidad\" 🤑 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📹 ¡Claro Video Gratis por 24 meses!\n💰 Pago total mensual: S/.{{totalPlan}} (Plan + cuota mensual)\n💲 Precio Total Equipo: S/. {{totalGearPrice}}"
+        },
+        "contado": {
+            "ruta": "/ofrecimiento/contado",
+            "id": 15,
+            "labels": [
+                "Ofrecimiento Contado"
+            ],
+            "variables": [
+                "customerName",
+                "customerGear",
+                "gearPrice",
+                "customerPoints",
+                "customerPlan",
+                "gbPlan"
+            ],
+            "type": [
+                "text"
+            ],
+            "placeholder": [
+                "Introduce los detalles del cliente y equipo"
+            ],
+            "message": "Gracias por tu espera, *{{customerName}}*\n\nRealizando la evaluación, aplicas al beneficio de *pago al contado*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo: {{customerGear}}\n💲 Pago al contado: S/ {{gearPrice}} *(Único pago)*\n💰 Descuento con Claro Puntos: S/ {{customerPoints}}\n📈 Plan: S/. {{customerPlan}} 🌐 {{gbPlan}}GB de internet ilimitado para que navegues en “alta velocidad\" 🤑 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
+        },
+        "equipoOfertado": {
+            "ruta": "/ofrecimiento/equipoOfertado",
+            "id": 16,
+            "labels": [
+                "Equipo Ofertado"
+            ],
+            "variables": [
+                "customerGear",
+                "storageGear",
+                "cameraGear",
+                "ramGear"
+            ],
+            "type": [
+                "text"
+            ],
+            "placeholder": [
+                "Introduce los detalles del equipo"
+            ],
+            "message": "¡El {{customerGear}} es un teléfono inteligente con *grandes prestaciones*!\n\n☁ {{storageGear}} GB Almacenamiento: Guardarás gran cantidad de información.\n📸 {{cameraGear}} MP Cámara: Alta calidad y nitidez.\n🧠 {{ramGear}} GB RAM: Excelente rendimiento en aplicativos.\n\nSujeto a stock y a evaluación crediticia."
+        },
+        "accesorio": {
+            "ruta": "/ofrecimiento/accesorio",
+            "id": 17,
+            "labels": [
+                "Accesorio Ofertado"
+            ],
+            "variables": [
+                "customerName",
+                "customerGear",
+                "accesoryPrice"
+            ],
+            "type": [
+                "text"
+            ],
+            "placeholder": [
+                "Introduce el precio del accesorio"
+            ],
+            "message": "{{customerName}}, gracias a que has adquirido el equipo {{customerGear}} se te está brindando la opción de que obtengas un accesorio a precio promocional de tan solo S/{{accesoryPrice}} y lo mejor es que te lo podemos enviar gratis a tu dirección."
+        },
+        "proteccionMovil": {
+            "ofrece": {
+                "ruta": "/ofrecimiento/proteccionMovil/ofrece",
+                "id": 18,
+                "labels": [
+                    "Protección Móvil - Ofrecida"
+                ],
+                "variables": [
+                    "pmXday"
+                ],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [
+                    "Introduce detalles sobre la opción de protección"
+                ],
+                "message": "✅ Protege tu inversión por [copiar opción según gama]\n✅ Usa tu nuevo celular con tranquilidad sabiendo que está protegido. 🛡️\n✅ Ahorra. No deberás pagar la totalidad de un nuevo equipo. 💵\n✅ No está sujeto a contratos. \n\n¿Protegemos tu nuevo celular? 😊🔒\n\n{{pmXday}}"
+            },
+            "noDesea": {
+                "ruta": "/ofrecimiento/proteccionMovil/noDesea",
+                "id": 19,
+                "labels": [
+                    "Protección Móvil - No Desea"
+                ],
+                "variables": [],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [],
+                "message": "¡Anímate! 😃 A todos nos ha pasado alguna vez que se nos ha caído el celular al suelo 📲💥, al agua 💦🌊, se nos ha quebrado la pantalla 📵😢 o hemos sufrido algún robo 🔒🚫. Por eso, es importante proteger tu nuevo móvil 🛡️, considerando que estás haciendo un esfuerzo para adquirirlo. 💪💰"
+            },
+            "noDesea2": {
+                "ruta": "/ofrecimiento/proteccionMovil/noDesea2",
+                "id": 20,
+                "labels": [
+                    "Protección Móvil - No Desea 2"
+                ],
+                "variables": [
+                    "customerName"
+                ],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [
+                    "Introduce el nombre del cliente"
+                ],
+                "message": "¡Perfecto, {{customerName}}! No hay ningún problema. Si decides proteger tu nuevo celular, simplemente tienes que ponerte en contacto al 123 ☎️ o acercarte a uno de nuestros centros de atención 🏢. Tienes hasta 30 días a partir de la recepción de tu equipo para hacerlo. 📱⏰ "
+            }
+        },
+        "preCierre": {
+            "delivery": {
+                "ruta": "/preCierre/delivery",
+                "id": 21,
+                "labels": [
+                    "Pre Cierre - Delivery"
+                ],
+                "variables": [
+                    "customerName"
+                ],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [
+                    "Introduce el nombre del cliente"
+                ],
+                "message": "🤩 Y lo mejor es que contamos con entrega a través de *Delivery totalmente gratuito sujeto a cobertura.\n\n*¿Te gustaría que te lo llevemos a tu casa o a tu trabajo?\n\n¡Retomando el tema de la entrega! 🚚⌛ ¿En qué horario prefieres recibir la visita del delivery? ¿Por la mañana ☀️ o por la tarde 🌙?\n\n¡Volviendo al tema del recojo! 🚀 ¿Cuándo te gustaría visitarnos para recibir tu código de atención? ¿Hoy 📅🌞 o mañana 📅🌙?"
+            },
+            "sinDelivery": {
+                "ruta": "/preCierre/sinDelivery",
+                "id": 22,
+                "labels": [
+                    "Pre Cierre - Sin Delivery"
+                ],
+                "variables": [
+                    "customerName"
+                ],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [
+                    "Introduce el nombre del cliente"
+                ],
+                "message": "{{customerName}} ¡Te cuento algo importante! 📍📲 En estos momentos, no tenemos cobertura en la dirección que nos proporcionaste. Pero no te preocupes, *¡tenemos una solución!* Acércate a alguno de nuestros centros de atención ubicados en:\n\n-\n\n-\n\n¿Cuál de los centros de atención te queda más cerca?, Solo necesito que me confirmes la hora en la que puedas ir, para así generarte una cita y evitar que hagas largas colas. ¡Estamos aquí para ayudarte! 😉📅"
+            },
+            "cac": {
+                "ruta": "/preCierre/cac",
+                "id": 23,
+                "labels": [
+                    "Pre Cierre - CAC"
+                ],
+                "variables": [],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [],
+                "message": "🤩 Y lo mejor es que contamos con recojo a través de nuestros centros de atención al cliente y priorizaremos tu atención con una cita personalizada.\n\n¿Te gustaría que te programe tu cita por la mañana o por la tarde?"
+            },
+            "colorEquipo": {
+                "ruta": "/preCierre/colorEquipo",
+                "id": 24,
+                "labels": [
+                    "Pre Cierre - Color del Equipo"
+                ],
+                "variables": [
+                    "customerName",
+                    "customerGear",
+                    "color1Gear",
+                    "color2Gear"
+                ],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [
+                    "Introduce el nombre del cliente"
+                ],
+                "message": "*¡{{customerName}}!* Sabes, lo mejor es que tengo disponible el equipo {{customerGear}} en dos colores distintos. Cuéntame, ¿prefieres que lo ingrese en color {{color1Gear}} o {{color2Gear}}? 🎨📱"
+            },
+            "portabilidad": {
+                "ruta": "/preCierre/portabilidad",
+                "id": 25,
+                "labels": [
+                    "Pre Cierre - Portabilidad"
+                ],
+                "variables": [
+                    "pricePorta"
+                ],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [
+                    "Introduce el precio de portabilidad"
+                ],
+                "message": "Entiendo! 👍 Pero con nosotros obtendrás un *ahorro* en el valor del plan a diferencia de tu operador actual, es decir solo pagarás *S/ {{pricePorta}}* durante *12 meses* ¡O tal vez puedas obtener una línea adicional para compartirla con un ser querido que necesite mantenerse en contacto! 🤝"
+            },
+            "lineaNueva": {
+                "ruta": "/preCierre/lineaNueva",
+                "id": 26,
+                "labels": [
+                    "Pre Cierre - Línea Nueva"
+                ],
+                "variables": [],
+                "type": [
+                    "text"
+                ],
+                "placeholder": [],
+                "message": "¡Te evaluamos sin compromiso! 📝 Puedes regalarle la línea a un familiar 👨‍👩‍👧‍👦 o puedes mantener la segunda línea para tu trabajo 💼📱 y utilizar la que tienes actualmente para tu familia. ¡Tú decides! 😊👍"
+            }
+        }
+    },
+    "caracteristicaEspecial": {
+        "camara": {
+            "ruta": "/caracteristicaEspecial/camara",
+            "id": 27,
+            "labels": [
+                "Características Especiales - Cámara"
+            ],
+            "variables": [
+                "customerName",
+                "customerGear",
+                "numberCameraGear",
+                "1cameraGear",
+                "2cameraGear"
+            ],
+            "type": [
+                "text"
+            ],
+            "placeholder": [
+                "Introduce el nombre del cliente",
+                "Introduce el modelo del equipo"
+            ],
+            "message": "*{{customerName}}* te comento que el nuevo *{{customerGear}}* incluye *{{numberCameraGear}}* cámaras, en el lado posterior del equipo está ubicada la cámara principal de {{1cameraGear}} MP 📸 que te permite capturar fotos *panorámicas, retrato y grabar con detalles espectaculares*, 😱 además una cámara de {{2cameraGear}} MP, ambas cámaras incluyen un flash ideal para *fotografías nocturnas*. 🌃🔝"
+        },
+        "bateria": {
+            "ruta": "/caracteristicaEspecial/bateria",
+            "id": 28,
+            "labels": [
+                "Características Especiales - Batería"
+            ],
+            "variables": [
+                "customerName",
+                "customerGear",
+                "batteryGear",
+                "watsGear"
+            ],
+            "type": [
+                "text"
+            ],
+            "placeholder": [
+                "Introduce el nombre del cliente",
+                "Introduce el modelo del equipo"
+            ],
+            "message": "*{{customerName}}* La capacidad de la batería del *{{customerGear}}*, que es de {{batteryGear}} mAh, garantiza una *duración suficiente para todo el día*, si se utiliza de forma moderada. Además, este dispositivo ofrece una *función de carga rápida de {{watsGear}} W*, lo que permite recargar la batería en un corto período de tiempo. 😉👌"
+        },
+        "pantalla": {
+            "ruta": "/caracteristicaEspecial/pantalla",
+            "id": 29,
+            "labels": [
+                "Características Especiales - Pantalla"
+            ],
+            "variables": [
+                "customerName",
+                "screenGear",
+                "refreshGear"
+            ],
+            "type": [
+                "text"
+            ],
+            "placeholder": [
+                "Introduce el nombre del cliente"
+            ],
+            "message": "*{{customerName}}* El *{{customerGear}}* ofrece una experiencia visual envolvente con su generosa pantalla de {{screenGear}} y una tasa de refresco de {{refreshGear}} Hz que *garantiza animaciones fluidas*. Su calidad de imagen impresionante, con amplia gama de colores, hace que tus fotos, videos y redes sociales favoritas se vean *simplemente espectaculares*. 😉👌"
+        },
+        "procesador": {
+            "ruta": "/caracteristicaEspecial/procesador",
+            "id": 30,
+            "labels": [
+                "Características Especiales - Procesador"
+            ],
+            "variables": [
+                "customerName",
+                "customerGear",
+                "chipGear",
+                "coresChipGear",
+                "speedChipGear"
+            ],
+            "type": [
+                "text"
+            ],
+            "placeholder": [
+                "Introduce el nombre del cliente",
+                "Introduce el modelo del equipo"
+            ],
+            "message": "*{{customerName}}* El procesador del *{{customerGear}}* es un {{chipGear}} de {{coresChipGear}} núcleos con una velocidad de procesamiento de {{speedChipGear}} GHz, lo que *garantiza un excelente rendimiento* para ejecutar varias aplicaciones simultáneamente, sin retrasos. Además, su compatibilidad con las *redes XG* proporciona una experiencia de uso excepcional. 👌😉"
+        },
+        "ram": {
+            "ruta": "/caracteristicaEspecial/ram",
+            "id": 31,
+            "labels": [
+                "Características Especiales - RAM"
+            ],
+            "variables": [
+                "customerName",
+                "customerGear",
+                "ramGear"
+            ],
+            "type": [
+                "text"
+            ],
+            "placeholder": [
+                "Introduce el nombre del cliente",
+                "Introduce el modelo del equipo"
+            ],
+            "message": "*{{customerName}}* El {{customerGear}} tiene una memoria RAM de *{{ramGear}} GB*, eso quiere decir que podrás ejecutar más aplicaciones en simultáneo sin que se ralentice. Esto significa que podrás cambiar entre aplicaciones de manera más fluida y realizar *multitareas* sin problemas. 🧠💪"
+        }
+    },
+    "planes": {
+        "ruta": "/planes",
+        "id": 32,
+        "labels": [
+            "Planes de Internet"
+        ],
+        "variables": [],
+        "type": [
+            "text"
+        ],
+        "placeholder": [],
+        "message": "📈 Plan: S/. 29.90 🌐 10GB de internet para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 30.90 🌐 15GB de internet para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 39.90 🌐 5GB de internet para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 40.90 🌐 28GB de internet para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 49.90 🌐 35GB de internet para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 51.90 🌐 40GB de internet para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 55.90 🌐 65GB de internet para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 57.90 🌐 56GB de internet ilimitado para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 69.90 🌐 95GB de internet ilimitado para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 72.90 🌐 100GB de internet ilimitado para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 74.90 🌐 102GB de internet ilimitado para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 79.90 🌐 105GB de internet ilimitado para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 82.90 🌐 110GB de internet ilimitado para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 93.90 🌐 115GB de internet ilimitado para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 95.90 🌐 130GB de internet ilimitado para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 109.90 🌐 140GB de internet ilimitado para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 159.90 🌐 160GB de internet ilimitado para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 189.90 🌐 180GB de internet ilimitado para que navegues en “alta velocidad\" 🤑\n📈 Plan: S/. 289.90 🌐 190GB de internet ilimitado para que navegues en “alta velocidad\" 🤑"
+    },
+    "argumentos": [
+        {
+            "ruta": "descuentoOtroOperador",
+            "id": 33,
+            "labels": [
+                "Descuento de otro operador",
+                "Competencia"
+            ],
+            "variables": [],
+            "type": "text",
+            "placeholder": "",
+            "message": "Es importante considerar por qué un operador te ofrece beneficios adicionales, como descuentos o bonos 🤔. No siempre estos beneficios reflejan la calidad del servicio. 🚨\n\nEn nuestro caso, somos reconocidos por Osiptel como líderes en navegación 🌐 y brindamos la mejor cobertura a nivel nacional 🇵🇪, diferenciándonos de otras operadoras. 🏆📶"
+        },
+        {
+            "ruta": "noQuiereContado",
+            "id": 34,
+            "labels": [
+                "No quiere pagar contado",
+                "Cuota inicial"
+            ],
+            "variables": [
+                "customerName"
+            ],
+            "type": "text",
+            "placeholder": "{{customerName}}",
+            "message": "*{{customerName}}* comprendo tu preocupación sobre la cuota inicial del equipo 📲, pero recuerda que, al realizar este pago, logramos mensualidades más económicas. 🤗 Lo que se traduce como un ahorro adicional para ti. 📈💰\n\nSi aún tienes inquietudes, puedo ofrecerte la mejor opción que se adecue a tus necesidades y presupuesto, 🤩 Estoy aquí para ayudarte 🙌"
+        },
+        {
+            "ruta": "precioEquipo",
+            "id": 35,
+            "labels": [
+                "Precio del equipo",
+                "Ofertas"
+            ],
+            "variables": [
+                "customerName"
+            ],
+            "type": "text",
+            "placeholder": "{{customerName}}",
+            "message": "*{{customerName}}* es importante tener en cuenta algunos aspectos antes de tomar una decisión. 😉\n\n📌 Somos reconocidos por Osiptel como líderes en navegación 🌐 otorgando la mejor cobertura a nivel nacional 🇵🇪, Recuerda que también te ofrecemos beneficios especiales como Claro Club 🎁, Claro Música 🎶, Claro Video 📽, Millas Latam ✈ a través de Claro puntos. 💰\n\nVoy a revisar la oferta que recibiste y buscar una alternativa que se ajuste a tus necesidades y presupuesto 🔎. Estoy aquí para garantizar que tomes la mejor decisión. 🤗"
+        },
+        {
+            "ruta": "prefiereRetail",
+            "id": 36,
+            "labels": [
+                "Prefiere comprar en retail",
+                "Garantía"
+            ],
+            "variables": [
+                "customerName"
+            ],
+            "type": "text",
+            "placeholder": "{{customerName}}",
+            "message": "*{{customerName}}* entiendo que el equipo en tiendas Retail pueda costar menos, pero recuerda que ⚠, al comprar nuestro equipo, ante cualquier inconveniente 🪛 te ofrecemos una garantía por 12 meses. \n\nA diferencia de las plataformas de tiendas Retail, 🫣 donde los equipos generalmente son vendidos por terceros sin garantía directa, 📉 nosotros te brindamos la tranquilidad 😌 de tener una compra directa y atención especializada. 🤩\n\nEstoy aquí para asegurar que obtengas el mejor equipo celular. 🤗✨"
+        },
+        {
+            "ruta": "cuotaInicial",
+            "id": 37,
+            "labels": [
+                "Cuota inicial",
+                "Pago inicial"
+            ],
+            "variables": [
+                "customerName"
+            ],
+            "type": "text",
+            "placeholder": "{{customerName}}",
+            "message": "*{{customerName}}* comprendo tu preocupación sobre la cuota inicial del equipo 📲, pero recuerda que, al realizar este pago, logramos mensualidades más económicas. 🤗 Lo que se traduce como un ahorro adicional para ti. 📈💰\n\nSi aún tienes inquietudes, puedo ofrecerte la mejor opción que se adecue a tus necesidades y presupuesto, 🤩 Estoy aquí para ayudarte 🙌"
+        },
+        {
+            "ruta": "sinStock",
+            "id": 38,
+            "labels": [
+                "Sin stock",
+                "Alternativas de equipos"
+            ],
+            "variables": [
+                "customerName",
+                "anotherGear",
+                "anotherGearPrice"
+            ],
+            "type": "text",
+            "placeholder": "{{customerName}}, {{anotherGear}}, {{anotherGearPrice}}",
+            "message": "*{{customerName}}* comprendo tu interés en obtener ese equipo en específico. Sin embargo, no lo tenemos en stock, permíteme ofrecerte algunas alternativas similares que tenemos disponible en estos momentos, por ejemplo: {{anotherGear}} a tan solo S/ {{anotherGearPrice}} 💻🔄"
+        },
+        {
+            "ruta": "cambioPromocion",
+            "id": 39,
+            "labels": [
+                "Cambio de promoción",
+                "Promociones pasadas"
+            ],
+            "variables": [
+                "customerName"
+            ],
+            "type": "text",
+            "placeholder": "{{customerName}}",
+            "message": "*{{customerName}}*, así es, esa fue la promoción que estaba disponible ese día y lo ideal hubiera sido aprovecharla. Actualmente, el equipo que deseas sigue en promoción en comparación con su precio real. ⏳⚡️Ten en cuenta que las promociones tienen un tiempo limitado y generalmente no duran más de 24 horas. Es posible que mañana ya no esté disponible y vuelva a su precio original. ¡No dejes pasar esta oportunidad! 🎁🚀 Aprovecha esta promoción mientras aún está vigente. ¡No te arrepentirás! 😊📱"
+        },
+        {
+            "ruta": "permanencia",
+            "id": 40,
+            "labels": [
+                "Permanencia",
+                "Beneficios del plan"
+            ],
+            "variables": [
+                "customerName"
+            ],
+            "type": "text",
+            "placeholder": "{{customerName}}",
+            "message": "*¡{{customerName}}!* 👋 ¡No te preocupes¡, recuerda que nuestra campaña de *Renovación WhatsApp*✅ te brinda *precios diferenciados* 💰.\n\nAdemás, tener el plan por 12 o 18 meses te brinda una variedad de beneficios especiales como *Claro Club 🎁, Claro Música 🎶, Claro Video 📽, Millas Latam* ✈ a través de *Claro puntos.*"
+        },
+        {
+            "ruta": "accesorioContado",
+            "id": 41,
+            "labels": [
+                "Accesorio contado",
+                "Descuento especial"
+            ],
+            "variables": [
+                "customerName"
+            ],
+            "type": "text",
+            "placeholder": "{{customerName}}",
+            "message": "{{customerName}} entiendo tu negativa, sin embargo, este accesorio está regularmente a un precio mayor, a ti se te está brindando un descuento especial y podrías aprovechar en regalárselo a un familiar o a una amistad."
+        },
+        {
+            "ruta": "convenioBanco",
+            "id": 42,
+            "labels": [
+                "Convenio con banco",
+                "Cuotas sin intereses"
+            ],
+            "variables": [
+                "customerName"
+            ],
+            "type": "text",
+            "placeholder": "{{customerName}}",
+            "message": "*¡{{customerName}}!* 👋✨ El *precio especial* que te estamos otorgando al *contado* será un *pago único* y lo mejor es que lo podrás financiar *en cuotas sin intereses* 🤩💰 *con las tarjetas de crédito ¡BBVA, BCP, Cencosud, Diners Club, Financiera OH, Interbank o Scotiabank!* 🙌💳 (equipos seleccionados) \n\nPara verificar si cumples con los requisitos de esta campaña de cuotas sin intereses 🥳 coméntame ¿tienes tarjeta de crédito de los bancos mencionados? "
+        },
+        {
+            "ruta": "antiBaja",
+            "id": 43,
+            "labels": [
+                "Anti-baja",
+                "Probar servicio"
+            ],
+            "variables": [],
+            "type": "text",
+            "placeholder": "",
+            "message": "¡Puedes probar nuestro servicio y estamos seguros de que una vez que experimentes sus beneficios, te quedarás con nosotros por mucho tiempo! 🌟😃"
+        },
+        {
+            "ruta": "claroClub",
+            "id": 44,
+            "labels": [
+                "Claro Club",
+                "Beneficios adicionales"
+            ],
+            "variables": [],
+            "type": "text",
+            "placeholder": "",
+            "message": "¡Te invito a descargar nuestra aplicación *CLARO CLUB* desde la *Play Store* 🎮📲 o *App Store* 🍏📱! Podrás acceder a un amplio catálogo de descuentos 🛍️ en miles de establecimientos✨💳 ¡No pierdas la oportunidad de disfrutar de increíbles descuentos y beneficios adicionales! 😍🔥"
+        },
+        {
+            "ruta": "claroDrive",
+            "id": 45,
+            "labels": [
+                "Claro Drive",
+                "Almacenamiento en la nube"
+            ],
+            "variables": [],
+            "type": "text",
+            "placeholder": "",
+            "message": "¡Recuerda que puedes disfrutar de *CLARO DRIVE*, donde obtendrás *25GB* de almacenamiento gratuito en la nube! 🌥️📂 Además, tienes la opción de adquirir hasta *1TB* de almacenamiento para guardar todos tus archivos, fotos, videos y mucho más. 📷📁💾 "
+        },
+        {
+            "ruta": "revocatoriaConsentimiento",
+            "id": 46,
+            "labels": [
+                "Revocatoria de consentimiento",
+                "Cancelar autorización"
+            ],
+            "variables": [],
+            "type": "text",
+            "placeholder": "",
+            "message": "Recuerda que puedes cancelar la autorización para recibir llamadas de ofertas de nuestra parte 📞💬, accediendo a nuestro sitio web o comunicándote directamente con nuestro servicio al cliente 📲📞. Estamos comprometidos a respetar tu decisión y brindarte la mejor experiencia posible con nuestros productos y servicios. 😊🙏"
+        },
+        {
+            "ruta": "asesorNoDisponible",
+            "id": 47,
+            "labels": [
+                "Asesor no disponible",
+                "Derivación de atención"
+            ],
+            "variables": [
+                "customerName"
+            ],
+            "type": "text",
+            "placeholder": "{{customerName}}",
+            "message": "{{customerName}}, por inconvenientes técnicos estaré derivando la comunicación con otro compañero para que continúe con su atención y no desaproveche nuestras excelentes promociones en equipos 📱 🥳"
+        }
+    ],
+    "consultasAdicionañes": {
+        "derivaciones": {
+            "ruta": "derivaciones",
+            "id": 48,
+            "labels": [
+                "Consulta adicional",
+                "Derivaciones",
+                "Asesoría de servicio"
+            ],
+            "variables": [
+                "customerName"
+            ],
+            "type": "text",
+            "placeholder": "{{customerName}}",
+            "message": "¡Hola {{customerName}}! Para que puedas recibir una asesoría especializada sobre el estado de tu servicio 📶🔍, te sugerimos que te comuniques al 123☎️ o al 📞0800-00123 desde una línea fija. Este canal es exclusivo para ventas de equipos y nuestro equipo estará encantado de brindarte toda la ayuda que necesitas. 💻"
+        },
+        "bloqueoDeuda": {
+            "ruta": "bloqueoDeuda",
+            "id": 49,
+            "labels": [
+                "Consulta adicional",
+                "Bloqueo por deuda",
+                "Pago pendiente"
+            ],
+            "variables": [
+                "customerName"
+            ],
+            "type": "text",
+            "placeholder": "{{customerName}}",
+            "message": "📱{{customerName}}, validamos que actualmente cuentas con un importe pendiente de pago ¡No te preocupes! Puedes pagarlo desde donde te encuentres a través de tu banca móvil o de billeteras digitales 💳\n\nEscríbenos cuando hayas realizado el pago ¡Tu nuevo equipo te está esperando! 🤩 ¡no desaproveches esta excelente promoción!"
+        },
+        "noResponde": {
+            "5min": {
+                "ruta": "noResponde5min",
+                "id": 50,
+                "labels": [
+                    "Consulta adicional",
+                    "Cliente no responde",
+                    "Recordatorio"
+                ],
+                "variables": [],
+                "type": "text",
+                "message": "😄📱 ¡Nos encanta seguir en contacto contigo! ¡Estamos esperando con ansias tu respuesta! 😊"
+            },
+            "15min": {
+                "ruta": "noResponde15min",
+                "id": 51,
+                "labels": [
+                    "Consulta adicional",
+                    "Cliente no responde",
+                    "Recordatorio"
+                ],
+                "variables": [
+                    "userName"
+                ],
+                "type": "text",
+                "placeholder": "{{userName}}",
+                "message": "⏰⚡️Si estás ocupado ahora, no hay problema. ¡No dudes en escribirnos cuando tengas tiempo! Estaremos encantados de mostrarte las promociones disponibles para ti. 😊🎉 Te atendió *{{userName}}*. ¡Que tengas un excelente día! 🌟🙌"
+            }
+        }
+    },
+    "despedida": {
+        "venta": {
+            "ruta": "despedidaVenta",
+            "id": 52,
+            "labels": [
+                "Despedida",
+                "Venta exitosa",
+                "Agradecimiento"
+            ],
+            "variables": [
+                "customerName",
+                "userName"
+            ],
+            "type": "text",
+            "placeholder": "{{customerName}}, {{userName}}",
+            "message": "*{{customerName}}*, ¡Fue un placer atenderte y gracias por tu tiempo! 😊 Si en el futuro tienes alguna pregunta o consulta, no dudes en preguntar por mí. También *puedes recomendar a tus familiares o amigos 👨‍👩‍👧‍👦 que deseen renovar sus dispositivos* ¡Estoy aquí para ayudarte! Te atendió *{{userName}}*, ¡hasta pronto! 🥳"
+        },
+        "noVenta": {
+            "ruta": "despedidaNoVenta",
+            "id": 53,
+            "labels": [
+                "Despedida",
+                "No venta",
+                "Agradecimiento"
+            ],
+            "variables": [
+                "customerName",
+                "userName"
+            ],
+            "type": "text",
+            "placeholder": "{{customerName}}, {{userName}}",
+            "message": "**{{customerName}}** 😃 Recuerda que siempre puedes escribirnos aquí para obtener más información sobre nuestras ofertas y promociones. ¡Pregunta por mí *{{userName}}* y estaré encantado de ayudarte!, También *puedes recomendar a tus familiares o amigos 👨‍👩‍👧‍👦 que deseen renovar sus dispositivos*. ¡Que tengas un excelente día y gracias por tu tiempo! 🌟📱"
+        }
+    }
+}

@@ -1,0 +1,528 @@
+{
+    "1preguntasIniciales": {
+        "ruta": "legal/preguntasIniciales",
+        "id": "1",
+        "label": "Preguntas Iniciales",
+        "variables": [
+            "userName",
+            "dayTime",
+            "dayDate",
+            "monthDate",
+            "yearDate"
+        ],
+        "type": "mensaje",
+        "placeholder": "",
+        "message": "Yo {{userName}} siendo las (hora) de la {{dayTime}} del {{dayDate}} de {{monthDate}} del {{yearDate}}, como sustento legal de su solicitud, procederé a realizar la grabación legal correspondiente:\n\nA)¿Cuáles son sus nombres y apellidos completos?\nB)¿Cuál es su número de DNI?\nC)¿Cuál es su lugar y fecha de nacimiento?\nD)¿Cuál es el número celular Postpago con el que renovará su equipo?\nE)¿Me brinda su correo electrónico para enviarle su recibo telefónico, las condiciones del plan, así como las condiciones de compra y de garantía del equipo que está adquiriendo?"
+    },
+    "2modalidadContrato": {
+        "ruta": "legal/modalidadContrato",
+        "id": "2",
+        "label": "Modalidad de Contrato",
+        "contado": {
+            "ruta": "legal/modalidadContrato/contado",
+            "id": "2-1",
+            "label": "Modalidad de Contrato - Contado",
+            "variables": [
+                "customerName",
+                "storageGear",
+                "screenGear",
+                "batteryGear",
+                "customerNumber",
+                "newCustomerPlan",
+                "gearPrice"
+            ],
+            "type": "mensaje",
+            "placeholder": "",
+            "message": "Sr/Sta. {{customerName}} usted está adquiriendo al contado un equipo celular de la marca, modelo, capacidad de almacenamiento de GB y color, con las siguientes características:\n-{{storageGear}} de almacenamiento interno.\n-Una pantalla de {{screenGear}} pulgadas.\n-Una batería de {{batteryGear}} mili Amperios.\nAsociado a la indicada línea telefónica móvil {{customerNumber}} en el plan {{newCustomerPlan}}, el cual está sujeto a la aceptación de un Compromiso de Devolución de Descuento de Equipo por el plazo de 18 meses. El precio final de venta del equipo es S/.{{gearPrice}}, el cual ya tiene incluido el IGV."
+        },
+        "cuotas": {
+            "ruta": "legal/modalidadContrato/cuotas",
+            "id": "2-2",
+            "label": "Modalidad de Contrato - Cuotas",
+            "sinInicial": {
+                "ruta": "legal/modalidadContrato/cuotas/sinInicial",
+                "id": "2-2-1",
+                "label": "Sin Cuota Inicial",
+                "variables": [
+                    "customerName",
+                    "storageGear",
+                    "screenGear",
+                    "batteryGear",
+                    "customerNumber",
+                    "newCustomerPlan",
+                    "contractPlan",
+                    "monthlyPayment",
+                    "totalGearPrice"
+                ],
+                "type": "mensaje",
+                "placeholder": "",
+                "message": "Sr/Sta {{customerName}} usted está adquiriendo un equipo celular de la marca, modelo, capacidad de almacenamiento de GB y color, con las siguientes características:\n-{{storageGear}} de almacenamiento interno.\n-Una pantalla de {{screenGear}} pulgadas.\n-Una batería de {{batteryGear}} mili Amperios.\nAsociado a la indicada línea telefónica móvil {{customerNumber}} en el plan {{newCustomerPlan}}, el cual está sujeto a la aceptación de un Compromiso de Devolución de Descuento Especial de Equipo por el plazo de {{contractPlan}} meses y un Acuerdo Adicional para la Compra de Equipos Celulares en Cuotas que incluye el cronograma de pago por las {{contractPlan}} cuotas mensuales de S/.{{monthlyPayment}} cada una. El precio final de venta del equipo es S/.{{totalGearPrice}}, el cual ya tiene incluido el IGV.\nLe recordamos que CLARO mantendrá la propiedad del equipo hasta que usted haya cumplido con pagar la totalidad de las cuotas, las cuales le serán facturadas en el recibo asociado a la línea telefónica móvil con la que renovará su equipo."
+            },
+            "conInicial": {
+                "ruta": "legal/modalidadContrato/cuotas/conInicial",
+                "id": "2-2-2",
+                "label": "Con Cuota Inicial",
+                "variables": [
+                    "customerName",
+                    "storageGear",
+                    "screenGear",
+                    "batteryGear",
+                    "customerNumber",
+                    "newCustomerPlan",
+                    "contractPlan",
+                    "monthlyPayment",
+                    "firstPayment",
+                    "totalGearPrice"
+                ],
+                "type": "mensaje",
+                "placeholder": "",
+                "message": "Sr/Sta {{customerName}} usted está adquiriendo un equipo celular de la marca, modelo, capacidad de almacenamiento de GB y color, con las siguientes características:\n-{{storageGear}} de almacenamiento interno.\n-Una pantalla de {{screenGear}} pulgadas.\n-Una batería de {{batteryGear}} mili Amperios.\nAsociado a la indicada línea telefónica móvil {{customerNumber}} en el plan {{newCustomerPlan}}, el cual está sujeto a la aceptación de un Compromiso de Devolución de Descuento Especial de Equipo por el plazo de {{contractPlan}} meses y un Acuerdo Adicional para la Compra de Equipos Celulares en Cuotas que incluye el cronograma de pago por las {{contractPlan}} cuotas mensuales de S/.{{monthlyPayment}} cada una y una cuota inicial de S/.{{firstPayment}}. El precio final de venta del equipo es S/.{{totalGearPrice}}, el cual ya tiene incluido el IGV.\nLe recordamos que CLARO mantendrá la propiedad del equipo hasta que usted haya cumplido con pagar la totalidad de las cuotas, las cuales le serán facturadas en el recibo asociado a la línea telefónica móvil con la que renovará su equipo."
+            }
+        }
+    },
+    "3accesorioCuotas": {
+        "ruta": "accesorio/cuotas",
+        "id": "3",
+        "label": "Accesorio en Cuotas",
+        "sinInicial": {
+            "ruta": "accesorio/cuotas/sinInicial",
+            "id": "3-1",
+            "label": "Sin Cuota Inicial",
+            "variables": [
+                "costumerAccesory",
+                "modelAccesory",
+                "colorAccesory",
+                "contractAccesory",
+                "monthlyAccesoryPayment",
+                "totalAccesoryPrice"
+            ],
+            "type": "mensaje",
+            "placeholder": "",
+            "message": "Usted está adquiriendo un accesorio de la marca {{costumerAccesory}}, modelo {{modelAccesory}}, color {{colorAccesory}} a {{contractAccesory}} cuotas mensuales, sujeto a la aceptación de un Acuerdo Adicional para la Compra de Accesorios en Cuotas, que incluye el Cronograma de pago por las {{contractAccesory}} cuotas mensuales de S/.{{monthlyAccesoryPayment}} cada una. Las cuotas, según lo autorizado por Ud., le serán facturadas en el recibo asociado a la línea telefónica móvil con la que renovará su equipo. El precio total que pagará por el accesorio será de S/.{{totalAccesoryPrice}} incluido I.G.V."
+        },
+        "conInicial": {
+            "ruta": "accesorio/cuotas/conInicial",
+            "id": "3-2",
+            "label": "Con Cuota Inicial",
+            "variables": [
+                "costumerAccesory",
+                "modelAccesory",
+                "colorAccesory",
+                "contractAccesory",
+                "monthlyAccesoryPayment",
+                "firstAccesoryPayment",
+                "totalAccesoryPrice"
+            ],
+            "type": "mensaje",
+            "placeholder": "",
+            "message": "Usted está adquiriendo un accesorio de la marca {{costumerAccesory}}, modelo {{modelAccesory}}, color {{colorAccesory}} a {{contractAccesory}} cuotas mensuales, sujeto a la aceptación de un Acuerdo Adicional para la Compra de Accesorios en Cuotas, que incluye el Cronograma de pago por las {{contractAccesory}} cuotas mensuales de S/.{{monthlyAccesoryPayment}} cada una y una cuota inicial de S/.{{firstAccesoryPayment}}. La cuota inicial deberá ser pagada el día de la entrega del accesorio. Las cuotas restantes, según lo autorizado por Ud., le serán facturadas en el recibo asociado a la línea telefónica móvil con la que renovará su equipo. El precio total que pagará por el accesorio será de S/.{{totalAccesoryPrice}} incluido I.G.V."
+        }
+    },
+    "4garantiaEquipo": {
+        "ruta": "legal/garantiaEquipo",
+        "id": "4",
+        "label": "Garantía del Equipo",
+        "variables": [],
+        "type": "mensaje",
+        "placeholder": "",
+        "message": "El equipo adquirido es nuevo, está en perfecto estado y tiene una garantía de 12 meses. Los términos de la garantía están a su disposición en la web de Claro www.claro.com.pe en la sección “Condiciones de garantía de equipos.”"
+    },
+    "5rentaAdelantada": {
+        "ruta": "legal/rentaAdelantada",
+        "id": "5",
+        "label": "Renta Adelantada",
+        "variables": [
+            "advanceRent"
+        ],
+        "type": "mensaje",
+        "placeholder": "",
+        "message": "Le recordamos al momento de la entrega del pedido se cobrará el monto de S/.{{advanceRent}} por concepto de renta adelantada que será devuelto a partir del 5to recibo."
+    },
+    "6conformidad": {
+        "ruta": "legal/conformidad",
+        "id": "6",
+        "label": "Conformidad",
+        "variables": [],
+        "type": "mensaje",
+        "placeholder": "",
+        "message": "Si está de acuerdo con lo antes indicado, le agradeceré diga: “Sí, acepto.”"
+    },
+    "7contratoPlan": {
+        "ruta": "legal/contratoPlan",
+        "id": "7",
+        "label": "Contrato de Plan",
+        "mismoPlan": {
+            "ruta": "legal/contratoPlan/mismoPlan",
+            "id": "7-1",
+            "label": "Mismo Plan",
+            "variables": [
+                "customerNumber",
+                "prevCustomerPlan",
+                "additionalBenefit"
+            ],
+            "type": "mensaje",
+            "placeholder": "",
+            "message": "Le comentamos que usted contará con las mismas características del plan actual y los beneficios de Claro Club, Claro video{{additionalBenefit}}. Para más información, puede consultar la web de Claro www.claro.com.pe."
+        },
+        "cambioPlan": {
+            "ruta": "legal/contratoPlan/cambioPlan",
+            "id": "7-2",
+            "label": "Cambio de Plan",
+            "max": {
+                "ruta": "legal/contratoPlan/cambioPlan/max",
+                "id": "7-2-1",
+                "label": "Cambio a Plan Max",
+                "variables": [
+                    "customerNumber",
+                    "prevCustomerPlan",
+                    "customerPlan",
+                    "planPrice",
+                    "changeDate",
+                    "gbPlan",
+                    "minPlan",
+                    "smsPlan"
+                ],
+                "type": "mensaje",
+                "placeholder": "",
+                "message": "A continuación, le indicaremos las características principales del plan solicitado:\nMigración de la línea móvil número {{customerNumber}} con plan postpago {{prevCustomerPlan}} al plan postpago {{customerPlan}} por un cargo fijo mensual de S/. {{planPrice}} incluido IGV que será facturado por mes adelantado. El tráfico y los consumos adicionales serán facturados por mes vencido. La migración al plan contratado se realizará el {{changeDate}}. (Explicar prorrateo solo en caso el cliente solicite el cambio inmediato de plan)\nEl plan postpago {{customerPlan}} incluye lo siguiente:\n-{{gbPlan}} Megas en alta velocidad.\n-{{minPlan}} Minutos a nivel nacional.\n-{{smsPlan}} Mensajes de texto a nivel nacional."
+            },
+            "maxIlimitado": {
+                "ruta": "legal/contratoPlan/cambioPlan/maxIlimitado",
+                "id": "7-2-2",
+                "label": "Cambio a Plan Max Ilimitado",
+                "variables": [
+                    "customerNumber",
+                    "prevCustomerPlan",
+                    "customerPlan",
+                    "planPrice",
+                    "changeDate",
+                    "gbPlan",
+                    "minPlan",
+                    "smsPlan"
+                ],
+                "type": "mensaje",
+                "placeholder": "",
+                "message": "A continuación, le indicaremos las características principales del plan solicitado:\nMigración de la línea móvil número {{customerNumber}} con plan postpago {{prevCustomerPlan}} al plan postpago {{customerPlan}} por un cargo fijo mensual de S/. {{planPrice}} incluido IGV que será facturado por mes adelantado. El tráfico y los consumos adicionales serán facturados por mes vencido. La migración al plan contratado se realizará el {{changeDate}}. (Explicar prorrateo solo en caso el cliente solicite el cambio inmediato de plan)\nEl plan postpago {{customerPlan}} incluye lo siguiente:\n-{{gbPlan}} Megas en alta velocidad.\n-{{minPlan}} Minutos a nivel nacional.\n-{{smsPlan}} Mensajes de texto a nivel nacional.\nLa velocidad mínima garantizada asciende al 40% de la velocidad máxima de descarga ofrecida en su plan, teniendo en cuenta que la velocidad máxima de descarga es 10 Mbps y mínima asegurada de descarga 4 Mbps, mientras que la velocidad máxima de carga es 2 Mbps y mínima asegurada de carga es 1 Mbps."
+            }
+        }
+    },
+    "8conformidad2": {
+        "ruta": "legal/conformidad2",
+        "id": "8",
+        "label": "Conformidad 2",
+        "variables": [],
+        "type": "mensaje",
+        "placeholder": "",
+        "message": "Si está de acuerdo con los términos y condiciones de su plan postpago elegido, le agradeceré diga: “Sí, acepto.”"
+    },
+    "9terminosCondiciones": {
+        "ruta": "legal/terminosCondiciones",
+        "id": "9",
+        "label": "Términos y Condiciones",
+        "variables": [
+            "dayDate",
+            "monthDate",
+            "ageDate"
+        ],
+        "type": "mensaje",
+        "placeholder": "",
+        "message": "El texto completo de los referidos términos y condiciones, los de su compra, así como el comprobante de pago, le serán remitidos al correo electrónico que nos ha proporcionado. Para todo efecto la fecha de contratación será la de hoy {{dayDate}} de {{monthDate}} del año {{ageDate}}."
+    },
+    "10entrega": {
+        "delivery": {
+            "sinAccesorio": {
+                "cuotas": {
+                    "conInicial": {
+                        "ruta": "entrega/delivery/sinAccesorio/cuotas/conInicial",
+                        "id": "10-1",
+                        "label": "Entrega sin accesorio - cuotas con inicial",
+                        "variables": [
+                            "deliveryDay",
+                            "deliveryMonth",
+                            "deliveryHour",
+                            "customerAdress",
+                            "customerDistrict",
+                            "customerReference",
+                            "customerNumber"
+                        ],
+                        "type": "mensaje",
+                        "placeholder": "",
+                        "message": "El equipo le será entregado aproximadamente el {{deliveryDay}} de {{deliveryMonth}} a las {{deliveryHour}} en {{customerAdress}}, ubicada en el distrito de {{customerDistrict}}. Como referencia tenemos {{customerReference}}. Recuerde estar atento a su teléfono de referencia, el cual es {{customerNumber}}.\nPara recibir el producto, usted deberá mostrar su documento de identidad y pagar el precio de la cuota inicial del equipo con una tarjeta de crédito y/o débito a nuestro motorizado identificado como personal de CLARO. Recuerda validar que tengas el saldo suficiente para poder cubrir el monto a pagar y solo se puede hacer el pago del total con una sola tarjeta, ya sea débito o crédito, y no aceptamos efectivo. Tener presente que solo lo esperará por 10 minutos. Como constatación de la entrega de los productos/del producto, el motorizado le pedirá la firma de la respectiva Guía de Remisión y podría tomar una fotografía de su documento de identidad y de la recepción de los/del producto/s. Asimismo, el motorizado realizará la validación biométrica de su identidad para confirmar su solicitud, tal como lo establece OSIPTEL. Su solicitud se considerará aceptada al confirmarse la validación biométrica de identidad que usted podrá visualizar en la aplicación del motorizado y podrá solicitar hasta 1 reprogramación de su pedido."
+                    },
+                    "sinInicial": {
+                        "ruta": "entrega/delivery/sinAccesorio/cuotas/sinInicial",
+                        "id": "10-2",
+                        "label": "Entrega sin accesorio - cuotas sin inicial",
+                        "variables": [
+                            "deliveryDay",
+                            "deliveryMonth",
+                            "deliveryHour",
+                            "customerAdress",
+                            "customerDistrict",
+                            "customerReference",
+                            "customerNumber"
+                        ],
+                        "type": "mensaje",
+                        "placeholder": "",
+                        "message": "El equipo le será entregado aproximadamente el {{deliveryDay}} de {{deliveryMonth}} a las {{deliveryHour}} en {{customerAdress}}, ubicada en el distrito de {{customerDistrict}}. Como referencia tenemos {{customerReference}}. Recuerde estar atento a su teléfono de referencia, el cual es {{customerNumber}}.\nPara recibir el producto, usted deberá mostrar su documento de identidad a nuestro motorizado identificado como personal de CLARO. Tener presente que solo lo esperará por 10 minutos. Como constatación de la entrega de los productos/del producto, el motorizado le pedirá la firma de la respectiva Guía de Remisión y podría tomar una fotografía de su documento de identidad y de la recepción de los/del producto/s. Asimismo, el motorizado realizará la validación biométrica de su identidad para confirmar su solicitud, tal como lo establece OSIPTEL. Su solicitud se considerará aceptada al confirmarse la validación biométrica de identidad que usted podrá visualizar en la aplicación del motorizado y podrá solicitar hasta 1 reprogramación de su pedido."
+                    }
+                },
+                "contado": {
+                    "ruta": "entrega/delivery/sinAccesorio/contado",
+                    "id": "10-3",
+                    "label": "Entrega sin accesorio - contado",
+                    "variables": [
+                        "deliveryDay",
+                        "deliveryMonth",
+                        "deliveryHour",
+                        "customerAdress",
+                        "customerDistrict",
+                        "customerReference",
+                        "customerNumber"
+                    ],
+                    "type": "mensaje",
+                    "placeholder": "",
+                    "message": "El equipo le será entregado aproximadamente el {{deliveryDay}} de {{deliveryMonth}} a las {{deliveryHour}} en {{customerAdress}}, ubicada en el distrito de {{customerDistrict}}. Como referencia tenemos {{customerReference}}. Recuerde estar atento a su teléfono de referencia, el cual es {{customerNumber}}.\nPara recibir el producto, usted deberá mostrar su documento de identidad y pagar el precio del equipo con una tarjeta de crédito y/o débito a nuestro motorizado identificado como personal de CLARO. Recuerda validar que tengas el saldo suficiente para poder cubrir el monto a pagar y solo se puede hacer el pago del total con una sola tarjeta, ya sea débito o crédito, y no aceptamos efectivo. Tener presente que solo lo esperará por 10 minutos. Como constatación de la entrega de los productos/del producto, el motorizado le pedirá la firma de la respectiva Guía de Remisión y podría tomar una fotografía de su documento de identidad y de la recepción de los/del producto/s. Asimismo, el motorizado realizará la validación biométrica de su identidad para confirmar su solicitud, tal como lo establece OSIPTEL. Su solicitud se considerará aceptada al confirmarse la validación biométrica de identidad que usted podrá visualizar en la aplicación del motorizado y podrá solicitar hasta 1 reprogramación de su pedido."
+                }
+            },
+            "conAccesorio": {
+                "cuotas": {
+                    "conInicial": {
+                        "ruta": "entrega/delivery/conAccesorio/cuotas/conInicial",
+                        "id": "10-4",
+                        "label": "Entrega con accesorio - cuotas con inicial",
+                        "variables": [
+                            "deliveryDay",
+                            "deliveryMonth",
+                            "deliveryHour",
+                            "customerAdress",
+                            "customerDistrict",
+                            "customerReference",
+                            "customerNumber"
+                        ],
+                        "type": "mensaje",
+                        "placeholder": "",
+                        "message": "El equipo y el accesorio le serán entregados aproximadamente el {{deliveryDay}} de {{deliveryMonth}} a las {{deliveryHour}} en {{customerAdress}}, ubicada en el distrito de {{customerDistrict}}. Como referencia tenemos {{customerReference}}. Recuerde estar atento a su teléfono de referencia, el cual es {{customerNumber}}.\nPara recibir los productos, usted deberá mostrar su documento de identidad y pagar el precio total del accesorio indicado y de la cuota inicial del equipo con una tarjeta de crédito y/o débito a nuestro motorizado identificado como personal de CLARO. Recuerda validar que tengas el saldo suficiente para poder cubrir el monto a pagar y solo se puede hacer el pago del total con una sola tarjeta, ya sea débito o crédito, y no aceptamos efectivo. Tener presente que solo lo esperará por 10 minutos. Como constatación de la entrega de los productos/del producto, el motorizado le pedirá la firma de la respectiva Guía de Remisión y podría tomar una fotografía de su documento de identidad y de la recepción de los/del producto/s. Asimismo, el motorizado realizará la validación biométrica de su identidad para confirmar su solicitud, tal como lo establece OSIPTEL. Su solicitud se considerará aceptada al confirmarse la validación biométrica de identidad que usted podrá visualizar en la aplicación del motorizado y podrá solicitar hasta 1 reprogramación de su pedido."
+                    },
+                    "sinInicial": {
+                        "ruta": "entrega/delivery/conAccesorio/cuotas/sinInicial",
+                        "id": "10-5",
+                        "label": "Entrega con accesorio - cuotas sin inicial",
+                        "variables": [
+                            "deliveryDay",
+                            "deliveryMonth",
+                            "deliveryHour",
+                            "customerAdress",
+                            "customerDistrict",
+                            "customerReference",
+                            "customerNumber"
+                        ],
+                        "type": "mensaje",
+                        "placeholder": "",
+                        "message": "El equipo y el accesorio le serán entregados aproximadamente el {{deliveryDay}} de {{deliveryMonth}} a las {{deliveryHour}} en {{customerAdress}}, ubicada en el distrito de {{customerDistrict}}. Como referencia tenemos {{customerReference}}. Recuerde estar atento a su teléfono de referencia, el cual es {{customerNumber}}.\nPara recibir los productos, usted deberá mostrar su documento de identidad y pagar el precio total del accesorio indicado con una tarjeta de crédito y/o débito a nuestro motorizado identificado como personal de CLARO. Recuerda validar que tengas el saldo suficiente para poder cubrir el monto a pagar y solo se puede hacer el pago del total con una sola tarjeta, ya sea débito o crédito, y no aceptamos efectivo. Tener presente que solo lo esperará por 10 minutos. Como constatación de la entrega de los productos/del producto, el motorizado le pedirá la firma de la respectiva Guía de Remisión y podría tomar una fotografía de su documento de identidad y de la recepción de los/del producto/s. Asimismo, el motorizado realizará la validación biométrica de su identidad para confirmar su solicitud, tal como lo establece OSIPTEL. Su solicitud se considerará aceptada al confirmarse la validación biométrica de identidad que usted podrá visualizar en la aplicación del motorizado y podrá solicitar hasta 1 reprogramación de su pedido."
+                    }
+                },
+                "contado": {
+                    "ruta": "entrega/delivery/conAccesorio/contado",
+                    "id": "10-6",
+                    "label": "Entrega con accesorio - contado",
+                    "variables": [
+                        "deliveryDay",
+                        "deliveryMonth",
+                        "deliveryHour",
+                        "customerAdress",
+                        "customerDistrict",
+                        "customerReference",
+                        "customerNumber"
+                    ],
+                    "type": "mensaje",
+                    "placeholder": "",
+                    "message": "El equipo y el accesorio le serán entregados aproximadamente el {{deliveryDay}} de {{deliveryMonth}} a las {{deliveryHour}} en {{customerAdress}}, ubicada en el distrito de {{customerDistrict}}. Como referencia tenemos {{customerReference}}. Recuerde estar atento a su teléfono de referencia, el cual es {{customerNumber}}.\nPara recibir los productos, usted deberá mostrar su documento de identidad y pagar el precio total del equipo y del accesorio indicado con una tarjeta de crédito y/o débito a nuestro motorizado identificado como personal de CLARO. Recuerda validar que tengas el saldo suficiente para poder cubrir el monto a pagar y solo se puede hacer el pago del total con una sola tarjeta, ya sea débito o crédito, y no aceptamos efectivo. Tener presente que solo lo esperará por 10 minutos. Como constatación de la entrega de los productos/del producto, el motorizado le pedirá la firma de la respectiva Guía de Remisión y podría tomar una fotografía de su documento de identidad y de la recepción de los/del producto/s. Asimismo, el motorizado realizará la validación biométrica de su identidad para confirmar su solicitud, tal como lo establece OSIPTEL. Su solicitud se considerará aceptada al confirmarse la validación biométrica de identidad que usted podrá visualizar en la aplicación del motorizado y podrá solicitar hasta 1 reprogramación de su pedido."
+                }
+            }
+        },
+        "recojo": {
+            "conAccesorio": {
+                "cuotas": {
+                    "conInicial": {
+                        "ruta": "recojo/conAccesorio/cuotas/conInicial",
+                        "id": "10-7",
+                        "label": "Cuotas - Con Inicial - Con Accesorio",
+                        "variables": [
+                            "claroStore",
+                            "claroStoreHours"
+                        ],
+                        "type": "mensaje",
+                        "placeholder": "",
+                        "message": "Usted podrá recoger el equipo y el accesorio dentro de los siguientes dos días en el Centro de atención al cliente de CLARO, ubicado en {{claroStore}} en horario de atención {{claroStoreHours}}. Para recoger el producto, usted deberá acercarse al personal de ayuda de Claro, mostrar su documento de identidad, indicar el código de gestión SEC el cual se lo estaré facilitando en un momento de forma escrita por whatsapp, mencionar el código RECO2024 donde según la afluencia, lo derivarán al módulo de despacho para la verificación del pedido, posterior a ello irá a Caja para pagar la cuota inicial del equipo y el precio del accesorio con una tarjeta de crédito o débito. Solo recibiremos efectivo si el monto total a pagar es menor a S/2000. Recuerde que nuestro asesor realizará la validación biométrica de su identidad para confirmar su solicitud, tal como lo establece OSIPTEL. Su solicitud se considerará aceptada al confirmarse la validación biométrica de identidad, si deseas realizar alguna modificación de tu pedido esto podría demorar un intervalo aproximado de 30 min, además te recordamos que no podrás recoger tu pedido en el horario de refrigerio del despacho que es de 1 a 2 pm."
+                    },
+                    "sinInicial": {
+                        "ruta": "recojo/conAccesorio/cuotas/sinInicial",
+                        "id": "10-8",
+                        "label": "Cuotas - Sin Inicial - Con Accesorio",
+                        "variables": [
+                            "claroStore",
+                            "claroStoreHours"
+                        ],
+                        "type": "mensaje",
+                        "placeholder": "",
+                        "message": "Usted podrá recoger el equipo y el accesorio dentro de los siguientes dos días en el Centro de atención al cliente de CLARO, ubicado en {{claroStore}} en horario de atención {{claroStoreHours}}. Para recoger el producto, usted deberá acercarse al personal de ayuda de Claro, mostrar su documento de identidad, indicar el código de gestión SEC el cual se lo estaré facilitando en un momento de forma escrita por whatsapp, mencionar el código RECO2024 donde según la afluencia, lo derivarán al módulo de despacho para la verificación del pedido, posterior a ello irá a Caja para pagar el precio del accesorio con una tarjeta de crédito o débito. Solo recibiremos efectivo si el monto total a pagar es menor a S/2000. Recuerde que nuestro asesor realizará la validación biométrica de su identidad para confirmar su solicitud, tal como lo establece OSIPTEL. Su solicitud se considerará aceptada al confirmarse la validación biométrica de identidad, si deseas realizar alguna modificación de tu pedido esto podría demorar un intervalo aproximado de 30 min, además te recordamos que no podrás recoger tu pedido en el horario de refrigerio del despacho que es de 1 a 2 pm."
+                    }
+                },
+                "contado": {
+                    "ruta": "recojo/conAccesorio/contado",
+                    "id": "10-9",
+                    "label": "Contado - Con Accesorio",
+                    "variables": [
+                        "claroStore",
+                        "claroStoreHours"
+                    ],
+                    "type": "mensaje",
+                    "placeholder": "",
+                    "message": "Usted podrá recoger el equipo y el accesorio dentro de los siguientes dos días en el Centro de atención al cliente de CLARO, ubicado en {{claroStore}} en horario de atención {{claroStoreHours}}. Para recoger el producto, usted deberá acercarse al personal de ayuda de Claro, mostrar su documento de identidad, indicar el código de gestión SEC el cual se lo estaré facilitando en un momento de forma escrita por whatsapp, mencionar el código RECO2024 donde según la afluencia, lo derivarán al módulo de despacho para la verificación del pedido, posterior a ello irá a Caja para pagar el precio del equipo y el precio del accesorio con una tarjeta de crédito o débito. Solo recibiremos efectivo si el monto total a pagar es menor a S/2000. Recuerde que nuestro asesor realizará la validación biométrica de su identidad para confirmar su solicitud, tal como lo establece OSIPTEL. Su solicitud se considerará aceptada al confirmarse la validación biométrica de identidad, si deseas realizar alguna modificación de tu pedido esto podría demorar un intervalo aproximado de 30 min, además te recordamos que no podrás recoger tu pedido en el horario de refrigerio del despacho que es de 1 a 2 pm."
+                }
+            },
+            "sinAccesorio": {
+                "cuotas": {
+                    "conInicial": {
+                        "ruta": "recojo/sinAccesorio/cuotas/conInicial",
+                        "id": "10-10",
+                        "label": "Cuotas - Con Inicial - Sin Accesorio",
+                        "variables": [
+                            "claroStore",
+                            "claroStoreHours"
+                        ],
+                        "type": "mensaje",
+                        "placeholder": "",
+                        "message": "Usted podrá recoger el equipo dentro de los siguientes dos días en el Centro de atención al cliente de CLARO, ubicado en {{claroStore}} en horario de atención {{claroStoreHours}}. Para recoger el producto, usted deberá acercarse al personal de ayuda de Claro, mostrar su documento de identidad, indicar el código de gestión SEC el cual se lo estaré facilitando en un momento de forma escrita por whatsapp, mencionar el código RECO2024 donde según la afluencia, lo derivarán al módulo de despacho para la verificación del pedido, posterior a ello irá a Caja para pagar el precio de la cuota inicial de equipo con una tarjeta de crédito o débito. Solo recibiremos efectivo si el monto total a pagar es menor a S/2000. Recuerde que nuestro asesor realizará la validación biométrica de su identidad para confirmar su solicitud, tal como lo establece OSIPTEL. Su solicitud se considerará aceptada al confirmarse la validación biométrica de identidad, si deseas realizar alguna modificación de tu pedido esto podría demorar un intervalo aproximado de 30 min, además te recordamos que no podrás recoger tu pedido en el horario de refrigerio del despacho que es de 1 a 2 pm."
+                    },
+                    "sinInicial": {
+                        "ruta": "recojo/sinAccesorio/cuotas/sinInicial",
+                        "id": "10-11",
+                        "label": "Cuotas - Sin Inicial - Sin Accesorio",
+                        "variables": [
+                            "claroStore",
+                            "claroStoreHours"
+                        ],
+                        "type": "mensaje",
+                        "placeholder": "",
+                        "message": "Usted podrá recoger el equipo dentro de los siguientes dos días en el Centro de atención al cliente de CLARO, ubicado en {{claroStore}} en horario de atención {{claroStoreHours}}. Para recoger el producto, usted deberá acercarse al personal de ayuda de Claro, mostrar su documento de identidad, indicar el código de gestión SEC el cual se lo estaré facilitando en un momento de forma escrita por whatsapp, mencionar el código RECO2024 donde según la afluencia, lo derivarán al módulo de despacho para la verificación del pedido. Recuerde que nuestro asesor realizará la validación biométrica de su identidad para confirmar su solicitud, tal como lo establece OSIPTEL. Su solicitud se considerará aceptada al confirmarse la validación biométrica de identidad, si deseas realizar alguna modificación de tu pedido esto podría demorar un intervalo aproximado de 30 min, además te recordamos que no podrás recoger tu pedido en el horario de refrigerio del despacho que es de 1 a 2 pm."
+                    }
+                },
+                "contado": {
+                    "ruta": "recojo/sinAccesorio/contado",
+                    "id": "10-12",
+                    "label": "Contado - Sin Accesorio",
+                    "variables": [
+                        "claroStore",
+                        "claroStoreHours"
+                    ],
+                    "type": "mensaje",
+                    "placeholder": "",
+                    "message": "Usted podrá recoger el equipo dentro de los siguientes dos días en el Centro de atención al cliente de CLARO, ubicado en {{claroStore}} en horario de atención {{claroStoreHours}}. Para recoger el producto, usted deberá acercarse al personal de ayuda de Claro, mostrar su documento de identidad, indicar el código de gestión SEC el cual se lo estaré facilitando en un momento de forma escrita por whatsapp, mencionar el código RECO2024 donde según la afluencia, lo derivarán al módulo de despacho para la verificación del pedido, posterior a ello irá a Caja para pagar el precio total del equipo con una tarjeta de crédito o débito. Solo recibiremos efectivo si el monto total a pagar es menor a S/2000. Recuerde que nuestro asesor realizará la validación biométrica de su identidad para confirmar su solicitud, tal como lo establece OSIPTEL. Su solicitud se considerará aceptada al confirmarse la validación biométrica de identidad, si deseas realizar alguna modificación de tu pedido esto podría demorar un intervalo aproximado de 30 min, además te recordamos que no podrás recoger tu pedido en el horario de refrigerio del despacho que es de 1 a 2 pm."
+                }
+            }
+        }
+    },
+    "11proteccionMovil": {
+        "ruta": "proteccionMovil",
+        "id": "11",
+        "label": "Protección Móvil",
+        "variables": [
+            "pmPrice",
+            "dayTime",
+            "monthDate",
+            "yearDate",
+            "customerName",
+            "customerDocument",
+            "customerEmail",
+            "fullModelGear",
+            "contactAdress"
+        ],
+        "type": "mensaje",
+        "placeholder": "",
+        "message": "Usted está adquiriendo Protección Móvil que cubre los eventos de daño físico, falla eléctrica o mecánica (una vez la garantía del fabricante haya expirado) y robo o hurto.\nEl costo mensual del servicio protección móvil para el equipo adquirido, corresponde a S/.{{pmPrice}}. La primera prima se paga al momento que reciba su teléfono. El plazo del seguro es de un mes, con renovación automática.\nLa póliza cubre hasta un máximo de 2 reemplazos, en un periodo de 12 meses consecutivos, contados desde la fecha de reemplazo del primer siniestro cubierto.\nDeberá pagar un deducible en caso de siniestro cubierto. Este será de acuerdo con el precio prepago del bien asegurado a la fecha del siniestro, sin descuentos o subsidios. En caso de daño o falla el deducible es del 25% y en caso de robo o hurto el deducible es del 40%. En caso de siniestro, puede comunicarse sin costo a la línea de Protección Móvil marcando al *855 desde su celular Claro o al 0800-71-855.\nEste seguro no cubre, entre otras cosas: desaparición misteriosa, extravío, rasguños, daños superficiales, grietas, daño por abuso, daño por uso de forma contraria a las instrucciones del fabricante; pérdidas cubiertas por la garantía del fabricante; deshacerse intencionalmente del bien; daños por un acto intencional, doloso, deshonesto, fraudulento o delictivo.\nPuede encontrar toda la información sobre la cobertura del seguro Protección Móvil en el Certificado de Seguro, que recibirá en los días siguientes a la compra del seguro, y en las Condiciones Generales aplicables, disponibles en www.proteccionmovil.com.pe.\nPuede pedir su desactivación en cualquier momento en un Centro de Atención Claro o llamando desde su celular gratuitamente al 123 o al 0-800-00-123 desde un teléfono fijo.\n\n¿Acepta la recolección y tratamiento de sus datos personales en relación con su contrato de seguro, los cuales se tratarán en conformidad con el aviso de privacidad que encuentra en www.proteccionmovil.com.pe?\nSi está de acuerdo con lo antes indicado, le agradeceré diga: “Sí, acepto”. (si el usuario responde no, se concluye la llamada)\n\nSiendo el día {{dayTime}} de {{monthDate}} del {{yearDate}}, Ud. Sr(a) {{customerName}} con DNI N° {{customerDocument}} y correo electrónico {{customerEmail}} ¿Acepta contratar el servicio de protección móvil por S/ {{pmPrice}} mensuales para proteger su celular {{fullModelGear}} modelo cuyo código de IMEI está asociado a la línea celular N° {{}} y al equipo que acaba de adquirir y le será entregado por Claro en {{contactAdress}}? Si está de acuerdo con lo antes indicado, le agradeceré diga: “Sí, acepto”."
+    },
+    "12speechRecordatorio": {
+        "delivery": {
+            "a": {
+                "ruta": "speechRecordatorio/delivery/a",
+                "id": "12-1",
+                "label": "Recordatorio - Delivery - Felicitaciones",
+                "variables": [
+                    "customerName"
+                ],
+                "type": "mensaje",
+                "placeholder": "",
+                "message": "{{customerName}} ¡felicitaciones! ¡Tu pedido ha sido ingresado exitosamente! Con la finalidad de que tus familiares o amistades puedan obtener también el beneficio de renovar con un precio especial, ¿tienes algún referido que pueda estar interesado en la propuesta?\nEn caso la respuesta sea “si”:\nPerfecto, bríndame el nombre y número de la persona que obtendrá este beneficio."
+            },
+            "b": {
+                "ruta": "speechRecordatorio/delivery/b",
+                "id": "12-2",
+                "label": "Recordatorio - Delivery - Pago Seguro",
+                "variables": [],
+                "type": "mensaje",
+                "placeholder": "",
+                "message": "Priorizamos tu seguridad, por ende, te comento que no te llamaremos para pedirte pagos por adelantado ni depósitos bancarios de tu nuevo equipo. El único pago lo realizarás en el POS que te entregará el repartidor autorizado de Claro el día programado."
+            },
+            "c": {
+                "ruta": "speechRecordatorio/delivery/c",
+                "id": "12-3",
+                "label": "Recordatorio - Delivery - Pago Seguro Sin Detalles",
+                "variables": [],
+                "type": "mensaje",
+                "placeholder": "",
+                "message": "Priorizamos tu seguridad, por ende, te comento que no te llamaremos para pedirte pagos por adelantado ni depósitos bancarios de tu nuevo equipo."
+            },
+            "d": {
+                "ruta": "speechRecordatorio/delivery/d",
+                "id": "12-4",
+                "label": "Recordatorio - Delivery - Encuesta",
+                "variables": [],
+                "type": "mensaje",
+                "placeholder": "",
+                "message": "En Claro buscamos mejorar constantemente. Por ello, dentro de 24 horas hábiles, te invitamos a completar una breve encuesta para evaluar tu experiencia al renovar tu dispositivo."
+            }
+        },
+        "cac": {
+            "a": {
+                "ruta": "speechRecordatorio/cac/a",
+                "id": "12-5",
+                "label": "Recordatorio - CAC - Felicitaciones",
+                "variables": [
+                    "customerName"
+                ],
+                "type": "mensaje",
+                "placeholder": "",
+                "message": "{{customerName}} ¡felicitaciones! ¡Tu pedido ha sido ingresado exitosamente! Con la finalidad de que tus familiares o amistades puedan obtener también el beneficio de renovar con un precio especial, ¿tienes algún referido que pueda estar interesado en la propuesta?\nEn caso la respuesta sea “si”:\nPerfecto, bríndame el nombre y número de la persona que obtendrá este beneficio."
+            },
+            "b": {
+                "ruta": "speechRecordatorio/cac/b",
+                "id": "12-6",
+                "label": "Recordatorio - CAC - Pago Seguro",
+                "variables": [],
+                "type": "mensaje",
+                "placeholder": "",
+                "message": "Priorizamos tu seguridad, por ende, te comento que no te llamaremos para pedirte pagos por adelantado ni depósitos bancarios de tu nuevo equipo. El único pago lo realizarás en el módulo de caja del centro de atención."
+            },
+            "c": {
+                "ruta": "speechRecordatorio/cac/c",
+                "id": "12-7",
+                "label": "Recordatorio - CAC - Pago Seguro Sin Detalles",
+                "variables": [],
+                "type": "mensaje",
+                "placeholder": "",
+                "message": "Priorizamos tu seguridad, por ende, te comento que no te llamaremos para pedirte pagos por adelantado ni depósitos bancarios de tu nuevo equipo."
+            },
+            "d": {
+                "ruta": "speechRecordatorio/cac/d",
+                "id": "12-8",
+                "label": "Recordatorio - CAC - Encuesta",
+                "variables": [],
+                "type": "mensaje",
+                "placeholder": "",
+                "message": "En Claro buscamos mejorar constantemente. Por ello, dentro de 24 horas hábiles, te invitamos a completar una breve encuesta para evaluar tu experiencia al renovar tu dispositivo."
+            }
+        }
+    }
+}
