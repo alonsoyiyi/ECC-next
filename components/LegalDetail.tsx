@@ -1,15 +1,19 @@
 // components/LegalDetail.tsx
 'use client';
 
-import React, { useState, useEffect, useCallback } from 'react';
-import { Button } from '@/components/ui/button';
+import React, { useState, useEffect, useCallback } from 'react'
+import { Button } from '@/components/ui/button'
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { useGlobalInputs } from '@/components/GlobalInputsProvider'
+import { GlobalInputs } from '@/types/globalTypes'
 import Footer from "@/components/Footer";
 
+interface LegalDetailProps {
+  selectedLegalId: string;
+  globalInputs: GlobalInputs;
+}
 
 interface MensajeLegal {
   id: string
@@ -29,19 +33,19 @@ interface DatosLegales {
   inputs: { [key: string]: InputLegal }
 }
 
-export default function LegalDetail() {
-  const [step, setStep] = useState(1); // Controla la pregunta actual
-  const [selectedOption1, setSelectedOption1] = useState<string | null>(null);
-  const [selectedOption2, setSelectedOption2] = useState<string | null>(null);
-  const [selectedOption4, setSelectedOption4] = useState<string | null>(null);
-  const [selectedOption5, setSelectedOption5] = useState<string | null>(null);
-  const [selectedOption6, setSelectedOption6] = useState<string | null>(null);
-  const [selectedOption8, setSelectedOption8] = useState<string | null>(null);
-  const [codes, setCodes] = useState<number[]>([]);
+export default function LegalDetail({ selectedLegalId, globalInputs }: LegalDetailProps) {
+  const [step, setStep] = useState(1)
+  const [selectedOption1, setSelectedOption1] = useState<string | null>(null)
+  const [selectedOption2, setSelectedOption2] = useState<string | null>(null)
+  const [selectedOption4, setSelectedOption4] = useState<string | null>(null)
+  const [selectedOption5, setSelectedOption5] = useState<string | null>(null)
+  const [selectedOption6, setSelectedOption6] = useState<string | null>(null)
+  const [selectedOption8, setSelectedOption8] = useState<string | null>(null)
+  const [codes, setCodes] = useState<number[]>([])
   const [datosLegales, setDatosLegales] = useState<DatosLegales | null>(null)
   const [mensajeFinal, setMensajeFinal] = useState('')
   const [valoresInput, setValoresInput] = useState<{ [key: string]: string }>({})
-  const { globalInputs } = useGlobalInputs()
+
 
   useEffect(() => {
     obtenerDatosLegales()
@@ -237,25 +241,24 @@ export default function LegalDetail() {
     if (!datosLegales) return
 
     const mensajes = codes
-      .map(code => datosLegales.messages.find(m => m.id === code.toString()))
-      .filter((m): m is MensajeLegal => m !== undefined)
+    .map(code => datosLegales.messages.find(m => m.id === code.toString()))
+    .filter((m): m is MensajeLegal => m !== undefined)
 
-    const mensajesFormateados = mensajes.map(m => {
-      let mensajeFormateado = m.message
-      m.inputref.forEach(inputKey => {
-        const valor = inputKey === 'userName' ? globalInputs.nombre : (valoresInput[inputKey] || `{${inputKey}}`)
-        mensajeFormateado = mensajeFormateado.split(`{${inputKey}}`).join(valor);
-
-      })
-      return mensajeFormateado
+  const mensajesFormateados = mensajes.map(m => {
+    let mensajeFormateado = m.message
+    m.inputref.forEach(inputKey => {
+      const valor = inputKey === 'userName' ? globalInputs.nombre : (valoresInput[inputKey] || `{${inputKey}}`)
+      mensajeFormateado = mensajeFormateado.split(`{${inputKey}}`).join(valor)
     })
+    return mensajeFormateado
+  })
 
-    setMensajeFinal(mensajesFormateados.join('\n\n'))
-  }, [codes, datosLegales, valoresInput, globalInputs.nombre])
+  setMensajeFinal(mensajesFormateados.join('\n\n'))
+}, [codes, datosLegales, valoresInput, globalInputs])
 
-  useEffect(() => {
-    generarMensajeFinal()
-  }, [generarMensajeFinal])
+useEffect(() => {
+  generarMensajeFinal()
+}, [generarMensajeFinal])
 
   const renderizarInputs = () => {
     if (!datosLegales) return null
