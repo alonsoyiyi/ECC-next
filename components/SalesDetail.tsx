@@ -3,30 +3,45 @@
 import { useEffect, useState } from 'react';
 import { useGlobalInputs } from '@/components/GlobalInputsProvider'; // Importa el hook
 import Footer from "@/components/Footer";
+import { SalesDetailProps } from "@/types/salesTypes";
 
-const SalesDetail = ({ template, inputs }) => {
-  const [inputValues, setInputValues] = useState({});
-  const { globalInputs } = useGlobalInputs(); // Usa el hook para obtener valores globales
+interface InputConfig {
+  type?: string;
+  label?: string;
+  options?: { value: string, label: string }[];
+}
+
+interface InputValues {
+  [key: string]: string | number | undefined; // Permitir cualquier clave que tenga string, number o undefined como valor
+}
+
+const SalesDetail: React.FC<SalesDetailProps> = ({ template, inputs }) => {
+  const [inputValues, setInputValues] = useState<InputValues>({});
+  
+  const { globalInputs } = useGlobalInputs();
 
   useEffect(() => {
-    // Inicializa inputValues con userName del contexto global si está presente en inputs
-    setInputValues(prevValues => ({
-      ...prevValues,
-      userName: inputs.userName ? globalInputs.nombre : prevValues.userName
-    }));
+    // Verifica si inputs tiene una clave llamada userName
+    if (inputs && 'userName' in inputs) {
+      setInputValues(prevValues => ({
+        ...prevValues,
+        userName: globalInputs.nombre,
+      }));
+    }
   }, [template, inputs, globalInputs]);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
-    setInputValues((prevValues) => ({
+    setInputValues(prevValues => ({
       ...prevValues,
       [name]: value,
     }));
   };
 
-  const renderMessage = (messageTemplate) => {
+  const renderMessage = (messageTemplate: string) => {
     return messageTemplate.replace(/\{(.*?)\}/g, (match, key) => {
-      return inputValues[key] || match;
+      const value = inputValues[key];
+      return value !== undefined ? String(value) : match; // Asegúrate de que siempre se devuelva un string
     });
   };
 
@@ -37,14 +52,14 @@ const SalesDetail = ({ template, inputs }) => {
       <h3 className="text-xl font-semibold mb-2">{template.label}</h3>
       <div className="grid grid-cols-3 gap-2 mb-4"> {/* Tres columnas */}
         {inputRefs.map((inputRef) => {
-          const inputConfig = (inputs && inputs[inputRef.key]) || { type: 'text', label: inputRef.label }; // Valor por defecto
+          const inputConfig: InputConfig = inputs[inputRef.key] || { type: 'text', label: inputRef.label }; // Valor por defecto
           return (
             <div key={inputRef.key} className="mb-1"> {/* Espacio vertical reducido */}
               <label className="block text-xs">{inputConfig.label}</label> {/* Usar el label del JSON */}
               {inputConfig.type === 'select' ? (
                 <select
                   name={inputRef.key}
-                  value={inputValues[inputRef.key] || ''}
+                  value={inputValues[inputRef.key] as string || ''}
                   onChange={handleInputChange}
                   className="border rounded p-0.5 w-full text-black"
                 >
@@ -58,7 +73,7 @@ const SalesDetail = ({ template, inputs }) => {
                 <input
                   type={inputConfig.type || 'text'}
                   name={inputRef.key}
-                  value={inputValues[inputRef.key] || ''}
+                  value={inputValues[inputRef.key] as string || ''}
                   onChange={handleInputChange}
                   className="border rounded p-0.5 w-full text-black"
                   placeholder={`Ingrese ${inputConfig.label}`}
@@ -73,7 +88,7 @@ const SalesDetail = ({ template, inputs }) => {
         value={renderMessage(template.message)}
         readOnly
       />
-      <Footer/>
+      <Footer />
     </>
   );
 };

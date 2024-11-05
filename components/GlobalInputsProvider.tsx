@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Image from 'next/image'
 import { useLocalStorage } from '@/lib/useLocalStorage';
-import { GlobalInputs } from '@/types/globalInputs';
+import { GlobalInputs } from '@/types/globalTypes';
 import Link from 'next/link';
 import { Button } from "@/components/ui/button"; // Asegúrate de tener tu botón importado
 
@@ -61,7 +61,7 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
             <Input
               id="nombre"
               value={globalInputs.nombre}
-              onChange={(e) => handleInputChange('nombre', e.target.value)}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleInputChange('nombre', e.target.value)}
               placeholder="Ingresa tu nombre"
               className="text-center" // Centrar texto en el input
             />
