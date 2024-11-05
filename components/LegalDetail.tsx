@@ -111,18 +111,7 @@ export default function LegalDetail({ globalInputs }: LegalDetailProps) {
     return selectedOption6 === 'Delivery' ? [17, 18] : [17, 18];
   };
 
-  // Función para obtener los valores de la octava pregunta
 
-  // const getQuestion8Options = () => {
-  //   switch (selectedOption8) {
-  //     case 'Con PM':
-  //       return [43];
-  //     case 'Sin PM':
-  //       return [44];
-  //     default:
-  //       return [];
-  //   }
-  // };
 
   // Función para manejar el botón "Siguiente"
   const handleNextClick = () => {
@@ -564,7 +553,7 @@ useEffect(() => {
         )}  
 
         {step <= 8 && (
-          <div className="mt-2 w-full max-w-md">
+          <div className="hidden">
             <h2 className="text-lg font-bold text-center">Códigos seleccionados:</h2>
             <Textarea
               className="w-full h-5 p-2 bg-black border-2 border-red-500 text-red-500 rounded"
