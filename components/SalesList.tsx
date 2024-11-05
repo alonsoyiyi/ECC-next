@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"; // Asegúrate de que Button est
 const SalesList = () => {
   const [data, setData] = useState(null);
   const [selectedTemplate, setSelectedTemplate] = useState(null);
-  const router = useRouter();
+  // const router = useRouter();
 
   useEffect(() => {
     const fetchSalesData = async () => {

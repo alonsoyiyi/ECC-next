@@ -11,7 +11,7 @@ export async function GET() {
     try {
       await fs.access(filePath);
     } catch (error) {
-      console.error('El archivo VentasData.json no existe en:', filePath);
+      console.error('El archivo VentasData.json no existe en:', filePath, error);
       return NextResponse.json(
         { error: 'Archivo de ventas no encontrado' },
         { status: 404 }

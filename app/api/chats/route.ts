@@ -12,8 +12,8 @@ export async function GET() {
     const filePath = path.join(jsonDirectory, 'ChatData.json')
     try {
       await fs.access(filePath)
-    } catch (error) {
-      console.error('El archivo ChatData.json no existe en:', filePath)
+    } catch  (error) {
+      console.error('El archivo ChatData.json no existe en:', filePath, error)
       return NextResponse.json(
         { error: 'Archivo de chats no encontrado' },
         { status: 404 }

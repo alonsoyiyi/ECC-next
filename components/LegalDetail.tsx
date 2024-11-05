@@ -109,16 +109,16 @@ export default function LegalDetail() {
 
   // Función para obtener los valores de la octava pregunta
 
-  const getQuestion8Options = () => {
-    switch (selectedOption8) {
-      case 'Con PM':
-        return [43];
-      case 'Sin PM':
-        return [44];
-      default:
-        return [];
-    }
-  };
+  // const getQuestion8Options = () => {
+  //   switch (selectedOption8) {
+  //     case 'Con PM':
+  //       return [43];
+  //     case 'Sin PM':
+  //       return [44];
+  //     default:
+  //       return [];
+  //   }
+  // };
 
   // Función para manejar el botón "Siguiente"
   const handleNextClick = () => {
@@ -243,7 +243,7 @@ export default function LegalDetail() {
     const mensajesFormateados = mensajes.map(m => {
       let mensajeFormateado = m.message
       m.inputref.forEach(inputKey => {
-        let valor = inputKey === 'userName' ? globalInputs.nombre : (valoresInput[inputKey] || `{${inputKey}}`)
+        const valor = inputKey === 'userName' ? globalInputs.nombre : (valoresInput[inputKey] || `{${inputKey}}`)
         mensajeFormateado = mensajeFormateado.split(`{${inputKey}}`).join(valor);
 
       })
@@ -420,7 +420,7 @@ export default function LegalDetail() {
 
             {step === 4 && (
               <div>
-                <p className="text-lg mb-4">4. ¿Venta con renta adelantada o sin renta adelantada?</p>
+                <p className="text-lg mb-4">3. ¿Venta con renta adelantada o sin renta adelantada?</p>
                 <div className="flex flex-col space-y-2 mb-4">
                   <label className="flex items-center space-x-2">
                     <input
@@ -448,7 +448,7 @@ export default function LegalDetail() {
 
             {step === 5 && (
               <div>
-                <p className="text-lg mb-4">5. ¿Qué plan desea?</p>
+                <p className="text-lg mb-4">4. ¿Qué plan desea?</p>
                 <div className="flex flex-col space-y-2 mb-4">
                   <label className="flex items-center space-x-2">
                     <input
@@ -486,7 +486,7 @@ export default function LegalDetail() {
 
             {step === 6 && (
               <div>
-                <p className="text-lg mb-4">6. ¿Cómo será la entrega?</p>
+                <p className="text-lg mb-4">5. ¿Cómo será la entrega?</p>
                 <div className="flex flex-col space-y-2 mb-4">
                   <label className="flex items-center space-x-2">
                     <input
@@ -513,7 +513,7 @@ export default function LegalDetail() {
             )}
             {step === 8 && (
               <div>
-                <p className="text-lg mb-4">8. ¿Activa Protección Móvil?</p>
+                <p className="text-lg mb-4">6. ¿Activa Protección Móvil?</p>
                 <div className="flex flex-col space-y-2 mb-4">
                   <label className="flex items-center space-x-2">
                     <input
