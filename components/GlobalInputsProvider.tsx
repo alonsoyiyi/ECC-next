@@ -63,7 +63,7 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
               value={globalInputs.nombre}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleInputChange('nombre', e.target.value)}
               placeholder="Ingresa tu nombre"
-              className="text-center" // Centrar texto en el input
+              className="text-center bg-black text-white"  // Centrar texto en el input
             />
           </div>
         </div>
