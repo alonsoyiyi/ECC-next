@@ -4,10 +4,19 @@ import { useEffect, useState } from 'react';
 // import { useRouter } from 'next/navigation';
 import SalesDetail from './SalesDetail';
 import { Button } from "@/components/ui/button"; // Asegúrate de que Button esté importado
+import { SalesDetailProps } from '@/types/salesTypes'; // Importa SalesDetailProps
+
+interface SalesTemplate {
+  id: number;
+  name: string;
+  label: string;
+  message: string;
+  inputref: { key: string; label: string }[]; // Ajusta según la estructura real de inputref
+}
 
 const SalesList = () => {
-  const [data, setData] = useState(null);
-  const [selectedTemplate, setSelectedTemplate] = useState(null);
+  const [data, setData] = useState<{ plantillas: { [key: string]: SalesTemplate }; inputs: SalesDetailProps['inputs'] } | null>(null);
+  const [selectedTemplate, setSelectedTemplate] = useState<SalesTemplate | null>(null);
   // const router = useRouter();
 
   useEffect(() => {
@@ -20,7 +29,7 @@ const SalesList = () => {
     fetchSalesData();
   }, []);
 
-  const handleTemplateClick = (template) => {
+  const handleTemplateClick = (template: SalesTemplate) => {
     setSelectedTemplate(template);
   };
 
@@ -37,7 +46,7 @@ const SalesList = () => {
             <Button
               key={key}
               variant={selectedTemplate?.label === template.label ? "default" : "outline"}
-              className="w-full justify-start text-xs" // Ajuste de tamaño de letra
+              className="w-full justify-start text-sm" // Ajuste de tamaño de letra
               onClick={() => handleTemplateClick(template)}
             >
               {template.label}

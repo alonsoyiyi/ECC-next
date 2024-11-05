@@ -283,7 +283,7 @@ useEffect(() => {
                 <Input
                   id={inputRef}
                   value={valoresInput[inputRef] || ''}
-                  onChange={(e) => {
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                     setValoresInput(prev => ({ ...prev, [inputRef]: e.target.value }))
                   }}
                   placeholder={`Ingrese ${input.label.toLowerCase()}`}

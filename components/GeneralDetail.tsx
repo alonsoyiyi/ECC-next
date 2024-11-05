@@ -1,6 +1,13 @@
 import Footer from "@/components/Footer";
 
-const GeneralDetail = ({ item }) => {
+// Define la interfaz para el tipo de item
+interface ItemType {
+  message: string; // Propiedad que contiene el mensaje
+  id?: number; // Otras propiedades que pueda tener item
+}
+
+// Usa el tipo en la declaración del componente
+const GeneralDetail: React.FC<{ item: ItemType }> = ({ item }) => {
   return (
     <div className="mt-4 w-full">
       <textarea
@@ -9,7 +16,7 @@ const GeneralDetail = ({ item }) => {
         readOnly
         style={{ minHeight: '300px' }} // Aumentar la altura mínima
       />
-      <Footer/>
+      <Footer />
     </div>
   );
 };
