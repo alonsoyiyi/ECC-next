@@ -1,189 +1,999 @@
 {
-    "ventas": {
+    "plantillas": {
         "delivery": {
-            "ruta": "ventas/delivery",
-            "id": "1",
-            "label": "Tipo de Delivery",
-            "variables": [
-                "deliveryType",
-                "pdv",
-                "salesCampaign",
-                "customerName",
-                "customerDocument",
-                "customerNumber",
-                "referenceNumber",
-                "customerEmail",
-                "prevCustomerPlan",
-                "newCustomerPlan",
-                "limitConsumption",
-                "contractPlan",
-                "fullModelGear",
-                "totalGearPrice",
-                "customerPoints",
-                "pmPrice",
-                "advanceRent",
-                "firstPayment",
-                "monthlyPayment",
-                "monthlyGearPlan",
-                "fullCustomerAdress",
-                "customerReference",
-                "adressPlane",
-                "coordinates",
-                "paymentType",
-                "fullDeliveryDate",
-                "turn",
-                "secCode",
-                "userName",
-                "snCode",
-                "manager"
+            "label": "Venta Delivery",
+            "inputref": [
+                {
+                    "key": "deliveryType",
+                    "label": "Tipo de delivery"
+                },
+                {
+                    "key": "pdv",
+                    "label": "PDV"
+                },
+                {
+                    "key": "salesCampaign",
+                    "label": "Campaña de venta"
+                },
+                {
+                    "key": "customerName",
+                    "label": "Nombre de cliente"
+                },
+                {
+                    "key": "customerDocument",
+                    "label": "DNI"
+                },
+                {
+                    "key": "customerNumber",
+                    "label": "Número de cliente"
+                },
+                {
+                    "key": "referenceNumber",
+                    "label": "Número de referencia"
+                },
+                {
+                    "key": "customerEmail",
+                    "label": "Email del cliente"
+                },
+                {
+                    "key": "prevCustomerPlan",
+                    "label": "Antiguo plan del cliente"
+                },
+                {
+                    "key": "newCustomerPlan",
+                    "label": "Nuevo Plan del Cliente"
+                },
+                {
+                    "key": "limitConsumption",
+                    "label": "Límite de consumo"
+                },
+                {
+                    "key": "fullModelGear",
+                    "label": "Modelo equipo según excel de stock"
+                },
+                {
+                    "key": "totalGearPrice",
+                    "label": "Precio total del equipo"
+                },
+                {
+                    "key": "customerPoints",
+                    "label": "Puntos Claro"
+                },
+                {
+                    "key": "pmPrice",
+                    "label": "Precio Protección Móvil"
+                },
+                {
+                    "key": "advanceRent",
+                    "label": "Renta adelantada"
+                },
+                {
+                    "key": "firstPayment",
+                    "label": "Pago inicial"
+                },
+                {
+                    "key": "monthlyPayment",
+                    "label": "Pago mensual"
+                },
+                {
+                    "key": "monthlyGearPlan",
+                    "label": "Pago mensual plan + equipoy"
+                },
+                {
+                    "key": "fullCustomerAdress",
+                    "label": "Dirección completa del cliente"
+                },
+                {
+                    "key": "customerReference",
+                    "label": "Referencia de dirección"
+                },
+                {
+                    "key": "adressPlane",
+                    "label": "Plano de mapa"
+                },
+                {
+                    "key": "coordinates",
+                    "label": "Coordenadas"
+                },
+                {
+                    "key": "paymentType",
+                    "label": "Contrato del plan"
+                },
+                {
+                    "key": "fullDeliveryDate",
+                    "label": "Fecha de entrega"
+                },
+                {
+                    "key": "turn",
+                    "label": "Turno"
+                },
+                {
+                    "key": "secCode",
+                    "label": "Código SEC"
+                },
+                {
+                    "key": "userName",
+                    "label": "Nombre de asesor"
+                },
+                {
+                    "key": "snCode",
+                    "label": "Código llamada SN"
+                },
+                {
+                    "key": "manager",
+                    "label": "Nombre de supervisor"
+                }
             ],
-            "type": "mensaje",
-            "placeholder": "",
-            "message": "TIPO DE DELIVERY: {{deliveryType}}\nPDV: {{pdv}}\nCAMPAÑA: RENOVACIÓN\nTIPO DE CAMPAÑA: {{salesCampaign}}\nNOMBRES Y APELLIDOS: {{customerName}}\nDNI: {{customerDocument}}\nNÚMERO A RENOVAR: {{customerNumber}}\nNUMERO DE REFERENCIA: {{referenceNumber}}\nCORREO: {{customerEmail}}\nCAMPAÑA: {{salesCampaign}}\nPLAN ACTUAL: {{prevCustomerPlan}}\nPLAN OFRECIDO: {{newCustomerPlan}}\nTOPE DE CONSUMO: {{limitConsumption}}\nPLAZO CONTRATO: {{contractPlan}}\nEQUIPO Y COLOR: {{fullModelGear}}\nPRECIO DEL EQUIPO: {{totalGearPrice}}\nCLARO PUNTOS: {{customerPoints}}\nPROTECCION MOVIL: {{pmPrice}}\nRENTAS: {{advanceRent}}\nCUOTA INICIAL: {{firstPayment}}\nCUOTA MENSUAL: {{monthlyPayment}}\nCARGO FIJO(PLAN Y CUOTA O SOLO PLAN SI ES AL CONTADO): {{monthlyGearPlan}}\nDIRECCION DE ENTREGA: {{fullCustomerAdress}}\nREFERENCIA: {{customerReference}}\nPLANO: {{adressPlane}}\nCOORDENADAS: {{coordinates}}\nTIPO DE PAGO: {{paymentType}}\nFECHA DE ENTREGA: {{fullDeliveryDate}}\nTURNO: {{turn}}\nSEC: {{secCode}}\nASESOR: {{userName}}\nSN: {{snCode}}\nSUPERVISOR: {{manager}}\nCALL CENTER: GEA"
+            "message": "TIPO DE DELIVERY: {deliveryType}\nPDV: {pdv}\nCAMPAÑA: RENOVACIÓN\nTIPO DE CAMPAÑA: {salesCampaign}\nNOMBRES Y APELLIDOS: {customerName}\nDNI: {customerDocument}\nNÚMERO A RENOVAR: {customerNumber}\nNUMERO DE REFERENCIA: {referenceNumber}\nCORREO: {customerEmail}\nCAMPAÑA: {salesCampaign}\nPLAN ACTUAL: {prevCustomerPlan}\nPLAN OFRECIDO: {newCustomerPlan}\nTOPE DE CONSUMO: {limitConsumption}\nPLAZO CONTRATO: {contractPlan}\nEQUIPO Y COLOR: {fullModelGear}\nPRECIO DEL EQUIPO: {totalGearPrice}\nCLARO PUNTOS: {customerPoints}\nPROTECCION MOVIL: {pmPrice}\nRENTAS: {advanceRent}\nCUOTA INICIAL: {firstPayment}\nCUOTA MENSUAL: {monthlyPayment}\nCARGO FIJO(PLAN Y CUOTA O SOLO PLAN SI ES AL CONTADO): {monthlyGearPlan}\nDIRECCION DE ENTREGA: {fullCustomerAdress}\nREFERENCIA: {customerReference}\nPLANO: {adressPlane}\nCOORDENADAS: {coordinates}\nTIPO DE PAGO: {paymentType}\nFECHA DE ENTREGA: {fullDeliveryDate}\nTURNO: {turn}\nSEC: {secCode}\nASESOR: {userName}\nSN: {snCode}\nSUPERVISOR: {manager}\nCALL CENTER: GEA"
         },
         "cac": {
-            "ruta": "ventas/cac",
-            "id": "2",
             "label": "Venta CAC",
-            "variables": [
-                "deliveryType",
-                "pdv",
-                "customerName",
-                "customerDocument",
-                "customerEmail",
-                "customerNumber",
-                "fullModelGear",
-                "pmPrice",
-                "customerPoints",
-                "advanceRent",
-                "pickupDate",
-                "secCode",
-                "prevCustomerPlan",
-                "newCustomerPlan",
-                "firstPayment",
-                "monthlyPayment",
-                "monthlyGearPlan",
-                "snCode",
-                "userName",
-                "manager"
+            "inputref": [
+                {
+                    "key": "cacType",
+                    "label": "Tipo de CAC"
+                },
+                {
+                    "key": "cacName",
+                    "label": "Nombre del CAC"
+                },
+                {
+                    "key": "customerName",
+                    "label": "Nombre de cliente"
+                },
+                {
+                    "key": "customerDocument",
+                    "label": "DNI"
+                },
+                {
+                    "key": "customerEmail",
+                    "label": "Email del cliente"
+                },
+                {
+                    "key": "customerNumber",
+                    "label": "Número de cliente"
+                },
+                {
+                    "key": "fullModelGear",
+                    "label": "Modelo equipo según excel de stock"
+                },
+                {
+                    "key": "pmPrice",
+                    "label": "Precio Protección Móvil"
+                },
+                {
+                    "key": "customerPoints",
+                    "label": "Puntos Claro"
+                },
+                {
+                    "key": "advanceRent",
+                    "label": "Renta adelantada"
+                },
+                {
+                    "key": "pickupDate",
+                    "label": "Fecha de recojo"
+                },
+                {
+                    "key": "secCode",
+                    "label": "Código SEC"
+                },
+                {
+                    "key": "prevCustomerPlan",
+                    "label": "Antiguo plan del cliente"
+                },
+                {
+                    "key": "newCustomerPlan",
+                    "label": "Nuevo Plan del Cliente"
+                },
+                {
+                    "key": "firstPayment",
+                    "label": "Pago inicial"
+                },
+                {
+                    "key": "monthlyPayment",
+                    "label": "Pago mensual"
+                },
+                {
+                    "key": "monthlyGearPlan",
+                    "label": "Pago mensual plan + equipoy"
+                },
+                {
+                    "key": "snCode",
+                    "label": "Código llamada SN"
+                },
+                {
+                    "key": "userName",
+                    "label": "Nombre de asesor"
+                },
+                {
+                    "key": "manager",
+                    "label": "Nombre de supervisor"
+                }
             ],
-            "type": "mensaje",
-            "placeholder": "",
-            "message": "TIPO DE ENTREGA: {{deliveryType}}\nVENTA CAC\nPDV A TRAMITAR: {{pdv}}\nNOMBRE: {{customerName}}\nDNI: {{customerDocument}}\nCORREO: {{customerEmail}}\nNUMERO A RENOVAR: {{customerNumber}}\nEQUIPO Y COLOR: {{fullModelGear}}\nPROTECCION MOVIL: {{pmPrice}}\nCLARO PUNTOS: {{customerPoints}}\nRENTAS: {{advanceRent}}\nFECHA DE RECOJO: {{pickupDate}}\nSEC: {{secCode}}\nPLAN ACTUAL: {{prevCustomerPlan}}\nPLAN OFRECIDO: {{newCustomerPlan}}\nCUOTA INICIAL: {{firstPayment}}\nCUOTA MENSUAL: {{monthlyPayment}}\nCARGO FIJO(PLAN Y CUOTA O SOLO PLAN SI ES AL CONTADO): {{monthlyGearPlan}}\nSN: {{snCode}}\nASESOR: {{userName}}\nSUPERVISOR: {{manager}}\nCALL CENTER: GEA"
+            "message": "TIPO DE ENTREGA: {cacType}\nVENTA CAC\nPDV A TRAMITAR: {cacName}\nNOMBRE: {customerName}\nDNI: {customerDocument}\nCORREO: {customerEmail}\nNUMERO A RENOVAR: {customerNumber}\nEQUIPO Y COLOR: {fullModelGear}\nPROTECCION MOVIL: {pmPrice}\nCLARO PUNTOS: {customerPoints}\nRENTAS: {advanceRent}\nFECHA DE RECOJO: {pickupDate}\nSEC: {secCode}\nPLAN ACTUAL: {prevCustomerPlan}\nPLAN OFRECIDO: {newCustomerPlan}\nCUOTA INICIAL: {firstPayment}\nCUOTA MENSUAL: {monthlyPayment}\nCARGO FIJO(PLAN Y CUOTA O SOLO PLAN SI ES AL CONTADO): {monthlyGearPlan}\nSN: {snCode}\nASESOR: {userName}\nSUPERVISOR: {manager}\nCALL CENTER: GEA"
         },
         "portaDelivery": {
-            "ruta": "ventas/portaDelivery",
-            "id": "3",
-            "label": "Plantilla de Transferencia Chip",
-            "variables": [
-                "customerName",
-                "customerNumbers",
-                "currentOperator",
-                "contractType",
-                "secCode",
-                "customerDocument",
-                "referenceNumber",
-                "fullCustomerAdress",
-                "customerDistrict",
-                "customerReference",
-                "coordinates",
-                "customerEmail",
-                "customerDistrict",
-                "portaOfferPlan",
-                "salesCampaign",
-                "fullDeliveryDate",
-                "turn",
-                "userName",
-                "snCode"
+            "label": "Poirtabilidad y alta delivery",
+            "inputref": [
+                {
+                    "key": "customerName",
+                    "label": "Nombre de cliente"
+                },
+                {
+                    "key": "customerNumbers",
+                    "label": "Números del cliente"
+                },
+                {
+                    "key": "currentOperator",
+                    "label": "Operador Actual"
+                },
+                {
+                    "key": "contractType",
+                    "label": "Tipo de servicio"
+                },
+                {
+                    "key": "secCode",
+                    "label": "Código SEC"
+                },
+                {
+                    "key": "customerDocument",
+                    "label": "DNI"
+                },
+                {
+                    "key": "referenceNumber",
+                    "label": "Número de referencia"
+                },
+                {
+                    "key": "fullCustomerAdress",
+                    "label": "Dirección completa del cliente"
+                },
+                {
+                    "key": "customerDistrict",
+                    "label": "Nombre de cliente"
+                },
+                {
+                    "key": "customerReference",
+                    "label": "Referencia de dirección"
+                },
+                {
+                    "key": "coordinates",
+                    "label": "Coordenadas"
+                },
+                {
+                    "key": "customerEmail",
+                    "label": "Email del cliente"
+                },
+                {
+                    "key": "newCustomerPlan",
+                    "label": "Nuevo Plan del Cliente"
+                },
+                {
+                    "key": "salesCampaign",
+                    "label": "Campaña de venta"
+                },
+                {
+                    "key": "fullDeliveryDate",
+                    "label": "Fecha de entrega"
+                },
+                {
+                    "key": "turn",
+                    "label": "Turno"
+                },
+                {
+                    "key": "userName",
+                    "label": "Nombre de asesor"
+                },
+                {
+                    "key": "gbPlan",
+                    "label": "GB del plan"
+                },
+                {
+                    "key": "snCode",
+                    "label": "Código llamada SN"
+                }
             ],
-            "type": "mensaje",
-            "placeholder": "",
-            "message": "PLANTILLA DE TRASFERENCIA CHIP\nCL: {{customerName}}\nNUMEROS: {{customerNumbers}}\nEMPRESA OPERADOR ACTUAL: {{currentOperator}}\nMODALIDAD (PRE O POST): {{contractType}}\nSEC: {{secCode}}\nDNI: {{customerDocument}}\nNUMERO DE REFERENCIA: {{referenceNumber}}\nDIRECCION: {{fullCustomerAdress}}\nDIST/PROV/DPTO: {{customerDistrict}}\nREFERENCIA: {{customerReference}}\nCOORDENADAS: {{coordinates}}\nPLANO: {{adressPlane}}\nCORREO: {{customerEmail}}\nPROVINCIA Y DISTRITO: {{customerDistrict}}\nPLAN: {{portaOfferPlan}}\nCARACTERISTICAS DE PLAN (3 MIN):\n1. {{gbPlan}} GB\n2. {{minPlan}} minutos\n3. {{smsPlan}} sms\nCAMPAÑA: {{salesCampaign}}\nFECHA DE ENTREGA: {{fullDeliveryDate}}\nTURNO: {{turn}}\nVENDEDOR: {{userName}}\nSN: {{snCode}}"
+            "message": "PLANTILLA DE TRASFERENCIA CHIP\nCL: {customerName}\nNUMEROS: {customerNumbers}\ngenero OPERADOR ACTUAL: {currentOperator}\nMODALIDAD (PRE O POST): {contractType}\nSEC: {secCode}\nDNI: {customerDocument}\nNUMERO DE REFERENCIA: {referenceNumber}\nDIRECCION: {fullCustomerAdress}\nDIST/PROV/DPTO: {customerDistrict}\nREFERENCIA: {customerReference}\nCOORDENADAS: {coordinates}\nPLANO: {adressPlane}\nCORREO: {customerEmail}\nPROVINCIA Y DISTRITO: {customerDistrict}\nPLAN: {portaOfferPlan}\nCARACTERISTICAS DE PLAN (3 MIN):\n1. {gbPlan} GB\n2. MINUTOS ILIMITADOS\n3. SMS ILIMITADOS sms\nCAMPAÑA: {salesCampaign}\nFECHA DE ENTREGA: {fullDeliveryDate}\nTURNO: {turn}\nVENDEDOR: {userName}\nSN: {snCode}"
         },
         "portaCac": {
-            "ruta": "ventas/portaCac",
-            "id": "4",
             "label": "Venta Porta CAC",
-            "variables": [
-                "customerName",
-                "customerDocument",
-                "customerNumber",
-                "customerEmail",
-                "secCode",
-                "cacName",
-                "pdv",
-                "fullCustomerAdress",
-                "pickupDate",
-                "turn",
-                "userName",
-                "snCode",
-                "salesCampaign"
+            "inputref": [
+                {
+                    "key": "customerName",
+                    "label": "Nombre de cliente"
+                },
+                {
+                    "key": "customerDocument",
+                    "label": "DNI"
+                },
+                {
+                    "key": "customerNumber",
+                    "label": "Número de cliente"
+                },
+                {
+                    "key": "customerEmail",
+                    "label": "Email del cliente"
+                },
+                {
+                    "key": "secCode",
+                    "label": "Código SEC"
+                },
+                {
+                    "key": "cacName",
+                    "label": "Nombre del CAC"
+                },
+                {
+                    "key": "pdv",
+                    "label": "PDV"
+                },
+                {
+                    "key": "fullCustomerAdress",
+                    "label": "Dirección completa del cliente"
+                },
+                {
+                    "key": "pickupDate",
+                    "label": "Fecha de recojo"
+                },
+                {
+                    "key": "turn",
+                    "label": "Turno"
+                },
+                {
+                    "key": "userName",
+                    "label": "Nombre de asesor"
+                },
+                {
+                    "key": "snCode",
+                    "label": "Código llamada SN"
+                },
+                {
+                    "key": "salesCampaign",
+                    "label": "Campaña de venta"
+                }
             ],
-            "type": "mensaje",
-            "placeholder": "",
-            "message": "CL: {{customerName}}\nDNI: {{customerDocument}}\nNÚMERO A RENOVAR: {{customerNumber}}\nCORREO: {{customerEmail}}\nSEC: {{secCode}}\nCAC, CADENA, ACD: {{cacName}}\nPDV: {{pdv}}\nDIRECCION: {{fullCustomerAdress}}\nFECHA DE RECOJO: {{pickupDate}}\nHORARIO DE RECOJO: {{turn}}\nVENDEDOR: {{userName}}\nSN: {{snCode}}\nCAMPAÑA: {{salesCampaign}}"
+            "message": "CL: {customerName}\nDNI: {customerDocument}\nNÚMERO A RENOVAR: {customerNumber}\nCORREO: {customerEmail}\nSEC: {secCode}\nCAC, CADENA, ACD: {cacName}\nPDV: {pdv}\nDIRECCION: {fullCustomerAdress}\nFECHA DE RECOJO: {pickupDate}\nHORARIO DE RECOJO: {turn}\nVENDEDOR: {userName}\nSN: {snCode}\nCAMPAÑA: {salesCampaign}"
         },
         "acdCadena": {
-            "ruta": "ventas/acdCadena",
-            "id": "5",
             "label": "Información ACD/Cadena",
-            "variables": [
-                "customerName",
-                "customerDocument",
-                "customerNumber",
-                "customerEmail",
-                "secCode",
-                "fullModelGear",
-                "totalGearPrice",
-                "monthlyPayment",
-                "firstPayment",
-                "gearPrice",
-                "customerPoints",
-                "cacName",
-                "fullCustomerAdress",
-                "pdv",
-                "pickupDate",
-                "turn",
-                "pmPrice",
-                "userName",
-                "manager",
-                "snCode",
-                "salesCampaign"
+            "inputref": [
+                {
+                    "key": "customerName",
+                    "label": "Nombre de cliente"
+                },
+                {
+                    "key": "customerDocument",
+                    "label": "DNI"
+                },
+                {
+                    "key": "customerNumber",
+                    "label": "Número de cliente"
+                },
+                {
+                    "key": "customerEmail",
+                    "label": "Email del cliente"
+                },
+                {
+                    "key": "secCode",
+                    "label": "Código SEC"
+                },
+                {
+                    "key": "fullModelGear",
+                    "label": "Modelo equipo según excel de stock"
+                },
+                {
+                    "key": "totalGearPrice",
+                    "label": "Precio total del equipo"
+                },
+                {
+                    "key": "firstPayment",
+                    "label": "Pago inicial"
+                },
+                {
+                    "key": "monthlyPayment",
+                    "label": "Pago mensual"
+                },
+                {
+                    "key": "totalGearPrice",
+                    "label": "Precio total del equipo"
+                },
+                {
+                    "key": "customerPoints",
+                    "label": "Puntos Claro"
+                },
+                {
+                    "key": "cacName",
+                    "label": "Nombre del CAC"
+                },
+                {
+                    "key": "fullCustomerAdress",
+                    "label": "Dirección completa del cliente"
+                },
+                {
+                    "key": "pdv",
+                    "label": "PDV"
+                },
+                {
+                    "key": "pickupDate",
+                    "label": "Fecha de recojo"
+                },
+                {
+                    "key": "turn",
+                    "label": "Turno"
+                },
+                {
+                    "key": "pmPrice",
+                    "label": "Precio Protección Móvil"
+                },
+                {
+                    "key": "userName",
+                    "label": "Nombre de asesor"
+                },
+                {
+                    "key": "manager",
+                    "label": "Nombre de supervisor"
+                },
+                {
+                    "key": "snCode",
+                    "label": "Código llamada SN"
+                },
+                {
+                    "key": "salesCampaign",
+                    "label": "Campaña de venta"
+                }
             ],
-            "type": "mensaje",
-            "placeholder": "",
-            "message": "NOMBRES: {{customerName}}\nDNI: {{customerDocument}}\nNÚMERO A RENOVAR: {{customerNumber}}\nCORREO: {{customerEmail}}\nSEC: {{secCode}}\nEQUIPO Y COLOR: {{fullModelGear}}\nPRECIO DEL EQUIPO: {{totalGearPrice}}\nCUOTA MENSUAL: {{monthlyPayment}}\nCUOTA INICIAL: {{firstPayment}}\nCONTADO: {{gearPrice}}\nCLARO PUNTOS: {{customerPoints}}\nACD/CADENA: {{cacName}}\nDIRECCION DE ENTREGA: {{fullCustomerAdress}}\nPDV: {{pdv}}\nFECHA DE RECOJO: {{pickupDate}}\nHORARIO DE RECOJO: {{turn}}\nPROTECCION MOVIL: {{pmPrice}}\nVENDEDOR: {{userName}}\nSUPERVISOR: {{manager}}\nSN: {{snCode}}\nCAMPAÑA: {{salesCampaign}}"
+            "message": "NOMBRES: {customerName}\nDNI: {customerDocument}\nNÚMERO A RENOVAR: {customerNumber}\nCORREO: {customerEmail}\nSEC: {secCode}\nEQUIPO Y COLOR: {fullModelGear}\nPRECIO DEL EQUIPO: {totalGearPrice}\nCUOTA MENSUAL: {monthlyPayment}\nCUOTA INICIAL: {firstPayment}\nCONTADO: {gearPrice}\nCLARO PUNTOS: {customerPoints}\nACD/CADENA: {cacName}\nDIRECCION DE ENTREGA: {fullCustomerAdress}\nPDV: {pdv}\nFECHA DE RECOJO: {pickupDate}\nHORARIO DE RECOJO: {turn}\nPROTECCION MOVIL: {pmPrice}\nVENDEDOR: {userName}\nSUPERVISOR: {manager}\nSN: {snCode}\nCAMPAÑA: {salesCampaign}"
         },
         "plantillaAnulacion": {
-            "ruta": "ventas/anulacion",
-            "id": "6",
             "label": "Anulación de Pedido/Renovación",
-            "variables": [
-                "orderCode",
-                "customerName",
-                "customerDocument",
-                "orderDate",
-                "orderDeliveryDate",
-                "fallReason",
-                "pdv"
+            "inputref": [
+                {
+                    "key": "orderCode",
+                    "label": "Número de pedido"
+                },
+                {
+                    "key": "customerName",
+                    "label": "Nombre de cliente"
+                },
+                {
+                    "key": "customerDocument",
+                    "label": "DNI"
+                },
+                {
+                    "key": "orderDate",
+                    "label": "Fecha creación pedido"
+                },
+                {
+                    "key": "orderDeliveryDate",
+                    "label": "Fecha recojo pedido"
+                },
+                {
+                    "key": "orderDeliveryDate",
+                    "label": "Motivo de caída"
+                },
+                {
+                    "key": "pdv",
+                    "label": "PDV"
+                }
             ],
-            "type": "mensaje",
-            "placeholder": "",
-            "message": "🚨 ANULAR PEDIDO/RENOVACION 🚨\nPEDIDO: {{orderCode}}\nNOMBRE: {{customerName}}\nDNI: {{customerDocument}}\nFECHA DE CREACION DE PEDIDO: {{orderDate}}\nFECHA DE ENTREGA DE PEDIDO: {{orderDeliveryDate}}\nMOTIVO DE CAIDA: {{fallReason}}\nPDV: {{pdv}}"
+            "message": "🚨 ANULAR PEDIDO/RENOVACION 🚨\nPEDIDO: {orderCode}\nNOMBRE: {customerName}\nDNI: {customerDocument}\nFECHA DE CREACION DE PEDIDO: {orderDate}\nFECHA DE ENTREGA DE PEDIDO: {orderDeliveryDate}\nMOTIVO DE CAIDA: {fallReason}\nPDV: {pdv}"
         },
         "desbloqueoPuntos": {
-            "ruta": "ventas/desbloqueoPuntos",
-            "id": "7",
             "label": "Desbloqueo Claro Puntos",
-            "variables": [
-                "customerName",
-                "customerNumber",
-                "customerDocument",
-                "secCode"
+            "inputref": [
+                {
+                    "key": "customerName",
+                    "label": "Nombre de cliente"
+                },
+                {
+                    "key": "customerDocument",
+                    "label": "DNI"
+                },
+                {
+                    "key": "customerNumber",
+                    "label": "Número de cliente"
+                },
+                {
+                    "key": "secCode",
+                    "label": "Código SEC"
+                }
             ],
-            "type": "mensaje",
-            "placeholder": "",
-            "message": "DESBLOQUEO CLARO PTOS:\nNOMBRE COMPLETO: {{customerName}}\nNÚMERO A RENOVAR: {{customerNumber}}\nDNI: {{customerDocument}}\nSEC: {{secCode}}"
+            "message": "DESBLOQUEO CLARO PTOS:\nNOMBRE COMPLETO: {customerName}\nNÚMERO A RENOVAR: {customerNumber}\nDNI: {customerDocument}\nSEC: {secCode}"
         }
-    }
-}
+    },
+    "inputs": {
+        "deliveryType": {
+            "label": "Tipo de Delivery",
+            "type": "select",
+            "options": [
+                {
+                    "value": "DELIVERY EXPRESS",
+                    "label": "DELIVERY EXPRESS"
+                },
+                {
+                    "value": "DELIVERY REGULAR",
+                    "label": "DELIVERY REGULAR"
+                }
+            ]
+        },
+        "pdv": {
+            "label": "PDV: ",
+            "type": "text"
+        },
+        "salesCampaign": {
+            "label": "Campaña de venta",
+            "type": "text"
+        },
+        "customerName": {
+            "label": "Nombre de Cliente",
+            "type": "text"
+        },
+        "customerDocument": {
+            "label": "DNI: ",
+            "type": "text"
+        },
+        "customerNumber": {
+            "label": "Número movil",
+            "type": "text"
+        },
+        "referenceNumber": {
+            "label": "Número de referencia",
+            "type": "text"
+        },
+        "customerEmail": {
+            "label": "Email Cliente",
+            "type": "text"
+        },
+        "prevCustomerPlan": {
+            "label": "Antiguo plan del cliente",
+            "type": "select",
+            "options": [
+                {
+                    "value": "Max 29.90",
+                    "label": "Plan 29.90"
+                },
+                {
+                    "value": "Max 30.90",
+                    "label": "Plan 30.90"
+                },
+                {
+                    "value": "Max 31.90",
+                    "label": "Plan 31.90"
+                },
+                {
+                    "value": "Max 39.90",
+                    "label": "Plan 39.90"
+                },
+                {
+                    "value": "Max 40.90",
+                    "label": "Plan 40.90"
+                },
+                {
+                    "value": "Max 42.90",
+                    "label": "Plan 42.90"
+                },
+                {
+                    "value": "Max 49.90",
+                    "label": "Plan 49.90"
+                },
+                {
+                    "value": "Max 51.90",
+                    "label": "Plan 51.90"
+                },
+                {
+                    "value": "Max 53.90",
+                    "label": "Plan 53.90"
+                },
+                {
+                    "value": "Max 55.90",
+                    "label": "Plan 55.90"
+                },
+                {
+                    "value": "Max 57.90",
+                    "label": "Plan 57.90"
+                },
+                {
+                    "value": "Max 60.90",
+                    "label": "Plan 60.90"
+                },
+                {
+                    "value": "Max Ilimitado 69.90",
+                    "label": "Plan 69.90"
+                },
+                {
+                    "value": "Max Ilimitado 72.90",
+                    "label": "Plan 72.90"
+                },
+                {
+                    "value": "Max Ilimitado 74.90",
+                    "label": "Plan 74.90"
+                },
+                {
+                    "value": "Max Ilimitado 79.90",
+                    "label": "Plan 79.90"
+                },
+                {
+                    "value": "Max Ilimitado 82.90",
+                    "label": "Plan 82.90"
+                },
+                {
+                    "value": "Max Ilimitado 84.90",
+                    "label": "Plan 84.90"
+                },
+                {
+                    "value": "Max Ilimitado 93.90",
+                    "label": "Plan 93.90"
+                },
+                {
+                    "value": "Max Ilimitado 95.90",
+                    "label": "Plan 95.90"
+                },
+                {
+                    "value": "Max Ilimitado 100.90",
+                    "label": "Plan 100.90"
+                },
+                {
+                    "value": "Max Ilimitado 109.90",
+                    "label": "Plan 109.90"
+                },
+                {
+                    "value": "Max Ilimitado 114.90",
+                    "label": "Plan 114.90"
+                },
+                {
+                    "value": "Max Ilimitado 159.90",
+                    "label": "Plan 159.90"
+                },
+                {
+                    "value": "Max Ilimitado 164.90",
+                    "label": "Plan 164.90"
+                },
+                {
+                    "value": "Max Ilimitado 189.90",
+                    "label": "Plan 189.90"
+                },
+                {
+                    "value": "Max Ilimitado 195.90",
+                    "label": "Plan 195.90"
+                },
+                {
+                    "value": "Max Ilimitado 289.90",
+                    "label": "Plan 289.90"
+                },
+                {
+                    "value": "Max Ilimitado 295.90",
+                    "label": "Plan 295.90"
+                },
+                {
+                    "value": "Max Play 95",
+                    "label": "Max Play 95"
+                },
+                {
+                    "value": "Max Play 115",
+                    "label": "Max Play 115"
+                },
+                {
+                    "value": "Max Play 145",
+                    "label": "Max Play 145"
+                }
+            ]
+        },
+        "newCustomerPlan": {
+            "label": "Nuevo Plan del Cliente",
+            "type": "select",
+            "options": [
+                {
+                    "value": "Max 29.90",
+                    "label": "Plan 29.90"
+                },
+                {
+                    "value": "Max 30.90",
+                    "label": "Plan 30.90"
+                },
+                {
+                    "value": "Max 31.90",
+                    "label": "Plan 31.90"
+                },
+                {
+                    "value": "Max 39.90",
+                    "label": "Plan 39.90"
+                },
+                {
+                    "value": "Max 40.90",
+                    "label": "Plan 40.90"
+                },
+                {
+                    "value": "Max 42.90",
+                    "label": "Plan 42.90"
+                },
+                {
+                    "value": "Max 49.90",
+                    "label": "Plan 49.90"
+                },
+                {
+                    "value": "Max 51.90",
+                    "label": "Plan 51.90"
+                },
+                {
+                    "value": "Max 53.90",
+                    "label": "Plan 53.90"
+                },
+                {
+                    "value": "Max 55.90",
+                    "label": "Plan 55.90"
+                },
+                {
+                    "value": "Max 57.90",
+                    "label": "Plan 57.90"
+                },
+                {
+                    "value": "Max 60.90",
+                    "label": "Plan 60.90"
+                },
+                {
+                    "value": "Max Ilimitado 69.90",
+                    "label": "Plan 69.90"
+                },
+                {
+                    "value": "Max Ilimitado 72.90",
+                    "label": "Plan 72.90"
+                },
+                {
+                    "value": "Max Ilimitado 74.90",
+                    "label": "Plan 74.90"
+                },
+                {
+                    "value": "Max Ilimitado 79.90",
+                    "label": "Plan 79.90"
+                },
+                {
+                    "value": "Max Ilimitado 82.90",
+                    "label": "Plan 82.90"
+                },
+                {
+                    "value": "Max Ilimitado 84.90",
+                    "label": "Plan 84.90"
+                },
+                {
+                    "value": "Max Ilimitado 93.90",
+                    "label": "Plan 93.90"
+                },
+                {
+                    "value": "Max Ilimitado 95.90",
+                    "label": "Plan 95.90"
+                },
+                {
+                    "value": "Max Ilimitado 100.90",
+                    "label": "Plan 100.90"
+                },
+                {
+                    "value": "Max Ilimitado 109.90",
+                    "label": "Plan 109.90"
+                },
+                {
+                    "value": "Max Ilimitado 114.90",
+                    "label": "Plan 114.90"
+                },
+                {
+                    "value": "Max Ilimitado 159.90",
+                    "label": "Plan 159.90"
+                },
+                {
+                    "value": "Max Ilimitado 164.90",
+                    "label": "Plan 164.90"
+                },
+                {
+                    "value": "Max Ilimitado 189.90",
+                    "label": "Plan 189.90"
+                },
+                {
+                    "value": "Max Ilimitado 195.90",
+                    "label": "Plan 195.90"
+                },
+                {
+                    "value": "Max Ilimitado 289.90",
+                    "label": "Plan 289.90"
+                },
+                {
+                    "value": "Max Ilimitado 295.90",
+                    "label": "Plan 295.90"
+                }
+            ]
+        },
+        "limitConsumption": {
+            "label": "Límite de consumo",
+            "type": "text"
+        },
+        "contractPlan": {
+            "label": "Contrato del plan",
+            "type": "select",
+            "options": [
+                {
+                    "value": "6",
+                    "label": "6 meses"
+                },
+                {
+                    "value": "12",
+                    "label": "12 meses"
+                },
+                {
+                    "value": "18",
+                    "label": "18 meses"
+                }
+            ]
+        },
+        "fullModelGear": {
+            "label": "Modelo equipo según excel de stock",
+            "type": "text"
+        },
+        "totalGearPrice": {
+            "label": "Precio total de equipo",
+            "type": "text"
+        },
+        "customerPoints": {
+            "label": "Puntos Claro",
+            "type": "text"
+        },
+        "pmPrice": {
+            "label": "Precio Protección Móvil",
+            "type": "text"
+        },
+        "advanceRent": {
+            "label": "Renta Adelantada",
+            "type": "text"
+        },
+        "firstPayment": {
+            "label": "Pago inicial",
+            "type": "text"
+        },
+        "monthlyPayment": {
+            "label": "Pago mensual equipo",
+            "type": "text"
+        },
+        "monthlyGearPlan": {
+            "label": "Pago mensual equipo + plan",
+            "type": "text"
+        },
+        "fullCustomerAdress": {
+            "label": "Dirección completa cliente",
+            "type": "text"
+        },
+        "customerReference": {
+            "label": "Referencia de dirección",
+            "type": "text"
+        },
+        "adressPlane": {
+            "label": "Plano de mapa",
+            "type": "text"
+        },
+        "coordinates": {
+            "label": "Coordenadas",
+            "type": "text"
+        },
+        "paymentType": {
+            "label": "Contrato del plan",
+            "type": "select",
+            "options": [
+                {
+                    "value": "CONTADO",
+                    "label": "Contado"
+                },
+                {
+                    "value": "CUOTAS",
+                    "label": "Cuotas"
+                }
+            ]
+        },
+        "fullDeliveryDate": {
+            "label": "Fecha de entrega",
+            "type": "date"
+        },
+        "turn": {
+            "label": "Turno",
+            "type": "select",
+            "options": [
+                {
+                    "value": "AM1",
+                    "label": "AM1"
+                },
+                {
+                    "value": "AM2",
+                    "label": "AM2"
+                },
+                {
+                    "value": "PM1",
+                    "label": "PM1"
+                },
+                {
+                    "value": "PM2",
+                    "label": "PM2"
+                }
+            ]
+        },
+        "secCode": {
+            "label": "Código SEC",
+            "type": "text"
+        },
+        "userName": {
+            "label": "Nombre de asesor",
+            "type": "text"
+        },
+        "snCode": {
+            "label": "Código llamada SN",
+            "type": "text"
+        },
+        "manager": {
+            "label": "Nombre de supervisor",
+            "type": "text"
+        },
+        "customerNumbers": {
+            "label": "Números",
+            "type": "text"
+        },
+        "currentOperator": {
+            "label": "Operador Actual",
+            "type": "text"
+        },
+        "contractType": {
+            "label": "Tipo de servicio",
+            "type": "select",
+            "options": [
+                {
+                    "value": "PRE",
+                    "label": "PRE"
+                },
+                {
+                    "value": "POST",
+                    "label": "POST"
+                }
+            ]
+        },
+        "customerDistrict": {
+            "label": "Distrito Cliente",
+            "type": "text"
+        },
+        "gearPrice": {
+            "label": "Precio equipo contado",
+            "type": "text"
+        },
+        "pickupDate": {
+            "label": "Fecha de recojo",
+            "type": "date"
+        },
+        "fallReason": {
+            "label": "Motivo de caída",
+            "type": "text"
+        },
+        "orderCode": {
+            "label": "Número de pedido",
+            "type": "text"
+        },
+        "orderDate": {
+            "label": "Fecha creación pedido",
+            "type": "date"
+        },
+        "orderDeliveryDate": {
+            "label": "Fecha recojo pedido",
+            "type": "date"
+        },
+        "cacName": {
+            "label": "Nombre del CAC",
+            "type": "text"
+        },
+        "cacType": {
+            "label": "Tipo de CAC",
+            "type": "select",
+            "options": [
+                {
+                    "value": "REGULAR",
+                    "label": "REGULAR"
+                },
+                {
+                    "value": "PICKUP",
+                    "label": "PICKUP"
+                }
+            ]
+        },
+        "gbPlan": {
+            "label": "GB del plan",
+            "type": "text"
+        }
+    }}

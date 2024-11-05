@@ -3,13 +3,15 @@ import fs from 'fs'
 import path from 'path'
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  const { category } = req.query
+  const category = 'ChatData' // Prueba con el nombre exacto
 
-  if (typeof category !== 'string') {
-    return res.status(400).json({ error: 'Invalid category' })
-  }
-
+  // Definir la ruta al archivo JSON
   const filePath = path.join(process.cwd(), 'server', `${category}.json`)
+
+  // Verificar que el archivo exista antes de leerlo
+  if (!fs.existsSync(filePath)) {
+    return res.status(404).json({ error: 'File not found' })
+  }
 
   try {
     const fileContents = fs.readFileSync(filePath, 'utf8')

@@ -18,9 +18,9 @@ export default function LegalList({ onSelectLegal }: LegalListProps) {
     // Aquí deberías cargar los datos legales desde tu archivo JSON
     // Por ahora, usaremos datos de ejemplo
     setLegals([
-      { id: '1', title: 'Términos y condiciones' },
-      { id: '2', title: 'Política de privacidad' },
-      { id: '3', title: 'Aviso legal' },
+      { id: '1', title: 'Click para inciar' },
+      // { id: '2', title: 'Política de privacidad' },
+      // { id: '3', title: 'Aviso legal' },
     ])
   }, [])
 

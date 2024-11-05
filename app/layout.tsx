@@ -1,12 +1,13 @@
-import './globals.css'
+import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { Toaster } from "@/components/ui/toaster"
+import './globals.css'
+import { GlobalInputsProvider } from '@/components/GlobalInputsProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'EasyChat Claro',
-  description: 'Aplicación para gestionar mensajes predefinidos',
+  description: 'Aplicación para generar mensajes predefinidos',
 }
 
 export default function RootLayout({
@@ -17,8 +18,11 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={inter.className}>
-        {children}
-        <Toaster />
+        <div className="min-h-screen flex flex-col">
+          <GlobalInputsProvider>
+            {children}
+          </GlobalInputsProvider>
+        </div>
       </body>
     </html>
   )

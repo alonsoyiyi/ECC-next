@@ -1,49 +1,59 @@
-import React, { useState, useEffect } from 'react'
-import { Button } from "@/components/ui/button"
+"use client";
 
-type Sale = {
-  id: string
-  title: string
-}
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import SalesDetail from './SalesDetail';
+import { Button } from "@/components/ui/button"; // Asegúrate de que Button esté importado
 
-type SalesListProps = {
-  onSelectSale: (id: string | null) => void
-}
-
-export default function SalesList({ onSelectSale }: SalesListProps) {
-  const [sales, setSales] = useState<Sale[]>([])
-  const [selectedSale, setSelectedSale] = useState<string | null>(null)
+const SalesList = () => {
+  const [data, setData] = useState(null);
+  const [selectedTemplate, setSelectedTemplate] = useState(null);
+  const router = useRouter();
 
   useEffect(() => {
-    // Aquí deberías cargar los datos de ventas desde tu archivo JSON
-    // Por ahora, usaremos datos de ejemplo
-    setSales([
-      { id: '1', title: 'Oferta especial' },
-      { id: '2', title: 'Descuento por volumen' },
-      { id: '3', title: 'Promoción de temporada' },
-    ])
-  }, [])
+    const fetchSalesData = async () => {
+      const response = await fetch('/api/ventas');
+      const data = await response.json();
+      setData(data);
+    };
 
-  const handleSelectSale = (id: string) => {
-    setSelectedSale(id)
-    onSelectSale(id)
+    fetchSalesData();
+  }, []);
+
+  const handleTemplateClick = (template) => {
+    setSelectedTemplate(template);
+  };
+
+  if (!data) {
+    return <div>Loading...</div>;
   }
 
   return (
-    <div className="w-full">
-      <h2 className="text-xl font-bold mb-4">Plantillas de ventas</h2>
-      <div className="space-y-2">
-        {sales.map((sale) => (
-          <Button
-            key={sale.id}
-            variant={selectedSale === sale.id ? "default" : "outline"}
-            className="w-full justify-start"
-            onClick={() => handleSelectSale(sale.id)}
-          >
-            {sale.title}
-          </Button>
-        ))}
+    <div className="flex">
+      <div className="w-1/4 space-y-2 p-2 h-screen sticky top-0 overflow-y-auto">
+        <h2 className="text-lg font-semibold mb-2">Plantillas de Venta</h2>
+        <div className="space-y-2"> {/* Usar espacio similar a LegalList */}
+          {Object.entries(data.plantillas).map(([key, template]) => (
+            <Button
+              key={key}
+              variant={selectedTemplate?.label === template.label ? "default" : "outline"}
+              className="w-full justify-start text-xs" // Ajuste de tamaño de letra
+              onClick={() => handleTemplateClick(template)}
+            >
+              {template.label}
+            </Button>
+          ))}
+        </div>
+      </div>
+      <div className="flex-1 border-l pl-4">
+        {selectedTemplate ? (
+          <SalesDetail template={selectedTemplate} inputs={data.inputs} />
+        ) : (
+          <p className="text-gray-500">Selecciona una plantilla para ver los detalles.</p>
+        )}
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default SalesList;

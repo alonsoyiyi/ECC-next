@@ -1,28 +1,43 @@
-import MainLayout from '@/components/MainLayout'
-import Link from 'next/link'
-import { Button } from "@/components/ui/button"
+import Link from 'next/link';
+import { Button } from "@/components/ui/button";
+import Footer from "@/components/Footer"; // Importa el Footer
 
-const navItems = [
-  { name: 'Chats', path: '/chats' },
-  { name: 'Legales', path: '/legales' },
-  { name: 'Ventas', path: '/ventas' },
-  { name: 'General', path: '/general' },
-]
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <MainLayout>
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Bienvenido a EasyChat Claro</h1>
-        <p className="text-xl mb-8">Selecciona una categoría para comenzar:</p>
-        <div className="flex flex-wrap justify-center gap-4">
-          {navItems.map((item) => (
-            <Link key={item.path} href={item.path}>
-              <Button size="lg">{item.name}</Button>
-            </Link>
-          ))}
+    <div className="flex flex-col items-center justify-center min-h-[calc(100vh-200px)]">
+      <div className="max-w-md w-full space-y-8">
+        <div className="text-center">
+          <h2 className="mt-6 text-3xl font-bold">
+            Bienvenido a EasyChat Claro
+          </h2>
+          <p className="mt-2 text-sm text-gray-600">
+            Selecciona una sección para comenzar
+          </p>
+        </div>
+        <div className="mt-8 space-y-4">
+          <Link href="/chats" className="w-full">
+            <Button className="w-full" variant="outline">
+              Chats
+            </Button>
+          </Link>
+          <Link href="/legales" className="w-full">
+            <Button className="w-full" variant="outline">
+              Legales
+            </Button>
+          </Link>
+          <Link href="/ventas" className="w-full">
+            <Button className="w-full" variant="outline">
+              Ventas
+            </Button>
+          </Link>
+          <Link href="/general" className="w-full">
+            <Button className="w-full" variant="outline">
+              General
+            </Button>
+          </Link>
         </div>
       </div>
-    </MainLayout>
-  )
+      <Footer /> {/* Agrega el Footer aquí */}
+    </div>
+  );
 }

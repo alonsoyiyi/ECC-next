@@ -1,89 +1,81 @@
-import React, { useState, useEffect } from 'react'
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
-import { GlobalInputs } from '@/components/MainLayout'
+"use client";
 
-type SalesDetailProps = {
-  globalInputs: GlobalInputs;
-  selectedSaleId: string | null;
-}
+import { useEffect, useState } from 'react';
+import { useGlobalInputs } from '@/components/GlobalInputsProvider'; // Importa el hook
+import Footer from "@/components/Footer";
 
-type SaleData = {
-  id: string;
-  title: string;
-  inputs: { id: string; label: string }[];
-  message: string;
-}
-
-export default function SalesDetail({ globalInputs, selectedSaleId }: SalesDetailProps) {
-  const [saleData, setSaleData] = useState<SaleData | null>(null)
-  const [localInputs, setLocalInputs] = useState<Record<string, string>>({})
-  const [finalMessage, setFinalMessage] = useState('')
+const SalesDetail = ({ template, inputs }) => {
+  const [inputValues, setInputValues] = useState({});
+  const { globalInputs } = useGlobalInputs(); // Usa el hook para obtener valores globales
 
   useEffect(() => {
-    if (selectedSaleId) {
-      // Aquí deberías cargar los datos de ventas desde tu archivo JSON
-      // Por ahora, usaremos datos de ejemplo
-      setSaleData({
-        id: selectedSaleId,
-        title: `Plantilla de venta ${selectedSaleId}`,
-        inputs: [
-          { id: 'producto', label: 'Producto' },
-          { id: 'descuento', label: 'Porcentaje de descuento' },
-        ],
-        message: 'Estimado {nombre_cliente}, tenemos una oferta especial para ti. Nuestro producto {producto} tiene un descuento del {descuento}%. No pierdas esta oportunidad. Contacta a {nombre} de {empresa} para más detalles.',
-      })
-      setLocalInputs({})
-    }
-  }, [selectedSaleId])
+    // Inicializa inputValues con userName del contexto global si está presente en inputs
+    setInputValues(prevValues => ({
+      ...prevValues,
+      userName: inputs.userName ? globalInputs.nombre : prevValues.userName
+    }));
+  }, [template, inputs, globalInputs]);
 
-  useEffect(() => {
-    if (saleData) {
-      let message = saleData.message
-      Object.entries({ ...globalInputs, ...localInputs }).forEach(([key, value]) => {
-        message = message.replace(new RegExp(`{${key}}`, 'g'), value || `{${key}}`)
-      })
-      setFinalMessage(message)
-    }
-  }, [saleData, globalInputs, localInputs])
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setInputValues((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }));
+  };
 
-  const handleInputChange = (key: string, value: string) => {
-    setLocalInputs(prev => ({ ...prev, [key]: value }))
-  }
+  const renderMessage = (messageTemplate) => {
+    return messageTemplate.replace(/\{(.*?)\}/g, (match, key) => {
+      return inputValues[key] || match;
+    });
+  };
 
-  if (!saleData) {
-    return <div>Selecciona una plantilla de venta para ver los detalles</div>
-  }
+  const inputRefs = template.inputref || [];
 
   return (
-    <div>
-      <h2 className="text-xl font-bold mb-4">{saleData.title}</h2>
-      <div className="space-y-4 mb-4">
-        {saleData.inputs.map((input) => (
-          <div key={input.id}>
-            <Label htmlFor={input.id}>{input.label}</Label>
-            <Input
-              id={input.id}
-              value={localInputs[input.id] || ''}
-              onChange={(e) => handleInputChange(input.id, e.target.value)}
-              placeholder={`Ingrese ${input.label.toLowerCase()}`}
-            />
-          </div>
-        ))}
+    <>
+      <h3 className="text-xl font-semibold mb-2">{template.label}</h3>
+      <div className="grid grid-cols-3 gap-2 mb-4"> {/* Tres columnas */}
+        {inputRefs.map((inputRef) => {
+          const inputConfig = (inputs && inputs[inputRef.key]) || { type: 'text', label: inputRef.label }; // Valor por defecto
+          return (
+            <div key={inputRef.key} className="mb-1"> {/* Espacio vertical reducido */}
+              <label className="block text-xs">{inputConfig.label}</label> {/* Usar el label del JSON */}
+              {inputConfig.type === 'select' ? (
+                <select
+                  name={inputRef.key}
+                  value={inputValues[inputRef.key] || ''}
+                  onChange={handleInputChange}
+                  className="border rounded p-0.5 w-full text-black"
+                >
+                  {inputConfig.options && inputConfig.options.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+              ) : (
+                <input
+                  type={inputConfig.type || 'text'}
+                  name={inputRef.key}
+                  value={inputValues[inputRef.key] || ''}
+                  onChange={handleInputChange}
+                  className="border rounded p-0.5 w-full text-black"
+                  placeholder={`Ingrese ${inputConfig.label}`}
+                />
+              )}
+            </div>
+          );
+        })}
       </div>
-      <Textarea
-        value={finalMessage}
+      <textarea
+        className="border-2 border-red-600 rounded p-2 w-full h-60 bg-black text-white"
+        value={renderMessage(template.message)}
         readOnly
-        className="h-40"
       />
-      <Button
-        className="mt-4"
-        onClick={() => navigator.clipboard.writeText(finalMessage)}
-      >
-        Copiar mensaje de venta
-      </Button>
-    </div>
-  )
-}
+      <Footer/>
+    </>
+  );
+};
+
+export default SalesDetail;
