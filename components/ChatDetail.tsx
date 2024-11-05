@@ -1,28 +1,28 @@
-'use client'
+'use client';
 
-import React, { useState, useEffect, useCallback } from 'react'
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-// import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-// import { useGlobalInputs } from '@/components/GlobalInputsProvider'
-import { ChatData } from '@/types/chatTypes'
-import { GlobalInputs } from '@/types/globalTypes' // Asegúrate de crear este tipo
+import React, { useState, useEffect, useCallback } from 'react';
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { ChatData } from '@/types/chatTypes';
+import { GlobalInputs } from '@/types/globalTypes';
 import Footer from "@/components/Footer";
 
 type ChatDetailProps = {
   selectedChat: ChatData | null;
   globalInputs: GlobalInputs;
-}
+};
 
 export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailProps) {
-  const [localInputs, setLocalInputs] = useState<Record<string, string>>({})
-  const [finalMessage, setFinalMessage] = useState('')
+  const [localInputs, setLocalInputs] = useState<Record<string, string>>({});
+  const [finalMessage, setFinalMessage] = useState('');
 
   const updateFinalMessage = useCallback((chat: ChatData, inputs: Record<string, string>) => {
     let message = chat.message;
+    console.log("Mensaje inicial:", message);
     const allInputs = { ...globalInputs, ...inputs };
+    console.log("Inputs combinados:", allInputs);
 
     if (allInputs.nombre) {
       message = message.replace(/{userName}/g, allInputs.nombre);
@@ -45,27 +45,27 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
     });
 
     message = message.replace(/^\s*[\r\n]/gm, '').trim();
-    console.log("Mensaje final:", message);
+    
     setFinalMessage(message);
   }, [globalInputs]);
 
   useEffect(() => {
     if (selectedChat) {
-      setLocalInputs({})
-      updateFinalMessage(selectedChat, {})
+      setLocalInputs({});
+      updateFinalMessage(selectedChat, {});
     }
   }, [selectedChat, updateFinalMessage]);
 
   const handleInputChange = (key: string, value: string) => {
-    const newLocalInputs = { ...localInputs, [key]: value }
-    setLocalInputs(newLocalInputs)
+    const newLocalInputs = { ...localInputs, [key]: value };
+    setLocalInputs(newLocalInputs);
     if (selectedChat) {
-      updateFinalMessage(selectedChat, newLocalInputs)
+      updateFinalMessage(selectedChat, newLocalInputs);
     }
-  }
+  };
 
   if (!selectedChat) {
-    return <div>Selecciona un chat para ver los detalles</div>
+    return <div>Selecciona un chat para ver los detalles</div>;
   }
 
   return (
@@ -82,7 +82,7 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
                   value={localInputs[input.id] || ''}
                   onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleInputChange(input.id, e.target.value)}
                   placeholder={`Ingrese ${input.label.toLowerCase()}`}
-                  className="w-full text-sm h-8"
+                  className="w-full text-sm h-8 bg-black text-white" // Asegura el fondo negro y texto blanco
                 />
               ) : (
                 <Select onValueChange={(value) => handleInputChange(input.id, value)}>
@@ -93,20 +93,18 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
                     {input.options?.map((option) => (
                       <SelectItem key={option.value} value={option.value}>
                         {option.label}
-                      </SelectItem>
-                    ))}
+                      </SelectItem>))}
                   </SelectContent>
                 </Select>
               )}
-            </div>
-          ))}
-        </div>
-      )}
-      <div 
-        dangerouslySetInnerHTML={{ __html: finalMessage.replace(/\n\n/g, '<br><br>') }}
+            </div>))}
+        </div>)}
+      <div
+        dangerouslySetInnerHTML={{ __html: finalMessage.replace(/\n/g, '<br>') }}
         className="min-h-[300px] w-full p-2 bg-black border-4 border-red-500 text-white rounded whitespace-pre-wrap overflow-auto"
-        style={{ maxHeight: 'calc(100vh - 300px)' }}
+        style={{ maxHeight: 'calc(100vh - 300px)' }} // Asegura que los saltos de línea se mantengan
       />
+
 
       <Button
         className="mt-4"
@@ -114,7 +112,7 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
       >
         Copiar mensaje
       </Button>
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }

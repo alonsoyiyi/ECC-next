@@ -46,7 +46,6 @@ export default function LegalDetail({ globalInputs }: LegalDetailProps) {
   const [mensajeFinal, setMensajeFinal] = useState('')
   const [valoresInput, setValoresInput] = useState<{ [key: string]: string }>({})
 
-  console.log(globalInputs);
 
   useEffect(() => {
     obtenerDatosLegales()
