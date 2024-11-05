@@ -801,16 +801,15 @@
         },
         "monthlyAccesoryPayment": {
             "label": "Pago mensual del accesorio",
-            "type": "number"
+            "type": "text"
         },
         "totalAccesoryPrice": {
             "label": "Pago total del accesorio",
-            "type": "number",
-            "description": "firstAccesoryPayment + (contractAccesory*monthlyAccesoryPayment)"
+            "type": "text"
         },
         "firstAccesoryPayment": {
             "label": "Pago inicial del accesorio",
-            "type": "number"
+            "type": "text"
         },
         "accesoryWarranty": {
             "label": "Garantía del accesorio",

@@ -1,19 +1,18 @@
 'use client'
 
-import LegalDetail from '@/components/LegalDetail'
-import { GlobalInputs } from '@/types/globalTypes'
+import React from 'react';
+import LegalDetail from '@/components/LegalDetail';
+import { useGlobalInputs } from '@/components/GlobalInputsProvider'; // Importar el hook
 
 export default function LegalesPage() {
-  const emptyGlobalInputs: GlobalInputs = {
-    nombre: '',
-  }
+  const { globalInputs } = useGlobalInputs(); // Usar el hook para obtener globalInputs
 
   return (
     <div className="container mx-auto p-4">
       <LegalDetail 
         selectedLegalId="1" 
-        globalInputs={emptyGlobalInputs}
+        globalInputs={globalInputs} // Pasar los globalInputs directamente
       />
     </div>
-  )
+  );
 }
