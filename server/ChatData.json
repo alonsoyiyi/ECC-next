@@ -615,7 +615,7 @@
                     ]
                 }
             ],
-            "message": "Gracias por tu espera, Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago al contado*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo: Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {gearPrice} *(Único pago)*\n{pointDiscountText}\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
+            "message": "Gracias por tu espera, Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago al contado*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo: Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {totalGearPrice} *(Único pago)*\n{pointDiscountText}\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
         },
         {
             "id": "14",
@@ -748,12 +748,12 @@
             "title": "Varios",
             "inputs": [
                 {
-                    "id": "input-23",
-                    "label": "label-23",
+                    "id": "customerName",
+                    "label": "Nombre del Cliente",
                     "type": "text"
                 }
             ],
-            "message": "El equipo te sale a inicial 0!!!😱😱 ¿Te lo mandamos a casa o lo recoges en tienda?\n\nPrecio promocional por hoy martes 22/10 😱😱 ¿Te lo mandamos a casa o lo recoges en tienda? 👀\n\nDe acuerdo a la evaluación realizada en nuestro sistema actualmente solo puedes renovar con modalidad al contado, sin embargo, si tienes tarjeta de crédito podemos hacer un financiamiento hasta 24 cuotas sin intereses. ¿Tienes alguna tarjeta de crédito?🙌👀\n\nDe acuerdo a la evaluación realizada en nuestro sistema actualmente solo puedes renovar con modalidad al contado,sin embargo, te comento que tenemos convenio con los siguientes bancos si deseas adquirir un equipo en cuotas sin intereses con tarjeta de crédito:\n🔴 Scotiabank: Hasta 36 cuotas sin intereses.\n🟢Interbank: Hasta 24 cuotas sin intereses.\n🔵 BCP: Hasta 24 cuotas sin intereses.\n🟡 BBVA: Hasta 24 cuotas sin intereses.\n🟠Financiera Oh: Hasta 18 cuotas sin intereses.\n🟣Cencosud: Para 12 y 18 cuotas sin intereses.\n🟤Diners: Hasta 24 cuotas sin intereses.\nO con cualquier otra tarjeta de crédito de tu preferencia consultando con tu banco sobre los intereses. ¿Qué tarjeta de crédito cuentas para poder evaluarte? ✍\n\n*¡Nombre de cliente! * 👋✨ El *precio especial* que te estamos otorgando al *contado* será un *pago único* y lo mejor es que lo podrás financiar *en cuotas sin intereses* 🤩💰 *con las tarjetas de crédito ¡BBVA, BCP, Cencosud, Diners Club, Financiera OH, Interbank o Scotiabank! * 🙌💳 (equipos seleccionados)\nPara verificar si cumples con los requisitos de esta campaña de cuotas sin intereses 🥳 coméntame ¿tienes tarjeta de crédito de los bancos mencionados?"
+            "message": "El equipo te sale a inicial 0!!!😱😱 ¿Te lo mandamos a casa o lo recoges en tienda?\n\nPrecio promocional por hoy martes 22/10 😱😱 ¿Te lo mandamos a casa o lo recoges en tienda? 👀\n\nDe acuerdo a la evaluación realizada en nuestro sistema actualmente solo puedes renovar con modalidad al contado, sin embargo, si tienes tarjeta de crédito podemos hacer un financiamiento hasta 24 cuotas sin intereses. ¿Tienes alguna tarjeta de crédito?🙌👀\n\nDe acuerdo a la evaluación realizada en nuestro sistema actualmente solo puedes renovar con modalidad al contado,sin embargo, te comento que tenemos convenio con los siguientes bancos si deseas adquirir un equipo en cuotas sin intereses con tarjeta de crédito:\n🔴 Scotiabank: Hasta 36 cuotas sin intereses.\n🟢Interbank: Hasta 24 cuotas sin intereses.\n🔵 BCP: Hasta 24 cuotas sin intereses.\n🟡 BBVA: Hasta 24 cuotas sin intereses.\n🟠Financiera Oh: Hasta 18 cuotas sin intereses.\n🟣Cencosud: Para 12 y 18 cuotas sin intereses.\n🟤Diners: Hasta 24 cuotas sin intereses.\nO con cualquier otra tarjeta de crédito de tu preferencia consultando con tu banco sobre los intereses. ¿Qué tarjeta de crédito cuentas para poder evaluarte? ✍\n\n*{customerName} * 👋✨ El *precio especial* que te estamos otorgando al *contado* será un *pago único* y lo mejor es que lo podrás financiar *en cuotas sin intereses* 🤩💰 *con las tarjetas de crédito ¡BBVA, BCP, Cencosud, Diners Club, Financiera OH, Interbank o Scotiabank! * 🙌💳 (equipos seleccionados)\nPara verificar si cumples con los requisitos de esta campaña de cuotas sin intereses 🥳 coméntame ¿tienes tarjeta de crédito de los bancos mencionados?"
         },
         {
             "id": "24",
