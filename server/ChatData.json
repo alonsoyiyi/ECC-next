@@ -86,7 +86,7 @@
                     "type": "select",
                     "options": [
                         {
-                            "value": "iPhone",
+                            "value": "Apple iPhone",
                             "label": "iPhone"
                         },
                         {
@@ -369,7 +369,7 @@
                     "type": "select",
                     "options": [
                         {
-                            "value": "iPhone",
+                            "value": "Apple iPhone",
                             "label": "iPhone"
                         },
                         {
@@ -615,7 +615,7 @@
                     ]
                 }
             ],
-            "message": "Gracias por tu espera, Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago al contado*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo: Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {totalGearPrice} *(Único pago)*\n{pointDiscountText}\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
+            "message": "Gracias por tu espera, Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago al contado*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo:{brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {totalGearPrice} *(Único pago)*\n{pointDiscountText}\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
         },
         {
             "id": "14",
@@ -1155,7 +1155,7 @@
                     "type": "select",
                     "options": [
                         {
-                            "value": "iPhone",
+                            "value": "Apple iPhone",
                             "label": "iPhone"
                         },
                         {
