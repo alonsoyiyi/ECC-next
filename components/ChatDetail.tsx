@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 
 type ChatDetailProps = {
   selectedChat: ChatData | null;
-  globalInputs: GlobalInputs; // Añadimos esta prop
+  globalInputs: GlobalInputs;
 }
 
 export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailProps) {
