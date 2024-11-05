@@ -80,7 +80,7 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
                 <Input
                   id={input.id}
                   value={localInputs[input.id] || ''}
-                  onChange={(e) => handleInputChange(input.id, e.target.value)}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleInputChange(input.id, e.target.value)}
                   placeholder={`Ingrese ${input.label.toLowerCase()}`}
                   className="w-full text-sm h-8"
                 />
