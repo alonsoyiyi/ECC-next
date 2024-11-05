@@ -5,6 +5,7 @@
 import React, { createContext, useContext } from 'react';
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import Image from 'next/image'
 import { useLocalStorage } from '@/lib/useLocalStorage';
 import { GlobalInputs } from '@/types/globalInputs';
 import Link from 'next/link';
@@ -43,9 +44,11 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
         <div className="flex items-center"> {/* Contenedor para imagen y h1 */}
           {/* Imagen clickeable */}
           <Link href="/">
-            <img 
+          <Image
               src="/images/logo.png" // Ruta de tu imagen
               alt="Logo"
+              width={32}
+  height={32}
               className="h-10 w-auto cursor-pointer mr-4" // Estilos para la imagen
             />
           </Link>
