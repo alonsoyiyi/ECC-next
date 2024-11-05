@@ -21,12 +21,13 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
   const updateFinalMessage = useCallback((chat: ChatData, inputs: Record<string, string>) => {
     let message = chat.message;
     console.log("Mensaje inicial:", message);
+
     const allInputs = { ...globalInputs, ...inputs };
     console.log("Inputs combinados:", allInputs);
 
-    if (allInputs.nombre) {
-      message = message.replace(/{userName}/g, allInputs.nombre);
-    }
+   if (allInputs.nombre) {
+    message = message.replace(/{userName}/g, allInputs.nombre);
+  }
 
     const bonusText = allInputs.bonus ? `+${allInputs.bonus}` : '';
     allInputs.bonusText = bonusText;
@@ -44,7 +45,8 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
       }
     });
 
-    message = message.replace(/^\s*[\r\n]/gm, '').trim();
+    message = message.replace(/(\r\n|\r|\n)/g, '<br>').trim();
+    console.log("Mensaje final antes de setting state:", message);
     
     setFinalMessage(message);
   }, [globalInputs]);
@@ -52,12 +54,14 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
   useEffect(() => {
     if (selectedChat) {
       setLocalInputs({});
+      console.log("Mensaje inicial en useEffect:", selectedChat.message);
       updateFinalMessage(selectedChat, {});
     }
   }, [selectedChat, updateFinalMessage]);
 
   const handleInputChange = (key: string, value: string) => {
     const newLocalInputs = { ...localInputs, [key]: value };
+    console.log("Nuevo valor del input:", newLocalInputs);
     setLocalInputs(newLocalInputs);
     if (selectedChat) {
       updateFinalMessage(selectedChat, newLocalInputs);

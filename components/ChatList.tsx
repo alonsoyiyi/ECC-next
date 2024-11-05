@@ -13,6 +13,7 @@ export default function ChatList({ onSelectChat }: ChatListProps) {
   const [chatData, setChatData] = useState<ChatDataResponse | null>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [selectedChatId, setSelectedChatId] = useState<string | null>(null) // Estado para el chat seleccionado
 
   useEffect(() => {
     async function fetchChats() {
@@ -49,9 +50,14 @@ export default function ChatList({ onSelectChat }: ChatListProps) {
                   return (
                     <Button
                       key={chatId}
-                      onClick={() => onSelectChat(chat)}
+                      onClick={() => {
+                        onSelectChat(chat)
+                        setSelectedChatId(chatId) // Actualiza el chat seleccionado
+                      }}
                       variant="ghost"
-                      className="w-full justify-start text-left text-sm py-1 h-auto"
+                      className={`w-full justify-start text-left text-sm py-1 h-auto ${
+                        selectedChatId === chatId ? 'bg-red-500 text-white' : ''
+                      }`} // Clase condicional para el fondo rojo
                     >
                       {chat.title}
                     </Button>

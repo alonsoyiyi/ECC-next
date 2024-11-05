@@ -9,7 +9,7 @@ import Image from 'next/image'
 import { useLocalStorage } from '@/lib/useLocalStorage';
 import { GlobalInputs } from '@/types/globalTypes';
 import Link from 'next/link';
-import { Button } from "@/components/ui/button"; // Asegúrate de tener tu botón importado
+import { Button } from "@/components/ui/button";
 
 const GlobalInputsContext = createContext<{
   globalInputs: GlobalInputs;
@@ -40,35 +40,37 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
 
   return (
     <GlobalInputsContext.Provider value={{ globalInputs, setGlobalInputs }}>
-      <header className="bg-primary text-primary-foreground p-4 flex items-center justify-between"> {/* Ajusta para espacio entre */}
-        <div className="flex items-center"> {/* Contenedor para imagen y h1 */}
-          {/* Imagen clickeable */}
+      <header className="bg-primary text-primary-foreground p-4 flex items-center justify-between">
+        <div className="flex items-center">
           <Link href="/">
-          <Image
-              src="/images/logo.png" // Ruta de tu imagen
+            <Image
+              src="/images/logo.png"
               alt="Logo"
               width={32}
-  height={32}
-              className="h-10 w-auto cursor-pointer mr-4" // Estilos para la imagen
+              height={32}
+              className="h-10 w-auto cursor-pointer mr-4"
             />
           </Link>
-          <h1 className="text-2xl font-bold">EasyChat Claro</h1>
+          <h1 className="text-2xl font-bold flex items-center">
+            EasyChat Claro
+            <span className="text-sm text-gray-400 ml-2 align-top">Beta Version</span>
+          </h1>
         </div>
-        
-        <div className="flex-1 flex justify-center"> {/* Espacio flexible para centrar el input */}
-          <div className="flex flex-col items-center"> {/* Alinear verticalmente */}
+
+        <div className="flex-1 flex justify-center">
+          <div className="flex flex-col items-center">
             <Label htmlFor="nombre" className="sr-only">Nombre</Label>
             <Input
               id="nombre"
               value={globalInputs.nombre}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleInputChange('nombre', e.target.value)}
               placeholder="Ingresa tu nombre"
-              className="text-center bg-black text-white"  // Centrar texto en el input
+              className="text-center bg-black text-white"
             />
           </div>
         </div>
 
-        <Button className="ml-4">Login</Button> {/* Botón de login */}
+        <Button className="ml-4">Login</Button>
       </header>
       <main className="flex-1 p-4">
         {children}
