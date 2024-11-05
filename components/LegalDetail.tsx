@@ -33,7 +33,7 @@ interface DatosLegales {
   inputs: { [key: string]: InputLegal }
 }
 
-export default function LegalDetail({ selectedLegalId, globalInputs }: LegalDetailProps) {
+export default function LegalDetail({ globalInputs }: LegalDetailProps) {
   const [step, setStep] = useState(1)
   const [selectedOption1, setSelectedOption1] = useState<string | null>(null)
   const [selectedOption2, setSelectedOption2] = useState<string | null>(null)
@@ -46,6 +46,7 @@ export default function LegalDetail({ selectedLegalId, globalInputs }: LegalDeta
   const [mensajeFinal, setMensajeFinal] = useState('')
   const [valoresInput, setValoresInput] = useState<{ [key: string]: string }>({})
 
+  console.log(globalInputs);
 
   useEffect(() => {
     obtenerDatosLegales()
@@ -247,8 +248,10 @@ export default function LegalDetail({ selectedLegalId, globalInputs }: LegalDeta
   const mensajesFormateados = mensajes.map(m => {
     let mensajeFormateado = m.message
     m.inputref.forEach(inputKey => {
+      console.log(globalInputs);
       const valor = inputKey === 'userName' ? globalInputs.nombre : (valoresInput[inputKey] || `{${inputKey}}`)
       mensajeFormateado = mensajeFormateado.split(`{${inputKey}}`).join(valor)
+      
     })
     return mensajeFormateado
   })
