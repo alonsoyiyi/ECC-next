@@ -12,11 +12,11 @@ export default function ChatsPage() {
 
   return (
     <div className="flex gap-4 p-4">
-      <div className="w-1/3 overflow-y-auto">
+      <div className="w-1/3">
         <ChatList onSelectChat={setSelectedChat} />
       </div>
       <div className="w-2/3 sticky top-4 self-start">
-        <ChatDetail globalInputs={globalInputs} selectedChat={selectedChat} />
+        <ChatDetail selectedChat={selectedChat} globalInputs={globalInputs} />
       </div>
     </div>
   )

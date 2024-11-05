@@ -1,39 +1,26 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { useGlobalInputs } from '@/components/GlobalInputsProvider'
 import { ChatData } from '@/types/chatTypes'
+import { GlobalInputs } from '@/types/globalTypes' // Asegúrate de crear este tipo
 import Footer from "@/components/Footer";
 
 type ChatDetailProps = {
   selectedChat: ChatData | null;
+  globalInputs: GlobalInputs; // Añadimos esta prop
 }
 
-export default function ChatDetail({ selectedChat }: ChatDetailProps) {
-  const { globalInputs } = useGlobalInputs()
+export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailProps) {
   const [localInputs, setLocalInputs] = useState<Record<string, string>>({})
   const [finalMessage, setFinalMessage] = useState('')
 
-  useEffect(() => {
-    if (selectedChat) {
-      setLocalInputs({})
-      updateFinalMessage(selectedChat, {})
-    }
-  }, [selectedChat, globalInputs])
-
-  const handleInputChange = (key: string, value: string) => {
-    const newLocalInputs = { ...localInputs, [key]: value }
-    setLocalInputs(newLocalInputs)
-    if (selectedChat) {
-      updateFinalMessage(selectedChat, newLocalInputs)
-    }
-  }
-
-  const updateFinalMessage = (chat: ChatData, inputs: Record<string, string>) => {
+  const updateFinalMessage = useCallback((chat: ChatData, inputs: Record<string, string>) => {
     let message = chat.message;
     const allInputs = { ...globalInputs, ...inputs };
 
@@ -57,15 +44,25 @@ export default function ChatDetail({ selectedChat }: ChatDetailProps) {
       }
     });
 
-    // Reemplazar \n\n con <br><br> para preservar los saltos de línea
-    message = message.replace(/\n\n/g, '<br><br>');
-    
-    // Eliminar líneas vacías al inicio y al final
-    message = message.replace(/^(<br>)+|(<br>)+$/g, '');
-
+    message = message.replace(/^\s*[\r\n]/gm, '').trim();
     console.log("Mensaje final:", message);
     setFinalMessage(message);
-  };
+  }, [globalInputs]);
+
+  useEffect(() => {
+    if (selectedChat) {
+      setLocalInputs({})
+      updateFinalMessage(selectedChat, {})
+    }
+  }, [selectedChat, updateFinalMessage]);
+
+  const handleInputChange = (key: string, value: string) => {
+    const newLocalInputs = { ...localInputs, [key]: value }
+    setLocalInputs(newLocalInputs)
+    if (selectedChat) {
+      updateFinalMessage(selectedChat, newLocalInputs)
+    }
+  }
 
   if (!selectedChat) {
     return <div>Selecciona un chat para ver los detalles</div>
@@ -106,19 +103,18 @@ export default function ChatDetail({ selectedChat }: ChatDetailProps) {
         </div>
       )}
       <div 
-        dangerouslySetInnerHTML={{ __html: finalMessage }}
+        dangerouslySetInnerHTML={{ __html: finalMessage.replace(/\n\n/g, '<br><br>') }}
         className="min-h-[300px] w-full p-2 bg-black border-4 border-red-500 text-white rounded whitespace-pre-wrap overflow-auto"
         style={{ maxHeight: 'calc(100vh - 300px)' }}
       />
 
       <Button
         className="mt-4"
-        onClick={() => navigator.clipboard.writeText(finalMessage.replace(/<br><br>/g, '\n\n'))}
+        onClick={() => navigator.clipboard.writeText(finalMessage)}
       >
         Copiar mensaje
       </Button>
       <Footer/>
     </div>
-    
   )
 }
