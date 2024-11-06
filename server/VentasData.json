@@ -276,10 +276,6 @@
                     "label": "Turno"
                 },
                 {
-                    "key": "userName",
-                    "label": "Nombre de asesor"
-                },
-                {
                     "key": "gbPlan",
                     "label": "GB del plan"
                 },
@@ -332,10 +328,6 @@
                 {
                     "key": "turn",
                     "label": "Turno"
-                },
-                {
-                    "key": "userName",
-                    "label": "Nombre de asesor"
                 },
                 {
                     "key": "snCode",

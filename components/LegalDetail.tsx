@@ -275,7 +275,8 @@ useEffect(() => {
                     setValoresInput(prev => ({ ...prev, [inputRef]: e.target.value }))
                   }}
                   placeholder={`Ingrese ${input.label.toLowerCase()}`}
-                  className="w-full text-sm h-8"
+                  className="w-full text-sm h-8 bg-black text-white"
+
                 />
               ) : (
                 <Select
