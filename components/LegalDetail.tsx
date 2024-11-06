@@ -112,25 +112,43 @@ export default function LegalDetail({ globalInputs }: LegalDetailProps) {
   };
 
 
+  useEffect(() => {
+    if (step === 1 && codes.length > 0) {
+      setStep(2);
+    }
+  }, [codes, step]);
+
 
   // Función para manejar el botón "Siguiente"
   const handleNextClick = () => {
     if (step === 1) {
-      setCodes([...getPaymentOptions()]);
-      setStep(2);
+      const paymentOptions = getPaymentOptions();
+      setCodes(paymentOptions);
+      console.log(paymentOptions);
+
+      
     } else if (step === 2) {
-      const updatedCodes = [...codes, ...getAccessoryOptions()];
-      setCodes(updatedCodes);
-
-      // Evaluación de la pregunta 3
-      if (selectedOption2 === 'Sin accesorio') {
-        setCodes((prev) => [...prev, 10]);
-      } else {
-        setCodes((prev) => [...prev, 9]);
-      }
-
-      setStep(4);
-    } else if (step === 4) {
+      const paymentOptions = getPaymentOptions();
+    setCodes(paymentOptions);
+      
+      if (codes.length > 0){console.log(codes);
+        const updatedCodes = [...codes, ...getAccessoryOptions()];
+        setCodes(updatedCodes);
+       
+        // Evaluación de la pregunta 3
+        if (selectedOption2 === 'Sin accesorio') {
+          setCodes((prev) => [...prev, 10]);
+        } else {
+          setCodes((prev) => [...prev, 9]);
+        }
+  
+        setStep(4);}
+        else{
+          setStep(2);
+        }
+      
+    } 
+    else if (step === 4) {
       setCodes((prev) => [
         ...prev,
         selectedOption4 === 'Con renta' ? 11 : 12,
@@ -236,7 +254,7 @@ export default function LegalDetail({ globalInputs }: LegalDetailProps) {
   const mensajesFormateados = mensajes.map(m => {
     let mensajeFormateado = m.message
     m.inputref.forEach(inputKey => {
-      console.log(globalInputs);
+      
       const valor = inputKey === 'userName' ? globalInputs.nombre : (valoresInput[inputKey] || `{${inputKey}}`)
       mensajeFormateado = mensajeFormateado.split(`{${inputKey}}`).join(valor)
       
@@ -275,7 +293,8 @@ useEffect(() => {
                     setValoresInput(prev => ({ ...prev, [inputRef]: e.target.value }))
                   }}
                   placeholder={`Ingrese ${input.label.toLowerCase()}`}
-                  className="w-full text-sm h-8"
+                  className="w-full text-sm h-8 bg-black text-white"
+
                 />
               ) : (
                 <Select

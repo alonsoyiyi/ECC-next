@@ -23,7 +23,7 @@
         {
             "id": "5",
             "title": "Equipo del Cliente",
-            "message": "¿Coméntame cuál es la marca y modelo que estás usando actualmente? 📲"
+            "message": "¿Coméntame cuál es la marca y modelo que estás usando actualmente?📲Para poder darte un teléfono más actual que el que tienes🙌"
         },
         {
             "id": "6",
@@ -45,7 +45,14 @@
         {
             "id": "8",
             "title": "Preferencias del Cliente",
-            "message": "Perfecto, y dime, ¿tiene alguna marca de su agrado como: Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi?\n\n¿Qué *características* te gustaría mejorar? Tal vez buscas mejor *cámara* 📷, más *RAM* 🧠 o más *memoria interna* 📲 o ¿Alguna otra *característica*?"
+            "inputs": [
+                {
+                    "id": "customeBrand",
+                    "label": "Marca telefono cliente",
+                    "type": "text"
+                }
+            ],
+            "message": "Perfecto, y dime, ¿tienes alguna marca de su agrado como: Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi? 🔍👀\n\n¿Excelente elección 🙌, ¿Y qué *características* te gustaría mejorar? Tal vez buscas mejor *cámara* 📷, más *RAM* 🧠 o más *memoria interna* 📲 o ¿Alguna otra *característica*?\n\nPerfecto, y dime,  ¿deseas seguir trabajando con la marca {customerBrand)? o prefieres evaluar otras marcas como Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi? 🔍👀\n\nExcelente elección 💰, ¿Cuál es el monto que tienes en mente para obtener tu *nuevo equipo*? _y con ello no excederme en tu presupuesto_ 🙌"
         },
         {
             "id": "9",
@@ -615,7 +622,7 @@
                     ]
                 }
             ],
-            "message": "Gracias por tu espera, Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago al contado*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo:{brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {totalGearPrice} *(Único pago)*\n{pointDiscountText}\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
+            "message": "Gracias por tu espera, Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago al contado*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {totalGearPrice} *(Único pago)*\n{pointDiscountText}\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
         },
         {
             "id": "14",
@@ -1397,6 +1404,11 @@
                 }
             ],
             "message": "Gracias por tu espera, Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago en cuotas sin intereses con {bankName}*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {totalGearPrice} *(Pago total divisible en cuotas)*\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
+        },
+        {
+            "id": "50",
+            "title": "Pre-Oferta",
+            "message": "Entiendo, personalmente te recomiendo este equipo que estoy más que seguro que cumplirá con todas tus expectativas🙌😎:"
         }
     ],
     "indice": [
@@ -1429,6 +1441,7 @@
         {
             "label": "4. Ofrecimiento",
             "items": [
+                "50",
                 "12",
                 "13",
                 "49",
