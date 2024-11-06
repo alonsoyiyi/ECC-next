@@ -1273,11 +1273,6 @@
                     "type": "text"
                 },
                 {
-                    "id": "pointDiscount",
-                    "label": "Descuento Claro Puntos (S/)",
-                    "type": "text"
-                },
-                {
                     "id": "customerPlan",
                     "label": "Plan del Cliente",
                     "type": "select",
@@ -1401,7 +1396,7 @@
                     ]
                 }
             ],
-            "message": "Gracias por tu espera, Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago en cuotas sin intereses con {bankName}*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo: Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {totalGearPrice} *(Pago total divisible en cuotas)*\n{pointDiscountText}\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
+            "message": "Gracias por tu espera, Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago en cuotas sin intereses con {bankName}*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {totalGearPrice} *(Pago total divisible en cuotas)*\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
         }
     ],
     "indice": [

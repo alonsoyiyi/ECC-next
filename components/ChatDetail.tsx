@@ -25,9 +25,9 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
     const allInputs = { ...globalInputs, ...inputs };
     console.log("Inputs combinados:", allInputs);
 
-   if (allInputs.nombre) {
-    message = message.replace(/{userName}/g, allInputs.nombre);
-  }
+    if (allInputs.nombre) {
+      message = message.replace(/{userName}/g, allInputs.nombre);
+    }
 
     const bonusText = allInputs.bonus ? `+${allInputs.bonus}` : '';
     allInputs.bonusText = bonusText;
@@ -66,6 +66,11 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
     if (selectedChat) {
       updateFinalMessage(selectedChat, newLocalInputs);
     }
+  };
+
+  const formatFinalMessageForCopy = (message: string) => {
+    // Reemplaza los <br> por saltos de línea
+    return message.replace(/<br\s*\/?>/g, '\n');
   };
 
   if (!selectedChat) {
@@ -109,10 +114,12 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
         style={{ maxHeight: 'calc(100vh - 300px)' }} // Asegura que los saltos de línea se mantengan
       />
 
-
       <Button
         className="mt-4"
-        onClick={() => navigator.clipboard.writeText(finalMessage)}
+        onClick={() => {
+          const formattedMessage = formatFinalMessageForCopy(finalMessage);
+          navigator.clipboard.writeText(formattedMessage);
+        }}
       >
         Copiar mensaje
       </Button>

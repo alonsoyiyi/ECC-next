@@ -112,8 +112,8 @@
                     "label": "Código SEC"
                 },
                 {
-                    "key": "userName",
-                    "label": "Nombre de asesor"
+                    "key": "contractPlan",
+                    "label": "Plazo de contrato"
                 },
                 {
                     "key": "snCode",
@@ -200,10 +200,6 @@
                 {
                     "key": "snCode",
                     "label": "Código llamada SN"
-                },
-                {
-                    "key": "userName",
-                    "label": "Nombre de asesor"
                 },
                 {
                     "key": "manager",
@@ -392,7 +388,7 @@
                     "label": "Pago mensual"
                 },
                 {
-                    "key": "totalGearPrice",
+                    "key": "gearPrice",
                     "label": "Precio total del equipo"
                 },
                 {
@@ -422,10 +418,6 @@
                 {
                     "key": "pmPrice",
                     "label": "Precio Protección Móvil"
-                },
-                {
-                    "key": "userName",
-                    "label": "Nombre de asesor"
                 },
                 {
                     "key": "manager",
