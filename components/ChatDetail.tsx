@@ -8,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { ChatData } from '@/types/chatTypes';
 import { GlobalInputs } from '@/types/globalTypes';
 import Footer from "@/components/Footer";
+import { useToast } from "@/hooks/use-toast"
 
 type ChatDetailProps = {
   selectedChat: ChatData | null;
@@ -17,6 +18,7 @@ type ChatDetailProps = {
 export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailProps) {
   const [localInputs, setLocalInputs] = useState<Record<string, string>>({});
   const [finalMessage, setFinalMessage] = useState('');
+  const { toast } = useToast();
 
   const updateFinalMessage = useCallback((chat: ChatData, inputs: Record<string, string>) => {
     let message = chat.message;
@@ -69,8 +71,18 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
   };
 
   const formatFinalMessageForCopy = (message: string) => {
-    // Reemplaza los <br> por saltos de línea
     return message.replace(/<br\s*\/?>/g, '\n');
+  };
+
+  const handleReset = () => {
+    setLocalInputs({});
+    if (selectedChat) {
+      updateFinalMessage(selectedChat, {});
+    }
+    toast({
+      title: "Reinicio completado",
+      description: "Todas las entradas han sido reiniciadas.",
+    });
   };
 
   if (!selectedChat) {
@@ -79,7 +91,12 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
 
   return (
     <div>
-      <h2 className="text-xl font-bold mb-4">{selectedChat.title}</h2>
+       <div className="flex items-center justify-between mb-4">
+    <h2 className="text-xl font-bold">{selectedChat.title}</h2>
+    <Button onClick={handleReset} variant="destructive">
+      Reiniciar
+    </Button>
+  </div>
       {selectedChat.inputs && selectedChat.inputs.length > 0 && (
         <div className="grid grid-cols-2 gap-4 mb-4">
           {selectedChat.inputs.map((input) => (
@@ -91,38 +108,50 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
                   value={localInputs[input.id] || ''}
                   onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleInputChange(input.id, e.target.value)}
                   placeholder={`Ingrese ${input.label.toLowerCase()}`}
-                  className="w-full text-sm h-8 bg-black text-white" // Asegura el fondo negro y texto blanco
+                  className="w-full text-sm h-8 bg-black text-white"
                 />
               ) : (
-                <Select onValueChange={(value) => handleInputChange(input.id, value)}>
-                  <SelectTrigger className="w-full text-sm h-8">
-                    <SelectValue placeholder={`Seleccione ${input.label ? input.label.toLowerCase() : ''}`} />
-                  </SelectTrigger>
-                  <SelectContent className="max-h-48 overflow-y-auto">
-                    {input.options?.map((option) => (
-                      <SelectItem key={option.value} value={option.value}>
-                        {option.label}
-                      </SelectItem>))}
-                  </SelectContent>
-                </Select>
+                <Select
+                value={localInputs[input.id] || ''} // Aquí el Select recibe su valor de localInputs
+                onValueChange={(value) => handleInputChange(input.id, value)}
+              >
+                <SelectTrigger className="w-full text-sm h-8">
+                  <SelectValue placeholder={`Seleccione ${input.label ? input.label.toLowerCase() : ''}`} />
+                </SelectTrigger>
+                <SelectContent className="max-h-48 overflow-y-auto">
+                  {input.options?.map((option) => (
+                    <SelectItem key={option.value} value={option.value}>
+                      {option.label}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
               )}
             </div>))}
         </div>)}
       <div
         dangerouslySetInnerHTML={{ __html: finalMessage.replace(/\n/g, '<br>') }}
         className="min-h-[300px] w-full p-2 bg-black border-4 border-red-500 text-white rounded whitespace-pre-wrap overflow-auto"
-        style={{ maxHeight: 'calc(100vh - 300px)' }} // Asegura que los saltos de línea se mantengan
+        style={{ maxHeight: 'calc(100vh - 300px)' }}
       />
 
-      <Button
-        className="mt-4"
-        onClick={() => {
-          const formattedMessage = formatFinalMessageForCopy(finalMessage);
-          navigator.clipboard.writeText(formattedMessage);
-        }}
-      >
-        Copiar mensaje
-      </Button>
+      <div className="flex justify-between mt-4">
+        <Button
+          onClick={() => {
+            const formattedMessage = formatFinalMessageForCopy(finalMessage);
+            navigator.clipboard.writeText(formattedMessage);
+            toast({
+              title: "Mensaje copiado",
+              description: "El mensaje ha sido copiado al portapapeles.",
+            });
+          }}
+        >
+          Copiar mensaje
+        </Button>
+        {/* <Button onClick={handleReset} variant="destructive">
+          Reiniciar
+        </Button> */}
+      </div>
       <Footer />
     </div>
   );
