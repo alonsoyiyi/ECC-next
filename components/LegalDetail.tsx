@@ -9,6 +9,8 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { GlobalInputs } from '@/types/globalTypes'
 import Footer from "@/components/Footer";
+import { useToast } from "@/hooks/use-toast"
+
 
 interface LegalDetailProps {
   selectedLegalId: string;
@@ -45,6 +47,33 @@ export default function LegalDetail({ globalInputs }: LegalDetailProps) {
   const [datosLegales, setDatosLegales] = useState<DatosLegales | null>(null)
   const [mensajeFinal, setMensajeFinal] = useState('')
   const [valoresInput, setValoresInput] = useState<{ [key: string]: string }>({})
+  const { toast } = useToast();
+  const [states, setStates] = useState<StateType>({
+    s1: 0,
+    s2: 0,
+    s4: 0,
+    s5: 0,
+    s6: 0,
+    s8: 0,
+  });
+
+  type StateType = {
+    s1: number;
+    s2: number;
+    s4: number;
+    s5: number;
+    s6: number;
+    s8: number;
+  };
+
+
+
+  const updateState = (key: keyof StateType, value: number) => {
+    setStates(prev => ({
+      ...prev,
+      [key]: value,
+    }));
+  };
 
 
   useEffect(() => {
@@ -107,58 +136,164 @@ export default function LegalDetail({ globalInputs }: LegalDetailProps) {
   };
 
   // Función para obtener los valores de la sexta pregunta
-  const getDeliveryOptions = () => {
-    return selectedOption6 === 'Delivery' ? [17, 18] : [17, 18];
+  const getDeliveryOptions = (): number[] => {
+    return (selectedOption6 === 'Delivery' || selectedOption6 === 'Recojo') ? [17, 18] : [];
   };
 
 
+
+
   useEffect(() => {
-    if (step === 1 && codes.length > 0) {
+    if (step === 1 && states.s1 > 0) {
+      console.log('Nuevo valor de s1:', states.s1);
       setStep(2);
     }
-  }, [codes, step]);
+    else if (step === 2 && states.s2 === 3) {
+      console.log('Nuevo valor de s2:', states.s2);
+
+      if (selectedOption2 === 'Sin accesorio') {
+        setCodes((prev) => [...prev, 10]);
+      } else {
+        setCodes((prev) => [...prev, 9]);
+      }
+
+      setStep(4);
+    }
+    else if (step === 4 && states.s4 === 5) {
+      console.log(states.s4);
+      setStep(5);
+
+    }
+    else if (step === 5 && states.s5 === 7) {
+      console.log(states.s5);
+      setStep(6);
+    }
+    else if (step === 6 && states.s6 === 9) {
+      console.log(states.s6);
+      setStep(8);
+    }
+    else if (step === 8 && states.s8 > 10) {
+      console.log(states.s8);
+      if ((selectedOption1 === 'Contado' || selectedOption1 === 'Cuotas con inicial') && selectedOption6 === 'Delivery') {
+        setCodes((prev) => [...prev, 45]);
+      } else if (selectedOption1 === 'Cuotas sin inicial' && selectedOption6 === 'Delivery') {
+        setCodes((prev) => [...prev, 46]);
+      } else if ((selectedOption1 === 'Contado' || selectedOption1 === 'Cuotas con inicial') && selectedOption6 === 'Recojo') {
+        setCodes((prev) => [...prev, 47]);
+      } else if (selectedOption1 === 'Cuotas sin inicial' && selectedOption6 === 'Recojo') {
+        setCodes((prev) => [...prev, 48]);
+      }
+      setStep(9);
+    }
+
+  }, [codes, step, states.s1, states.s2, states.s4, states.s5, states.s6, states.s8]);
+
 
 
   // Función para manejar el botón "Siguiente"
   const handleNextClick = () => {
+
     if (step === 1) {
       const paymentOptions = getPaymentOptions();
       setCodes(paymentOptions);
-      console.log(paymentOptions);
+      updateState("s1", paymentOptions.length)
+      console.log(paymentOptions.length);
 
-      
-    } else if (step === 2) {
+      if (paymentOptions.length < 1) {
+        console.log("hago aca");
+        toast({
+          variant: "destructive",
+          title: "Por favor selecciona alguna opción",
+          description: "Gracias",
+        });
+      }
+
+    }
+
+
+    if (step === 2) {
       const paymentOptions = getPaymentOptions();
-    setCodes(paymentOptions);
-      
-      if (codes.length > 0){console.log(codes);
-        const updatedCodes = [...codes, ...getAccessoryOptions()];
-        setCodes(updatedCodes);
-       
-        // Evaluación de la pregunta 3
-        if (selectedOption2 === 'Sin accesorio') {
-          setCodes((prev) => [...prev, 10]);
-        } else {
-          setCodes((prev) => [...prev, 9]);
-        }
-  
-        setStep(4);}
-        else{
-          setStep(2);
-        }
-      
-    } 
-    else if (step === 4) {
-      setCodes((prev) => [
-        ...prev,
-        selectedOption4 === 'Con renta' ? 11 : 12,
-      ]);
-      setStep(5);
-    } else if (step === 5) {
-      setCodes((prev) => [...prev, ...getPlanOptions()]);
-      setStep(6);
-    } else if (step === 6) {
-      setCodes((prev) => [...prev, ...getDeliveryOptions()]);
+      setCodes(paymentOptions);
+      console.log(paymentOptions.length);
+
+      const updatedCodes = [...codes, ...getAccessoryOptions()];
+      setCodes(updatedCodes);
+      updateState("s2", updatedCodes.length)
+      console.log(updatedCodes.length);
+
+      if (updatedCodes.length < 3) {
+        console.log("hago aca");
+        toast({
+          variant: "destructive",
+          title: "Por favor selecciona alguna opción",
+          description: "Gracias",
+        });
+      }
+
+    }
+    if (step === 4) {
+      if (selectedOption4 === 'Con renta') {
+        setCodes((prev) => {
+          const updatedCodes = [...prev, 11];
+          updateState("s4", updatedCodes.length);
+          return updatedCodes;
+        });
+      } else if (selectedOption4 === 'Sin renta') {
+        setCodes((prev) => {
+          const updatedCodes = [...prev, 12];
+          updateState("s4", updatedCodes.length);
+          return updatedCodes;
+        });
+      }
+      else {
+        console.log("hago aca");
+        toast({
+          variant: "destructive",
+          title: "Por favor selecciona alguna opción",
+          description: "Gracias",
+        });
+      }
+    }
+
+
+
+    if (step === 5) {
+      const updatedCodes = [...codes, ...getPlanOptions()];
+      setCodes(updatedCodes);
+
+      console.log(updatedCodes.length);
+      updateState("s5", updatedCodes.length);
+
+      if (updatedCodes.length < 7) {
+        console.log("hago aca");
+        toast({
+          variant: "destructive",
+          title: "Por favor selecciona alguna opción",
+          description: "Gracias",
+        })
+      };
+
+
+    } if (step === 6) {
+
+
+
+      const updatedCodes = [...codes, ...getDeliveryOptions()];
+      setCodes(updatedCodes);
+
+      console.log(updatedCodes.length);
+      updateState("s6", updatedCodes.length);
+
+      if (updatedCodes.length < 9) {
+        console.log("hago aca");
+        toast({
+          variant: "destructive",
+          title: "Por favor selecciona alguna opción",
+          description: "Gracias",
+        })
+      };
+
+
       // Evaluación de la pregunta 7
       if (selectedOption1 === 'Contado' && selectedOption2 === 'Sin accesorio' && selectedOption6 === 'Delivery') {
         setCodes((prev) => [...prev, 19]);
@@ -219,26 +354,47 @@ export default function LegalDetail({ globalInputs }: LegalDetailProps) {
       } else if (selectedOption1 === 'Cuotas con inicial' && selectedOption2 === 'Con accesorio a cuotas con inicial' && selectedOption6 === 'Recojo') {
         setCodes((prev) => [...prev, 42]);
       }
-      setStep(8);
-    } else if (step === 8) {
-      setCodes((prev) => [...prev, selectedOption8 === 'Con PM' ? 43 : 44]); // Añade lógica según opción seleccionada
+      const s6 = codes.length;
+      console.log(s6);
 
-      // Evaluación de la pregunta 3
-      if ((selectedOption1 === 'Contado' || selectedOption1 === 'Cuotas con inicial') && selectedOption6 === 'Delivery') {
-        setCodes((prev) => [...prev, 45]);
-      } else if (selectedOption1 === 'Cuotas sin inicial' && selectedOption6 === 'Delivery') {
-        setCodes((prev) => [...prev, 46]);
-      } else if ((selectedOption1 === 'Contado' || selectedOption1 === 'Cuotas con inicial') && selectedOption6 === 'Recojo') {
-        setCodes((prev) => [...prev, 47]);
-      } else if (selectedOption1 === 'Cuotas sin inicial' && selectedOption6 === 'Recojo') {
-        setCodes((prev) => [...prev, 48]);
+      // setStep(8);
+    } if (step === 8) {
+
+      if (selectedOption8 === 'Con PM') {
+        setCodes((prev) => {
+          const updatedCodes = [...prev, 43];
+          updateState("s8", updatedCodes.length);
+          // console.log(updatedCodes);
+          return updatedCodes;
+
+        });
+      } else if (selectedOption8 === 'Sin PM') {
+        setCodes((prev) => {
+          const updatedCodes = [...prev, 44];
+          updateState("s8", updatedCodes.length);
+          // console.log(updatedCodes);
+          return updatedCodes;
+        });
       }
-      setStep(9);
+      else {
+        console.log("hago aca");
+        toast({
+          variant: "destructive",
+          title: "Por favor selecciona alguna opción",
+          description: "Gracias",
+        });
+      }
+
     }
   };
 
+
+
+
   useEffect(() => {
     if (step === 9) {
+      const s9 = codes.length;
+      console.log(s9);
       generarMensajeFinal();
     }
   }, [step, codes]);
@@ -248,26 +404,26 @@ export default function LegalDetail({ globalInputs }: LegalDetailProps) {
     if (!datosLegales) return
 
     const mensajes = codes
-    .map(code => datosLegales.messages.find(m => m.id === code.toString()))
-    .filter((m): m is MensajeLegal => m !== undefined)
+      .map(code => datosLegales.messages.find(m => m.id === code.toString()))
+      .filter((m): m is MensajeLegal => m !== undefined)
 
-  const mensajesFormateados = mensajes.map(m => {
-    let mensajeFormateado = m.message
-    m.inputref.forEach(inputKey => {
-      
-      const valor = inputKey === 'userName' ? globalInputs.nombre : (valoresInput[inputKey] || `{${inputKey}}`)
-      mensajeFormateado = mensajeFormateado.split(`{${inputKey}}`).join(valor)
-      
+    const mensajesFormateados = mensajes.map(m => {
+      let mensajeFormateado = m.message
+      m.inputref.forEach(inputKey => {
+
+        const valor = inputKey === 'userName' ? globalInputs.nombre : (valoresInput[inputKey] || `{${inputKey}}`)
+        mensajeFormateado = mensajeFormateado.split(`{${inputKey}}`).join(valor)
+
+      })
+      return mensajeFormateado
     })
-    return mensajeFormateado
-  })
 
-  setMensajeFinal(mensajesFormateados.join('\n\n'))
-}, [codes, datosLegales, valoresInput, globalInputs])
+    setMensajeFinal(mensajesFormateados.join('\n\n'))
+  }, [codes, datosLegales, valoresInput, globalInputs])
 
-useEffect(() => {
-  generarMensajeFinal()
-}, [generarMensajeFinal])
+  useEffect(() => {
+    generarMensajeFinal()
+  }, [generarMensajeFinal])
 
   const renderizarInputs = () => {
     if (!datosLegales) return null
@@ -335,7 +491,20 @@ useEffect(() => {
     setMensajeFinal('');
     setValoresInput({});
     setCodes([]);
+    setStates({
+      s1: 0,
+      s2: 0,
+      s4: 0,
+      s5: 0,
+      s6: 0,
+      s8: 0,
+    });
   };
+
+
+
+
+
 
   return (
     <div className="p-2">
@@ -569,10 +738,10 @@ useEffect(() => {
             </div>
 
           </>
-        )}  
+        )}
 
         {step <= 8 && (
-          <div className="hidden">
+          <div >
             <h2 className="text-lg font-bold text-center">Códigos seleccionados:</h2>
             <Textarea
               className="w-full h-5 p-2 bg-black border-2 border-red-500 text-red-500 rounded"
@@ -597,7 +766,7 @@ useEffect(() => {
 
 
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }  
