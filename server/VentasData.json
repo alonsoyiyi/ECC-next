@@ -194,6 +194,10 @@
                     "label": "Pago mensual"
                 },
                 {
+                    "key": "totalGearPrice",
+                    "label": "Precio total de equipo"
+                },
+                {
                     "key": "monthlyGearPlan",
                     "label": "Pago mensual plan + equipoy"
                 },
@@ -206,7 +210,7 @@
                     "label": "Nombre de supervisor"
                 }
             ],
-            "message": "TIPO DE ENTREGA: {cacType}\nVENTA CAC\nPDV A TRAMITAR: {cacName}\nNOMBRE: {customerName}\nDNI: {customerDocument}\nCORREO: {customerEmail}\nNUMERO A RENOVAR: {customerNumber}\nEQUIPO Y COLOR: {fullModelGear}\nPROTECCION MOVIL: {pmPrice}\nCLARO PUNTOS: {customerPoints}\nRENTAS: {advanceRent}\nFECHA DE RECOJO: {pickupDate}\nSEC: {secCode}\nPLAN ACTUAL: {prevCustomerPlan}\nPLAN OFRECIDO: {newCustomerPlan}\nCUOTA INICIAL: {firstPayment}\nCUOTA MENSUAL: {monthlyPayment}\nCARGO FIJO(PLAN Y CUOTA O SOLO PLAN SI ES AL CONTADO): {monthlyGearPlan}\nSN: {snCode}\nASESOR: {userName}\nSUPERVISOR: {manager}\nCALL CENTER: GEA"
+            "message": "TIPO DE ENTREGA: {cacType}\nVENTA CAC\nPDV A TRAMITAR: {cacName}\nNOMBRE: {customerName}\nDNI: {customerDocument}\nCORREO: {customerEmail}\nNUMERO A RENOVAR: {customerNumber}\nEQUIPO Y COLOR: {fullModelGear}\nPROTECCION MOVIL: {pmPrice}\nCLARO PUNTOS: {customerPoints}\nRENTAS: {advanceRent}\nFECHA DE RECOJO: {pickupDate}\nSEC: {secCode}\nPLAN ACTUAL: {prevCustomerPlan}\nPLAN OFRECIDO: {newCustomerPlan}\nCUOTA INICIAL: {firstPayment}\nCUOTA MENSUAL: {monthlyPayment}\nPRECIO TOTAL EQUIPO: {totalGearPrice}\nCARGO FIJO(PLAN Y CUOTA O SOLO PLAN SI ES AL CONTADO): {monthlyGearPlan}\nSN: {snCode}\nASESOR: {userName}\nSUPERVISOR: {manager}\nCALL CENTER: GEA"
         },
         "portaDelivery": {
             "label": "Poirtabilidad y alta delivery",
@@ -980,4 +984,5 @@
             "label": "GB del plan",
             "type": "text"
         }
-    }}
+    }
+}

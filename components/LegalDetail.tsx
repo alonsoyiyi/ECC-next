@@ -741,7 +741,7 @@ export default function LegalDetail({ globalInputs }: LegalDetailProps) {
         )}
 
         {step <= 8 && (
-          <div >
+          <div className="hidden">
             <h2 className="text-lg font-bold text-center">Códigos seleccionados:</h2>
             <Textarea
               className="w-full h-5 p-2 bg-black border-2 border-red-500 text-red-500 rounded"
