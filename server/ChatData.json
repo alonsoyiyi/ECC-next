@@ -52,7 +52,7 @@
                     "type": "text"
                 }
             ],
-            "message": "Perfecto, y dime, ¿tienes alguna marca de su agrado como: Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi? 🔍👀\n\nExcelente elección 🙌, ¿Y qué *características* te gustaría mejorar? Tal vez buscas mejor *cámara* 📷, más *RAM* 🧠 o más *memoria interna* 📲 o ¿Alguna otra *característica*?\n\nPerfecto, y dime,  ¿deseas seguir trabajando con la marca {customerBrand)? o prefieres evaluar otras marcas como Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi? 🔍👀\n\nExcelente elección 💰, ¿Cuál es el monto que tienes en mente para obtener tu *nuevo equipo*? _y con ello no excederme en tu presupuesto_ 🙌"
+            "message": "Perfecto, y dime, ¿tienes alguna marca de su agrado como: Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi? 🔍👀\n\nExcelente elección 🙌, ¿Y qué *características* te gustaría mejorar? Tal vez buscas mejor *cámara* 📷, más *RAM* 🧠 o más *memoria interna* 📲 o ¿Alguna otra *característica*?\n\nPerfecto, y dime,  ¿deseas seguir trabajando con la marca {customerBrand}? o prefieres evaluar otras marcas como Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi? 🔍👀\n\nExcelente elección 💰, ¿Cuál es el monto que tienes en mente para obtener tu *nuevo equipo*? _y con ello no excederme en tu presupuesto_ 🙌"
         },
         {
             "id": "9",

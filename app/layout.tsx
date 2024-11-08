@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { GlobalInputsProvider } from '@/components/GlobalInputsProvider'
+import { Toaster } from '@/components/ui/toaster'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({
         <div className="min-h-screen flex flex-col">
           <GlobalInputsProvider>
             {children}
+            <Toaster/>
           </GlobalInputsProvider>
         </div>
       </body>
