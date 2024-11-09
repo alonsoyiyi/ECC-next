@@ -52,7 +52,7 @@
                     "type": "text"
                 }
             ],
-            "message": "Perfecto, y dime, ¿tienes alguna marca de su agrado como: Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi? 🔍👀\n\nExcelente elección 🙌, ¿Y qué *características* te gustaría mejorar? Tal vez buscas mejor *cámara* 📷, más *RAM* 🧠 o más *memoria interna* 📲 o ¿Alguna otra *característica*?\n\nPerfecto, y dime,  ¿deseas seguir trabajando con la marca {customerBrand}? o prefieres evaluar otras marcas como Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi? 🔍👀\n\nExcelente elección 💰, ¿Cuál es el monto que tienes en mente para obtener tu *nuevo equipo*? _y con ello no excederme en tu presupuesto_ 🙌"
+            "message": "Perfecto, y dime, ¿tienes alguna marca de su agrado como: Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi? 🔍👀\n\nExcelente elección 🙌, ¿Y qué *características* te gustaría mejorar? Tal vez buscas mejor *cámara* 📷, más *RAM* 🧠, una *pantalla impresionante*📱 o más *memoria interna* 📲 o ¿Cuál de todas ellas prefieres?\n\nExcelente elección 🙌, ¿Y qué *tipo de uso* te gustaría darle a tu nuevo teléfono? Tal vez buscas *un equipo para fotos y videos* 📷, quizás *uno especialmente diseñado para jugar videojuegos * 🎮🧠, una *pantalla impresionante para ver películas *📱 o, por otro lado *para uso diario y trabajo*📲, ¿Qué uso le darás?\n\n Perfecto, y dime,  ¿deseas seguir trabajando con la marca {customerBrand}? o prefieres evaluar otras marcas como Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi? 🔍👀\n\nExcelente elección 💰, ¿Cuál es el monto que tienes en mente para obtener tu *nuevo equipo*? _y con ello no excederme en tu presupuesto_ 🙌"
         },
         {
             "id": "9",
@@ -1408,7 +1408,12 @@
         {
             "id": "50",
             "title": "Pre-Oferta",
-            "message": "Entiendo, personalmente te recomiendo este equipo que estoy más que seguro que cumplirá con todas tus expectativas🙌😎:"
+            "message": "Entiendo, personalmente te recomiendo este equipo que estoy más que seguro que cumplirá con todas tus expectativas🙌😎: \n\nEntiendo, considerando tus preferencias te recomiendo este equipo que estoy más que seguro que cumplirá con todas tus expectativas🙌😎: "
+        },
+        {
+            "id": "51",
+            "title": "Saludo adicional/temporal",
+            "message": "🔔 ¡Tenemos descuentos increíbles en equipos! 📱✨\n\n¡Hola, soy {userName} de Claro! Aprovecha las ofertas que tenemos para ti, ¡estoy seguro que te encantarán! 🤗\n\n¿En qué equipo estás interesado?👀"
         }
     ],
     "indice": [
@@ -1418,7 +1423,8 @@
                 "1",
                 "2",
                 "3",
-                "4"
+                "4",
+                "51"
             ]
         },
         {
