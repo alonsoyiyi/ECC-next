@@ -37,7 +37,7 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
     let pointDiscountText = '';
     const pointDiscount = parseFloat(allInputs.pointDiscount || '0');
     if (!isNaN(pointDiscount) && pointDiscount > 0) {
-      pointDiscountText = `💰 Descuento con Claro Puntos: S/ ${pointDiscount.toFixed(2)}`;
+      pointDiscountText = `\n💰 Descuento con Claro Puntos: S/ ${pointDiscount.toFixed(2)}`;
     }
     allInputs.pointDiscountText = pointDiscountText;
 

@@ -165,7 +165,7 @@
                 "offerPlan",
                 "gbPlan"
             ],
-            "message": "A continuación, le indicaremos las características principales del plan solicitado:\nMigración de la línea móvil número {customerNumber} con plan postpago {customerPlan} al plan postpago Max {planPrice} por un cargo fijo mensual de S/. {planPrice} incluido IGV que será facturado por mes adelantado. El tráfico y los consumos adicionales serán facturados por mes vencido. La migración al plan contratado se realizará el {changeDate}. (Explicar prorrateo solo en caso el cliente solicite el cambio inmediato de plan)\nEl plan postpago {offerPlan} {planPrice} incluye lo siguiente:\n-{gbPlan} en alta velocidad.\n-Minutos ilimitados a nivel nacional.\n-Mensajes de texto a nivel nacional."
+            "message": "A continuación, le indicaremos las características principales del plan solicitado:\nMigración de la línea móvil número {customerNumber} con plan postpago {customerPlan} al plan postpago Max {planPrice} por un cargo fijo mensual de S/. {planPrice} incluido IGV que será facturado por mes adelantado. El tráfico y los consumos adicionales serán facturados por mes vencido. La migración al plan contratado se realizará el {changeDate}. (Explicar prorrateo solo en caso el cliente solicite el cambio inmediato de plan)\nEl plan postpago Max de {planPrice} incluye lo siguiente:\n-{gbPlan}GB en alta velocidad.\n-Minutos ilimitados a nivel nacional.\n-Mensajes de texto a nivel nacional."
         },
         {
             "id": "16",
@@ -178,7 +178,7 @@
                 "offerPlan",
                 "gbPlan"
             ],
-            "message": "A continuación, le indicaremos las características principales del plan solicitado:\nMigración de la línea móvil número {customerNumber} con plan postpago {customerPlan} al plan postpago Max {planPrice} por un cargo fijo mensual de S/. {planPrice} incluido IGV que será facturado por mes adelantado. El tráfico y los consumos adicionales serán facturados por mes vencido. La migración al plan contratado se realizará el {changeDate}. (Explicar prorrateo solo en caso el cliente solicite el cambio inmediato de plan)\nEl plan postpago {offerPlan} {planPrice} incluye lo siguiente:\n-{gbPlan} en alta velocidad.\n-Minutos ilimitados a nivel nacional.\n-Mensajes de texto a nivel nacional.\nLa velocidad mínima garantizada asciende al 40% de la velocidad máxima de descarga ofrecida en su plan, teniendo en cuenta que la velocidad máxima de descarga es 10 Mbps y mínima asegurada de descarga 4 Mbps, mientras que la velocidad máxima de carga es 2 Mbps y mínima asegurada de carga es 1 Mbps."
+            "message": "A continuación, le indicaremos las características principales del plan solicitado:\nMigración de la línea móvil número {customerNumber} con plan postpago {customerPlan} al plan postpago Max Ilimitado {planPrice} por un cargo fijo mensual de S/. {planPrice} incluido IGV que será facturado por mes adelantado. El tráfico y los consumos adicionales serán facturados por mes vencido. La migración al plan contratado se realizará el {changeDate}. (Explicar prorrateo solo en caso el cliente solicite el cambio inmediato de plan)\nEl plan postpago Max Ilimitado de {planPrice} incluye lo siguiente:\n-{gbPlan}GB en alta velocidad.\n-Minutos ilimitados a nivel nacional.\n-Mensajes de texto a nivel nacional.\nLa velocidad mínima garantizada asciende al 40% de la velocidad máxima de descarga ofrecida en su plan, teniendo en cuenta que la velocidad máxima de descarga es 10 Mbps y mínima asegurada de descarga 4 Mbps, mientras que la velocidad máxima de carga es 2 Mbps y mínima asegurada de carga es 1 Mbps."
         },
         {
             "id": "17",
@@ -296,7 +296,7 @@
         },
         {
             "id": "26",
-            "label": "Delivery equipo a cuotas sin inicial accesorio cuotas con inicia",
+            "label": "Delivery equipo a cuotas sin inicial accesorio cuotas con inicial",
             "inputref": [
                 "deliveryDay",
                 "deliveryMonth",
@@ -375,7 +375,7 @@
         },
         {
             "id": "32",
-            "label": "Recojo equipo al contado acceosrio al contado",
+            "label": "Recojo equipo al contado accesorio al contado",
             "inputref": [
                 "storeAdress",
                 "storeHours"
@@ -728,8 +728,126 @@
             "type": "text"
         },
         "newCustomerPlan": {
-            "label": "Nuevo plan del cliente",
-            "type": "text"
+            "label": "Plan ofrecido al cliente",
+            "type": "select",
+            "options": [
+                {
+                    "value": "Max 29.90",
+                    "label": "Plan 29.90"
+                },
+                {
+                    "value": "Max 30.90",
+                    "label": "Plan 30.90"
+                },
+                {
+                    "value": "Max 31.90",
+                    "label": "Plan 31.90"
+                },
+                {
+                    "value": "Max 39.90",
+                    "label": "Plan 39.90"
+                },
+                {
+                    "value": "Max 40.90",
+                    "label": "Plan 40.90"
+                },
+                {
+                    "value": "Max 42.90",
+                    "label": "Plan 42.90"
+                },
+                {
+                    "value": "Max 49.90",
+                    "label": "Plan 49.90"
+                },
+                {
+                    "value": "Max 51.90",
+                    "label": "Plan 51.90"
+                },
+                {
+                    "value": "Max 53.90",
+                    "label": "Plan 53.90"
+                },
+                {
+                    "value": "Max 55.90",
+                    "label": "Plan 55.90"
+                },
+                {
+                    "value": "Max 57.90",
+                    "label": "Plan 57.90"
+                },
+                {
+                    "value": "Max 60.90",
+                    "label": "Plan 60.90"
+                },
+                {
+                    "value": "Max Ilimitado 69.90",
+                    "label": "Plan 69.90"
+                },
+                {
+                    "value": "Max Ilimitado 72.90",
+                    "label": "Plan 72.90"
+                },
+                {
+                    "value": "Max Ilimitado 74.90",
+                    "label": "Plan 74.90"
+                },
+                {
+                    "value": "Max Ilimitado 79.90",
+                    "label": "Plan 79.90"
+                },
+                {
+                    "value": "Max Ilimitado 82.90",
+                    "label": "Plan 82.90"
+                },
+                {
+                    "value": "Max Ilimitado 84.90",
+                    "label": "Plan 84.90"
+                },
+                {
+                    "value": "Max Ilimitado 93.90",
+                    "label": "Plan 93.90"
+                },
+                {
+                    "value": "Max Ilimitado 95.90",
+                    "label": "Plan 95.90"
+                },
+                {
+                    "value": "Max Ilimitado 100.90",
+                    "label": "Plan 100.90"
+                },
+                {
+                    "value": "Max Ilimitado 109.90",
+                    "label": "Plan 109.90"
+                },
+                {
+                    "value": "Max Ilimitado 114.90",
+                    "label": "Plan 114.90"
+                },
+                {
+                    "value": "Max Ilimitado 159.90",
+                    "label": "Plan 159.90"
+                },
+                {
+                    "value": "Max Ilimitado 164.90",
+                    "label": "Plan 164.90"
+                },
+                {
+                    "value": "Max Ilimitado 189.90",
+                    "label": "Plan 189.90"
+                },
+                {
+                    "value": "Max Ilimitado 195.90",
+                    "label": "Plan 195.90"
+                },
+                {
+                    "value": "Max Ilimitado 289.90",
+                    "label": "Plan 289.90"
+                },
+                {
+                    "value": "Max Ilimitado 295.90",
+                    "label": "Plan 295.90"
+                }
+            ]
         },
         "gearPrice": {
             "label": "Precio de equipo",
@@ -754,11 +872,11 @@
             ]
         },
         "monthlyPayment": {
-            "label": "Pago mensual",
+            "label": "Pago mensual del equipo",
             "type": "text"
         },
         "firstPayment": {
-            "label": "Pago inicial",
+            "label": "Pago inicial del equipo",
             "type": "text"
         },
         "totalGearPrice": {
@@ -828,17 +946,25 @@
                     "label": "Sin beneficios adicionales"
                 },
                 {
-                    "value": " y Claro Music",
-                    "label": "Claro Music"
+                    "value": " y Claro Video",
+                    "label": "Claro Video"
                 },
                 {
-                    "value": ", Claro Music y Claro Drive",
-                    "label": "Claro Music y Claro Drive"
+                    "value": ", Claro Video y Claro Drive",
+                    "label": "Claro Video y Claro Drive"
+                },
+                {
+                    "value": ", Claro Video y Claro Music",
+                    "label": "Claro Video y Claro Music"
+                },
+                {
+                    "value": ", Claro Video, Claro Music y Claro Drive",
+                    "label": "Claro Video, Claro Music y Claro Drive"
                 }
             ]
         },
         "customerPlan": {
-            "label": "Plan del Cliente",
+            "label": "Plan ACTUAL del Cliente",
             "type": "select",
             "options": [
                 {
@@ -972,7 +1098,7 @@
             ]
         },
         "planPrice": {
-            "label": "Precio del plan",
+            "label": "Precio del NUEVO plan",
             "type": "select",
             "options": [
                 {
@@ -1095,21 +1221,11 @@
         },
         "changeDate": {
             "label": "Fecha de cambio Plan",
-            "type": "text"
+            "type": "date"
         },
-        "offerPlan": {
-            "label": "Plan ofrecido",
-            "type": "select",
-            "options": [
-                {
-                    "value": "Max",
-                    "label": "Max"
-                },
-                {
-                    "value": "Max Ilimitado",
-                    "label": "Max Ilimitado"
-                }
-            ]
+        "storeAdress": {
+            "label": "Dirección de la tienda",
+            "type": "text"
         },
         "gbPlan": {
             "label": "GB del plan",
@@ -1187,7 +1303,7 @@
             "label": "Dirección de entrega",
             "type": "text"
         },
-        "customerDistric": {
+        "customerDistrict": {
             "label": "Distrito de entrega",
             "type": "text"
         },

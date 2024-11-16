@@ -52,7 +52,7 @@
                     "type": "text"
                 }
             ],
-            "message": "Perfecto, y dime, ¿tienes alguna marca de su agrado como: Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi? 🔍👀\n\nExcelente elección 🙌, ¿Y qué *características* te gustaría mejorar? Tal vez buscas mejor *cámara* 📷, más *RAM* 🧠, una *pantalla impresionante*📱 o más *memoria interna* 📲 o ¿Cuál de todas ellas prefieres?\n\nExcelente elección 🙌, ¿Y qué *tipo de uso* te gustaría darle a tu nuevo teléfono? Tal vez buscas *un equipo para fotos y videos* 📷, quizás *uno especialmente diseñado para jugar videojuegos * 🎮🧠, una *pantalla impresionante para ver películas *📱 o, por otro lado *para uso diario y trabajo*📲, ¿Qué uso le darás?\n\n Perfecto, y dime,  ¿deseas seguir trabajando con la marca {customerBrand}? o prefieres evaluar otras marcas como Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi? 🔍👀\n\nExcelente elección 💰, ¿Cuál es el monto que tienes en mente para obtener tu *nuevo equipo*? _y con ello no excederme en tu presupuesto_ 🙌"
+            "message": "Perfecto, y dime, ¿tienes alguna marca de su agrado como: Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi? 🔍👀\n\nExcelente elección 🙌, ¿Y qué *características* te gustaría mejorar? Tal vez buscas mejor *cámara* 📷, más *RAM* 🧠, una *pantalla impresionante*📱 o más *memoria interna* 📲 o ¿Cuál de todas ellas prefieres?\n\nExcelente elección 🙌, ¿Y qué *tipo de uso* te gustaría darle a tu nuevo teléfono? Tal vez buscas *un equipo para fotos y videos* 📷, quizás *uno especialmente diseñado para jugar videojuegos * 🎮🧠, una *pantalla impresionante para ver películas *📱 o, por otro lado *para uso diario y trabajo*📲, ¿Qué uso le darás?\n\n Perfecto, y dime,  ¿deseas seguir trabajando con la marca {customerBrand}? o prefieres evaluar otras marcas como Honor, Samsung, Iphone, Motorola, ZTE, VIVO, OPPO o Xiaomi? 🔍👀"
         },
         {
             "id": "9",
@@ -64,7 +64,7 @@
                     "type": "text"
                 }
             ],
-            "message": "Gracias, *{customerName}* coméntame:\n\n💰 ¿Cuál es el monto que tienes en mente para obtener tu *nuevo equipo*? _y con ello no excederme en tu presupuesto_ 🙌.\n\n_Recuerda que un equipo de calidad puede ser una inversión muy conveniente a largo plazo._"
+            "message": "Excelente elección 💰, ¿Cuál es el monto que tienes en mente para obtener tu *nuevo equipo*? _y con ello no excederme en tu presupuesto_ 🙌\n\n_Recuerda que un equipo de calidad puede ser una inversión muy conveniente a largo plazo._"
         },
         {
             "id": "10",
@@ -94,11 +94,23 @@
                     "options": [
                         {
                             "value": "Apple iPhone",
-                            "label": "iPhone"
+                            "label": "Apple iPhone"
                         },
                         {
-                            "value": "Samsung Galaxy",
-                            "label": "Samsung Galaxy"
+                            "value": "Honor",
+                            "label": "Honor"
+                        },
+                        {
+                            "value": "Honor Magic",
+                            "label": "Honor Magic"
+                        },
+                        {
+                            "value": "Motorola Moto",
+                            "label": "Motorola Moto"
+                        },
+                        {
+                            "value": "Motorola EDGE",
+                            "label": "Motorola EDGE"
                         },
                         {
                             "value": "Oppo",
@@ -107,6 +119,14 @@
                         {
                             "value": "Oppo Reno",
                             "label": "Oppo Reno"
+                        },
+                        {
+                            "value": "Samsung Galaxy",
+                            "label": "Samsung Galaxy"
+                        },
+                        {
+                            "value": "Vivo",
+                            "label": "Vivo"
                         },
                         {
                             "value": "Xiaomi",
@@ -123,27 +143,8 @@
                         {
                             "value": "ZTE Nubia",
                             "label": "ZTE Nubia"
-                        },
-                        {
-                            "value": "Vivo",
-                            "label": "Vivo"
-                        },
-                        {
-                            "value": "Motorola Moto",
-                            "label": "Motorola Moto"
-                        },
-                        {
-                            "value": "Motorola EDGE",
-                            "label": "Motorola EDGE"
-                        },
-                        {
-                            "value": "Honor",
-                            "label": "Honor"
-                        },
-                        {
-                            "value": "Honor Magic",
-                            "label": "Honor Magic"
                         }
+                        
                     ]
                 },
                 {
@@ -364,7 +365,7 @@
                     "type": "text"
                 }
             ],
-            "message": "Gracias por tu espera, Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago en cuotas*:\n📱Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n📌 Cuota inicial: S/. {firstPayment}\n🧾 Cuota mensual: S/. {monthlyPayment}\n💳 Financiamiento:{financing} cuotas\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📹 ¡Claro Video Gratis por 24 meses!\n💰 Pago total mensual: S/.{totalPlanGear} (Plan + cuota mensual)\n💲 Precio Total Equipo: S/. {totalGearPrice}"
+            "message": "Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago en cuotas*:\n📱Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n📌 Cuota inicial: S/. {firstPayment}\n🧾 Cuota mensual: S/. {monthlyPayment}\n💳 Financiamiento:{financing} cuotas\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📹 ¡Claro Video Gratis por 24 meses!\n💰 Pago total mensual: S/.{totalPlanGear} (Plan + cuota mensual)\n💲 Precio Total Equipo: S/. {totalGearPrice}"
         },
         {
             "id": "13",
@@ -377,11 +378,23 @@
                     "options": [
                         {
                             "value": "Apple iPhone",
-                            "label": "iPhone"
+                            "label": "Apple iPhone"
                         },
                         {
-                            "value": "Samsung Galaxy",
-                            "label": "Samsung Galaxy"
+                            "value": "Honor",
+                            "label": "Honor"
+                        },
+                        {
+                            "value": "Honor Magic",
+                            "label": "Honor Magic"
+                        },
+                        {
+                            "value": "Motorola Moto",
+                            "label": "Motorola Moto"
+                        },
+                        {
+                            "value": "Motorola EDGE",
+                            "label": "Motorola EDGE"
                         },
                         {
                             "value": "Oppo",
@@ -390,6 +403,14 @@
                         {
                             "value": "Oppo Reno",
                             "label": "Oppo Reno"
+                        },
+                        {
+                            "value": "Samsung Galaxy",
+                            "label": "Samsung Galaxy"
+                        },
+                        {
+                            "value": "Vivo",
+                            "label": "Vivo"
                         },
                         {
                             "value": "Xiaomi",
@@ -406,27 +427,8 @@
                         {
                             "value": "ZTE Nubia",
                             "label": "ZTE Nubia"
-                        },
-                        {
-                            "value": "Vivo",
-                            "label": "Vivo"
-                        },
-                        {
-                            "value": "Motorola Moto",
-                            "label": "Motorola Moto"
-                        },
-                        {
-                            "value": "Motorola EDGE",
-                            "label": "Motorola EDGE"
-                        },
-                        {
-                            "value": "Honor",
-                            "label": "Honor"
-                        },
-                        {
-                            "value": "Honor Magic",
-                            "label": "Honor Magic"
                         }
+                        
                     ]
                 },
                 {
@@ -622,7 +624,7 @@
                     ]
                 }
             ],
-            "message": "Gracias por tu espera, Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago al contado*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {totalGearPrice} *(Único pago)*\n{pointDiscountText}\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
+            "message": "Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago al contado*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {totalGearPrice} *(Único pago)*{pointDiscountText}\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
         },
         {
             "id": "14",
@@ -760,7 +762,7 @@
                     "type": "text"
                 }
             ],
-            "message": "El equipo te sale a inicial 0!!!😱😱 ¿Te lo mandamos a casa o lo recoges en tienda?\n\nPrecio promocional por hoy martes 22/10 😱😱 ¿Te lo mandamos a casa o lo recoges en tienda? 👀\n\nDe acuerdo a la evaluación realizada en nuestro sistema actualmente solo puedes renovar con modalidad al contado, sin embargo, si tienes tarjeta de crédito podemos hacer un financiamiento hasta 24 cuotas sin intereses. ¿Tienes alguna tarjeta de crédito?🙌👀\n\nDe acuerdo a la evaluación realizada en nuestro sistema actualmente solo puedes renovar con modalidad al contado,sin embargo, te comento que tenemos convenio con los siguientes bancos si deseas adquirir un equipo en cuotas sin intereses con tarjeta de crédito:\n🔴 Scotiabank: Hasta 36 cuotas sin intereses.\n🟢Interbank: Hasta 24 cuotas sin intereses.\n🔵 BCP: Hasta 24 cuotas sin intereses.\n🟡 BBVA: Hasta 24 cuotas sin intereses.\n🟠Financiera Oh: Hasta 18 cuotas sin intereses.\n🟣Cencosud: Para 12 y 18 cuotas sin intereses.\n🟤Diners: Hasta 24 cuotas sin intereses.\nO con cualquier otra tarjeta de crédito de tu preferencia consultando con tu banco sobre los intereses. ¿Qué tarjeta de crédito cuentas para poder evaluarte? ✍\n\n*{customerName} * 👋✨ El *precio especial* que te estamos otorgando al *contado* será un *pago único* y lo mejor es que lo podrás financiar *en cuotas sin intereses* 🤩💰 *con las tarjetas de crédito ¡BBVA, BCP, Cencosud, Diners Club, Financiera OH, Interbank o Scotiabank! * 🙌💳 (equipos seleccionados)\nPara verificar si cumples con los requisitos de esta campaña de cuotas sin intereses 🥳 coméntame ¿tienes tarjeta de crédito de los bancos mencionados?"
+            "message": "El equipo te sale a inicial 0!!!😱😱 ¿Te lo mandamos a casa o lo recoges en tienda? 👀\n\nPrecio promocional por hoy martes 22/10 😱😱 ¿Te lo mandamos a casa o lo recoges en tienda? 👀\n\nDe acuerdo a la evaluación realizada en nuestro sistema actualmente solo puedes renovar con modalidad al contado, sin embargo, si tienes tarjeta de crédito podemos hacer un financiamiento hasta 24 cuotas sin intereses. ¿Tienes alguna tarjeta de crédito?🙌👀\n\nDe acuerdo a la evaluación realizada en nuestro sistema actualmente solo puedes renovar con modalidad al contado,sin embargo, te comento que tenemos convenio con los siguientes bancos si deseas adquirir un equipo en cuotas sin intereses con tarjeta de crédito:\n🔴 Scotiabank: Hasta 36 cuotas sin intereses.\n🟢Interbank: Hasta 24 cuotas sin intereses.\n🔵 BCP: Hasta 24 cuotas sin intereses.\n🟡 BBVA: Hasta 24 cuotas sin intereses.\n🟠Financiera Oh: Hasta 18 cuotas sin intereses.\n🟣Cencosud: Para 12 y 18 cuotas sin intereses.\n🟤Diners: Hasta 24 cuotas sin intereses.\nO con cualquier otra tarjeta de crédito de tu preferencia consultando con tu banco sobre los intereses. ¿Qué tarjeta de crédito cuentas para poder evaluarte? ✍\n\n*{customerName} * 👋✨ El *precio especial* que te estamos otorgando al *contado* será un *pago único* y lo mejor es que lo podrás financiar *en cuotas sin intereses* 🤩💰 *con las tarjetas de crédito ¡BBVA, BCP, Cencosud, Diners Club, Financiera OH, Interbank o Scotiabank! * 🙌💳 (equipos seleccionados)\nPara verificar si cumples con los requisitos de esta campaña de cuotas sin intereses 🥳 coméntame ¿tienes tarjeta de crédito de los bancos mencionados?"
         },
         {
             "id": "24",
@@ -1163,11 +1165,23 @@
                     "options": [
                         {
                             "value": "Apple iPhone",
-                            "label": "iPhone"
+                            "label": "Apple iPhone"
                         },
                         {
-                            "value": "Samsung Galaxy",
-                            "label": "Samsung Galaxy"
+                            "value": "Honor",
+                            "label": "Honor"
+                        },
+                        {
+                            "value": "Honor Magic",
+                            "label": "Honor Magic"
+                        },
+                        {
+                            "value": "Motorola Moto",
+                            "label": "Motorola Moto"
+                        },
+                        {
+                            "value": "Motorola EDGE",
+                            "label": "Motorola EDGE"
                         },
                         {
                             "value": "Oppo",
@@ -1176,6 +1190,14 @@
                         {
                             "value": "Oppo Reno",
                             "label": "Oppo Reno"
+                        },
+                        {
+                            "value": "Samsung Galaxy",
+                            "label": "Samsung Galaxy"
+                        },
+                        {
+                            "value": "Vivo",
+                            "label": "Vivo"
                         },
                         {
                             "value": "Xiaomi",
@@ -1192,27 +1214,8 @@
                         {
                             "value": "ZTE Nubia",
                             "label": "ZTE Nubia"
-                        },
-                        {
-                            "value": "Vivo",
-                            "label": "Vivo"
-                        },
-                        {
-                            "value": "Motorola Moto",
-                            "label": "Motorola Moto"
-                        },
-                        {
-                            "value": "Motorola EDGE",
-                            "label": "Motorola EDGE"
-                        },
-                        {
-                            "value": "Honor",
-                            "label": "Honor"
-                        },
-                        {
-                            "value": "Honor Magic",
-                            "label": "Honor Magic"
                         }
+                        
                     ]
                 },
                 {
@@ -1403,12 +1406,12 @@
                     ]
                 }
             ],
-            "message": "Gracias por tu espera, Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago en cuotas sin intereses con {bankName}*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {totalGearPrice} *(Pago total divisible en cuotas)*\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
+            "message": "Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago en cuotas sin intereses con {bankName}*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {totalGearPrice} *(Pago total divisible en cuotas)*\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
         },
         {
             "id": "50",
             "title": "Pre-Oferta",
-            "message": "Entiendo, personalmente te recomiendo este equipo que estoy más que seguro que cumplirá con todas tus expectativas🙌😎: \n\nEntiendo, considerando tus preferencias te recomiendo este equipo que estoy más que seguro que cumplirá con todas tus expectativas🙌😎: "
+            "message": "Gracias por tu espera✨, entiendo, personalmente te recomiendo este equipo que estoy más que seguro que cumplirá con todas tus expectativas🙌😎: \n\nGracias por tu espera✨, entiendo, considerando tus preferencias te recomiendo este equipo que estoy más que seguro que cumplirá con todas tus expectativas🙌😎: "
         },
         {
             "id": "51",
