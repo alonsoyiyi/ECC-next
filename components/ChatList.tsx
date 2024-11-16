@@ -2,18 +2,21 @@
 
 import React, { useState, useEffect } from 'react'
 import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
 import { ChatData, ChatDataResponse } from '@/types/chatTypes'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 interface ChatListProps {
   onSelectChat: (chat: ChatData) => void;
+  onSearch: (searchTerm: string) => void;
 }
 
-export default function ChatList({ onSelectChat }: ChatListProps) {
+export default function ChatList({ onSelectChat, onSearch }: ChatListProps) {
   const [chatData, setChatData] = useState<ChatDataResponse | null>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [selectedChatId, setSelectedChatId] = useState<string | null>(null) // Estado para el chat seleccionado
+  const [selectedChatId, setSelectedChatId] = useState<string | null>(null)
+  const [searchTerm, setSearchTerm] = useState('')
 
   useEffect(() => {
     async function fetchChats() {
@@ -31,13 +34,29 @@ export default function ChatList({ onSelectChat }: ChatListProps) {
     fetchChats()
   }, [])
 
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const term = e.target.value
+    setSearchTerm(term)
+    onSearch(term)
+  }
+
   if (isLoading) return <div>Cargando...</div>
   if (error) return <div>Error: {error}</div>
   if (!chatData) return <div>No hay datos disponibles</div>
 
   return (
     <div className="space-y-2">
-      <h2 className="text-xl font-bold mb-4">Chats Disponibles</h2>
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-xl font-bold">Chats Disponibles</h2>
+        <Input
+  type="text"
+  placeholder="Buscar chats..."
+  value={searchTerm}
+  onChange={handleSearch}
+  className="w-48 bg-black text-white placeholder-gray-400 border border-gray-600 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-red-500"
+/>
+
+      </div>
       <Accordion type="single" collapsible className="w-full">
         {chatData.indice.map((section, index) => (
           <AccordionItem key={index} value={`section-${index}`}>
@@ -52,12 +71,12 @@ export default function ChatList({ onSelectChat }: ChatListProps) {
                       key={chatId}
                       onClick={() => {
                         onSelectChat(chat)
-                        setSelectedChatId(chatId) // Actualiza el chat seleccionado
+                        setSelectedChatId(chatId)
                       }}
                       variant="ghost"
                       className={`w-full justify-start text-left text-sm py-1 h-auto ${
                         selectedChatId === chatId ? 'bg-red-500 text-white' : ''
-                      }`} // Clase condicional para el fondo rojo
+                      }`}
                     >
                       {chat.title}
                     </Button>
