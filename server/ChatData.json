@@ -94,11 +94,23 @@
                     "options": [
                         {
                             "value": "Apple iPhone",
-                            "label": "iPhone"
+                            "label": "Apple iPhone"
                         },
                         {
-                            "value": "Samsung Galaxy",
-                            "label": "Samsung Galaxy"
+                            "value": "Honor",
+                            "label": "Honor"
+                        },
+                        {
+                            "value": "Honor Magic",
+                            "label": "Honor Magic"
+                        },
+                        {
+                            "value": "Motorola Moto",
+                            "label": "Motorola Moto"
+                        },
+                        {
+                            "value": "Motorola EDGE",
+                            "label": "Motorola EDGE"
                         },
                         {
                             "value": "Oppo",
@@ -107,6 +119,14 @@
                         {
                             "value": "Oppo Reno",
                             "label": "Oppo Reno"
+                        },
+                        {
+                            "value": "Samsung Galaxy",
+                            "label": "Samsung Galaxy"
+                        },
+                        {
+                            "value": "Vivo",
+                            "label": "Vivo"
                         },
                         {
                             "value": "Xiaomi",
@@ -123,27 +143,8 @@
                         {
                             "value": "ZTE Nubia",
                             "label": "ZTE Nubia"
-                        },
-                        {
-                            "value": "Vivo",
-                            "label": "Vivo"
-                        },
-                        {
-                            "value": "Motorola Moto",
-                            "label": "Motorola Moto"
-                        },
-                        {
-                            "value": "Motorola EDGE",
-                            "label": "Motorola EDGE"
-                        },
-                        {
-                            "value": "Honor",
-                            "label": "Honor"
-                        },
-                        {
-                            "value": "Honor Magic",
-                            "label": "Honor Magic"
                         }
+                        
                     ]
                 },
                 {
@@ -377,11 +378,23 @@
                     "options": [
                         {
                             "value": "Apple iPhone",
-                            "label": "iPhone"
+                            "label": "Apple iPhone"
                         },
                         {
-                            "value": "Samsung Galaxy",
-                            "label": "Samsung Galaxy"
+                            "value": "Honor",
+                            "label": "Honor"
+                        },
+                        {
+                            "value": "Honor Magic",
+                            "label": "Honor Magic"
+                        },
+                        {
+                            "value": "Motorola Moto",
+                            "label": "Motorola Moto"
+                        },
+                        {
+                            "value": "Motorola EDGE",
+                            "label": "Motorola EDGE"
                         },
                         {
                             "value": "Oppo",
@@ -390,6 +403,14 @@
                         {
                             "value": "Oppo Reno",
                             "label": "Oppo Reno"
+                        },
+                        {
+                            "value": "Samsung Galaxy",
+                            "label": "Samsung Galaxy"
+                        },
+                        {
+                            "value": "Vivo",
+                            "label": "Vivo"
                         },
                         {
                             "value": "Xiaomi",
@@ -406,27 +427,8 @@
                         {
                             "value": "ZTE Nubia",
                             "label": "ZTE Nubia"
-                        },
-                        {
-                            "value": "Vivo",
-                            "label": "Vivo"
-                        },
-                        {
-                            "value": "Motorola Moto",
-                            "label": "Motorola Moto"
-                        },
-                        {
-                            "value": "Motorola EDGE",
-                            "label": "Motorola EDGE"
-                        },
-                        {
-                            "value": "Honor",
-                            "label": "Honor"
-                        },
-                        {
-                            "value": "Honor Magic",
-                            "label": "Honor Magic"
                         }
+                        
                     ]
                 },
                 {
@@ -622,7 +624,7 @@
                     ]
                 }
             ],
-            "message": "Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago al contado*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {totalGearPrice} *(Único pago)*\n{pointDiscountText}\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
+            "message": "Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago al contado*\n😃 Puedes llevarte el equipo de la siguiente manera:\n📱Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n💲 Pago al contado: S/ {totalGearPrice} *(Único pago)*{pointDiscountText}\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📄 Contrato: 18 meses\n📹 ¡Claro Video Gratis por 24 meses!"
         },
         {
             "id": "14",
@@ -1163,11 +1165,23 @@
                     "options": [
                         {
                             "value": "Apple iPhone",
-                            "label": "iPhone"
+                            "label": "Apple iPhone"
                         },
                         {
-                            "value": "Samsung Galaxy",
-                            "label": "Samsung Galaxy"
+                            "value": "Honor",
+                            "label": "Honor"
+                        },
+                        {
+                            "value": "Honor Magic",
+                            "label": "Honor Magic"
+                        },
+                        {
+                            "value": "Motorola Moto",
+                            "label": "Motorola Moto"
+                        },
+                        {
+                            "value": "Motorola EDGE",
+                            "label": "Motorola EDGE"
                         },
                         {
                             "value": "Oppo",
@@ -1176,6 +1190,14 @@
                         {
                             "value": "Oppo Reno",
                             "label": "Oppo Reno"
+                        },
+                        {
+                            "value": "Samsung Galaxy",
+                            "label": "Samsung Galaxy"
+                        },
+                        {
+                            "value": "Vivo",
+                            "label": "Vivo"
                         },
                         {
                             "value": "Xiaomi",
@@ -1192,27 +1214,8 @@
                         {
                             "value": "ZTE Nubia",
                             "label": "ZTE Nubia"
-                        },
-                        {
-                            "value": "Vivo",
-                            "label": "Vivo"
-                        },
-                        {
-                            "value": "Motorola Moto",
-                            "label": "Motorola Moto"
-                        },
-                        {
-                            "value": "Motorola EDGE",
-                            "label": "Motorola EDGE"
-                        },
-                        {
-                            "value": "Honor",
-                            "label": "Honor"
-                        },
-                        {
-                            "value": "Honor Magic",
-                            "label": "Honor Magic"
                         }
+                        
                     ]
                 },
                 {
