@@ -9,13 +9,16 @@ import { ChatData } from '@/types/chatTypes';
 import { GlobalInputs } from '@/types/globalTypes';
 import Footer from "@/components/Footer";
 import { useToast } from "@/hooks/use-toast"
+import { Card, CardContent } from "@/components/ui/card"
 
 type ChatDetailProps = {
   selectedChat: ChatData | null;
   globalInputs: GlobalInputs;
+  searchResults: ChatData[];
+  onSelectSearchResult: (chat: ChatData) => void;
 };
 
-export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailProps) {
+export default function ChatDetail({ selectedChat, globalInputs, searchResults, onSelectSearchResult }: ChatDetailProps) {
   const [localInputs, setLocalInputs] = useState<Record<string, string>>({});
   const [finalMessage, setFinalMessage] = useState('');
   const { toast } = useToast();
@@ -85,18 +88,33 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
     });
   };
 
+  if (searchResults.length > 0) {
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {searchResults.map((chat) => (
+          <Card key={chat.id} className="cursor-pointer hover:bg-gray-100" onClick={() => onSelectSearchResult(chat)}>
+            <CardContent className="p-4">
+              <h3 className="font-bold mb-2">{chat.title}</h3>
+              <p className="text-sm text-gray-600">{chat.message.substring(0, 100)}...</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    );
+  }
+
   if (!selectedChat) {
     return <div>Selecciona un chat para ver los detalles</div>;
   }
 
   return (
     <div>
-       <div className="flex items-center justify-between mb-4">
-    <h2 className="text-xl font-bold">{selectedChat.title}</h2>
-    <Button onClick={handleReset} variant="destructive">
-      Reiniciar
-    </Button>
-  </div>
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-xl font-bold">{selectedChat.title}</h2>
+        <Button onClick={handleReset} variant="destructive">
+          Reiniciar
+        </Button>
+      </div>
       {selectedChat.inputs && selectedChat.inputs.length > 0 && (
         <div className="grid grid-cols-2 gap-4 mb-4">
           {selectedChat.inputs.map((input) => (
@@ -112,20 +130,20 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
                 />
               ) : (
                 <Select
-                value={localInputs[input.id] || ''} // Aquí el Select recibe su valor de localInputs
-                onValueChange={(value) => handleInputChange(input.id, value)}
-              >
-                <SelectTrigger className="w-full text-sm h-8">
-                  <SelectValue placeholder={`Seleccione ${input.label ? input.label.toLowerCase() : ''}`} />
-                </SelectTrigger>
-                <SelectContent className="max-h-48 overflow-y-auto">
-                  {input.options?.map((option) => (
-                    <SelectItem key={option.value} value={option.value}>
-                      {option.label}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+                  value={localInputs[input.id] || ''}
+                  onValueChange={(value) => handleInputChange(input.id, value)}
+                >
+                  <SelectTrigger className="w-full text-sm h-8">
+                    <SelectValue placeholder={`Seleccione ${input.label ? input.label.toLowerCase() : ''}`} />
+                  </SelectTrigger>
+                  <SelectContent className="max-h-48 overflow-y-auto">
+                    {input.options?.map((option) => (
+                      <SelectItem key={option.value} value={option.value}>
+                        {option.label}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               )}
             </div>))}
         </div>)}
@@ -148,9 +166,6 @@ export default function ChatDetail({ selectedChat, globalInputs }: ChatDetailPro
         >
           Copiar mensaje
         </Button>
-        {/* <Button onClick={handleReset} variant="destructive">
-          Reiniciar
-        </Button> */}
       </div>
       <Footer />
     </div>
