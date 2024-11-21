@@ -10,56 +10,87 @@
                 "brand": "Apple",
                 "models": [
                     {
-                        "label": "Apple Iphone 13",
-                        "id": "AI13",
+                        "label": "Apple Iphone 13 128GB",
+                        "id": "AI13128",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "Apple Iphone 14",
-                        "id": "",
+                        "label": "Apple Iphone 14 128GB",
+                        "id": "AI14128",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "Apple Iphone 15",
-                        "id": "",
+                        "label": "Apple Iphone 15 128GB",
+                        "id": "AI15128",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "Apple Iphone 15 Pro",
-                        "id": "",
+                        "label": "Apple Iphone 15 Pro 128GB",
+                        "id": "AI15P128",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "Apple Iphone 15 Pro Max",
-                        "id": "",
+                        "label": "Apple Iphone 15 Pro Max 256GB",
+                        "id": "AI15PM256",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "Apple Iphone 16",
-                        "id": "",
+                        "label": "Apple Iphone 15 Pro Max 1TB",
+                        "id": "AI15PM1000",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "Apple Iphone 16 Plus",
-                        "id": "",
+                        "label": "Apple Iphone 16 128GB",
+                        "id": "AI16128",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "Apple Iphone 16 Pro",
-                        "id": "",
+                        "label": "Apple Iphone 16 256GB",
+                        "id": "AI16256",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "Apple Iphone 16 Pro Max",
-                        "id": "",
+                        "label": "Apple Iphone 16 Plus 128GB",
+                        "id": "AI16PL128",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Apple Iphone 16 Plus 256GB",
+                        "id": "AI16PL256",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Apple Iphone 16 Pro 128GB",
+                        "id": "AI16PR128",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Apple Iphone 16 Pro 256GB",
+                        "id": "AI16PR256",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Apple Iphone 16 Pro Max 256GB",
+                        "id": "AI16PM256",
+                        "specs": "",
+                        "img": ""
+                    }
+                    ,
+                    {
+                        "label": "Apple Iphone 16 Pro Max 1TB",
+                        "id": "AI16PM1000",
                         "specs": "",
                         "img": ""
                     }
@@ -411,49 +442,49 @@
                 "brand": "ZTE",
                 "models": [
                     {
-                        "label": "ZTE A54 128gb",
+                        "label": "ZTE A54 128GB",
                         "id": "",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "ZTE A35 64gb",
+                        "label": "ZTE A35 64GB",
                         "id": "",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "ZTE Nubia Focus 256gb",
+                        "label": "ZTE Nubia Focus 256GB",
                         "id": "",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "ZTE Nubia Music 256gb",
+                        "label": "ZTE Nubia Music 256GB",
                         "id": "",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "ZTE Nubia Neo 2 256gb",
+                        "label": "ZTE Nubia Neo 2 256GB",
                         "id": "",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "ZTE RedMagic 8s 256gb",
+                        "label": "ZTE RedMagic 8s 256GB",
                         "id": "",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "ZTE V50 Desing 256gb",
+                        "label": "ZTE V50 Desing 256GB",
                         "id": "",
                         "specs": "",
                         "img": ""
                     },
                     {
-                        "label": "ZTE V50 Vita 256gb",
+                        "label": "ZTE V50 Vita 256GB",
                         "id": "",
                         "specs": "",
                         "img": ""
