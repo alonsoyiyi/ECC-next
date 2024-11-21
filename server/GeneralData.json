@@ -3,12 +3,470 @@
         "label": "Todos los Planes",
         "message": "📈 Plan: S/. 29.90 🌐 10GB de internet para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 30.90 🌐 15GB de internet para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 31.90 🌐 16GB de internet para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 39.90 🌐 25GB de internet para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 40.90 🌐 28GB de internet para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 42.90 🌐 29GB de internet para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 49.90 🌐 35GB de internet para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 51.90 🌐 40GB de internet para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 53.90 🌐 45GB de internet para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 55.90 🌐 65GB de internet para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 57.90 🌐 56GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 60.90 🌐 53GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 69.90 🌐 95GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 72.90 🌐 100GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 74.90 🌐 102GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 79.90 🌐 105GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 82.90 🌐 110GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 84.90 🌐 111GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 93.90 🌐 115GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 95.90 🌐 130GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 100.90 🌐 135GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 109.90 🌐 140GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 114.90 🌐 150GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 159.90 🌐 160GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 164.90 🌐 170GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 189.90 🌐 180GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 195.90 🌐 190GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 289.90 🌐 190GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n📈 Plan: S/. 295.90 🌐 200GB de internet ilimitado para que navegues en \"alta velocidad\" 🤑 📞 llamadas y ✉ SMS nacionales ilimitados.\n\n* PLANES NETFLIX:\n95 = Plan 55.90 + Servicio Netflix\n115 = Plan 79.90 + Servicio Netflix\n145 = Plan 109.90 + Servicio Netflix"
     },
-    "equipos":{
-        "label":"Características de Equipos",
-        "message":"Próximamente"
+    "equipos": {
+        "label": "Características de Equipos",
+        "data": [
+            {
+                "brand": "Apple",
+                "models": [
+                    {
+                        "label": "Apple Iphone 13",
+                        "id": "AI13",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Apple Iphone 14",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Apple Iphone 15",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Apple Iphone 15 Pro",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Apple Iphone 15 Pro Max",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Apple Iphone 16",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Apple Iphone 16 Plus",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Apple Iphone 16 Pro",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Apple Iphone 16 Pro Max",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    }
+                ]
+            },
+            {
+                "brand": "Honor",
+                "models":[
+                    {
+                        "label": "Honor X5 Plus 64GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Honor X5B 128GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Honor X6B Plus 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Honor X7B 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Honor X8B 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Honor Magic 6 Lite 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Honor 200 Lite 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Honor 200 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Honor 200 Pro 512GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    }
+                ]
+            },
+            {
+                "brand": "Motorola",
+                "models": [
+                    {
+                        "label": "Moto E 40 Neo 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Moto Edge 50 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Moto Edge 50 Fusion 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Moto Edge 50 Pro 512GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Moto G54 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Moto G84 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Moto G04S 128GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Moto G04 128GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Moto G24 Power 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Moto G85 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "RAZR 50 512GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    }
+                ]
+            },
+            {
+                "brand": "Oppo",
+                "models": [
+                    {
+                        "label": "Oppo A40 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Oppo A58 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Oppo A40 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Oppo A60 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Oppo A78 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Oppo A79 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Oppo A80 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Oppo Reno 11F 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Oppo Reno 12F 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Oppo Reno 12F Harry Potter Edition 256GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    }
+                ]
+            },
+            {
+                "brand": "Samsung",
+                "models": [
+                    {
+                        "label": "Samsung Galaxy A05 128GB",
+                        "id": "SGA05",
+                        "specs": "¡El SAMSUNG GALAXY A05 es un teléfono inteligente con grandes prestaciones!\\n☁ 64 GB Almacenamiento: Guardarás gran cantidad de información.\\n📸 50 MP Cámara: Alta calidad y nitidez.\\n🧠 4 GB RAM: Excelente rendimiento en aplicativos.\\n📱 Pantalla de 6.7\" para una buena visibilidad.\\n🔋 5000 mAh de batería para una larga duración.",
+                        "img": "galaxy-a05"
+                    },
+                    {
+                        "label": "Samsung Galaxy A06 128GB",
+                        "id": "SGA06",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Samsung Galaxy A15 256GB",
+                        "id": "SGA15",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Samsung Galaxy A16 256GB",
+                        "id": "SGA15",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Samsung Galaxy A25 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Samsung Galaxy A35 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Samsung Galaxy A55 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Samsung Galaxy S24 FE 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Samsung Galaxy S24 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Samsung Galaxy S24 Plus 512GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Samsung Galaxy S24 Ultra 512GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Samsung Galaxy Z Flip 512GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    }
+                ]
+            },
+            {
+                "brand": "Vivo",
+                "models": [
+                    {
+                        "label": "Vivo Y03 128GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Vivo Y18 128GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Vivo Y36 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    }
+                ]
+            },
+            {
+                "brand": "Xiaomi",
+                "models": [
+                    {
+                        "label": "Xiaomi Redmi A3 64GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Xiaomi Redmi 13C 128GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Xiaomi Redmi 14C 128GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Xiaomi Redmi 14T 512GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Xiaomi Redmi Note 13 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Xiaomi Redmi Note 13 Pro 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "Xiaomi Redmi Note 13 Pro Plus 256GB",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    }
+                ]
+            },
+            {
+                "brand": "ZTE",
+                "models": [
+                    {
+                        "label": "ZTE A54 128gb",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "ZTE A35 64gb",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "ZTE Nubia Focus 256gb",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "ZTE Nubia Music 256gb",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "ZTE Nubia Neo 2 256gb",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "ZTE RedMagic 8s 256gb",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "ZTE V50 Desing 256gb",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    },
+                    {
+                        "label": "ZTE V50 Vita 256gb",
+                        "id": "",
+                        "specs": "",
+                        "img": ""
+                    }
+                ]
+            }
+        ]
     },
-    "userChats":{
-        "label":"Mis Chats Personales",
-        "message":"Próximamente"
+    "userChats": {
+        "label": "Mis Chats Personales",
+        "message": "Próximamente"
+    },
+    "links": {
+        "label": "Links de gestión"
     }
 }
