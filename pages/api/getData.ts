@@ -3,7 +3,11 @@ import fs from 'fs'
 import path from 'path'
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  const category = 'ChatData' // Prueba con el nombre exacto
+  const { category } = req.query
+
+  if (!category || typeof category !== 'string') {
+    return res.status(400).json({ error: 'Category parameter is required' })
+  }
 
   // Definir la ruta al archivo JSON
   const filePath = path.join(process.cwd(), 'server', `${category}.json`)

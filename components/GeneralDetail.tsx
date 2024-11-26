@@ -1,24 +1,34 @@
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer"
+import EquipmentSearch from "@/components/EquipmentSearch"
 
-// Define la interfaz para el tipo de item
-interface ItemType {
-  message: string; // Propiedad que contiene el mensaje
-  id?: number; // Otras propiedades que pueda tener item
+interface Item {
+  id: string
+  label: string
+  message: string
+  data?: any
 }
 
-// Usa el tipo en la declaración del componente
-const GeneralDetail: React.FC<{ item: ItemType }> = ({ item }) => {
+const GeneralDetail: React.FC<{ item: Item }> = ({ item }) => {
+  if (item.id === 'equipos') {
+    return (
+      <div className="mt-4 w-full">
+        <EquipmentSearch equipmentData={item.data} />
+        <Footer />
+      </div>
+    )
+  }
+
   return (
     <div className="mt-4 w-full">
       <textarea
         className="w-full p-2 bg-black border-2 border-red-500 text-white rounded"
         value={item.message}
         readOnly
-        style={{ minHeight: '300px' }} // Aumentar la altura mínima
+        style={{ minHeight: '300px' }}
       />
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default GeneralDetail;
+export default GeneralDetail
