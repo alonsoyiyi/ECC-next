@@ -4,11 +4,23 @@ import React, { useState, useEffect } from 'react'
 import GeneralDetail from './GeneralDetail'
 import { Button } from "@/components/ui/button"
 
+interface Model {
+  label: string;
+  id: string;
+  specs: string;
+  img: string;
+}
+
+interface Brand {
+  brand: string;
+  models: Model[];
+}
+
 interface GeneralItem {
-  id: string
-  label: string
-  message: string
-  data?: any
+  id: string;
+  label: string;
+  message: string;
+  data?: Brand[]; // Definimos el tipo de data
 }
 
 const GeneralList: React.FC = () => {
@@ -22,13 +34,15 @@ const GeneralList: React.FC = () => {
         if (!response.ok) {
           throw new Error('Failed to fetch data')
         }
-        const data = await response.json()
-        setGeneralData(Object.entries(data).map(([id, value]: [string, any]) => ({
-          id,
-          label: value.label,
-          message: value.message,
-          data: value.data
-        })))
+        const data: Record<string, { label: string; message: string; data?: Brand[] }> = await response.json()
+        setGeneralData(
+          Object.entries(data).map(([id, value]) => ({
+            id,
+            label: value.label,
+            message: value.message,
+            data: value.data
+          }))
+        )
       } catch (error) {
         console.error('Error fetching general data:', error)
       }
