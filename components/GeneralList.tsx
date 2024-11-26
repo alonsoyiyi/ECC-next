@@ -30,7 +30,7 @@ const GeneralList: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/getdata?category=GeneralData')
+        const response = await fetch('/api/getData?category=GeneralData')
         if (!response.ok) {
           throw new Error('Failed to fetch data')
         }

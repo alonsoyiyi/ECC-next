@@ -1,13 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import fs from 'fs/promises'
+import { promises as fs } from 'fs'
 import path from 'path'
-
-interface GeneralDataItem {
-  id: string
-  label: string
-  message: string
-  data?: Record<string, unknown>
-}
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { category } = req.query
@@ -17,18 +10,30 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   const filePath = path.join(process.cwd(), 'server', `${category}.json`)
+  console.log(`Attempting to read file from: ${filePath}`)
+
+  try {
+    await fs.access(filePath);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error(`El archivo ${category}.json no existe en:`, filePath, error.message);
+      return res.status(404).json({ error: 'File not found' })
+    } else {
+      console.error(`Error desconocido al verificar acceso al archivo ${category}.json en:`, filePath);
+      return res.status(500).json({ error: 'Unknown error occurred' })
+    }
+  }
 
   try {
     const fileContents = await fs.readFile(filePath, 'utf8')
-    const data: Record<string, GeneralDataItem> = JSON.parse(fileContents)
+    const data = JSON.parse(fileContents)
+    console.log("File read successfully")
     res.status(200).json(data)
   } catch (error: unknown) {
     if (error instanceof Error) {
-      // Ahora 'error' es un objeto de tipo Error
       console.error(error.message)
       res.status(500).json({ error: 'Error reading file' })
     } else {
-      // Si el error no es una instancia de Error, manejamos ese caso
       res.status(500).json({ error: 'Unknown error occurred' })
     }
   }
