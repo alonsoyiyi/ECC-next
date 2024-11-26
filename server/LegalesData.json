@@ -152,7 +152,7 @@
             "inputref": [
                 "additionalBenefit"
             ],
-            "message": "Le comentamos que usted contará con las mismas características del plan actual y los beneficios de Claro Club, Claro video {additionalBenefit}. Para más información, puede consultar la web de Claro www.claro.com.pe."
+            "message": "Le comentamos que usted contará con las mismas características del plan actual y los beneficios de Claro Club {additionalBenefit}. Para más información, puede consultar la web de Claro www.claro.com.pe."
         },
         {
             "id": "15",

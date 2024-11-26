@@ -12,146 +12,139 @@
                     {
                         "label": "Apple Iphone 13 128GB",
                         "id": "AI13128",
-                        "specs": "",
-                        "img": ""
+                        "specs": "¡El iPhone 13 combina potencia y diseño al alcance de tu mano!\n📱 Pantalla: Super Retina XDR de 6.1\" (OLED) con resolución 2532 x 1170 píxeles y densidad de 460 ppi, ideal para contenido de alta calidad.\n📸 Cámara trasera: Sistema de 12 MP con grabación en 4K Dolby Vision y modo cine para videos con baja profundidad de campo.\n🤳 Cámara frontal: TrueDepth de 12 MP con modo retrato, efectos de iluminación y grabación en 4K.\n🧠 Procesador: Chip A15 Bionic, con CPU de 6 núcleos, GPU de 4 núcleos, Neural Engine de 16 núcleos y 4GB de RAM, garantizando velocidad y eficiencia.\n📂 Almacenamiento: Disponible en versión de 128 GB.\n🔋 Batería: 3240mAh y hasta 19 horas de reproducción de video, compatible con carga rápida de 20W, carga inalámbrica MagSafe (15W) y Qi (7.5W).\n✨ Diseño: Elegante y minimalista, disponible en colores premium como rosa, azul, blanco, negro (midnight) y starlight.",
+                        "img": "AI13128"
                     },
                     {
                         "label": "Apple Iphone 14 128GB",
                         "id": "AI14128",
-                        "specs": "",
-                        "img": ""
+                        "specs": "¡El iPhone 14 lleva la tecnología al siguiente nivel!\n📱 Pantalla: Super Retina XDR de 6.1\" (OLED) con resolución 2532 x 1170 píxeles y densidad de 460 ppi, protegida con Ceramic Shield.\n📸 Cámara trasera: Sistema dual de 12 MP (gran angular y ultra gran angular) con grabación en 4K HDR, modo noche y HDR inteligente.\n🤳 Cámara frontal: TrueDepth de 12 MP con grabación en 4K y flash Retina.\n🧠 Procesador: Chip A15 Bionic con CPU de 6 núcleos y GPU de 5 núcleos, además de 6GB RAM ideales para apps exigentes y videojuegos.\n📂 Almacenamiento: Disponible en versión de 128 GB.\n🔋 Batería: 3279mAh, hasta 20 horas de reproducción de video, con carga rápida y soporte MagSafe.\n✨ Diseño: Elegante y resistente, en colores como Midnight y Blue.",
+                        "img": "AI14128"
                     },
                     {
                         "label": "Apple Iphone 15 128GB",
                         "id": "AI15128",
-                        "specs": "",
-                        "img": ""
+                        "specs": "¡El iPhone 15 redefine la experiencia móvil!\n📱 Pantalla: OLED Super Retina XDR de 6.1\", con hasta 2,000 nits para una visibilidad excepcional.\n📸 Cámara trasera: Gran angular de 48 MP y ultra gran angular de 12 MP, ideales para fotos y videos de calidad profesional.\n🤳 Cámara frontal: TrueDepth de 12 MP, perfecta para selfies y videollamadas.\n🧠 Procesador: Chip A16 Bionic y 6GB RAM, diseñados para un rendimiento rápido y eficiente.\n📂 Almacenamiento: Opción de 128 GB.\n🔋 Batería: Duración óptima con 3349mAh y soporte para carga rápida y USB-C.\n✨ Diseño: Resistente y elegante, con certificación IP68 y colores como rosa, verde, amarillo y black titanium.\n🆕 Extras: Dynamic Island, FACE ID, Detección de accidentes y Llamadas de emergencia.",
+                        "img": "AI15128"
+                    },
+                    {
+                        "label": "Apple Iphone 15 256GB",
+                        "id": "AI15256",
+                        "specs": "¡El iPhone 15 redefine la experiencia móvil!\n📱 Pantalla: OLED Super Retina XDR de 6.1\", con hasta 2,000 nits para una visibilidad excepcional.\n📸 Cámara trasera: Gran angular de 48 MP y ultra gran angular de 12 MP, ideales para fotos y videos de calidad profesional.\n🤳 Cámara frontal: TrueDepth de 12 MP, perfecta para selfies y videollamadas.\n🧠 Procesador: Chip A16 Bionic y 6GB RAM, diseñados para un rendimiento rápido y eficiente.\n📂 Almacenamiento: Opción de 256 GB.\n🔋 Batería: Duración óptima con 3349mAh y soporte para carga rápida y USB-C.\n✨ Diseño: Resistente y elegante, con certificación IP68 y colores como rosa, verde, amarillo y black titanium.\n🆕 Extras: Dynamic Island, FACE ID, Detección de accidentes y Llamadas de emergencia.",
+                        "img": "AI15256"
                     },
                     {
                         "label": "Apple Iphone 15 Pro 128GB",
                         "id": "AI15P128",
-                        "specs": "",
-                        "img": ""
-                    },
-                    {
-                        "label": "Apple Iphone 15 Pro Max 256GB",
-                        "id": "AI15PM256",
-                        "specs": "",
-                        "img": ""
-                    },
-                    {
-                        "label": "Apple Iphone 15 Pro Max 1TB",
-                        "id": "AI15PM1000",
-                        "specs": "",
-                        "img": ""
+                        "specs": "¡El iPhone 15 Pro redefine la tecnología móvil!\n📱 Pantalla: Super Retina XDR de 6.1\" con ProMotion hasta 120 Hz y Dynamic Island, brindando una visualización fluida y un acceso intuitivo a alertas y actividades en tiempo real.\n📸 Cámara trasera: Gran angular de 48 MP, teleobjetivo 3x y ultra gran angular, con grabación en 4K ProRes y optimización automática para fotos nítidas incluso de noche.\n🤳 Cámara frontal: TrueDepth de 12 MP, ideal para selfies y videollamadas con modo Noche y HDR inteligente.\n🧠 Procesador: Chip A17 Pro y 8GB RAM, ofreciendo un rendimiento excepcional para juegos y multitarea con gráficos hiperrealistas.\n📂 Almacenamiento: Opción de 128 GB, asegurando espacio suficiente para todas tus fotos, videos y aplicaciones.\n🔋 Batería: Duración optimizada con 3274mAh y carga rápida, además de Wi-Fi 6E para velocidades de descarga ultrarrápidas.\n✨ Diseño: Elegante y resistente, con cuerpo de titanio y colores como Titanio, Negro y Azul.\n🆕 Extras: Botón de acción personalizable, conector USB-C, Detección de Choques y funciones avanzadas de seguridad.\n🌍 Sostenibilidad: Fabricado con materiales reciclados, contribuyendo al cuidado del medio ambiente.",
+                        "img": "AI15P128"
                     },
                     {
                         "label": "Apple Iphone 16 128GB",
                         "id": "AI16128",
-                        "specs": "",
-                        "img": ""
+                        "specs": "¡El iPhone 16 redefine la experiencia móvil!\n📱 Pantalla: OLED Super Retina XDR de 6.1\", con colores vibrantes y Dynamic Island para una experiencia visual fluida.\n📸 Cámara trasera: Gran angular de 48 MP, teleobjetivo de 12 MP con zoom 2x y ultra gran angular de 12 MP con visión de 120°.\n🤳 Cámara frontal: TrueDepth de 12 MP con modo Noche, perfecta para selfies y videollamadas en 4K.\n🧠 Procesador: Chip A18 y 8GB RAM, para un rendimiento superior y eficiencia energética, ideal para multitareas y juegos exigentes.\n📂 Almacenamiento: Opción de 128 GB, con espacio más que suficiente para todas tus fotos, videos y apps.\n🔋 Batería: Duración optimizada con 3561 mAh y carga rápida MagSafe, hasta 50% en 30 minutos.\n✨ Diseño: Elegante, resistente, con cuerpo de aluminio y vidrio, disponible en colores vibrantes como negro, rosa y verde azulado.\n🆕 Extras: Dynamic Island, Face ID, grabación en 4K, Detección de accidentes y opciones avanzadas de seguridad.",
+                        "img": "AI16256"
                     },
                     {
                         "label": "Apple Iphone 16 256GB",
                         "id": "AI16256",
-                        "specs": "",
-                        "img": ""
+                        "specs": "¡El iPhone 16 redefine la experiencia móvil!\n📱 Pantalla: OLED Super Retina XDR de 6.1\", con colores vibrantes y Dynamic Island para una experiencia visual fluida.\n📸 Cámara trasera: Gran angular de 48 MP, teleobjetivo de 12 MP con zoom 2x y ultra gran angular de 12 MP con visión de 120°.\n🤳 Cámara frontal: TrueDepth de 12 MP con modo Noche, perfecta para selfies y videollamadas en 4K.\n🧠 Procesador: Chip A18 y 8GB RAM, para un rendimiento superior y eficiencia energética, ideal para multitareas y juegos exigentes.\n📂 Almacenamiento: Opción de 256 GB, con espacio más que suficiente para todas tus fotos, videos y apps.\n🔋 Batería: Duración optimizada con 3561 mAh y carga rápida MagSafe, hasta 50% en 30 minutos.\n✨ Diseño: Elegante, resistente, con cuerpo de aluminio y vidrio, disponible en colores vibrantes como negro, rosa y verde azulado.\n🆕 Extras: Dynamic Island, Face ID, grabación en 4K, Detección de accidentes y opciones avanzadas de seguridad.",
+                        "img": "AI16256"
                     },
                     {
                         "label": "Apple Iphone 16 Plus 128GB",
                         "id": "AI16PL128",
-                        "specs": "",
-                        "img": ""
+                        "specs": "¡El iPhone 16 Plus lo tiene todo!\n📱 Pantalla: OLED Super Retina XDR de 6.7\" , con resolución de 2796 x 1290 píxeles, brillo HDR y Dynamic Island.\n📸 Cámara trasera: 48 MP, con teleobjetivo de 2x, ultra gran angular de 12 MP y zoom digital hasta 10x.\n🤳 Cámara frontal: TrueDepth de 12 MP, con grabación en 4K Dolby Vision, autoenfoque con Focus Pixels y modo Noche.\n🧠 Procesador: Chip A18 y 8GB RAM para un rendimiento rápido.\n📂 Almacenamiento: Opción de 128 GB para adaptarse a tus necesidades.\n🔋 Batería: Hasta 27 horas de video, 24 horas de streaming y 100 horas de reproducción de audio con 4674mAh. Carga inalámbrica MagSafe a 25W.\n✨ Diseño: Ligero con un cuerpo de aluminio y frente Ceramic Shield, disponible en colores vibrantes\n🆕 Extras: Nuevo control de cámara, ajuste de exposición y enfoque, y mayor durabilidad.",
+                        "img": "AI16PL128"
                     },
                     {
                         "label": "Apple Iphone 16 Plus 256GB",
                         "id": "AI16PL256",
-                        "specs": "",
-                        "img": ""
+                        "specs": "¡El iPhone 16 Plus lo tiene todo!\n📱 Pantalla: OLED Super Retina XDR de 6.7\" , con resolución de 2796 x 1290 píxeles, brillo HDR y Dynamic Island.\n📸 Cámara trasera: 48 MP, con teleobjetivo de 2x, ultra gran angular de 12 MP y zoom digital hasta 10x.\n🤳 Cámara frontal: TrueDepth de 12 MP, con grabación en 4K Dolby Vision, autoenfoque con Focus Pixels y modo Noche.\n🧠 Procesador: Chip A18 y 8GB RAM para un rendimiento rápido.\n📂 Almacenamiento: Opción de 256 GB para adaptarse a tus necesidades.\n🔋 Batería: Hasta 27 horas de video, 24 horas de streaming y 100 horas de reproducción de audio con 4674mAh. Carga inalámbrica MagSafe a 25W.\n✨ Diseño: Ligero con un cuerpo de aluminio y frente Ceramic Shield, disponible en colores vibrantes\n🆕 Extras: Nuevo control de cámara, ajuste de exposición y enfoque, y mayor durabilidad.",
+                        "img": "AI16PL128"
                     },
                     {
                         "label": "Apple Iphone 16 Pro 128GB",
                         "id": "AI16PR128",
-                        "specs": "",
-                        "img": ""
+                        "specs": "¡El iPhone 16 Pro te sorprenderá!\n📱 Pantalla: Super Retina XDR OLED de 6.3\" con Dynamic Island, tasa de refresco ProMotion hasta 120Hz y brillo de 2,000 nits.\n📸 Cámara trasera: 48 MP, con teleobjetivo de 5x, ultra gran angular de 48 MP y grabación en 4K Dolby Vision.\n🤳 Cámara frontal: TrueDepth de 12 MP con grabación 4K y Modo Noche.\n🧠 Procesador: Chip A18 Pro y 8GB RAM para un rendimiento excepcional.\n📂 Almacenamiento: Opción de 128GB.\n🔋 Batería: 3582mAh para tener hasta 23 horas de video, carga rápida MagSafe a 25W.\n✨ Diseño: Cuerpo de titanio con Ceramic Shield, resistente al agua y al polvo (IP68).\n🆕 Extras: 5G, Wi-Fi 7, Bluetooth 5.3, y nuevas funciones de cámara.",
+                        "img": "AI16PR256"
                     },
                     {
                         "label": "Apple Iphone 16 Pro 256GB",
                         "id": "AI16PR256",
-                        "specs": "",
-                        "img": ""
+                        "specs": "¡El iPhone 16 Pro te sorprenderá!\n📱 Pantalla: Super Retina XDR OLED de 6.3\" con Dynamic Island, tasa de refresco ProMotion hasta 120Hz y brillo de 2,000 nits.\n📸 Cámara trasera: 48 MP, con teleobjetivo de 5x, ultra gran angular de 48 MP y grabación en 4K Dolby Vision.\n🤳 Cámara frontal: TrueDepth de 12 MP con grabación 4K y Modo Noche.\n🧠 Procesador: Chip A18 Pro y 8GB RAM para un rendimiento excepcional.\n📂 Almacenamiento: Opción de 256GB.\n🔋 Batería: 3582mAh para tener hasta 23 horas de video, carga rápida MagSafe a 25W.\n✨ Diseño: Cuerpo de titanio con Ceramic Shield, resistente al agua y al polvo (IP68).\n🆕 Extras: 5G, Wi-Fi 7, Bluetooth 5.3, y nuevas funciones de cámara.",
+                        "img": "AI16PR256"
                     },
                     {
                         "label": "Apple Iphone 16 Pro Max 256GB",
                         "id": "AI16PM256",
-                        "specs": "",
-                        "img": ""
-                    }
-                    ,
+                        "specs": "¡El iPhone 16 Pro Max ya está disponible y viene cargado con increíbles características!\n📱 Pantalla: Super Retina XDR OLED de 6.9\" con resolución de 2868 x 1320, 460 ppi y un brillo impresionante.\n📸 Cámara trasera: 48 MP, con teleobjetivo 5x, ultra gran angular de 48 MP y grabación en 4K a 60 fps.\n🤳 Cámara frontal: 12 MP con apertura ƒ/1.9, selfies de alta calidad con tecnologías como Photonic Engine y HDR Inteligente 5.\n🧠 Procesador: Chip A18 Pro con CPU de 6 núcleos y Neural Engine de 16 núcleos además de 8GB RAM.\n📂 Almacenamiento: Opción de 256GB.\n🔋 Batería: Hasta 33 horas de video y carga rápida MagSafe, alcanzando un 50% de carga en 30 minutos con 4685mAh.\n✨ Diseño: Cuerpo de titanio, Ceramic Shield, y colores elegantes como negro, blanco, natural y desierto.\n🆕 Extras: Control de cámara para ajustes rápidos, grabación en Modo Cine y Modo Acción, además de estabilización óptica avanzada.",
+                        "img": "AI16PM256"
+                    },
                     {
                         "label": "Apple Iphone 16 Pro Max 1TB",
                         "id": "AI16PM1000",
-                        "specs": "",
-                        "img": ""
+                        "specs": "¡El iPhone 16 Pro Max ya está disponible y viene cargado con increíbles características!\n📱 Pantalla: Super Retina XDR OLED de 6.9\" con resolución de 2868 x 1320, 460 ppi y un brillo impresionante.\n📸 Cámara trasera: 48 MP, con teleobjetivo 5x, ultra gran angular de 48 MP y grabación en 4K a 60 fps.\n🤳 Cámara frontal: 12 MP con apertura ƒ/1.9, selfies de alta calidad con tecnologías como Photonic Engine y HDR Inteligente 5.\n🧠 Procesador: Chip A18 Pro con CPU de 6 núcleos y Neural Engine de 16 núcleos además de 8GB RAM.\n📂 Almacenamiento: Opción de 1TB.\n🔋 Batería: Hasta 33 horas de video y carga rápida MagSafe, alcanzando un 50% de carga en 30 minutos con 4685mAh.\n✨ Diseño: Cuerpo de titanio, Ceramic Shield, y colores elegantes como negro, blanco, natural y desierto.\n🆕 Extras: Control de cámara para ajustes rápidos, grabación en Modo Cine y Modo Acción, además de estabilización óptica avanzada.",
+                        "img": "AI16PM256"
                     }
                 ]
             },
             {
                 "brand": "Honor",
-                "models":[
+                "models": [
                     {
                         "label": "Honor X5 Plus 64GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "HX5PL64",
+                        "specs": "¡El Honor X5 Plus es el nuevo dispositivo que promete ofrecer un rendimiento excepcional a un precio accesible!\n📱 Pantalla: LCD de 6.56\" con resolución 720 x 1612 y una tasa de refresco de 90 Hz para una navegación fluida.\n📸 Cámara trasera: 50 MP, con una cámara adicional de 2 MP para capturar cada detalle en alta resolución y grabación en 1080p.\n🤳 Cámara frontal: 5 MP para selfies perfectos, también grabando en 1080p.\n🧠 Procesador: MediaTek Helio G36 con 4GB de RAM + Honor RAM Turbo para un rendimiento ágil.\n📂 Almacenamiento: 64 GB de memoria interna, ampliable hasta 1TB con tarjeta microSD.\n🔋 Batería: Batería de 5200 mAh para una duración extendida durante todo el día.\n✨ Diseño: Estilo clásico con bordes sencillos, lector de huella dactilar y reconocimiento facial.",
+                        "img": "HX5PL64"
                     },
                     {
                         "label": "Honor X5B 128GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "HX5B128",
+                        "specs": "¡El Honor X5b llega para ofrecer una excelente combinación de rendimiento, batería de larga duración y diseño elegante! Aquí te contamos sus características más destacadas:\n📱 Pantalla: TFT LCD de 6.56\" con resolución de 720 x 1612, ideal para ver videos, redes sociales y jugar con colores vivos y detalles nítidos.\n📸 Cámara trasera: 50 MP con cámara secundaria de 0.08 MP QVGA para fotos claras y detalladas.\n🤳 Cámara frontal: 5 MP, perfecta para selfies y videollamadas con HDR para mejorar el contraste.\n🧠 Procesador: MediaTek Helio G36 con 4GB de RAM + Honor RAM Turbo, ideal para multitarea sin retrasos.\n📂 Almacenamiento: 128 GB de almacenamiento interno, expandible hasta 1 TB mediante microSD.\n🔋 Batería: Batería de 5200 mAh, asegurando horas de uso durante el día.\n✨ Diseño: Cuerpo duradero con un agarre cómodo, y desbloqueo facial para mayor seguridad.",
+                        "img": "HX5B128"
                     },
                     {
                         "label": "Honor X6B Plus 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "HX6BPL256",
+                        "specs": "¡Conoce el Honor X6b Plus, un smartphone de alto rendimiento que combina tecnología avanzada, un diseño elegante y una batería duradera! Aquí te contamos todas sus características:\n📱 Pantalla: 6.5\" con resolución nítida y tasa de refresco de 90Hz, ideal para disfrutar de videos, juegos y películas con fluidez.\n📸 Cámara trasera: 50MP para fotos nítidas y detalladas, acompañada de dos cámaras secundarias de 2M + 0.08M (QVGA) para capturar mejores detalles en condiciones de poca luz.\n🤳 Cámara frontal: 5MP para selfies claras y grabación en 1080p.\n🧠 Rendimiento: 8GB de RAM + Honor RAM Turbo de 8GB para una experiencia multitarea rápida y sin interrupciones.\n📂 Almacenamiento: 256GB de almacenamiento interno, ampliable hasta 1TB con tarjeta microSD, para guardar todos tus archivos y aplicaciones.\n🔋 Batería: Carga rápida de 35W y 5200 mAh, perfecta para mantener el dispositivo cargado rápidamente y listo para usar.\n✨ Diseño: Cuerpo moderno, ligero, con bordes curvos, proporcionando una excelente sensación al tacto y fácil de llevar.",
+                        "img": "HX6BPL256"
                     },
                     {
                         "label": "Honor X7B 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "HX7B256",
+                        "specs": "¡Conoce el Honor X7b! Un teléfono potente con características avanzadas para aquellos que buscan un dispositivo eficiente y de calidad:\n📱 Pantalla: TFT LCD de 6.8\" con resolución nítida y velocidad de refresco de 90Hz, ideal para disfrutar de contenidos multimedia, juegos y videos con fluidez.\n🧠 Procesador: Qualcomm Snapdragon 680, junto con 8GB de RAM y HONOR RAM Turbo, para un rendimiento eficiente y rápido en multitarea.\n📂 Almacenamiento: 256GB de almacenamiento interno, expandible hasta 1TB mediante tarjeta microSD, perfecto para guardar fotos, aplicaciones y videos.\n📸 Cámara principal: 108MP, para capturar fotos de alta calidad, ideales para panorámicas y retratos, junto con cámaras de 5MP y 2MP.\n🤳 Cámara frontal: 8MP, perfecta para selfies y videollamadas, con grabación en 1080p.\n🔋 Batería: Duración optimizada para acompañarte todo el día sin preocupaciones con 5330mAh.\n✨ Diseño: Elegante y moderno, disponible en colores como el plata o celeste cielo, reflejando tanto estilo como comodidad.",
+                        "img": "HX7B256"
                     },
                     {
                         "label": "Honor X8B 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "HX8B256",
+                        "specs": "¡Conoce el Honor X8B! Un teléfono potente con características avanzadas para aquellos que buscan un dispositivo eficiente y de calidad:\n📱 Pantalla: AMOLED de 6.7\" con resolución nítida y velocidad de refresco de 90Hz, ideal para una experiencia visual fluida y colores vibrantes.\n🧠 Procesador: Qualcomm Snapdragon 680, junto con 8GB de RAM y HONOR RAM Turbo, para un rendimiento fluido y eficiente en multitarea.\n📂 Almacenamiento: 256GB de almacenamiento interno, perfecto para guardar fotos, videos y aplicaciones.\n📸 Cámara principal: 108MP + 5MP + 2MP, capturando fotos detalladas y vibrantes en cualquier condición de luz.\n🤳 Cámara frontal: 50MP, ideal para selfies de alta calidad, con grabación en 1080p.\n🔋 Batería: 4500 mAh tipo Li-ion Polymer, con carga rápida para mantener el dispositivo activo todo el día.\n✨ Diseño: Elegante y moderno, disponible en colores llamativos, ideal para quienes buscan estilo y funcionalidad.",
+                        "img": "HX8B256"
                     },
                     {
                         "label": "Honor Magic 6 Lite 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "HM6L256",
+                        "specs": "¡Conoce el Honor Magic 6 Lite! Un teléfono ideal para los amantes de la fotografía y la tecnología avanzada:\n📱 Pantalla: AMOLED de 6.78\" con resolución de 1200 x 2652 píxeles y brillo de 1200 nits, perfecta para disfrutar de contenido visual con colores vibrantes y detalles nítidos.\n🧠 Procesador: Qualcomm Snapdragon 6 Gen 1, con 8GB de RAM y Honor RAM Turbo de 8GB, para un rendimiento fluido y eficiente en multitarea.\n📂 Almacenamiento: 256GB de almacenamiento interno, ideal para fotos, videos, aplicaciones y mucho más.\n📸 Cámara principal: 108MP + 5MP + 2MP, para capturar fotos de alta calidad en cualquier situación, con grabación en 4K.\n🤳 Cámara frontal: 16MP, ideal para selfies de gran resolución y videos en 1080p.\n🔋 Batería: Li-ion Polymer de 5800mAh, asegurando una duración prolongada para todo el día.\n✨ Diseño: Ligero (185g) y elegante, con acabado en plata titanio, reflejando un hermoso efecto multicolor.",
+                        "img": "HM6L256"
                     },
                     {
                         "label": "Honor 200 Lite 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "H200L256",
+                        "specs": "¡El Honor 200 Lite redefine el equilibrio entre rendimiento y estilo!\n📱 Pantalla: AMOLED de 6.7\", resolución 1080×2412 píxeles, perfecta para disfrutar de fotos, videos, películas y videojuegos.\n📸 Cámara trasera: Principal de 108 MP, ultra gran angular de 5 MP y macro de 2 MP, para capturar fotos de calidad y grabar videos en 1080p.\n🤳 Cámara frontal: 50 MP, ideal para selfies y videollamadas en 1080p.\n🧠 Procesador: MediaTek Dimensity 6080 con 8 GB de RAM + 8 GB de Honor RAM Turbo, ofreciendo alto rendimiento y eficiencia para multitareas.\n📂 Almacenamiento: 256 GB, suficiente para fotos, videos, documentos y aplicaciones.\n🔋 Batería: 4500 mAh, con duración optimizada para jornadas largas.\n✨ Diseño: Elegante y cómodo, con acabado moderno, cuerpo liviano y compacto que cabe fácilmente en tu mano o bolsillo.\n🆕 Extras: Sistema operativo Android 14 (Android U) + Magic 8, conectividad 5G, lector de huellas, reconocimiento facial y grabación en 1080p.",
+                        "img": "H200L256"
                     },
                     {
                         "label": "Honor 200 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "H200256",
+                        "specs": "¡El Honor 200 redefine la potencia y la elegancia!\n📱 Pantalla: AMOLED de 6.7\", resolución 1200×2664 píxeles, ideal para disfrutar de películas, series, videojuegos y redes sociales con calidad excepcional.\n📸 Cámara trasera: Dos cámaras principales de 50 MP y una macro de 12 MP, para capturar panorámicas, detalles precisos y tomas macro, con grabación en 4K.\n🤳 Cámara frontal: 50 MP, perfecta para selfies y contenido de alta calidad en redes sociales con grabación en 4K.\n🧠 Procesador: Qualcomm Snapdragon 7 Gen 3 con 12 GB de RAM + 12 GB adicionales con RAM Turbo, ofreciendo un rendimiento ágil para multitareas y juegos exigentes.\n📂 Almacenamiento: 256 GB, suficiente para fotos, videos, aplicaciones y archivos.\n🔋 Batería: 5200 mAh con carga rápida de 100W, garantizando horas de uso continuo.\n✨ Diseño: Sofisticado, con bordes casi invisibles, lector de huellas y reconocimiento facial, complementado con colores llamativos y un acabado refinado.\n🆕 Extras: Grabación en 4K, sistema de seguridad avanzado y diseño fotográfico ovalado de alta gama.",
+                        "img": "H200256"
                     },
                     {
                         "label": "Honor 200 Pro 512GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "H200PR512",
+                        "specs": "¡El Honor 200 Pro combina potencia, diseño y tecnología avanzada!\n📱 Pantalla: AMOLED de 6.78\", resolución 1224×2700 píxeles, con tasa de refresco de 120Hz y brillo de alta calidad, ideal para películas, series y redes sociales.\n📸 Cámara trasera: Triple sistema de cámaras: dos de 50 MP (panorámica y retrato) y una macro de 12 MP, con grabación en 4K para contenido profesional.\n🤳 Cámara frontal: 50 MP, perfecta para selfies y grabación en 4K, ideal para redes sociales.\n🧠 Procesador: Qualcomm Snapdragon 8s Gen 3 con 12 GB de RAM + 12 GB adicionales con RAM Turbo, para un rendimiento óptimo en aplicaciones exigentes y multitarea.\n📂 Almacenamiento: 512 GB, suficiente para fotos, videos, documentos y aplicaciones sin restricciones.\n🔋 Batería: 5200 mAh con carga rápida de 100W, ofreciendo largas horas de uso continuo y recarga rápida.\n✨ Diseño: Sofisticado, con acabados traseros únicos y un módulo de cámaras ovalado con bordes plateados.\n🆕 Extras: Grabación en 4K, brillo ajustable, experiencia visual inmersiva y funciones exclusivas para fotografía retrato y macro.",
+                        "img": "H200PR512"
                     }
                 ]
             },
@@ -159,70 +152,70 @@
                 "brand": "Motorola",
                 "models": [
                     {
-                        "label": "Moto E 40 Neo 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "label": "Moto E 14 64GB",
+                        "id": "ME1464",
+                        "specs": "¡Aquí tienes el resumen del Moto E14 de 64 GB!\n📱 Pantalla: HD+ de 6.6\" con frecuencia de actualización de 90 Hz y sonido Dolby Atmos®, ideal para entretenimiento visual y sonoro.\n🧠 Rendimiento: Procesador Unisoc T606 Octa-Core (2x A75 a 1.6 GHz y 6x A55 a 1.6 GHz), con 2 GB de RAM física + hasta 2 GB de RAM Boost para una experiencia multitarea fluida.\n📸 Cámaras: Cámara trasera de 13 MP y cámara frontal de 5 MP, con funciones de IA para mejorar las fotos automáticamente.\n🔋 Batería: 5000 mAh, con hasta 40 horas de duración y carga rápida de 15 W para mantenerte en uso durante todo el día.\n📂 Almacenamiento: 64 GB de almacenamiento interno, expandible mediante tarjeta microSD de hasta 1 TB.\n✨ Diseño: Delgado y resistente con protección Gorilla Glass.\n📡 Conectividad: Bluetooth 5.0, WiFi de 2.4/5 GHz, sin NFC.\n🔧 Sistema Operativo: Android 14.0 (Go Edition), optimizado para mayor eficiencia.",
+                        "img": "ME1464"
                     },
                     {
                         "label": "Moto Edge 50 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "MED50256",
+                        "specs": "¡El Motorola Moto Edge 50 te ofrece una experiencia completa con su potente rendimiento y diseño elegante!\n📱 Pantalla: 6.67\" con resolución 1220 x 2712, tecnología POLED y tasa de refresco de 120Hz para una experiencia visual fluida.\n📸 Cámara principal: 50 MP + 13 MP ultra gran angular + 10 MP telefoto, captura fotos detalladas y videos en 4K.\n🤳 Cámara frontal: 32 MP, ideal para selfies y grabación en 4K.\n🧠 Procesador: Qualcomm SM7450 Pro, combinado con 12 GB de RAM para un rendimiento excepcional en multitareas.\n📂 Almacenamiento: 256 GB, ideal para almacenar todo tu contenido sin preocupaciones.\n🔋 Batería: 5000 mAh con carga rápida de 68W, asegurando duración para todo el día y carga eficiente.\n✨ Diseño: Elegante, con una construcción sofisticada y características de seguridad como el desbloqueo facial y el lector de huellas.\n🆕 Extras: Tecnología e-SIM, conectividad 5G, y grabación en 4K.",
+                        "img": "MED50256"
                     },
                     {
                         "label": "Moto Edge 50 Fusion 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "MED50F256",
+                        "specs": "¡El Motorola Edge 50 Fusion combina tecnología avanzada y un precio competitivo para ofrecerte un dispositivo excepcional!\n📱 Pantalla: Curva de 6.67\", resolución 1080 x 2400, perfecta para una experiencia inmersiva mientras ves series, películas o juegas.\n📸 Cámara principal: 50 MP + 13 MP, captura imágenes detalladas y videos en Full HD.\n🤳 Cámara frontal: 35 MP, ideal para selfies y videollamadas en FHD.\n🧠 Procesador: Qualcomm SM6450 con 8 GB de RAM, ofrece un rendimiento rápido y fluido para multitareas y juegos.\n📂 Almacenamiento: 256 GB, ideal para guardar tus fotos, videos y aplicaciones sin preocuparte por el espacio.\n🔋 Batería: 5000 mAh con carga rápida de 68W, asegurando un uso prolongado y carga eficiente.\n✨ Diseño: Elegante y ergonómico con pantalla curva, desbloqueo facial y lector de huellas para mayor seguridad.\n🆕 Extras: Conectividad 5G, ideal para quienes buscan velocidad y eficiencia en todo momento.",
+                        "img": "MED50F256"
                     },
                     {
                         "label": "Moto Edge 50 Pro 512GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "MED50PR512",
+                        "specs": "¡El Motorola Edge 50 Pro lleva la gama alta a otro nivel!\n📱 Pantalla: POLED de 6.67\", resolución 1220 x 2712 y tasa de refresco de 144 Hz, ideal para jugar y ver contenido con calidad superior.\n📸 Cámara principal: 50 MP + 13 MP + 10 MP, captura fotos impresionantes y videos en 4K, perfectas para cualquier situación.\n🤳 Cámara frontal: 50 MP, graba en 4K para selfies y contenido en redes sociales de alta calidad.\n🧠 Procesador: Qualcomm SM7550 con 12 GB de RAM, garantizando un rendimiento rápido y fluido en multitareas y juegos.\n📂 Almacenamiento: 512 GB, amplio espacio para guardar tus fotos, videos y aplicaciones sin preocupaciones.\n🔋 Batería: 4500 mAh con carga rápida de 135W y carga inalámbrica de 50W, asegurando una larga duración y carga rápida.\n✨ Diseño: Elegante y moderno, con reconocimiento facial y lector de huellas para mayor seguridad.\n🆕 Extras: Conectividad 5G, ideal para quienes buscan rapidez en todo momento.",
+                        "img": "MED50PR512"
                     },
                     {
                         "label": "Moto G54 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "MG54256",
+                        "specs": "¡El Motorola Moto G54 5G es un celular impresionante a un precio accesible!\n📱 Pantalla: LTPS de 6.497\" con resolución Full HD y tasa de refresco de 120Hz, ideal para una experiencia visual fluida al ver videos y jugar.\n📸 Cámara principal: 50 MP + 2 MP, captura fotos nítidas y detalladas, además de videos en 4K HDR, perfecto para todo tipo de momentos.\n🤳 Cámara frontal: 16 MP, ideal para selfies de alta calidad y grabación de videos en 1080p HD.\n🧠 Procesador: Dimensity 7020 con 8 GB de RAM, ofreciendo un rendimiento rápido y eficiente en tareas multitarea y juegos.\n📂 Almacenamiento: 256 GB, con expansión hasta 1TB, para que guardes todas tus fotos, videos y aplicaciones sin preocuparte por el espacio.\n🔋 Batería: 5000 mAh con carga rápida de 15W, garantizando que tu celular siempre esté listo para seguirte el ritmo.\n✨ Diseño: Moderno y elegante, disponible en colores negro, azul y verde, con un acabado texturizado que lo hace cómodo de sostener.\n🆕 Extras: Conectividad 5G para una navegación y streaming ultrarrápido.",
+                        "img": "MG54256"
                     },
                     {
                         "label": "Moto G84 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "MG84256",
+                        "specs": "¡El Motorola Moto G84 5G es el smartphone ideal para quienes buscan tecnología avanzada y un precio accesible!\n📱 Pantalla: POLED de 6.55\" con una fluidez de 120Hz, que te ofrece colores vibrantes y movimientos suaves, ideal para ver contenido multimedia.\n📸 Cámara principal: 50 MP + 8 MP, captura fotos de alta calidad con detalles nítidos, y su lente ultra gran angular te permite capturar más en cada toma.\n🤳 Cámara frontal: 16 MP, perfecta para selfies y videollamadas claras y detalladas.\n🧠 Procesador: Qualcomm SD6375 y 8GB de RAM, ofrecen un rendimiento fluido en multitarea y juegos.\n📂 Almacenamiento: 256 GB, con expansión mediante microSD hasta 512 GB, ofreciendo suficiente espacio para tus fotos, videos y aplicaciones.\n🔋 Batería: 5000 mAh, con una duración excelente para todo el día, además de carga rápida para que nunca te quedes sin batería.\n✨ Diseño: Moderno y elegante, se adapta a todos los estilos y es perfecto para quienes buscan un smartphone de calidad.\n🆕 Extras: Conectividad 5G, garantizando una experiencia rápida y eficiente para navegar y descargar contenidos.",
+                        "img": "MG84256"
                     },
                     {
                         "label": "Moto G04S 128GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "MG04S128",
+                        "specs": "¡El Motorola Moto G04S es un smartphone que ofrece excelentes características a un precio accesible!\n📱 Pantalla: IPS de 6.56\" con resolución HD+ (720 x 1612) y una tasa de refresco de 90Hz, brindando una experiencia visual fluida para disfrutar de contenido multimedia.\n📸 Cámara principal: 50 MP, captura fotos nítidas y de alta calidad, con la capacidad de grabar videos en HD, FHD y diferentes resoluciones.\n🤳 Cámara frontal: 5 MP, ideal para selfies y grabación de videos en calidad HD, perfecta para redes sociales.\n🧠 Procesador: Unisoc T606, acompañado de 4 GB de RAM, con posibilidad de expandir hasta 8 GB mediante memoria virtual para un rendimiento fluido en multitarea.\n📂 Almacenamiento: 128 GB, con opción de expansión hasta 1 TB mediante tarjeta microSD, asegurando suficiente espacio para todas tus aplicaciones, fotos y videos.\n🔋 Batería: 5000 mAh, con duración para todo el día, permitiendo ejecutar tus aplicaciones favoritas sin preocuparte por quedarte sin batería.\n✨ Diseño: Compacto y elegante, con reconocimiento facial y lector de huella dactilar para mayor seguridad.\n🆕 Extras: La experiencia fotográfica se complementa con filtros y configuraciones para obtener las mejores tomas sin ser un experto.",
+                        "img": "MG04S128"
                     },
                     {
                         "label": "Moto G04 128GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "MG04128",
+                        "specs": "¡El Motorola Moto G04 es un smartphone que trae características destacadas para ofrecerte una experiencia única!\n📱 Pantalla: 6.56\" de tipo AMOLED, con resolución 720 x 1612 píxeles y tasa de refresco de 90Hz, garantizando una visualización fluida para disfrutar de tus contenidos.\n📸 Cámara principal: 16 MP, ideal para capturar fotos de alta calidad y grabar videos en HD y FHD, con colores vibrantes y excelentes detalles.\n🤳 Cámara frontal: 5 MP, perfecta para selfies y grabación de videos en calidad HD, excelente para redes sociales.\n🧠 Procesador: Unisoc T606, junto con 4 GB de RAM (expandible a 8 GB), asegurando un rendimiento fluido para tareas multitarea sin interrupciones.\n📂 Almacenamiento: 128 GB, ampliables hasta 1 TB con tarjeta microSD, ofreciendo suficiente espacio para todas tus fotos, aplicaciones y archivos.\n🔋 Batería: 5000 mAh, con capacidad para durar todo el día, permitiendo el uso intensivo del teléfono sin preocuparte por la carga.\n✨ Diseño: Ligero y elegante, con reconocimiento facial y lector de huella dactilar para mayor seguridad.\n🆕 Extras: Configuraciones de luz y filtros fotográficos para mejorar tus fotos y videos, ideales para compartir en redes sociales.",
+                        "img": "MG04128"
                     },
                     {
                         "label": "Moto G24 Power 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "MG24P256",
+                        "specs": "¡El Motorola Moto G24 Power es un smartphone con características impresionantes que te dejarán sorprendido!\n📱 Pantalla: 6.6\" de tipo IPS, con resolución HD+ y tasa de refresco de 90Hz, ideal para disfrutar de contenido con colores vibrantes y movimientos fluidos.\n📸 Cámara principal: 50 MP + 2 MP, captura fotos detalladas y videos en Full HD, perfecto para grabar y crear contenido visual impresionante.\n🤳 Cámara frontal: 8 MP, perfecta para selfies y grabación de videos en Full HD, asegurando autorretratos nítidos y videos de calidad.\n🧠 Procesador: MTK G85, con 4 GB de RAM (expandible con RAM Plus) para un rendimiento eficiente y fluido en multitarea.\n📂 Almacenamiento: 256 GB, ampliable hasta 512 GB con tarjeta microSD, asegurando espacio suficiente para todas tus fotos, videos y aplicaciones.\n🔋 Batería: 6000 mAh, ofreciendo una duración excepcional para horas de entretenimiento sin preocuparte por la carga.\n✨ Diseño: Elegante, delgado y ligero, con bordes curvados que lo hacen cómodo de usar y visualmente atractivo.\n🆕 Extras: Pantalla optimizada para exteriores, reconocimiento facial y lector de huella dactilar para mayor seguridad.",
+                        "img": "MG24P256"
                     },
                     {
                         "label": "Moto G85 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "MG85256",
+                        "specs": "¡El Motorola Moto G85 es un smartphone con características excepcionales que te sorprenderán!\n📱 Pantalla: 6.67\" pOLED con resolución 1080 x 2640, ideal para disfrutar de imágenes nítidas, colores vibrantes y una experiencia visual envolvente.\n📸 Cámara principal: 50 MP + 8 MP, captura fotos panorámicas, retratos y detalles en alta calidad, perfecto para cualquier momento.\n🤳 Cámara frontal: 32 MP, graba selfies y videos en calidad FHD, asegurando imágenes y videos claros para redes sociales.\n🧠 Procesador: Qualcomm SM6375 Pro, acompañado de 12 GB de RAM para un rendimiento rápido y eficiente, ideal para multitarea y juegos.\n📂 Almacenamiento: 256 GB, ampliable hasta 1 TB con tarjeta microSD, ofreciendo espacio de sobra para todas tus aplicaciones, fotos y videos.\n🔋 Batería: 5000 mAh, con carga rápida de 33 W, asegurando horas de uso sin preocuparte por quedarte sin batería.\n✨ Diseño: Elegante, con un módulo fotográfico estilizado y un color minimalista que resalta el logo de Motorola.\n🆕 Extras: Reconocimiento facial, lector de huella dactilar y tecnología eSIM para mayor comodidad y seguridad.",
+                        "img": "MG85256"
                     },
                     {
                         "label": "RAZR 50 512GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "MR50512",
+                        "specs": "¡El Motorola Razr 50 es un smartphone con características impresionantes que te sorprenderán!\n📱 Pantalla: 6.7\" pOLED con resolución 120Hz, perfecta para disfrutar de colores vibrantes, imágenes nítidas y movimientos fluidos.\n📸 Cámara principal: 50 MP + 13 MP ultra gran angular, captura imágenes de alta calidad y videos en 4K, ideal para fotos panorámicas o de grupo.\n🤳 Cámara frontal: 32 MP, graba en 1080p HD a 60fps, asegurando selfies y videollamadas nítidas y de alta calidad.\n🧠 Procesador: MTK-24M, acompañado de 12 GB de RAM para un rendimiento rápido y fluido, ideal para multitarea y aplicaciones exigentes.\n📂 Almacenamiento: 512 GB, sin preocupaciones por el espacio, además de conectividad 5G para una experiencia de navegación y descarga ultra rápida.\n🔋 Batería: 4000 mAh, con carga rápida de 30W y carga inalámbrica de 15W, asegurando que siempre estés listo para continuar el día sin interrupciones.\n✨ Diseño: Elegante y minimalista, con el icónico logo de Motorola y un acabado moderno.\n🆕 Extras: Reconocimiento facial y lector de huella dactilar para mayor seguridad y comodidad.",
+                        "img": "MR50512"
                     }
                 ]
             },
@@ -231,63 +224,63 @@
                 "models": [
                     {
                         "label": "Oppo A40 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "OA40256",
+                        "specs": "¡El Oppo A40 es un smartphone con características impresionantes que te encantarán!\n📱 Pantalla: 6.67\" IPS LCD con resolución 720 x 1604, perfecta para disfrutar de contenido visual en una pantalla grande y clara.\n📸 Cámara principal: 50 MP + 5 MP, captura fotos y videos en 1080p a 30, 60, 120 y 480 fps, ideal para compartir contenido en redes sociales.\n🤳 Cámara frontal: 5 MP, con capacidad de grabar en 1080p a 30, 60, 120 y 480 fps, perfecta para selfies y crear contenido para redes sociales.\n🧠 Procesador: Qualcomm SM6115 de 8 núcleos, acompañado de 4 GB de RAM + 4 GB adicionales con RAM Plus, garantizando un rendimiento fluido en multitarea.\n📂 Almacenamiento: 256 GB, ampliable hasta 2 TB con tarjeta microSD, suficiente espacio para todas tus fotos, videos y aplicaciones.\n🔋 Batería: 5000 mAh, con carga rápida de 45W, asegurando una duración excepcional y recarga rápida para que sigas disfrutando del entretenimiento sin interrupciones.\n✨ Diseño: Elegante y moderno, con colores vibrantes y un sistema de seguridad que incluye desbloqueo por huella dactilar y reconocimiento facial.\n🆕 Extras: Desbloqueo facial y por huella dactilar para mayor seguridad.",
+                        "img": "OA40256"
+                    },
+                    {
+                        "label": "Oppo A58 128GB",
+                        "id": "OA58128",
+                        "specs": "¡El Oppo A58 es un smartphone diseñado para destacar y ofrecer un rendimiento excepcional!\n📱 Pantalla: 6.72\" sin bordes, con resolución FHD+ (1080 x 2400 píxeles) y tasa de refresco de 90 Hz, ideal para disfrutar de contenido fluido y nítido.\n📸 Cámara principal: 50 MP con autoenfoque + 2 MP, perfecta para capturar fotos nítidas y panorámicas con detalles sorprendentes.\n🤳 Cámara frontal: 8 MP, capaz de grabar videos en 1080p a 30 fps, perfecta para selfies y videollamadas de calidad.\n🧠 Procesador: Mediatek MT6769 Octa-Core y 8GB RAM, diseñado para un rendimiento potente en multitarea y entretenimiento.\n📂 Almacenamiento: 128 GB, ampliable hasta 1 TB con tarjeta microSD, asegurando espacio de sobra para fotos, videos y aplicaciones.\n🔋 Batería: 5000 mAh, con carga rápida de 33W, que garantiza largas horas de uso y recarga eficiente para mantenerte conectado.\n✨ Diseño: Moderno y sofisticado, con cámaras traseras en un elegante módulo circular, perfecto para quienes buscan estilo y funcionalidad.\n🆕 Extras: Tecnología RAM Plus, que amplía la memoria RAM hasta 16 GB, asegurando un desempeño fluido incluso en las aplicaciones más exigentes.",
+                        "img": "OA58128"
                     },
                     {
                         "label": "Oppo A58 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
-                    },
-                    {
-                        "label": "Oppo A40 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "OA58256",
+                        "specs": "¡El Oppo A58 es un smartphone diseñado para destacar y ofrecer un rendimiento excepcional!\n📱 Pantalla: 6.72\" sin bordes, con resolución FHD+ (1080 x 2400 píxeles) y tasa de refresco de 90 Hz, ideal para disfrutar de contenido fluido y nítido.\n📸 Cámara principal: 50 MP con autoenfoque + 2 MP, perfecta para capturar fotos nítidas y panorámicas con detalles sorprendentes.\n🤳 Cámara frontal: 8 MP, capaz de grabar videos en 1080p a 30 fps, perfecta para selfies y videollamadas de calidad.\n🧠 Procesador: Mediatek MT6769 Octa-Core y 8GB RAM, diseñado para un rendimiento potente en multitarea y entretenimiento.\n📂 Almacenamiento: 256 GB, ampliable hasta 1 TB con tarjeta microSD, asegurando espacio de sobra para fotos, videos y aplicaciones.\n🔋 Batería: 5000 mAh, con carga rápida de 33W, que garantiza largas horas de uso y recarga eficiente para mantenerte conectado.\n✨ Diseño: Moderno y sofisticado, con cámaras traseras en un elegante módulo circular, perfecto para quienes buscan estilo y funcionalidad.\n🆕 Extras: Tecnología RAM Plus, que amplía la memoria RAM hasta 16 GB, asegurando un desempeño fluido incluso en las aplicaciones más exigentes.",
+                        "img": "OA58256"
                     },
                     {
                         "label": "Oppo A60 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "OA60256",
+                        "specs": "¡El Oppo A60 combina tecnología avanzada con diseño refinado para ofrecerte lo mejor en un solo dispositivo!\n📱 Pantalla: 6.67\" IPS LCD, con resolución HD+ (720 x 1604), diseñada para disfrutar de contenido visual con claridad y colores vibrantes, incluso bajo luz intensa.\n📸 Cámara principal: 50 MP con múltiples modos (retrato, panorámico, etc.), perfecta para capturar fotos nítidas y llenas de detalles en cualquier situación.\n🤳 Cámara frontal: 5 MP, ideal para selfies y videollamadas, con capacidad de grabación en 1080p para videos claros y fluidos.\n🧠 Procesador: Qualcomm SM6115 Octa-Core acompañado de 8 GB de RAM nativa más 8 GB adicionales con la tecnología RAM Plus, garantizando un rendimiento impecable para multitarea y aplicaciones exigentes.\n📂 Almacenamiento: 256 GB internos, expandibles hasta 2 TB con microSD, para guardar todas tus fotos, videos y aplicaciones sin preocuparte por el espacio.\n🔋 Batería: 5000 mAh, con carga rápida de 45W, asegurando largas horas de uso continuo y recarga rápida para que nunca te detengas.\n✨ Diseño: Minimalista y moderno, con un módulo de cámara elegante y colores sobrios que resaltan la sofisticación del dispositivo.\n🆕 Extras: Seguridad avanzada con desbloqueo facial y lector de huella dactilar para mayor comodidad y protección.",
+                        "img": "OA60256"
                     },
                     {
                         "label": "Oppo A78 256GB",
-                        "id": "SGA06",
-                        "specs": "",
+                        "id": "OA78256",
+                        "specs": "¡El Oppo A78 4G es un dispositivo diseñado para ofrecerte tecnología de calidad con un diseño moderno y elegante!\n📱 Pantalla: 6.43\" AMOLED con resolución Full HD+ (1080 x 2400), ideal para disfrutar de contenido con colores vibrantes y una claridad excepcional.\n📸 Cámara principal: 50 MP con autoenfoque, acompañada de una cámara secundaria de 2 MP, perfecta para capturar paisajes panorámicos y retratos nítidos.\n🤳 Cámara frontal: 8 MP, con grabación de video en 1080p a 30 fps, ideal para selfies y contenido en redes sociales.\n🧠 Procesador: Qualcomm SM6225 Octa-Core, junto a 8 GB de RAM con expansión virtual de 8 GB adicionales, garantizando un rendimiento fluido incluso al ejecutar múltiples aplicaciones.\n📂 Almacenamiento: 256 GB internos, ampliables hasta 1 TB con microSD, para que nunca te preocupes por quedarte sin espacio.\n🔋 Batería: 5000 mAh con carga rápida de 67W, ofreciendo largas horas de uso y una recarga rápida para que siempre estés conectado.\n✨ Diseño: Delgado, con bordes estrechos y un atractivo acabado de colores y efectos de reflejo, combinando estilo y comodidad en tus manos.\n🆕 Extras: Seguridad avanzada con desbloqueo por huella y reconocimiento facial, para mayor practicidad y protección.",
                         "img": ""
                     },
                     {
                         "label": "Oppo A79 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "OA79256",
+                        "specs": "¡El Oppo A79 5G es el smartphone perfecto para quienes buscan tecnología avanzada y diseño moderno!\n📱 Pantalla: 6.57\" LCD con resolución Full HD+ (1080 x 2400) y tasa de refresco de 90 Hz, ideal para contenido multimedia y una navegación fluida.\n📸 Cámara principal: Sistema dual de 50 MP + 2 MP, con grabación de video en calidad 1080p, perfecto para capturar momentos vibrantes y detallados.\n🤳 Cámara frontal: 8 MP, con grabación de video 1080p, ideal para selfies y creación de contenido para redes sociales.\n🧠 Procesador: MediaTek MT6833 Octa-Core 5G (2 x 2.2 GHz + 6 x 2 GHz), acompañado de 8 GB de RAM, garantizando un rendimiento eficiente y ágil.\n📂 Almacenamiento: 256 GB internos, expandibles hasta 2 TB con microSD, ofreciéndote espacio más que suficiente para tus archivos, aplicaciones y videos favoritos.\n🔋 Batería: 5000 mAh para todo un día de uso, con configuración ajustable según tus necesidades.\n✨ Diseño: Elegante y funcional, con seguridad avanzada mediante reconocimiento facial y lector de huella dactilar.",
+                        "img": "OA79256"
                     },
                     {
                         "label": "Oppo A80 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "OA80256",
+                        "specs": "¡El Oppo A80 5G es la combinación perfecta de rendimiento, diseño y tecnología avanzada!\n📱 Pantalla: LCD de 6.67\" con resolución nítida, ideal para disfrutar series, películas y juegos. Su tasa de refresco de 60 Hz garantiza un desplazamiento fluido.\n📸 Cámara principal: Dual de 50 MP + 2 MP para fotos detalladas y vibrantes. Capacidad de grabación de video en 1080p a 30/60/120/480 fps, perfecta para cualquier ocasión.\n🤳 Cámara frontal: 8 MP, ideal para selfies y videollamadas con calidad profesional.\n🧠 Procesador: Procesador 6xA55@2.0GHz acompañado de 8 GB de RAM + 8 GB de RAM virtual, asegurando un rendimiento fluido en multitareas y aplicaciones exigentes.\n📂 Almacenamiento: 256 GB internos, expandibles hasta 2 TB, para almacenar todo tu contenido sin preocupaciones.\n🔋 Batería: 5000 mAh de larga duración, con carga rápida de 45 W, lista para mantenerte conectado todo el día.\n✨ Diseño: Moderno y elegante, con desbloqueo facial y sensor de huella dactilar para mayor seguridad y comodidad.",
+                        "img": "OA80256"
                     },
                     {
                         "label": "Oppo Reno 11F 256GB",
-                        "id": "SGA06",
-                        "specs": "",
+                        "id": "OR11F256",
+                        "specs": "¡El Oppo Reno 11F 5G combina tecnología de punta con un diseño sofisticado, ideal para los usuarios más exigentes!\n📱 Pantalla: AMOLED de 6.7\" con resolución 2412 x 1080 píxeles y tasa de refresco de 120 Hz, perfecta para disfrutar contenido multimedia con colores vibrantes y nitidez excepcional.\n📸 Cámara principal: Sistema triple con 64 MP + 8 MP + 2 MP, que permite capturar fotos excepcionales y grabar videos en 4K a 30 fps o en 1080p hasta 480 fps.\n🤳 Cámara frontal: 32 MP, ideal para selfies de alta calidad y videollamadas con resolución de hasta 4K.\n🧠 Procesador: Procesador Octa-core (2x2.6 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55), combinado con 8 GB de RAM, ofreciendo un rendimiento óptimo incluso para las aplicaciones más exigentes.\n📂 Almacenamiento: 256 GB internos, con capacidad de expandir hasta 2 TB mediante memoria externa.\n🔋 Batería: 5000 mAh, diseñada para durar todo el día con un uso moderado, asegurando energía para tus actividades diarias.\n✨ Diseño: Moderno y funcional, con sistemas de seguridad como reconocimiento facial y lector de huella dactilar, para mantener tus datos protegidos.",
                         "img": ""
                     },
                     {
                         "label": "Oppo Reno 12F 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "OR12F256",
+                        "specs": "¡El Oppo Reno 12F 5G: diseñado para sorprender con potencia y diseño!\n📱 Pantalla: AMOLED de 6.67” y resolución 2400 x 1080. Ideal para multimedia. Diseño moderno, ligero (187.5 g), y cómodo.\n📸 Cámara principal: Triple: 50 MP para fotos nítidas, 8 MP ultra gran angular y 2 MP para desenfoque profesional.\n🤳 Cámara frontal: 32 MP para selfies claros y videollamadas, incluso con poca luz.\n🧠 Procesador: Mediatek MT6835T con 12 GB RAM para un rendimiento fluido. Perfecto para multitareas exigentes.\n📂 Almacenamiento: 256 GB interno, expandible hasta 2 TB. Espacio para apps y multimedia.\n🔋 Batería: 5000 mAh con carga rápida de 45W. Lista en minutos y dura todo el día.\n✨ Seguridad: Desbloqueo facial y huella dactilar. Máxima protección y comodidad.",
+                        "img": "OR12F256"
                     },
                     {
                         "label": "Oppo Reno 12F Harry Potter Edition 256GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "OR12FHRE256",
+                        "specs": "¡El Oppo Reno 12F 5G Harry Potter Edition: un toque mágico en tus manos!\n📱 Pantalla: 6.67” AMOLED, resolución 2400 x 1080. Ideal para multimedia con imágenes vibrantes y claras. Seguridad con huella y desbloqueo facial.\n📸 Cámara trasera: Triple: 50 MP para fotos detalladas, 8 MP ultra gran angular y 2 MP para efectos profesionales.\n🤳 Cámara frontal: 32 MP, perfecta para selfies nítidas incluso con poca luz. AI para edición avanzada como borrar objetos o añadir stickers.\n🧠 Procesador: Mediatek MT6835T con 12 GB RAM. Rendimiento fluido en juegos y multitareas exigentes.\n📂 Almacenamiento: 256 GB interno, expandible hasta 2 TB. Espacio para apps, fotos y videos.\n🔋 Batería: 5000 mAh con carga rápida de 45W. Uso prolongado y recarga en minutos.\n🎁 Accesorios mágicos: Caja estilo libro de hechizos, varita mágica stylus, funda con Snitch dorada, pin Reliquias de la Muerte y carta de bienvenida a Hogwarts.\n✨ Diseño exclusivo: Acabado temático de Harry Potter con emblema de Hogwarts. ¡Perfecto para fanáticos de la magia y coleccionistas!",
+                        "img": "OR12FHRE256"
                     }
                 ]
             },
@@ -296,75 +289,87 @@
                 "models": [
                     {
                         "label": "Samsung Galaxy A05 128GB",
-                        "id": "SGA05",
-                        "specs": "¡El SAMSUNG GALAXY A05 es un teléfono inteligente con grandes prestaciones!\\n☁ 64 GB Almacenamiento: Guardarás gran cantidad de información.\\n📸 50 MP Cámara: Alta calidad y nitidez.\\n🧠 4 GB RAM: Excelente rendimiento en aplicativos.\\n📱 Pantalla de 6.7\" para una buena visibilidad.\\n🔋 5000 mAh de batería para una larga duración.",
-                        "img": "galaxy-a05"
+                        "id": "SGA05128",
+                        "specs": "Samsung Galaxy A05: Calidad y funcionalidad al alcance de todos\n📱 Pantalla: PLS LCD de 6.7” con resolución HD+ (720 x 1600) y refresco de 60Hz, ideal para videos y navegación fluida.\n📸 Cámara trasera: Principal de 50 MP para fotos detalladas y una secundaria de 2 MP para funciones específicas. Grabación de video en Full HD.\n🤳 Cámara frontal: 8 MP con grabación FHD, perfecta para selfies y redes sociales.\n🧠 Procesador: MediaTek Octa-Core (2 GHz y 1.8 GHz) con 4 GB de RAM, diseñado para multitareas y juegos.\n📂 Almacenamiento: 64 GB interno, expandible hasta 1 TB con tarjeta microSD.\n🔋 Batería: 5000 mAh para un uso prolongado durante todo el día.\n✨ Diseño: Elegante y ligero, con bordes delgados y reconocimiento facial para mayor seguridad.",
+                        "img": "SGA05128"
                     },
                     {
                         "label": "Samsung Galaxy A06 128GB",
-                        "id": "SGA06",
-                        "specs": "",
-                        "img": ""
+                        "id": "SGA06128",
+                        "specs": "Samsung Galaxy A06: Diseño, rendimiento y cámara excepcionales\n📱 Pantalla: 6.7” HD+ que ofrece una experiencia visual clara y vibrante, ideal para navegar, ver videos y redes sociales.\n📸 Cámara trasera: Principal de 50 MP para fotos detalladas y nítidas, perfecta para capturar momentos en cualquier entorno.\n🤳 Cámara frontal: 8 MP, ideal para selfies y videollamadas.\n🧠 Procesador: Octa-Core 2.0GHz/1.8GHz con 4GB de RAM para un rendimiento fluido en tareas diarias.\n📂 Almacenamiento: 128GB internos, expandible hasta 1TB con tarjeta microSD, para todo tu contenido.\n🔋 Batería: 5000 mAh que asegura largas horas de uso continuo.\n✨ Diseño: Ligero, elegante y cómodo, con bordes delgados y un diseño moderno.\n📶 Conectividad: 4G LTE y desbloqueo facial para mayor seguridad y comodidad.",
+                        "img": "SGA06128"
                     },
                     {
                         "label": "Samsung Galaxy A15 256GB",
-                        "id": "SGA15",
-                        "specs": "",
-                        "img": ""
+                        "id": "SGA15256",
+                        "specs": "Samsung Galaxy A15: Características clave y especificaciones\n📱 Pantalla: 6.5\" Super AMOLED con una tasa de actualización de 90 Hz, ideal para una visualización fluida y de alta calidad en videos, juegos y redes sociales.\n📸 Cámara principal: 50 MP, acompañada de dos cámaras adicionales de 5 MP y 2 MP para fotos panorámicas, zoom y tomas cercanas.\n🤳 Cámara frontal: 13 MP, perfecta para selfies y grabación en calidad Full HD para redes sociales.\n🧠 Procesador: Octa-Core a 2.2GHz/2.0GHz y 8GB de RAM para un rendimiento rápido y eficiente en aplicaciones exigentes.\n📂 Almacenamiento: 256 GB internos, ampliables hasta 1TB mediante tarjeta microSD.\n🔋 Batería: 5000 mAh que asegura un uso prolongado, ideal para ver videos, jugar y redes sociales durante todo el día.\n✨ Diseño: Simple y clásico, cómodo de sostener y disponible en varios colores para adaptarse a tu estilo.",
+                        "img": "SGA15256"
+                    },
+                    {
+                        "label": "Samsung Galaxy A16 128GB",
+                        "id": "SGA16128",
+                        "specs": "Samsung Galaxy A16 5G: Características clave y especificaciones\n📱 Pantalla: 6.7\" Super AMOLED con una tasa de actualización de 90 Hz y densidad de 387 ppi, garantizando una visualización fluida y clara para videos, juegos y navegación.\n📸 Cámara principal: 50 MP, acompañada de una cámara secundaria de 5 MP para ángulo amplio y una cámara de profundidad de 2 MP para fotos detalladas y efectos de profundidad.\n🤳 Cámara frontal: 13 MP, ideal para selfies y videollamadas en calidad FHD, perfecto para compartir contenido en redes sociales.\n🧠 Procesador: Octa-Core a 2.4GHz/2.0GHz y 4GB de RAM, proporcionando un rendimiento eficiente para multitarea y aplicaciones exigentes.\n📂 Almacenamiento: 128 GB internos, ampliables hasta 1TB mediante tarjeta microSD, ofreciendo suficiente espacio para aplicaciones, fotos y videos.\n🔋 Batería: 5000 mAh, con carga rápida de 25W, para asegurar un uso prolongado durante todo el día sin interrupciones.\n✨ Diseño: Delgado y ligero con un grosor de solo 7.9 mm, cómodo de sostener, y disponible en varios colores.",
+                        "img": "SGA16128"
                     },
                     {
                         "label": "Samsung Galaxy A16 256GB",
-                        "id": "SGA15",
-                        "specs": "",
-                        "img": ""
+                        "id": "SGA16256",
+                        "specs": "Samsung Galaxy A16 5G: Características clave y especificaciones\n📱 Pantalla: 6.7\" Super AMOLED con una tasa de actualización de 90 Hz y densidad de 387 ppi, garantizando una visualización fluida y clara para videos, juegos y navegación.\n📸 Cámara principal: 50 MP, acompañada de una cámara secundaria de 5 MP para ángulo amplio y una cámara de profundidad de 2 MP para fotos detalladas y efectos de profundidad.\n🤳 Cámara frontal: 13 MP, ideal para selfies y videollamadas en calidad FHD, perfecto para compartir contenido en redes sociales.\n🧠 Procesador: Octa-Core a 2.4GHz/2.0GHz y 4GB de RAM, proporcionando un rendimiento eficiente para multitarea y aplicaciones exigentes.\n📂 Almacenamiento: 256 GB internos, ampliables hasta 1TB mediante tarjeta microSD, ofreciendo suficiente espacio para aplicaciones, fotos y videos.\n🔋 Batería: 5000 mAh, con carga rápida de 25W, para asegurar un uso prolongado durante todo el día sin interrupciones.\n✨ Diseño: Delgado y ligero con un grosor de solo 7.9 mm, cómodo de sostener, y disponible en varios colores.",
+                        "img": "SGA16128"
                     },
                     {
                         "label": "Samsung Galaxy A25 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "SGA25256",
+                        "specs": "Samsung Galaxy A16 5G: Características clave y especificaciones\n📱 Pantalla: 6.7\" Super AMOLED con una tasa de actualización de 90 Hz y densidad de 387 ppi, garantizando una visualización fluida y clara para videos, juegos y navegación.\n📸 Cámara principal: 50 MP, acompañada de una cámara secundaria de 5 MP para ángulo amplio y una cámara de profundidad de 2 MP para fotos detalladas y efectos de profundidad.\n🤳 Cámara frontal: 13 MP, ideal para selfies y videollamadas en calidad FHD, perfecto para compartir contenido en redes sociales.\n🧠 Procesador: Octa-Core a 2.4GHz/2.0GHz y 4GB de RAM, proporcionando un rendimiento eficiente para multitarea y aplicaciones exigentes.\n📂 Almacenamiento: 256 GB internos, ampliables hasta 1TB mediante tarjeta microSD, ofreciendo suficiente espacio para aplicaciones, fotos y videos.\n🔋 Batería: 5000 mAh, con carga rápida de 25W, para asegurar un uso prolongado durante todo el día sin interrupciones.\n✨ Diseño: Delgado y ligero con un grosor de solo 7.9 mm, cómodo de sostener, y disponible en varios colores.",
+                        "img": "SGA25256"
                     },
                     {
                         "label": "Samsung Galaxy A35 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "SGA35256",
+                        "specs": "Samsung Galaxy A35 5G: Características clave y especificaciones\n📱 Pantalla: 6.6\" Super AMOLED FHD+ con una tasa de actualización de 120 Hz, ideal para una experiencia visual fluida en fotos, videos y videojuegos.\n📸 Cámara principal: Configuración triple de 50 MP, 8 MP y 5 MP, con capacidad de grabación en 8K para capturar imágenes y videos con gran detalle.\n🤳 Cámara frontal: 13 MP con grabación en 4K, perfecta para selfies y videollamadas de alta calidad.\n🧠 Procesador: Exynos 1380 (5 nm Octa-Core) con 6 GB de RAM + RAM Plus, garantizando un rendimiento potente y eficiente en multitarea y aplicaciones exigentes.\n📂 Almacenamiento: 256 GB internos, ampliables hasta 1TB mediante tarjeta microSD, ofreciendo un amplio espacio para fotos, videos y aplicaciones.\n🔋 Batería: 5000 mAh con carga rápida de 25W, asegurando una duración prolongada para tareas diarias y entretenimiento.\n✨ Diseño: Elegante acabado de vidrio en la parte trasera y bordes metálicos, con dimensiones cómodas (161.7 x 78.0 x 8.2 mm) y un peso de 209 g.",
+                        "img": "SGA35256"
                     },
                     {
                         "label": "Samsung Galaxy A55 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "SGA55256",
+                        "specs": "Samsung Galaxy A55 5G: Características clave y especificaciones\n📱 Pantalla: 6.6\" Super AMOLED FHD+ con una tasa de actualización de 120 Hz, perfecta para disfrutar de contenido multimedia con colores vibrantes y respuesta rápida.\n📸 Cámara principal: Configuración triple de 50 MP, 12 MP y 5 MP, con capacidad de grabación en 8K para capturar fotos y videos de alta calidad.\n🤳 Cámara frontal: 32 MP con grabación en 4K, ideal para selfies y videollamadas en alta definición.\n🧠 Procesador: Exynos 1480 (Octa-Core) con 8 GB de RAM + RAM Plus, garantizando un rendimiento excepcional para multitarea y aplicaciones exigentes.\n📂 Almacenamiento: 256 GB internos, ampliables hasta 1TB mediante tarjeta microSD, asegurando espacio más que suficiente para archivos y aplicaciones.\n🔋 Batería: 5000 mAh con carga rápida, diseñada para durar todo el día con un uso normal.\n✨ Diseño: Elegante y moderno, con bordes delgados y acabados premium. Integra lector de huellas y reconocimiento facial para mayor seguridad.",
+                        "img": "SGA55256"
                     },
                     {
                         "label": "Samsung Galaxy S24 FE 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "SGS24FE256",
+                        "specs": "Samsung Galaxy S24 FE: Características clave y especificaciones\n📱 Pantalla: 6.7\" Super AMOLED con resolución FHD+ y tasa de refresco de 120 Hz, ideal para disfrutar de contenido multimedia con fluidez y colores vibrantes.\n📸 Cámara principal: Configuración triple de 50 MP, 12 MP y 8 MP, diseñada para capturar fotos de alta calidad. Capacidad de grabación en 4K para videos nítidos y vibrantes.\n🤳 Cámara frontal: 10 MP, perfecta para selfies y videollamadas de calidad profesional.\n🧠 Procesador: Equipado con un procesador de alto rendimiento, acompañado por 8 GB de RAM que aseguran un desempeño fluido.\n📂 Almacenamiento: 256 GB internos, con soporte para expansión hasta 1TB mediante tarjeta microSD, ideal para guardar aplicaciones, fotos y videos.\n🔋 Batería: 4700 mAh con carga rápida de 25W, diseñada para durar todo el día y cargarse rápidamente para mayor comodidad.\n✨ Diseño y seguridad: Elegante diseño minimalista con peso de 213 g, integración de desbloqueo facial, lector de huellas y conectividad 5G para navegación ultrarrápida.",
+                        "img": "SGS24FE256"
                     },
                     {
                         "label": "Samsung Galaxy S24 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "SGS24256",
+                        "specs": "Samsung Galaxy S24: Características clave y especificaciones\n📱 Pantalla: 6.2\" Dynamic AMOLED 2X con resolución FHD+ (2340 x 1080), ideal para disfrutar contenido multimedia con la mejor calidad visual.\n📸 Cámara principal: Configuración cuádruple con lente principal de 50 MP (grabación 8K), complementada por cámaras de 10 MP y 12 MP, optimizadas para retratos, zoom y tomas macro.\n🤳 Cámara frontal: 12 MP con grabación en 4K, perfecta para selfies y contenido en redes sociales.\n🧠 Procesador: Exynos 2400, acompañado por 8 GB de RAM nativa, expandible hasta 16 GB con la tecnología RAM PLUS, para un rendimiento fluido en aplicaciones y juegos.\n📂 Almacenamiento: 256 GB, ideales para guardar fotos, videos y archivos sin preocuparte por el espacio.\n🔋 Batería: 4000 mAh con carga rápida de 25W, diseñada para durar todo el día y recargar rápidamente según lo necesites.\n✨ Diseño y seguridad: Diseño elegante y minimalista, con reconocimiento facial y lector de huella para mayor protección, junto con conectividad 5G para una navegación ultrarrápida.",
+                        "img": "SGS24256"
                     },
                     {
                         "label": "Samsung Galaxy S24 Plus 512GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "SGS24PL512",
+                        "specs": "Samsung Galaxy S24 Plus: Características clave y especificaciones\n📱 Pantalla: Dynamic AMOLED 2X de 6.7\" con resolución Quad HD+ (3120 x 1440), diseñada para ofrecer una experiencia visual de alta calidad en contenido multimedia y videojuegos.\n📸 Cámara principal: Sistema cuádruple con lente principal de 50 MP (grabación 8K), complementada por cámaras de 10 MP y 12 MP para retratos, zoom y tomas macro.\n🤳 Cámara frontal: 12 MP con capacidad de grabación en 4K, perfecta para selfies y creación de contenido.\n🧠 Procesador: Exynos 2400, combinado con 12 GB de RAM, expandible mediante tecnología RAM PLUS con 8 GB adicionales, para un rendimiento superior en multitareas y juegos.\n📂 Almacenamiento: 512 GB, ideales para fotos, videos y aplicaciones, ofreciendo espacio amplio y eficiente.\n🔋 Batería: 4900 mAh con carga rápida de 25W, garantizando duración extendida y recarga veloz para un uso continuo.\n✨ Diseño y conectividad: Estilo delgado y elegante con reconocimiento facial y lector de huellas. Conectividad 5G para velocidad ultrarrápida en internet y aplicaciones.",
+                        "img": "SGS24PL512"
                     },
                     {
                         "label": "Samsung Galaxy S24 Ultra 512GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "SGS24U512",
+                        "specs": "¡El Samsung Galaxy S24 Ultra redefine la experiencia móvil!\n📱 Pantalla: Dynamic AMOLED 2X de 6.8\" con resolución 3120 x 1440 (Quad HD+), ideal para contenido de alta calidad con colores vibrantes y fluidez visual.\n📸 Cámara trasera: Configuración de 200 MP + 50 MP + 12 MP + 10 MP, diseñada para fotos y videos en 8K, incluso en condiciones de poca luz.\n🤳 Cámara frontal: 12 MP, perfecta para selfies y grabación en 4K, ideal para redes sociales.\n🧠 Procesador: Qualcomm SM8650, acompañado de 12 GB RAM con tecnología RAM Plus (+8 GB adicionales), garantizando un rendimiento impecable.\n📂 Almacenamiento: Disponible en versión de 512 GB, para guardar todo tu contenido sin preocupaciones.\n🔋 Batería: 5000 mAh con carga rápida de 25W, asegurando autonomía durante todo el día.\n✨ Diseño: Elegante y seguro, con reconocimiento facial y lector de huellas digitales.",
+                        "img": "SGS24U512"
                     },
                     {
-                        "label": "Samsung Galaxy Z Flip 512GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "label": "Samsung Galaxy Z Flip 5 256GB",
+                        "id": "SGZF5256",
+                        "specs": "Samsung Galaxy Z Flip5: Características clave y especificaciones\n📱 Pantalla: 6.7” FHD+ Dynamic AMOLED 2X con frecuencia adaptable de 1-120Hz, garantizando imágenes nítidas y fluidez en cada transición, además de una pantalla externa de 3.4” Super AMOLED a 60Hz para notificaciones rápidas.\n📸 Cámara principal: Dual de 12 MP (UGA F2.2) y 12 MP (GA OIS F1.8), con grabación en 4K, capturando momentos con precisión y detalle.\n🤳 Cámara frontal: 10 MP F2.2, perfecta para selfies y videollamadas con calidad profesional.\n🧠 Procesador: Snapdragon 8 Gen 2 para Galaxy, brindando un rendimiento rápido y fluido para todas las aplicaciones y juegos.\n📂 Almacenamiento: 256 GB de almacenamiento interno, sin posibilidad de expansión.\n🔋 Batería: 3,700 mAh con carga rápida de 25W, asegurando una carga eficiente para todo el día.\n✨ Diseño: Diseño plegable y compacto con una pantalla externa para un acceso rápido a notificaciones y un estilo único. Incluye lector de huellas, carga inalámbrica y sensores avanzados.",
+                        "img": "SGZF5256"
+                    },
+                    {
+                        "label": "Samsung Galaxy Z Flip 5 512GB",
+                        "id": "SGZF5512",
+                        "specs": "Samsung Galaxy Z Flip5: Características clave y especificaciones\n📱 Pantalla: 6.7” FHD+ Dynamic AMOLED 2X con frecuencia adaptable de 1-120Hz, garantizando imágenes nítidas y fluidez en cada transición, además de una pantalla externa de 3.4” Super AMOLED a 60Hz para notificaciones rápidas.\n📸 Cámara principal: Dual de 12 MP (UGA F2.2) y 12 MP (GA OIS F1.8), con grabación en 4K, capturando momentos con precisión y detalle.\n🤳 Cámara frontal: 10 MP F2.2, perfecta para selfies y videollamadas con calidad profesional.\n🧠 Procesador: Snapdragon 8 Gen 2 para Galaxy, brindando un rendimiento rápido y fluido para todas las aplicaciones y juegos.\n📂 Almacenamiento: 512 GB de almacenamiento interno, sin posibilidad de expansión.\n🔋 Batería: 3,700 mAh con carga rápida de 25W, asegurando una carga eficiente para todo el día.\n✨ Diseño: Diseño plegable y compacto con una pantalla externa para un acceso rápido a notificaciones y un estilo único. Incluye lector de huellas, carga inalámbrica y sensores avanzados.",
+                        "img": "SGZF5512"
                     }
                 ]
             },
@@ -373,21 +378,21 @@
                 "models": [
                     {
                         "label": "Vivo Y03 128GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "VY03128",
+                        "specs": "Vivo Y03: Características clave y especificaciones\n📱 Pantalla: 6.56” LCD con resolución HD+ (1612x720) y tasa de refresco de 90Hz, ofreciendo una experiencia visual fluida y detallada.\n📸 Cámara principal: 13 MP + 0.08 MP, con grabación de video en 720p@30fps y 1080p@30fps para capturas claras.\n🤳 Cámara frontal: 5 MP, ideal para selfies y grabación de videos en 720p@30fps y 1080p@30fps.\n🧠 Procesador: Helio G85 (MT6769Z) con 4 GB de RAM + 4 GB de RAM Plus, asegurando un rendimiento eficaz para aplicaciones y multitarea.\n📂 Almacenamiento: 128 GB internos, ampliables hasta 1 TB mediante tarjeta microSD, proporcionando amplio espacio para archivos y apps.\n🔋 Batería: 5000 mAh con carga rápida de 15W, ofreciendo una excelente autonomía durante el día.\n✨ Diseño: Ligero y ergonómico con un peso de 185 g y dimensiones de 163.63 x 75.58 mm, cómodo para usar con una sola mano.",
+                        "img": "VY03128"
                     },
                     {
                         "label": "Vivo Y18 128GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "VY18128",
+                        "specs": "Vivo Y18: Características clave y especificaciones\n📱 Pantalla: 6.56” LCD con resolución HD+ (1612x720) y un brillo de hasta 528 nits en modo HBM, ofreciendo imágenes vibrantes y claras.\n📸 Cámara principal: Doble cámara de 50 MP + 0.08 MP, con grabación de video en 720p y 1080p a 30fps, ideal para fotos panorámicas y videos de alta calidad.\n🤳 Cámara frontal: 8 MP, perfecta para selfies y grabación de videos en 720p y 1080p a 30fps.\n🧠 Procesador: MediaTek Helio G85 con 6 GB de RAM + 6 GB de RAM Plus, asegurando un rendimiento rápido y sin interrupciones.\n📂 Almacenamiento: 128 GB internos, ampliables hasta 1 TB mediante tarjeta microSD, ofreciendo amplio espacio para apps, fotos y videos.\n🔋 Batería: 5000 mAh con carga rápida de 15W, proporcionando una excelente autonomía durante todo el día.\n✨ Diseño: Elegante con módulo fotográfico cuadrado, reconocimiento facial y sensor de huellas dactilares para mayor seguridad.",
+                        "img": "VY18128"
                     },
                     {
                         "label": "Vivo Y36 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "VY36256",
+                        "specs": "Vivo Y36: Características clave y especificaciones\n📱 Pantalla: 6.64” IPS-LCD con resolución Full HD+ (2388 x 1080), tasa de refresco de 90Hz, proporcionando una experiencia visual fluida y vibrante para películas, series y redes sociales.\n📸 Cámara principal: Triple cámara con 50 MP + 2 MP + 2 MP, grabación de video en 1080p a 30fps, ideal para fotos y videos panorámicos y de retrato.\n🤳 Cámara frontal: 16 MP, perfecta para selfies de alta calidad y videollamadas claras.\n🧠 Procesador: Qualcomm Snapdragon 680, combinado con 8 GB de RAM + hasta 8 GB adicionales con la tecnología RAM Plus, garantizando un rendimiento fluido en tareas diarias y multitarea.\n📂 Almacenamiento: 256 GB de almacenamiento interno, ampliable hasta 1 TB con tarjeta microSD, ofreciendo espacio suficiente para fotos, videos y aplicaciones.\n🔋 Batería: 5000 mAh con carga rápida, proporcionando autonomía durante todo el día, perfecta para uso intensivo de aplicaciones y entretenimiento.",
+                        "img": "VY36256"
                     }
                 ]
             },
@@ -396,45 +401,45 @@
                 "models": [
                     {
                         "label": "Xiaomi Redmi A3 64GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "XRA364",
+                        "specs": "Xiaomi Redmi A3: Características clave y especificaciones\n📱 Pantalla: 6.74” IPS LCD con resolución de 720 x 1600, ofreciendo una experiencia visual clara y agradable para el día a día.\n📸 Cámara principal: 8 MP + QGVA, con capacidad para grabar videos en Full HD, permitiendo capturar momentos con gran calidad.\n🤳 Cámara frontal: 5 MP, ideal para selfies y grabación de videos en HD, perfecta para redes sociales.\n🧠 Procesador: Mediatek Helio G36, acompañado de 3 GB de RAM + RAM Plus, asegurando un rendimiento fluido en tareas diarias y aplicaciones.\n📂 Almacenamiento: 64 GB de almacenamiento interno, suficiente para fotos, videos y aplicaciones, con opción de expansión mediante memoria externa.\n🔋 Batería: 5000 mAh, ofreciendo una duración prolongada para todo el día, ideal para un uso intensivo.\n🔒 Seguridad: Reconocimiento facial y lector de huella dactilar, proporcionando una capa adicional de seguridad para proteger tus datos.",
+                        "img": "XRA364"
                     },
                     {
                         "label": "Xiaomi Redmi 13C 128GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "XR13C128",
+                        "specs": "Xiaomi Redmi 13C: Características clave y especificaciones:\n📱 Pantalla: 6.74” AMOLED con resolución de 720 x 1600 y velocidad de actualización de 60Hz, brindando una excelente experiencia visual para ver videos y redes sociales.\n📸 Cámara principal: 50 MP con grabación en Full HD, perfecta para capturar paisajes, retratos y momentos familiares.\n🤳 Cámara frontal: 8 MP, ideal para selfies y grabación de videos en HD.\n🧠 Procesador: Mediatek Helio G85, acompañado de 4 GB de RAM, permitiendo un rendimiento versátil para aplicaciones y juegos.\n💾 Almacenamiento: 128 GB de almacenamiento interno, ideal para fotos, videos y aplicaciones.\n🔋 Batería: 5000 mAh con carga rápida de 10W, garantizando una duración prolongada para tus actividades diarias.\n🔒 Seguridad: Desbloqueo facial y por huella dactilar, asegurando que tus datos estén protegidos.",
+                        "img": "XR13C128"
                     },
                     {
                         "label": "Xiaomi Redmi 14C 128GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "XR14C128",
+                        "specs": "Xiaomi Redmi 14C: Características destacadas:\n📱 Pantalla IPS LCD de 6.74\": Con resolución de 720 x 1650 píxeles, frecuencia de actualización de 60Hz y un brillo de hasta 900 nits, ideal para ver contenido con claridad incluso bajo luz intensa.\n📸 Cámara principal de 50 MP: Captura fotos detalladas incluso en condiciones de baja luz, y graba videos en Full HD. También tiene una cámara secundaria de 2 MP y un sensor QGVA.\n🤳 Cámara frontal de 8 MP: Perfecta para selfies y grabación de videos en HD.\n🧠 Procesador MediaTek Helio G81 Ultra: Ofrece un rendimiento fluido con 4GB de RAM, permitiendo ejecutar múltiples aplicaciones y juegos sin problemas.\n💾 Almacenamiento: 128 GB de almacenamiento interno, ampliable mediante tarjeta microSD, permitiendo guardar más contenido como fotos, videos y archivos importantes.\n🔋 Batería de 5000 mAh: Garantiza una autonomía duradera para todo el día, ideal para trabajo, entretenimiento y comunicación continua.\n🔒 Seguridad: Incluye lector de huella dactilar y reconocimiento facial para un acceso rápido y seguro al dispositivo.",
+                        "img": "XR14C128"
                     },
                     {
                         "label": "Xiaomi Redmi 14T 512GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "XR14T512",
+                        "specs": "Xiaomi 14T 5G: Características destacadas:\n📱 Pantalla AMOLED de 6.67\": Con resolución de 1440x3200, esta pantalla ofrece colores vibrantes y una nitidez impresionante, ideal para disfrutar de videos, fotos y contenido multimedia en alta calidad.\n📸 Cámaras traseras de 50 MP + 50 MP + 12 MP: Sistema de tres cámaras con teleobjetivo, enfoque preciso y función macro para fotos nítidas en cualquier situación. Además, graba en calidad 4K y FHD.\n🤳 Cámara frontal de 32 MP: Captura selfies y videos en HD para compartir en redes sociales.\n🚀 Procesador Mediatek Dimensity 8300-Ultra Octa Core: Potenciado por un procesador de 3.1 GHz y 12 GB de RAM (expandidos hasta +12GB mediante RAM Plus), proporciona un rendimiento excepcional para juegos, trabajo y multitarea sin problemas.\n💾 Almacenamiento interno de 512 GB: Espacio más que suficiente para almacenar todos tus archivos, fotos, videos y aplicaciones sin preocuparte por el espacio.\n🔋 Batería de 5000 mAh y carga rápida de 67W: Disfruta de una batería de larga duración y recarga rápida para mantenerte siempre conectado.\n💎 Diseño moderno y elegante: Además, incluye seguridad con lector de huellas y reconocimiento facial.",
+                        "img": "XR14T512"
                     },
                     {
                         "label": "Xiaomi Redmi Note 13 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "XRN13256",
+                        "specs": "Redmi Note 13: Características clave y especificaciones:\n📱 Pantalla: AMOLED de 6.67” con resolución Full HD+ (1220x2712) y tasa de refresco de 120Hz, asegurando una visualización nítida y una navegación fluida.\n📸 Cámara principal: Cuádruple cámara con una principal de 108 MP, ideal para fotos precisas y grabación de videos en Full HD. Además, incluye cámaras secundarias de 8 MP y 2 MP para capturar más detalles.\n🤳 Cámara frontal: 16 MP, perfecta para selfies con calidad HD y grabación de video en 720p y 1080p a 30fps.\n🧠 Procesador: Qualcomm Snapdragon 685 con 8 GB de RAM + RAM Plus de 8 GB, garantizando un rendimiento eficiente incluso con aplicaciones exigentes.\n📂 Almacenamiento: 256 GB de almacenamiento interno, ofreciendo amplio espacio para tus aplicaciones, fotos y videos.\n🔋 Batería: 5000 mAh con carga rápida de 33W, proporcionando una autonomía duradera para todo el día.\n✨ Diseño: Elegante con reconocimiento facial y sensor de huellas dactilares, asegurando tanto seguridad como un aspecto moderno.",
+                        "img": "XRN13256"
                     },
                     {
                         "label": "Xiaomi Redmi Note 13 Pro 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "XRN13PR256",
+                        "specs": "Redmi Note 13 Pro: Características clave y especificaciones\n📱 Pantalla: POLED de 6.67” con resolución Full HD+ (2400x1080) y tasa de refresco de 120Hz, brindando imágenes vibrantes y navegación fluida.\n📸 Cámara principal: 200 MP, ideal para capturar fotos de alta calidad y grabar videos en Full HD. Acompañada de cámaras de 8 MP y 2 MP para una mayor versatilidad.\n🤳 Cámara frontal: 16 MP, perfecta para selfies de calidad y grabación en HD.\n🧠 Procesador: MTK Helio G99 Ultra, acompañado de 8 GB de RAM, asegurando un rendimiento rápido y sin interrupciones.\n📂 Almacenamiento: 256 GB internos, ampliables hasta 1 TB mediante tarjeta microSD, para almacenar todas tus aplicaciones y medios.\n🔋 Batería: 5000 mAh Li-Po, que garantiza una duración de uso prolongada durante todo el día.\n✨ Diseño: Elegante, con reconocimiento facial y sensor de huellas dactilares para mayor seguridad.",
+                        "img": "XRN13PR256"
                     },
                     {
-                        "label": "Xiaomi Redmi Note 13 Pro Plus 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "label": "Xiaomi Redmi Note 13 Pro Plus 512GB",
+                        "id": "XRN13PRPL512",
+                        "specs": "Redmi Note 13 Pro: Características clave y especificaciones\n📱 Pantalla: POLED de 6.67” con resolución Full HD+ (2400x1080) y tasa de refresco de 120Hz, brindando imágenes vibrantes y navegación fluida.\n📸 Cámara principal: 200 MP, ideal para capturar fotos de alta calidad y grabar videos en Full HD. Acompañada de cámaras de 8 MP y 2 MP para una mayor versatilidad.\n🤳 Cámara frontal: 16 MP, perfecta para selfies de calidad y grabación en HD.\n🧠 Procesador: MTK Helio G99 Ultra, acompañado de 8 GB de RAM, asegurando un rendimiento rápido y sin interrupciones.\n📂 Almacenamiento: 256 GB internos, ampliables hasta 1 TB mediante tarjeta microSD, para almacenar todas tus aplicaciones y medios.\n🔋 Batería: 5000 mAh Li-Po, que garantiza una duración de uso prolongada durante todo el día.\n✨ Diseño: Elegante, con reconocimiento facial y sensor de huellas dactilares para mayor seguridad.",
+                        "img": "XRN13PRPL512"
                     }
                 ]
             },
@@ -443,51 +448,51 @@
                 "models": [
                     {
                         "label": "ZTE A54 128GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "ZA54128",
+                        "specs": "ZTE Blade A54: Características clave y especificaciones\n📱 Pantalla: 6.6” HD+ con tecnología IPS, garantizando una experiencia visual cómoda y colores vibrantes para ver películas y series.\n📸 Cámara principal: 13 MP con enfoque automático e Inteligencia Artificial, ideal para fotos nítidas y detalladas, además de capturar excelentes panorámicas y retratos.\n🤳 Cámara frontal: 2 MP, perfecta para selfies y grabación de videos en 720p.\n🧠 Procesador: Octa-Core (4x Cortex-A55 1.6 GHz + 4x Cortex-A55 1.2 GHz) junto con 4 GB de RAM (y 4 GB adicionales mediante memoria RAM virtual), proporcionando un rendimiento fluido para aplicaciones y juegos.\n📂 Almacenamiento: 64 GB internos, ampliables hasta 256 GB mediante tarjeta microSD, brindando amplio espacio para aplicaciones, fotos y videos.\n🔋 Batería: 5000 mAh, garantizando una duración de uso prolongada para entretenimiento y trabajo durante todo el día.\n✨ Diseño: Innovador con módulo fotográfico especial, reconocimiento facial y sensor de huella dactilar para mayor seguridad.",
+                        "img": "ZA54128"
                     },
                     {
                         "label": "ZTE A35 64GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "ZA3564",
+                        "specs": "ZTE Blade A35: Características y especificaciones clave:\n📱 Pantalla: 6.75” HD+ con resolución de 720x1600, ofreciendo una excelente calidad para ver contenido multimedia, redes sociales y disfrutar de tus fotos y videos.\n📸 Cámara principal: 8 MP con autoenfoque e inteligencia artificial, adaptando las imágenes a los escenarios para fotos mejoradas.\n🤳 Cámara frontal: 5 MP con resolución de video 720p, ideal para selfies y grabaciones de calidad.\n🧠 Procesador: Octa-Core (4x Cortex-A55 1.6 GHz + 4x Cortex-A55 1.2 GHz) con 2 GB de RAM, ampliable con Memoria RAM Virtual Extra de 4 GB, permitiendo un rendimiento fluido para aplicaciones y juegos.\n📂 Almacenamiento: 64 GB internos, expandibles hasta 1 TB mediante tarjeta microSD, lo que te permite almacenar gran cantidad de archivos y aplicaciones.\n🔋 Batería: 5000 mAh, brindando una duración prolongada para uso diario sin preocuparte por quedarte sin carga.\n✨ Diseño: Estilo innovador y único, con un módulo fotográfico llamativo en la parte trasera, destacando la originalidad del dispositivo.",
+                        "img": "ZA3564"
                     },
                     {
                         "label": "ZTE Nubia Focus 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "ZNF256",
+                        "specs": "Nubia Focus 5G: Características destacadas\n📱 Pantalla: 6.6” HD+, ideal para ver contenido en alta definición con una calidad visual impresionante.\n📸 Cámara principal: 108 MP, ofreciendo fotos en calidad 4K, perfectas para capturar panorámicas y detalles nítidos en cualquier condición de luz.\n🤳 Cámara frontal: 8 MP con resolución de video 1080p, excelente para grabar selfies y videos en vivo de alta calidad.\n🧠 Procesador: Octa-Core (4 Cortex-A76 a 2.2GHz + 4 Cortex-A55 a 2.0GHz), combinado con 6 GB de RAM y +10 GB de RAM virtual extra, proporcionando un rendimiento fluido incluso en aplicaciones exigentes y videojuegos.\n📂 Almacenamiento: 256 GB internos, ofreciendo gran espacio para fotos, videos y aplicaciones sin preocupaciones por espacio.\n🔋 Batería: 5000 mAh con carga rápida de 22.5W, asegurando largas horas de uso y una carga rápida para mayor conveniencia.\n✨ Diseño: Un diseño único con un acabado exclusivo para la cámara, brindando un aspecto moderno y atractivo.",
+                        "img": "ZNF256"
                     },
                     {
                         "label": "ZTE Nubia Music 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "ZNM256",
+                        "specs": "ZTE Nubia Music: Características destacadas\n📱 Pantalla: 6.6” HD+, perfecta para ver tus series, películas y videos favoritos con una calidad visual superior.\n📸 Cámara principal: 50 MP, ideal para fotos panorámicas y retratos, complementada con una cámara AI para capturas aún más impresionantes.\n🤳 Cámara frontal: 5 MP con grabación en 1080p, perfecta para compartir selfies y videos en redes sociales.\n🧠 Procesador: Octa-Core (4x Cortex-A55 a 1.6GHz + 4x Cortex-A55 a 1.2GHz) con 4GB de RAM y tecnología de RAM Virtual Extra de 4GB, proporcionando un rendimiento rápido y fluido.\n📂 Almacenamiento: 128GB internos, expandibles hasta 256GB mediante tarjeta externa, ofreciendo amplio espacio para tus archivos y aplicaciones.\n🔋 Batería: 5000 mAh, garantizando largas horas de uso sin necesidad de recargar.\n✨ Diseño: Exclusivo con un parlante trasero destacado, efectos de luz y un acabado brillante que le dan un toque único y atractivo.\n🎵 Sonido: El ZTE Nubia Music se destaca por su altavoz incorporado, ofreciendo una experiencia de sonido potente como un parlante portátil, ideal para disfrutar de música, podcasts y más.",
+                        "img": "ZNM256"
                     },
                     {
                         "label": "ZTE Nubia Neo 2 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "ZNN2256",
+                        "specs": "Nubia Neo 2 5G: Características destacadas\n📱 Pantalla: 6.72” FHD+, ideal para jugar juegos populares como Genshin Impact, Call of Duty, Free Fire, y más, con una calidad visual impresionante.\n📸 Cámara principal: 50 MP, perfecta para fotos panorámicas, retratos y videos en 1080P con excelente calidad.\n🤳 Cámara frontal: 16 MP con grabación en 1080P, ideal para grabar historias, selfies y contenido para redes sociales.\n🧠 Procesador: Octa-Core (1A76@2.7GHz + 3A76@2.3GHz + 4*A55@2.1GHz) con 8GB de RAM, que puede expandirse virtualmente hasta +12GB, garantizando un rendimiento fluido en juegos de gama media y alta.\n📂 Almacenamiento: 256GB internos, ofreciendo suficiente espacio para aplicaciones, juegos, fotos y videos.\n🔋 Batería: 5200 mAh con carga rápida de 33W, para largas horas de uso y recarga rápida cuando sea necesario.\n✨ Diseño: Impresionante y gamer, con detalles en dorado, negro y plata, y opciones de desbloqueo facial y por huella dactilar.",
+                        "img": "ZNN2256"
                     },
                     {
                         "label": "ZTE RedMagic 8s 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "ZRM8S256",
+                        "specs": "Redmagic 8S Pro de ZTE: Características destacadas\n📱 Pantalla: 6.8” FHD+ AMOLED, con resolución de 2480x1116 y tasa de refresco de 120Hz, ideal para disfrutar de videos, películas y juegos con calidad excepcional.\n📸 Cámara principal: 50 MP con grabación en 4K o FHD, perfecta para crear contenido visual para redes sociales como TikTok.\n📷 Cámaras secundarias: 8 MP (para fotos macro) y 2 MP (para fotos micro), brindando opciones para capturar detalles impresionantes.\n🤳 Cámara frontal: 16 MP, ideal para selfies y videollamadas en FHD, con filtros y ajustes para mayor diversión.\n🧠 Procesador: Qualcomm Snapdragon 8 Gen 2 (Plus) con 12GB de RAM y tecnología RAM Plus, que expande la memoria hasta 22GB, garantizando un rendimiento fluido en juegos y tareas exigentes.\n📂 Almacenamiento: 256GB internos, ofreciendo amplio espacio para fotos, videos y aplicaciones.\n🔋 Batería: 6000 mAh con carga rápida de 65W, proporcionando largas horas de uso y recarga rápida para mantenerte conectado sin interrupciones.\n✨ Diseño: Elegante en color negro con efecto brillante en la parte trasera, tres cámaras y el logo distintivo de ZTE. Incluye desbloqueo facial y por huella dactilar para máxima seguridad.",
+                        "img": "ZRM8S256"
                     },
                     {
                         "label": "ZTE V50 Desing 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "ZTEV50D256",
+                        "specs": "ZTE Blade V50 Design: Características destacadas\n📱 Pantalla: 6.6” con resolución de 1080x2408 y tasa de refresco de 60Hz, ideal para disfrutar de contenido fluido en plataformas como TikTok, Netflix y más.\n📸 Cámara principal: 50 MP con resolución 1080p, perfecta para capturar detalles nítidos en fotos y videos, además de tener un modo retrato impresionante.\n📷 Cámaras secundarias: 2 cámaras de 2 MP cada una, diseñadas para enriquecer la experiencia fotográfica con detalles adicionales.\n🤳 Cámara frontal: 8 MP con resolución 1080p, ideal para selfies de alta calidad y videos para redes sociales.\n🧠 Procesador: Octa-Core con núcleos Cortex-A75 y Cortex-A55, 6GB de RAM, potenciado aún más por la tecnología de memoria virtual RAM que añade hasta 10GB de RAM virtuale, ofreciendo rendimiento fluido para multitarea y juegos.\n📂 Almacenamiento: 256GB internos con expansión hasta 1TB mediante tarjeta microSD, brindando amplio espacio para todos tus archivos y aplicaciones.\n🔋 Batería: 5000 mAh con carga rápida de 22.5W, proporcionando una larga duración y carga eficiente para mantenerte siempre conectado.\n✨ Diseño: Color sólido y módulo fotográfico cuadrado con efecto reflectante, combinando modernidad y sofisticación, además de desbloqueo facial y por huella dactilar para seguridad adicional.",
+                        "img": "ZTEV50D256"
                     },
                     {
                         "label": "ZTE V50 Vita 256GB",
-                        "id": "",
-                        "specs": "",
-                        "img": ""
+                        "id": "ZTEV50V256",
+                        "specs": "ZTE Blade V50 Vita: Características destacadas\n📱 Pantalla: 6.75” IPS con resolución 720x1600, ideal para disfrutar de colores vibrantes en contenido multimedia.\n📸 Cámara principal: 50 MP, perfecta para capturar fotos detalladas y videos en 1080P.\n📷 Cámaras secundarias: 2 cámaras de 2 MP, que complementan la experiencia fotográfica con tomas de calidad profesional.\n🤳 Cámara frontal: 8 MP con resolución 1080P, ideal para selfies de alta calidad y videos para compartir en redes sociales.\n🧠 Procesador: Octa-Core (2x Cortex-A75 @1.6GHz + 6x Cortex-A55 @1.6GHz) y su memoria RAM de 4GB + 10GB RAM Memory Virtual Extra optimizan la navegación entre aplicaciones.\n📂 Almacenamiento: 256GB internos, expandible hasta 1TB con tarjeta microSD, brindando amplio espacio para fotos, videos y apps.\n🔋 Batería: 6000 mAh, ofreciendo una duración prolongada para todas tus actividades diarias sin interrupciones.\n✨ Diseño: Elegante y compacto, con medidas de 167.4 x 76 x 8.3 mm y un peso de 204g, fácil de llevar. Además, incluye reconocimiento facial y lector de huellas para mayor seguridad.",
+                        "img": "ZTEV50V256"
                     }
                 ]
             }
@@ -498,6 +503,7 @@
         "message": "Próximamente"
     },
     "links": {
-        "label": "Links de gestión"
+        "label": "Links de gestión",
+         "message": "PROTECCIÓN MÓVIL:\nhttps://www.proteccionmovil.com.pe/\n\nGEODIR:\nhttps://maps.geodir.co/bravo-maps\nUSUARIO: balderay@pe.geainternacional.com\nCONTRASEÑA:NogZ978*\n\nTIENDA CLARO:\nhttps://www.tiendaclaro.pe/\n\nAGENDAMIENTO DE CITA:\nhttps://retencionesproactivo.claro.turnosaloha.com/home\n\nLARAIGO:\nhttps://claro.laraigo.com/sign-in\n\nPORTAL DE APLICACIONES:\nhttp://intranetwebapp/aplicaciones/\n\nGENESYS:\nhttps://login.mypurecloud.com/?rid=BzIESXy9hmUabsTkmKmBlTgmSUSAGUjtQeBOfpCZgLE#/authenticate-adv/org/CLAROPERU\nUSUARIO: E@claro.com.pe\n\nXMAGIC:\nhttp://172.28.1.236/xmagictmk/\n\nN° PARA REALIZAR CAMBIO MILLAS A CLARO PUNTOS:\n*2525#\n\nPORTAL GEA:\nhttps://apps.geaperu.pe/flex/"
     }
 }

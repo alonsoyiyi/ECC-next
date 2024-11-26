@@ -1,8 +1,6 @@
-// GlobalInputsProvider.tsx
-
 'use client';
 
-import React, { createContext, useContext } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Image from 'next/image'
@@ -10,6 +8,18 @@ import { useLocalStorage } from '@/lib/useLocalStorage';
 import { GlobalInputs } from '@/types/globalTypes';
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
+import { useAuth0 } from '@auth0/auth0-react';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 
 const GlobalInputsContext = createContext<{
   globalInputs: GlobalInputs;
@@ -30,6 +40,8 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
     bonus: '',
     pointDiscount: ''
   });
+  const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
+  const [isLogoutDialogOpen, setIsLogoutDialogOpen] = useState(false);
 
   const handleInputChange = (key: keyof GlobalInputs, value: string) => {
     setGlobalInputs(prev => ({
@@ -37,6 +49,21 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
       [key]: value
     }));
   }
+
+  const handleLogin = () => {
+    loginWithRedirect();
+  }
+
+  const handleLogout = () => {
+    setIsLogoutDialogOpen(true);
+  }
+
+  const confirmLogout = () => {
+    logout({
+      logoutParams: { returnTo: window.location.origin }, 
+    });
+    setIsLogoutDialogOpen(false);
+  };
 
   return (
     <GlobalInputsContext.Provider value={{ globalInputs, setGlobalInputs }}>
@@ -70,7 +97,27 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
           </div>
         </div>
 
-        <Button className="ml-4">Login</Button>
+        {isAuthenticated ? (
+          <AlertDialog open={isLogoutDialogOpen} onOpenChange={setIsLogoutDialogOpen}>
+            <AlertDialogTrigger asChild>
+              <Button onClick={handleLogout} className="ml-4">{user?.name || 'Usuario'}</Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>¿Deseas deslogearte de EasyChat Claro?</AlertDialogTitle>
+                <AlertDialogDescription>
+                  Esta acción cerrará tu sesión actual.
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>No</AlertDialogCancel>
+                <AlertDialogAction onClick={confirmLogout}>Sí</AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
+        ) : (
+          <Button onClick={handleLogin} className="ml-4">Login</Button>
+        )}
       </header>
       <main className="flex-1 p-4">
         {children}
