@@ -5,8 +5,8 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import { X } from 'lucide-react'
 import Image from 'next/image'
+import { useToast } from "@/hooks/use-toast"
 
 interface Equipment {
   label: string
@@ -28,7 +28,9 @@ export default function EquipmentSearch({ equipmentData }: EquipmentSearchProps)
   const [searchTerm, setSearchTerm] = useState('')
   const [searchResults, setSearchResults] = useState<Equipment[]>([])
   const [selectedEquipment, setSelectedEquipment] = useState<Equipment | null>(null)
+  const [selectedBrand, setSelectedBrand] = useState<string | null>(null) // Nuevo estado
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const { toast } = useToast()
 
   useEffect(() => {
     if (searchTerm.trim() === '') {
@@ -45,6 +47,9 @@ export default function EquipmentSearch({ equipmentData }: EquipmentSearchProps)
   }, [searchTerm, equipmentData])
 
   const handleEquipmentClick = (equipment: Equipment) => {
+    // Encontrar la marca asociada
+    const brand = equipmentData.find(b => b.models.some(m => m.id === equipment.id))?.brand || null
+    setSelectedBrand(brand)
     setSelectedEquipment(equipment)
     setIsModalOpen(true)
   }
@@ -52,7 +57,11 @@ export default function EquipmentSearch({ equipmentData }: EquipmentSearchProps)
   const copySpecs = () => {
     if (selectedEquipment) {
       navigator.clipboard.writeText(selectedEquipment.specs)
-      alert('Especificaciones copiadas al portapapeles')
+      toast({
+        title: "Especificaciones copiadas",
+        description: "Las especificaciones se han copiado al portapapeles.",
+        duration: 5000
+      })
     }
   }
 
@@ -83,27 +92,23 @@ export default function EquipmentSearch({ equipmentData }: EquipmentSearchProps)
         <DialogContent className="max-w-4xl h-auto">
           <DialogHeader>
             <DialogTitle>{selectedEquipment?.label}</DialogTitle>
-            <Button 
-              className="absolute right-4 top-4" 
-              variant="ghost" 
-              onClick={() => setIsModalOpen(false)}
-            >
-              <X className="h-4 w-4" />
-            </Button>
           </DialogHeader>
+         
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <Image
-                src={`/images/${selectedEquipment?.img}.jpg`}
-                alt={selectedEquipment?.label || 'Equipment image'}
-                width={400}
-                height={400}
-                className="object-cover"
-              />
+              {selectedEquipment && selectedBrand && (
+                <Image
+                  src={`/images/${selectedBrand}/${selectedEquipment.img}.jpg`}
+                  alt={selectedEquipment.label || 'Equipment image'}
+                  width={400}
+                  height={400}
+                  className="object-cover"
+                />
+              )}
             </div>
             <div>
               <p className="text-sm">{selectedEquipment?.specs}</p>
-              <Button onClick={copySpecs} className="mt-4">Copiar especificaciones</Button>
+              <Button onClick={copySpecs} className="mt-4 hover:text-red-500">Copiar especificaciones</Button>
             </div>
           </div>
         </DialogContent>
