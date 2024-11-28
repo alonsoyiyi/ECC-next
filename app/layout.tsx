@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { GlobalInputsProvider } from '@/components/GlobalInputsProvider'
-import { Auth0ProviderWithHistory } from '@/components/Auth0Provider'
 import { Toaster } from '@/components/ui/toaster'
+import { UserProvider } from '@auth0/nextjs-auth0/client'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,14 +20,14 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={inter.className}>
-      <Auth0ProviderWithHistory>
-        <div className="min-h-screen flex flex-col">
-          <GlobalInputsProvider>
-            {children}
-            <Toaster/>
-          </GlobalInputsProvider>
-        </div>
-        </Auth0ProviderWithHistory>
+        <UserProvider>
+          <div className="min-h-screen flex flex-col">
+            <GlobalInputsProvider>
+              {children}
+              <Toaster/>
+            </GlobalInputsProvider>
+          </div>
+        </UserProvider>
       </body>
     </html>
   )

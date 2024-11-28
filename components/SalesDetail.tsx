@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import { useGlobalInputs } from '@/components/GlobalInputsProvider'; // Importa el hook
+import { useGlobalInputs } from '@/components/GlobalInputsProvider';
 import Footer from "@/components/Footer";
 import { SalesDetailProps } from "@/types/salesTypes";
+import { Button } from "@/components/ui/button";
+import { toast } from "@/hooks/use-toast";
 
 interface InputConfig {
   type?: string;
@@ -12,16 +14,16 @@ interface InputConfig {
 }
 
 interface InputValues {
-  [key: string]: string | number | undefined; // Permitir cualquier clave que tenga string, number o undefined como valor
+  [key: string]: string | number | undefined;
 }
 
 const SalesDetail: React.FC<SalesDetailProps> = ({ template, inputs }) => {
   const [inputValues, setInputValues] = useState<InputValues>({});
-  
+  const [isCopied, setIsCopied] = useState(false);
+
   const { globalInputs } = useGlobalInputs();
 
   useEffect(() => {
-    // Verifica si inputs tiene una clave llamada userName
     if (inputs && 'userName' in inputs) {
       setInputValues(prevValues => ({
         ...prevValues,
@@ -41,7 +43,26 @@ const SalesDetail: React.FC<SalesDetailProps> = ({ template, inputs }) => {
   const renderMessage = (messageTemplate: string) => {
     return messageTemplate.replace(/\{(.*?)\}/g, (match, key) => {
       const value = inputValues[key];
-      return value !== undefined ? String(value) : match; // Asegúrate de que siempre se devuelva un string
+      return value !== undefined ? String(value) : match;
+    });
+  };
+
+  const copyToClipboard = () => {
+    const text = renderMessage(template.message);
+    navigator.clipboard.writeText(text).then(() => {
+      setIsCopied(true);
+      toast({
+        title: "Copiado al portapapeles",
+        description: "El texto ha sido copiado exitosamente.",
+      });
+      setTimeout(() => setIsCopied(false), 2000);
+    }).catch(err => {
+      console.error('Error al copiar: ', err);
+      toast({
+        title: "Error",
+        description: "No se pudo copiar el texto. Por favor, inténtalo de nuevo.",
+        variant: "destructive",
+      });
     });
   };
 
@@ -50,12 +71,12 @@ const SalesDetail: React.FC<SalesDetailProps> = ({ template, inputs }) => {
   return (
     <>
       <h3 className="text-xl font-semibold mb-2">{template.label}</h3>
-      <div className="grid grid-cols-3 gap-2 mb-4"> {/* Tres columnas */}
+      <div className="grid grid-cols-3 gap-2 mb-4">
         {inputRefs.map((inputRef) => {
-          const inputConfig: InputConfig = inputs[inputRef.key] || { type: 'text', label: inputRef.label }; // Valor por defecto
+          const inputConfig: InputConfig = inputs[inputRef.key] || { type: 'text', label: inputRef.label };
           return (
-            <div key={inputRef.key} className="mb-1"> {/* Espacio vertical reducido */}
-              <label className="block text-xs">{inputConfig.label}</label> {/* Usar el label del JSON */}
+            <div key={inputRef.key} className="mb-1">
+              <label className="block text-xs">{inputConfig.label}</label>
               {inputConfig.type === 'select' ? (
                 <select
                   name={inputRef.key}
@@ -83,11 +104,23 @@ const SalesDetail: React.FC<SalesDetailProps> = ({ template, inputs }) => {
           );
         })}
       </div>
-      <textarea
-        className="border-2 border-red-600 rounded p-2 w-full h-60 bg-black text-white"
-        value={renderMessage(template.message)}
-        readOnly
-      />
+      <div className="relative">
+        <textarea
+          className="border-2 border-red-600 rounded p-2 w-full h-60 bg-black text-white"
+          value={renderMessage(template.message)}
+          readOnly
+        />
+        <div className="mt-2 flex justify-center">
+          <Button
+            onClick={copyToClipboard}
+            className={`px-4 py-2 ${isCopied ? 'bg-green-500' : 'bg-red-500'} text-white rounded`}
+          >
+            {isCopied ? 'Copiado!' : 'Copiar'}
+          </Button>
+        </div>
+      </div>
+
+
       <Footer />
     </>
   );

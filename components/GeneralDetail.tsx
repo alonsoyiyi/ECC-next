@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import EquipmentSearch from "@/components/EquipmentSearch";
+import UserNotes from "@/components/UserNotes";
 
 interface Model {
   label: string;
@@ -17,15 +18,23 @@ interface Item {
   id: string;
   label: string;
   message: string;
-  data?: Brand[]; // Definimos que data es opcional
+  data?: Brand[];
 }
 
 const GeneralDetail: React.FC<{ item: Item }> = ({ item }) => {
   if (item.id === "equipos") {
     return (
       <div className="mt-4 w-full">
-        {/* Pasamos un arreglo vacío si data es undefined */}
         <EquipmentSearch equipmentData={item.data || []} />
+        <Footer />
+      </div>
+    );
+  }
+
+  if (item.id === "userChats") {
+    return (
+      <div className="mt-4 w-full">
+        <UserNotes />
         <Footer />
       </div>
     );

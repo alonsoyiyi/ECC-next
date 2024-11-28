@@ -54,7 +54,7 @@ const GeneralList: React.FC = () => {
   return (
     <div className="flex h-screen">
       <div className="w-1/4 bg-black p-4 overflow-y-auto">
-        <h2 className="text-xl font-bold mb-4 text-white">General List</h2>
+        <h2 className="text-xl font-bold mb-4 text-white">Información General</h2>
         <ul className="space-y-2">
           {generalData.map((item) => (
             <li key={item.id}>
