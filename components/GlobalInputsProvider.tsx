@@ -8,7 +8,7 @@ import { useLocalStorage } from '@/lib/useLocalStorage';
 import { GlobalInputs } from '@/types/globalTypes';
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
-import { useAuth0 } from '@auth0/auth0-react';
+import { useUser } from '@auth0/nextjs-auth0/client';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -40,7 +40,7 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
     bonus: '',
     pointDiscount: ''
   });
-  const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
+  const { user, isLoading } = useUser();
   const [isLogoutDialogOpen, setIsLogoutDialogOpen] = useState(false);
 
   const handleInputChange = (key: keyof GlobalInputs, value: string) => {
@@ -51,7 +51,7 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
   }
 
   const handleLogin = () => {
-    loginWithRedirect();
+    window.location.href = '/api/auth/login';
   }
 
   const handleLogout = () => {
@@ -59,9 +59,7 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
   }
 
   const confirmLogout = () => {
-    logout({
-      logoutParams: { returnTo: window.location.origin }, 
-    });
+    window.location.href = '/api/auth/logout';
     setIsLogoutDialogOpen(false);
   };
 
@@ -80,7 +78,7 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
           </Link>
           <h1 className="text-2xl font-bold flex items-center">
             EasyChat Claro
-            <span className="text-sm text-gray-400 ml-2 align-top">Beta Version</span>
+            <span className="text-sm text-gray-400 ml-2 align-top">Version 1.0</span>
           </h1>
         </div>
 
@@ -97,10 +95,12 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
           </div>
         </div>
 
-        {isAuthenticated ? (
+        {isLoading ? (
+          <div>Cargando...</div>
+        ) : user ? (
           <AlertDialog open={isLogoutDialogOpen} onOpenChange={setIsLogoutDialogOpen}>
             <AlertDialogTrigger asChild>
-              <Button onClick={handleLogout} className="ml-4">{user?.name || 'Usuario'}</Button>
+              <Button onClick={handleLogout} className="ml-4">{user.name || 'Usuario'}</Button>
             </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>
