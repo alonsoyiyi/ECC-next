@@ -17,22 +17,22 @@ export default function HomePage() {
         <div className="mt-8 space-y-4">
           <Link href="/chats" className="w-full">
             <Button className="w-full" variant="outline">
-              Chats
+              Mensajes WhatsApp Predeterminados
             </Button>
           </Link>
           <Link href="/legales" className="w-full">
             <Button className="w-full" variant="outline">
-              Legales
+              Extractos Legales para Grabación
             </Button>
           </Link>
           <Link href="/ventas" className="w-full">
             <Button className="w-full" variant="outline">
-              Ventas
+              Plantillas de Ventas y BO
             </Button>
           </Link>
           <Link href="/general" className="w-full">
             <Button className="w-full" variant="outline">
-              General
+              Información General
             </Button>
           </Link>
         </div>
