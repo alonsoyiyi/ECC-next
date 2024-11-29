@@ -485,9 +485,9 @@
                 "customerEmail",
                 "fullModelGear",
                 "customerNumber",
-                "contactAdress"
+                "PMadress"
             ],
-            "message": "Usted está adquiriendo Protección Móvil que cubre los eventos de daño físico, falla eléctrica o mecánica (una vez la garantía del fabricante haya expirado) y robo o hurto.\nEl costo mensual del servicio protección móvil para el equipo adquirido, corresponde a S/.{pmPrice}. La primera prima se paga al momento que reciba su teléfono. El plazo del seguro es de un mes, con renovación automática.\nLa póliza cubre hasta un máximo de 2 reemplazos, en un periodo de 12 meses consecutivos, contados desde la fecha de reemplazo del primer siniestro cubierto.\nDeberá pagar un deducible en caso de siniestro cubierto. Este será de acuerdo con el precio prepago del bien asegurado a la fecha del siniestro, sin descuentos o subsidios. En caso de daño o falla el deducible es del 25% y en caso de robo o hurto el deducible es del 40%. En caso de siniestro, puede comunicarse sin costo a la línea de Protección Móvil marcando al *855 desde su celular Claro o al 0800-71-855.\nEste seguro no cubre, entre otras cosas: desaparición misteriosa, extravío, rasguños, daños superficiales, grietas, daño por abuso, daño por uso de forma contraria a las instrucciones del fabricante; pérdidas cubiertas por la garantía del fabricante; deshacerse intencionalmente del bien; daños por un acto intencional, doloso, deshonesto, fraudulento o delictivo.\nPuede encontrar toda la información sobre la cobertura del seguro Protección Móvil en el Certificado de Seguro, que recibirá en los días siguientes a la compra del seguro, y en las Condiciones Generales aplicables, disponibles en www.proteccionmovil.com.pe.\nPuede pedir su desactivación en cualquier momento en un Centro de Atención Claro o llamando desde su celular gratuitamente al 123 o al 0-800-00-123 desde un teléfono fijo.\n\n¿Acepta la recolección y tratamiento de sus datos personales en relación con su contrato de seguro, los cuales se tratarán en conformidad con el aviso de privacidad que encuentra en www.proteccionmovil.com.pe?\nSi está de acuerdo con lo antes indicado, le agradeceré diga: “Sí, acepto”. (si el usuario responde no, se concluye la llamada)\n\nSiendo el día {dayTime} de {monthDate} del {yearDate}, Ud. Sr(a) {customerName} con DNI N° {customerDocument} y correo electrónico {customerEmail} ¿Acepta contratar el servicio de protección móvil por S/ {pmPrice} mensuales para proteger su celular {fullModelGear} modelo cuyo código de IMEI está asociado a la línea celular N° {customerNumber} y al equipo que acaba de adquirir y le será entregado por Claro en {contactAdress}? Si está de acuerdo con lo antes indicado, le agradeceré diga: “Sí, acepto”."
+            "message": "Usted está adquiriendo Protección Móvil que cubre los eventos de daño físico, falla eléctrica o mecánica (una vez la garantía del fabricante haya expirado) y robo o hurto.\nEl costo mensual del servicio protección móvil para el equipo adquirido, corresponde a S/.{pmPrice}. La primera prima se paga al momento que reciba su teléfono. El plazo del seguro es de un mes, con renovación automática.\nLa póliza cubre hasta un máximo de 2 reemplazos, en un periodo de 12 meses consecutivos, contados desde la fecha de reemplazo del primer siniestro cubierto.\nDeberá pagar un deducible en caso de siniestro cubierto. Este será de acuerdo con el precio prepago del bien asegurado a la fecha del siniestro, sin descuentos o subsidios. En caso de daño o falla el deducible es del 25% y en caso de robo o hurto el deducible es del 40%. En caso de siniestro, puede comunicarse sin costo a la línea de Protección Móvil marcando al *855 desde su celular Claro o al 0800-71-855.\nEste seguro no cubre, entre otras cosas: desaparición misteriosa, extravío, rasguños, daños superficiales, grietas, daño por abuso, daño por uso de forma contraria a las instrucciones del fabricante; pérdidas cubiertas por la garantía del fabricante; deshacerse intencionalmente del bien; daños por un acto intencional, doloso, deshonesto, fraudulento o delictivo.\nPuede encontrar toda la información sobre la cobertura del seguro Protección Móvil en el Certificado de Seguro, que recibirá en los días siguientes a la compra del seguro, y en las Condiciones Generales aplicables, disponibles en www.proteccionmovil.com.pe.\nPuede pedir su desactivación en cualquier momento en un Centro de Atención Claro o llamando desde su celular gratuitamente al 123 o al 0-800-00-123 desde un teléfono fijo.\n\n¿Acepta la recolección y tratamiento de sus datos personales en relación con su contrato de seguro, los cuales se tratarán en conformidad con el aviso de privacidad que encuentra en www.proteccionmovil.com.pe?\nSi está de acuerdo con lo antes indicado, le agradeceré diga: “Sí, acepto”. (si el usuario responde no, se concluye la llamada)\n\nSiendo el día {dayDate} de {monthDate} del {yearDate}, Ud. Sr(a) {customerName} con DNI N° {customerDocument} y correo electrónico {customerEmail} ¿Acepta contratar el servicio de protección móvil por S/ {pmPrice} mensuales para proteger su celular modelo {fullModelGear} cuyo código de IMEI está asociado a la línea celular N° {customerNumber} y al equipo que acaba de adquirir y le será entregado por Claro en {PMadress}? Si está de acuerdo con lo antes indicado, le agradeceré diga: “Sí, acepto”."
         },
         {
             "id": "44",
@@ -1231,6 +1231,11 @@
             "label": "GB del plan",
             "type": "text"
         },
+        "PMadress": {
+            "label": "Dirección entrega para PM(casa o tienda)",
+            "type": "text"
+        },
+        
         "deliveryDay": {
             "label": "Dia de entrega",
             "type": "text"
@@ -1346,14 +1351,12 @@
             "type": "text"
         },
         "fullModelGear": {
-            "label": "E-mail del cliente",
-            "type": "text",
-            "description": "brandGear+modelGear+storageGear+colorGear"
+            "label": "Modelo y marca de equipo ofrecido al cliente",
+            "type": "text"
         },
         "contactAdress": {
             "label": "Dirección completa del cliente",
-            "type": "text",
-            "description": "customerAdress+customerDistrict"
+            "type": "text"
         }
     }
 }
