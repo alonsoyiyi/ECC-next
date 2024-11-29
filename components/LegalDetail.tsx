@@ -12,6 +12,8 @@ import Footer from "@/components/Footer";
 import { useToast } from "@/hooks/use-toast"
 
 
+
+
 interface LegalDetailProps {
   selectedLegalId: string;
   globalInputs: GlobalInputs;
@@ -48,6 +50,7 @@ export default function LegalDetail({ globalInputs }: LegalDetailProps) {
   const [mensajeFinal, setMensajeFinal] = useState('')
   const [valoresInput, setValoresInput] = useState<{ [key: string]: string }>({})
   const { toast } = useToast();
+  const [isCopied, setIsCopied] = useState(false);
   const [states, setStates] = useState<StateType>({
     s1: 0,
     s2: 0,
@@ -425,6 +428,33 @@ export default function LegalDetail({ globalInputs }: LegalDetailProps) {
     generarMensajeFinal()
   }, [generarMensajeFinal])
 
+
+  const handleCopyText = () => {
+    navigator.clipboard.writeText(mensajeFinal).then(() => {
+      setIsCopied(true);
+      toast({
+        title: "Texto copiado",
+        description: "El mensaje ha sido copiado al portapapeles.",
+      })
+      setTimeout(() => setIsCopied(false), 2000);
+    }).catch(err => {
+      console.error('Error al copiar el texto: ', err);
+      toast({
+        variant: "destructive",
+        title: "Error al copiar",
+        description: "No se pudo copiar el texto. Por favor, inténtalo de nuevo.",
+      })
+    });
+  };
+
+  const handleInputChange = (inputRef: string, value: string) => {
+    setValoresInput(prev => ({ ...prev, [inputRef]: value }));
+  };
+
+
+
+
+
   const renderizarInputs = () => {
     if (!datosLegales) return null
 
@@ -433,31 +463,16 @@ export default function LegalDetail({ globalInputs }: LegalDetailProps) {
     ))).filter(inputRef => inputRef !== 'userName') // Excluye userName
 
     return (
-      <div className="grid grid-cols-2 gap-x-4 gap-y-2 w-1/2 pr-4  ">
+      <div className="grid grid-cols-3 gap-2 mb-4">
         {inputRefsUnicos.map(inputRef => {
           const input = datosLegales.inputs[inputRef]
           if (!input) return null
 
           return (
-            <div key={inputRef} className="mb-2">
-              <Label htmlFor={inputRef} className="text-sm">{input.label}</Label>
-              {input.type === 'text' ? (
-                <Input
-                  id={inputRef}
-                  value={valoresInput[inputRef] || ''}
-                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-                    setValoresInput(prev => ({ ...prev, [inputRef]: e.target.value }))
-                  }}
-                  placeholder={`Ingrese ${input.label.toLowerCase()}`}
-                  className="w-full text-sm h-8 bg-black text-white"
-
-                />
-              ) : (
-                <Select
-                  onValueChange={(value) => {
-                    setValoresInput(prev => ({ ...prev, [inputRef]: value }))
-                  }}
-                >
+            <div key={inputRef} className="mb-1">
+              <Label htmlFor={inputRef} className="block text-xs">{input.label}</Label>
+              {input.type === 'select' ? (
+                <Select onValueChange={(value) => handleInputChange(inputRef, value)}>
                   <SelectTrigger className="w-full text-sm h-8">
                     <SelectValue placeholder={`Seleccione ${input.label.toLowerCase()}`} />
                   </SelectTrigger>
@@ -469,6 +484,15 @@ export default function LegalDetail({ globalInputs }: LegalDetailProps) {
                     ))}
                   </SelectContent>
                 </Select>
+              ) : (
+                <Input
+                  id={inputRef}
+                  type={input.type}
+                  value={valoresInput[inputRef] || ''}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleInputChange(inputRef, e.target.value)}
+                  placeholder={`Ingrese ${input.label.toLowerCase()}`}
+                  className="border rounded p-0.5 w-full text-black"
+                />
               )}
             </div>
           )
@@ -752,21 +776,31 @@ export default function LegalDetail({ globalInputs }: LegalDetailProps) {
         )}
 
         {step > 8 && (
-          <div className="flex  w-full h-full mt-4">
+          <div className="flex w-full h-full mt-4">
             {renderizarInputs()}
             <div className="w-1/2 pl-4 sticky top-0 self-start flex flex-col space-y-4">
-              <Textarea
-                value={mensajeFinal}
-                readOnly
-                className="w-full h-[calc(100vh-100px)] p-2 bg-black border-4 border-red-500 text-white rounded"
-              />
+              <div className="relative">
+                <Textarea
+                  value={mensajeFinal}
+                  readOnly
+                  className="border-2 border-red-600 rounded p-2 w-full h-[calc(100vh-200px)] bg-black text-white"
+                />
+                <div className="mt-2 flex justify-center">
+                  <Button
+                    onClick={handleCopyText}
+                    className={`px-4 py-2 ${isCopied ? 'bg-green-500' : 'bg-red-500'} text-white rounded`}
+                  >
+                    {isCopied ? 'Copiado!' : 'Copiar'}
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         )}
-
 
       </div>
       <Footer />
     </div>
   )
-}  
+}
+

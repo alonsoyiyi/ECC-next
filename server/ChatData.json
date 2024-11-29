@@ -357,7 +357,7 @@
                     "type": "text"
                 }
             ],
-            "message": "Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago en cuotas*:\n📱Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n📌 Cuota inicial: S/. {firstPayment}\n🧾 Cuota mensual: S/. {monthlyPayment}\n💳 Financiamiento:{financing} cuotas\n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📹 ¡Claro Video Gratis por 24 meses!\n💰 Pago total mensual: S/.{totalPlanGear} (Plan + cuota mensual)\n💲 Precio Total Equipo: S/. {totalGearPrice}"
+            "message": "Excelentes noticias!!!\n\nRealizando la evaluación, aplicas al beneficio de *pago en cuotas*:\n📱Equipo: {brandGear} {modelGear} de {storageGear} {bonusText}\n📌 Cuota inicial: S/. {firstPayment}\n🧾 Cuota mensual: S/. {monthlyPayment}\n💳 Financiamiento:{financing} \n{customerPlan} 📞 llamadas y ✉️ SMS nacionales ilimitados.\n📹 ¡Claro Video Gratis por 24 meses!\n💰 Pago total mensual: S/.{totalPlanGear} (Plan + cuota mensual)\n💲 Precio Total Equipo: S/. {totalGearPrice}"
         },
         {
             "id": "13",
@@ -1517,8 +1517,7 @@
                 "1",
                 "2",
                 "3",
-                "4",
-                "51"
+                "4"
             ]
         },
         {

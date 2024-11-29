@@ -345,7 +345,7 @@
             "message": "CL: {customerName}\nDNI: {customerDocument}\nNÚMERO A RENOVAR: {customerNumber}\nCORREO: {customerEmail}\nSEC: {secCode}\nCAC, CADENA, ACD: {cacName}\nPDV: {pdv}\nDIRECCION: {fullCustomerAdress}\nFECHA DE RECOJO: {pickupDate}\nHORARIO DE RECOJO: {turn}\nVENDEDOR: {userName}\nSN: {snCode}\nCAMPAÑA: {salesCampaign}"
         },
         "acdCadena": {
-            "label": "Información ACD/Cadena",
+            "label": "ACD/Cadena",
             "inputref": [
                 {
                     "key": "customerName",
@@ -388,16 +388,12 @@
                     "label": "Precio total del equipo"
                 },
                 {
-                    "key": "customerPoints",
-                    "label": "Puntos Claro"
+                    "key": "imei",
+                    "label": "Imei del Equipo"
                 },
                 {
-                    "key": "cacName",
-                    "label": "Nombre del CAC"
-                },
-                {
-                    "key": "fullCustomerAdress",
-                    "label": "Dirección completa del cliente"
+                    "key": "acdName",
+                    "label": "Nombre del acd según EXCEL"
                 },
                 {
                     "key": "pdv",
@@ -408,10 +404,6 @@
                     "label": "Fecha de recojo"
                 },
                 {
-                    "key": "turn",
-                    "label": "Turno"
-                },
-                {
                     "key": "pmPrice",
                     "label": "Precio Protección Móvil"
                 },
@@ -420,15 +412,89 @@
                     "label": "Nombre de supervisor"
                 },
                 {
-                    "key": "snCode",
-                    "label": "Código llamada SN"
-                },
-                {
                     "key": "salesCampaign",
                     "label": "Campaña de venta"
+                },
+                {
+                    "key": "prevCustomerPlan",
+                    "label": "Antiguo plan del cliente"
+                },
+                {
+                    "key": "newCustomerPlan",
+                    "label": "Nuevo Plan del Cliente"
+                },
+                {
+                    "key": "monthlyGearPlan",
+                    "label": "Pago mensual plan + equipoy"
                 }
             ],
-            "message": "NOMBRES: {customerName}\nDNI: {customerDocument}\nNÚMERO A RENOVAR: {customerNumber}\nCORREO: {customerEmail}\nSEC: {secCode}\nEQUIPO Y COLOR: {fullModelGear}\nPRECIO DEL EQUIPO: {totalGearPrice}\nCUOTA MENSUAL: {monthlyPayment}\nCUOTA INICIAL: {firstPayment}\nCONTADO: {gearPrice}\nCLARO PUNTOS: {customerPoints}\nACD/CADENA: {cacName}\nDIRECCION DE ENTREGA: {fullCustomerAdress}\nPDV: {pdv}\nFECHA DE RECOJO: {pickupDate}\nHORARIO DE RECOJO: {turn}\nPROTECCION MOVIL: {pmPrice}\nVENDEDOR: {userName}\nSUPERVISOR: {manager}\nSN: {snCode}\nCAMPAÑA: {salesCampaign}"
+            "message": "PDV A TRAMITAR: {acdName}\nCÓDIGO PDV: {pdv}\nIMEI: {imei}\nCORREO: {customerEmail}\nNOMBRE: {customerName}\nDNI: {customerDocument} \nNUMERO A RENOVAR: {customerNumber}\nEQUIPO Y COLOR: {fullModelGear}\nFECHA DE RECOJO: {pickupDate}\nSEC: {secCode}\nCLARO PUNTOS: {customerPoints}\nPROTECCION MOVIL: {pmPrice}\nPLAN ACTUAL: {prevCustomerPlan}\nPLAN OFRECIDO: {newCustomerPlan}\nCAMPAÑA: {salesCampaign}\nCOSTO TOTAL EQUIPO: {totalGearPrice}\nCUOTA INICIAL: {firstPayment}\nCUOTA MENSUAL: {monthlyPayment}\nCARGO FIJO:\n{monthlyGearPlan}\nASESOR: {userName}\nSUPERVISOR: {manager}\nCALL CENTER: GEA"
+        },
+        "consultaStock": {
+            "label": "Plantilla de CONSULTA STOCK",
+            "inputref": [
+                {
+                    "key": "acdName",
+                    "label": "Nombre del acd según EXCEL"
+                },
+                {
+                    "key": "customerName",
+                    "label": "Nombre de cliente"
+                },
+                {
+                    "key": "customerDocument",
+                    "label": "DNI"
+                },
+                {
+                    "key": "secCode",
+                    "label": "Código SEC"
+                },
+                {
+                    "key": "acdType",
+                    "label": "Código SEC"
+                },
+                {
+                    "key": "pdv",
+                    "label": "PDV"
+                },
+                {
+                    "key": "pdvName",
+                    "label": "PDV"
+                },
+                {
+                    "key": "pdvAdress",
+                    "label": "PDV"
+                },
+                {
+                    "key": "pdvDistrict",
+                    "label": "PDV"
+                },
+                {
+                    "key": "pdvProvince",
+                    "label": "PDV"
+                },
+                {
+                    "key": "pdvDepartment",
+                    "label": "PDV"
+                },
+                {
+                    "key": "pdvManager",
+                    "label": "PDV"
+                },
+                {
+                    "key": "reason",
+                    "label": "PDV"
+                },
+                {
+                    "key": "date",
+                    "label": "PDV"
+                },
+                {
+                    "key": "hour",
+                    "label": "PDV"
+                }
+            ],
+            "message": "⚠❗ Plantilla de CONSULTA STOCK - CALL GEA:\n📌ACD : {acdName}\n📌CLIENTE: {customerName}\n📌DNI: {customerDocument}\n📌SEC: {secCode}\n📌PRODUCTO: RENOVACION\n📌PACK O CHIP: {acdType}\n📌CODIGO PDV: {pdv}\n📌NOMBRE PDV: {pdvName}\n📌DIRECCION PDV: {pdvAdress}\n📌DISTRITO: {pdvDistrict}\n📌PROVINCIA: {pdvProvince}\n📌DEPARTAMENTO: {pdvDepartment}\n📌CORREO COORDINADOR CLARO: NA\n📌COORDINADOR CLARO: {pdvManager}\n📌MOTIVO: {reason}\n📌FECHA: {date}\n📌HORA: {hour}"
         },
         "plantillaAnulacion": {
             "label": "Anulación de Pedido/Renovación",
@@ -954,6 +1020,10 @@
             "label": "Número de pedido",
             "type": "text"
         },
+        "imei": {
+            "label": "Imei del Equipo",
+            "type": "text"
+        },
         "orderDate": {
             "label": "Fecha creación pedido",
             "type": "date"
@@ -965,6 +1035,60 @@
         "cacName": {
             "label": "Nombre del CAC",
             "type": "text"
+        },
+        "acdName": {
+            "label": "Nombre del ACD según EXCEL",
+            "type": "text"
+        },
+        "pdvName": {
+            "label": "Nombre del pdv según SISACT",
+            "type": "text"
+        },
+        "pdvAdress": {
+            "label": "Dirección del pdv",
+            "type": "text"
+        },
+        "pdvDistrict": {
+            "label": "Distrito del pdv",
+            "type": "text"
+        },
+        "pdvProvince": {
+            "label": "Provincia del pdv",
+            "type": "text"
+        },
+        "pdvDepartment": {
+            "label": "Departamento del pdv",
+            "type": "text"
+        },
+        "pdvManager": {
+            "label": "Coordinador del pdv según EXCEL",
+            "type": "text"
+        },
+        "reason": {
+            "label": "Motivo",
+            "type": "text"
+        },
+        "hour": {
+            "label": "Hora",
+            "type": "text"
+        },
+        "date": {
+            "label": "Fecha",
+            "type": "date"
+        },
+        "acdType": {
+            "label": "Tipo de acd",
+            "type": "select",
+            "options": [
+                {
+                    "value": "Chip",
+                    "label": "Chip"
+                },
+                {
+                    "value": "Pack",
+                    "label": "Pack"
+                }
+            ]
         },
         "cacType": {
             "label": "Tipo de CAC",
