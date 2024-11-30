@@ -113,7 +113,7 @@ const SalesDetail: React.FC<SalesDetailProps> = ({ template, inputs }) => {
         <div className="mt-2 flex justify-center">
           <Button
             onClick={copyToClipboard}
-            className={`px-4 py-2 ${isCopied ? 'bg-green-500' : 'bg-red-500'} text-white rounded`}
+            className={`px-4 py-2 text-white rounded border-2 ${isCopied ? 'bg-red-500 border-red-500 hover:bg-red-600 hover:border-red-600' : 'bg-black border-red-500 hover:bg-red-700 hover:border-red-600'} text-white rounded`}
           >
             {isCopied ? 'Copiado!' : 'Copiar'}
           </Button>

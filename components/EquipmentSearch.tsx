@@ -108,7 +108,7 @@ export default function EquipmentSearch({ equipmentData }: EquipmentSearchProps)
             </div>
             <div>
               <p className="text-sm">{selectedEquipment?.specs}</p>
-              <Button onClick={copySpecs} className="mt-4 hover:text-red-500">Copiar especificaciones</Button>
+              <Button onClick={copySpecs} className="mt-4 border-2 border-red-500 bg-black-500 text-white hover:bg-red-600 transition-all duration-300">Copiar especificaciones</Button>
             </div>
           </div>
         </DialogContent>

@@ -155,6 +155,7 @@ export default function ChatDetail({ selectedChat, globalInputs, searchResults, 
 
       <div className="flex justify-between mt-4">
         <Button
+        className="border-2 border-red-500 text-white hover:bg-red-700 transition-colors duration-300"
           onClick={() => {
             const formattedMessage = formatFinalMessageForCopy(finalMessage);
             navigator.clipboard.writeText(formattedMessage);
