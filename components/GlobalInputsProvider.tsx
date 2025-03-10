@@ -20,6 +20,13 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog"
 
 const GlobalInputsContext = createContext<{
   globalInputs: GlobalInputs;
@@ -42,6 +49,7 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
   });
   const { user, isLoading } = useUser();
   const [isLogoutDialogOpen, setIsLogoutDialogOpen] = useState(false);
+  const [isYapeOpen, setIsYapeOpen] = useState(false);
 
   const handleInputChange = (key: keyof GlobalInputs, value: string) => {
     setGlobalInputs(prev => ({
@@ -78,11 +86,25 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
           </Link>
           <h1 className="text-2xl font-bold flex items-center">
             EasyChat Claro
-            <span className="text-sm text-gray-400 ml-2 align-top">Version 1.0</span>
+            <span className="text-sm text-gray-400 ml-2 align-top">Version 1.01</span>
           </h1>
         </div>
 
-        <div className="flex-1 flex justify-center">
+        <div className="flex-1 flex justify-center items-center gap-4">
+          <span 
+            className="text-sm font-semibold cursor-pointer hover:text-primary-foreground/80 transition-colors"
+            onClick={() => setIsYapeOpen(true)}
+          >
+            ¡Apoya este proyecto! 🚀
+          </span>
+          <Image
+            src="/images/yape.jpg"
+            alt="Yape QR"
+            width={40}
+            height={40}
+            className="cursor-pointer transition-transform hover:scale-110"
+            onClick={() => setIsYapeOpen(true)}
+          />
           <div className="flex flex-col items-center">
             <Label htmlFor="nombre" className="sr-only">Nombre</Label>
             <Input
@@ -118,6 +140,27 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
         ) : (
           <Button onClick={handleLogin} className="ml-4">Login</Button>
         )}
+        <Dialog open={isYapeOpen} onOpenChange={setIsYapeOpen}>
+          <DialogContent className="max-w-md">
+            <DialogHeader>
+              <DialogTitle className="text-center">¡Apoya este proyecto! 🚀</DialogTitle>
+              <DialogDescription className="text-center pt-4">
+                Este es un proyecto personal no monetizado, sin embargo, si crees que esta herramienta 
+                te ha sido útil para tu gestión, no dudes en apoyarlo y periódicamente estaré 
+                actualizando speechs, equipos, planes y todo tipo de información 🤗
+              </DialogDescription>
+            </DialogHeader>
+            <div className="flex justify-center p-4">
+              <Image
+                src="/images/yape.jpg"
+                alt="Yape QR"
+                width={300}
+                height={300}
+                className="rounded-lg"
+              />
+            </div>
+          </DialogContent>
+        </Dialog>
       </header>
       <main className="flex-1 p-4">
         {children}
