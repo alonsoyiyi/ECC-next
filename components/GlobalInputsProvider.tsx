@@ -86,7 +86,7 @@ export function GlobalInputsProvider({ children }: { children: React.ReactNode }
           </Link>
           <h1 className="text-2xl font-bold flex items-center">
             EasyChat Claro
-            <span className="text-sm text-gray-400 ml-2 align-top">Version 1.01</span>
+            <span className="text-sm text-gray-400 ml-2 align-top">Version 1.02</span>
           </h1>
         </div>
 

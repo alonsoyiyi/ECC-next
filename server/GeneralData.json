@@ -187,6 +187,18 @@
                         "id": "H200PR512",
                         "specs": "¡El Honor 200 Pro combina potencia, diseño y tecnología avanzada!\n📱 Pantalla: AMOLED de 6.78\", resolución 1224×2700 píxeles, con tasa de refresco de 120Hz y brillo de alta calidad, ideal para películas, series y redes sociales.\n📸 Cámara trasera: Triple sistema de cámaras: dos de 50 MP (panorámica y retrato) y una macro de 12 MP, con grabación en 4K para contenido profesional.\n🤳 Cámara frontal: 50 MP, perfecta para selfies y grabación en 4K, ideal para redes sociales.\n🧠 Procesador: Qualcomm Snapdragon 8s Gen 3 con 12 GB de RAM + 12 GB adicionales con RAM Turbo, para un rendimiento óptimo en aplicaciones exigentes y multitarea.\n📂 Almacenamiento: 512 GB, suficiente para fotos, videos, documentos y aplicaciones sin restricciones.\n🔋 Batería: 5200 mAh con carga rápida de 100W, ofreciendo largas horas de uso continuo y recarga rápida.\n✨ Diseño: Sofisticado, con acabados traseros únicos y un módulo de cámaras ovalado con bordes plateados.\n🆕 Extras: Grabación en 4K, brillo ajustable, experiencia visual inmersiva y funciones exclusivas para fotografía retrato y macro.",
                         "img": "H200PR512"
+                    },
+                    {
+                        "label": "Honor Magic 7 Pro 512GB",
+                        "id": "HM7PR512",
+                        "specs": "¡Honor Magic 7 Pro: potencia premium, cámara imponente y carga ultra rápida! 🚀📱\n📱 Pantalla OLED de 6.8\" con resolución 1280×2800 y tasa de refresco de 120Hz: ideal para gaming y contenido multimedia.\n📸 Triple cámara trasera: 50 MP, 200 MP y 50 MP, con calidad profesional.\n🤳 Cámara frontal de 50 MP con grabación en 4K: selfies y videollamadas nítidas.\n🧠 Procesador Snapdragon 8 Elite (4.3GHz + 3.5GHz), 12 GB de RAM + 12 GB HONOR RAM Turbo: máximo rendimiento para tareas exigentes.\n📂 512 GB de almacenamiento: espacio amplio para apps, fotos y videos.\n🔋 Batería de 5850 mAh con carga rápida de 100W: recarga completa en solo 30 minutos.\n✨ Extras: lector de huella, reconocimiento facial y diseño de gama alta ideal para usuarios exigentes.",
+                        "img": "HM7PR512"
+                    },
+                    {
+                        "label": "Honor 400 Lite 256GB",
+                        "id": "H400L256",
+                        "specs": "¡Honor 400 Lite: cámara de 108 MP, hasta 24 GB de RAM y pantalla AMOLED de 120Hz! 🚀📱\n📱 Pantalla AMOLED de 6.7\" FHD+ con tasa de refresco de 120Hz: experiencia visual envolvente, ideal para multimedia y juegos.\n📸 Cámara principal doble de 108 MP + 5 MP: fotos nítidas y detalladas.\n🤳 Cámara frontal de 16 MP: selfies claras y videollamadas en alta calidad.\n🧠 Procesador MediaTek Dimensity 7025 Ultra y hasta 24 GB de RAM virtual (12 GB físicos + 12 GB con RAM Turbo): rendimiento sólido para multitarea, apps exigentes y juegos.\n📂 256 GB de almacenamiento interno: espacio amplio sin necesidad de memoria externa.\n🔋 Batería de 5230 mAh con carga rápida de 35W: duración para todo el día y carga eficiente.\n✨ Extras: desbloqueo facial y lector de huella para mayor seguridad.",
+                        "img": "H400L256"
                     }
                 ]
             },
@@ -270,6 +282,18 @@
                         "id": "MR50512",
                         "specs": "¡El Motorola Razr 50 es un smartphone con características impresionantes que te sorprenderán!\n📱 Pantalla: 6.7\" pOLED con resolución 120Hz, perfecta para disfrutar de colores vibrantes, imágenes nítidas y movimientos fluidos.\n📸 Cámara principal: 50 MP + 13 MP ultra gran angular, captura imágenes de alta calidad y videos en 4K, ideal para fotos panorámicas o de grupo.\n🤳 Cámara frontal: 32 MP, graba en 1080p HD a 60fps, asegurando selfies y videollamadas nítidas y de alta calidad.\n🧠 Procesador: MTK-24M, acompañado de 12 GB de RAM para un rendimiento rápido y fluido, ideal para multitarea y aplicaciones exigentes.\n📂 Almacenamiento: 512 GB, sin preocupaciones por el espacio, además de conectividad 5G para una experiencia de navegación y descarga ultra rápida.\n🔋 Batería: 4200 mAh, con carga rápida de 30W y carga inalámbrica de 15W, asegurando que siempre estés listo para continuar el día sin interrupciones.\n✨ Diseño: Elegante y minimalista, con el icónico logo de Motorola y un acabado moderno.\n🆕 Extras: Reconocimiento facial y lector de huella dactilar para mayor seguridad y comodidad.",
                         "img": "MR50512"
+                    },
+                    {
+                        "label": "Moto G15 256GB",
+                        "id": "MG15256",
+                        "specs": "¡Motorola G15: pantalla amplia, cámara de 50 MP y batería de 5200 mAh! 🚀📱\n📱 Pantalla LCD de 6.72” con resolución FHD+ (1080 x 2400): buena nitidez para ver series, fotos y navegar con comodidad.\n📸 Cámara principal de 50 MP + cámara secundaria de 5 MP con Flicker: fotos precisas y videos en 1080p.\n🤳 Cámara frontal de 8 MP: selfies claras y grabación en 1080p.\n🧠 Procesador MediaTek + 4 GB de RAM: rendimiento básico pero estable para tareas cotidianas.\n📂 Almacenamiento interno de 256 GB + ranura para memoria externa.\n🔋 Batería de 5200 mAh con carga rápida de 20W: autonomía sólida para el día a día.\n🔒 Lector de huella + reconocimiento facial para mayor seguridad.",
+                        "img": "MG15256"
+                    },
+                    {
+                        "label": "Moto G35 256GB",
+                        "id": "MG35256",
+                        "specs": "¡Moto G35 5G: pantalla fluida, cámara versátil y diseño moderno! 🚀📱\n📱 Pantalla Full HD+ de 6.72” con tasa de refresco de 120Hz: ideal para una experiencia visual suave y envolvente.\n📸 Cámara principal dual: 50 MP (principal) + 8 MP (ultra gran angular).\n🤳 Cámara frontal de 16 MP perfecta para selfies y videollamadas.\n🧠 Procesador Unisoc T760 de 2.2 GHz + 4 GB de RAM: rendimiento sólido para multitarea y apps del día a día.\n📂 Almacenamiento interno de 256 GB: espacio amplio para apps, fotos y videos.\n🔋 Batería de 5000 mAh con carga rápida de 18W: autonomía de todo el día sin complicaciones.\n✨ Reconocimiento facial y lector de huella.",
+                        "img": "MG35256"
                     }
                 ]
             },
@@ -335,6 +359,18 @@
                         "id": "OR12FHRE256",
                         "specs": "¡El Oppo Reno 12F 5G Harry Potter Edition: un toque mágico en tus manos!\n📱 Pantalla: 6.67” AMOLED, resolución 2400 x 1080. Ideal para multimedia con imágenes vibrantes y claras. Seguridad con huella y desbloqueo facial.\n📸 Cámara trasera: Triple: 50 MP para fotos detalladas, 8 MP ultra gran angular y 2 MP para efectos profesionales.\n🤳 Cámara frontal: 32 MP, perfecta para selfies nítidas incluso con poca luz. AI para edición avanzada como borrar objetos o añadir stickers.\n🧠 Procesador: Mediatek MT6835T con 12 GB RAM. Rendimiento fluido en juegos y multitareas exigentes.\n📂 Almacenamiento: 256 GB interno, expandible hasta 2 TB. Espacio para apps, fotos y videos.\n🔋 Batería: 5000 mAh con carga rápida de 45W. Uso prolongado y recarga en minutos.\n🎁 Accesorios mágicos: Caja estilo libro de hechizos, varita mágica stylus, funda con Snitch dorada, pin Reliquias de la Muerte y carta de bienvenida a Hogwarts.\n✨ Diseño exclusivo: Acabado temático de Harry Potter con emblema de Hogwarts. ¡Perfecto para fanáticos de la magia y coleccionistas!",
                         "img": "OR12FHRE256"
+                    },
+                    {
+                        "label": "Oppo Reno 13F 256GB",
+                        "id": "OR13F256",
+                        "specs": "¡Oppo Reno 13F 5G: pantalla premium, potencia extrema y cámara pro! 🚀📱\n📱 Pantalla AMOLED de 6.67” Full HD+ con tasa de refresco de 120Hz: colores vivos, negros intensos y fluidez para juegos y videos.\n📸 Cámara triple: 50 MP (principal) + 8 MP (ultrawide) + 2 MP (profundidad).\n🤳 Cámara frontal de 32 MP para selfies y contenido en redes.\n🧠 Procesador Qualcomm SM6450 (Octa-Core) a 2.2 GHz + 12 GB de RAM + 12 GB RAM virtual: rendimiento altísimo para todo tipo de uso.\n📂 Almacenamiento interno: 256 GB.\n🔋 Batería de 5800 mAh con carga rápida: autonomía excelente para uso intensivo.\n✨ Lector de huella y desbloqueo facial. Ideal para juegos, streaming, redes sociales y productividad.",
+                        "img": "OR13F256"
+                    },
+                    {
+                        "label": "Oppo A5 Pro 256GB",
+                        "id": "OA5P256",
+                        "specs": "¡Oppo A5 Pro 5G 256GB: potencia, batería y conectividad total! 🚀📱\n📱 Pantalla LCD HD+ de 6.67\" con resolución 1604 × 720, brillo de hasta 1000 nits y tasa de refresco de 120Hz: fluidez y buena visibilidad incluso bajo el sol.\n📸 Cámara trasera dual: 50 MP principal + 2 MP monocromo, con grabación hasta 1080p@60fps.\n🤳 Cámara frontal de 8 MP con grabación en 1080p: ideal para selfies y videollamadas.\n🧠 Procesador MediaTek Dimensity 6300 con 8 núcleos y GPU Mali-G57 MC2 + 8 GB de RAM LPDDR4X: rendimiento eficiente para multitarea y apps exigentes.\n📂 256 GB de almacenamiento interno  expandible por microSD: espacio y rendimiento en uno solo.\n🔋 Batería de 5800 mAh con carga rápida SUPERVOOC de 45W: energía para todo el día y carga veloz.\n✨ Extras: lector de huella, reconocimiento facial, NFC, Bluetooth 5.3, USB-C, jack por USB-C, Gorilla Glass 7i, y diseño ligero en dos colores.",
+                        "img": "OA5P256"
                     }
                 ]
             },
@@ -472,7 +508,26 @@
                         "id": "SGZFO5512",
                         "specs": "¡El Samsung Galaxy Z Fold 5 redefine la innovación con su diseño plegable y potencia de alto nivel! 🚀📱\n📱 Pantalla: Dynamic AMOLED 2X de 7.6” QXGA+ con 120Hz y brillo de 1200 nits para una experiencia visual inmersiva. Además, pantalla externa de 6.2” HD+ para máxima versatilidad.\n📸 Cámara principal: 50 MP + 12 MP ultra gran angular + 10 MP telefoto con OIS y zoom óptico 3X, captura imágenes nítidas y detalladas en cualquier situación.\n🤳 Cámara frontal: 10 MP, ideal para selfies y videollamadas con calidad profesional.\n🧠 Procesador: Snapdragon 8 Gen 2 para Galaxy, asegurando rendimiento fluido en multitarea, gaming y productividad.\n📂 Almacenamiento: 512 GB con 12 GB de RAM LPDDR5X para un desempeño inigualable.\n🔋 Batería: 4400 mAh con carga rápida de 25W e inalámbrica, diseñada para acompañarte todo el día.\n✨ Diseño: Plegable, resistente y futurista, con compatibilidad para S Pen, llevando la creatividad y productividad al siguiente nivel.\n🆕 Extras: Samsung DeX para transformar tu móvil en una estación de trabajo, desbloqueo con huella lateral, conectividad 5G y carga inalámbrica.",
                         "img": "SGZFO5512"
+                    },
+                    {
+                        "label": "Samsung Galaxy A56 256GB",
+                        "id": "SGA56256",
+                        "specs": "¡Samsung Galaxy A56: rendimiento, estilo y tecnología inteligente! 🚀📱\n📱 Pantalla Super AMOLED de 6.7\" con resolución FHD+ (1080 x 2340) y tasa de refresco de 120Hz: visualización nítida para contenido multimedia.\n📸 Triple cámara trasera: 50 MP principal, 12 MP ultra gran angular y 5 MP, con grabación en 4K.\n🤳 Cámara frontal de 12 MP con grabación en 4K: selfies con gran detalle y calidad.\n🧠 Procesador Exynos 1580, 8 núcleos y 8 GB de RAM + 8 GB RAM Plus: excelente rendimiento en multitarea.\n📂 256 GB de almacenamiento interno: guarda todo tu contenido sin preocupaciones.\n🔋 Batería de 5000 mAh con carga rápida: uso prolongado para el día a día.\n✨ Extras: funciones de IA como Circle to Search, Mejor Cara y Nightography, lector de huella, reconocimiento facial y diseño moderno y ligero.",
+                        "img": "SGA56256"
+                    },
+                    {
+                        "label": "Samsung Galaxy A26 128GB",
+                        "id": "SGA26128",
+                        "specs": "¡Samsung Galaxy A26: pantalla Super AMOLED, cámara de 50 MP y potencia 5G! 🚀📱\n📱 Pantalla Super AMOLED de 6.7\" FHD+ (1080×2340) con tasa de refresco de 120Hz: colores vivos, nitidez y fluidez.\n📸 Cámara triple de 50 MP + 8 MP + 2 MP: captura detalles, paisajes amplios y retratos con profundidad.\n🤳 Cámara frontal de 13 MP: selfies y videollamadas de alta calidad.\n🧠 Procesador Exynos 1280 Octa-Core (hasta 2.4 GHz) con hasta 12 GB de RAM (6 GB + 6 GB RAM Plus): ideal para juegos, multitarea y apps exigentes.\n📂 128 GB o 256 GB de almacenamiento interno, expandible hasta 2 TB: espacio de sobra para tus archivos.\n🔋 Batería de 5000 mAh con carga rápida: hasta 85 min para carga completa.\n✨ Extras: reconocimiento facial, lector de huella, diseño delgado y ligero.",
+                        "img": "SGA26128"
+                    },
+                    {
+                        "label": "Samsung Galaxy A36 128GB",
+                        "id": "SGA36128",
+                        "specs": "¡Samsung Galaxy A36 5G: cámara triple, potencia Qualcomm y pantalla AMOLED de 120Hz! 🚀📱\n📱 Pantalla Super AMOLED de 6.7\" FHD+ (1080×2340) con tasa de refresco de 120Hz: colores vivos y gran fluidez visual.\n📸 Cámara triple de 50 MP + 8 MP + 5 MP: captura profesional, gran angular y profundidad.\n🤳 Cámara frontal de 12 MP: ideal para selfies y videollamadas con buena definición.\n🧠 Procesador Qualcomm SM6475 Octa-Core (hasta 2.4 GHz) y hasta 12 GB de RAM (6 GB + 6 GB RAM Plus): rendimiento fluido para juegos, apps y multitarea.\n📂 128 GB de almacenamiento interno, expandible: guarda tus apps, fotos y videos sin preocuparte.\n🔋 Batería de 5000 mAh con carga rápida de hasta 45W: carga completa en solo 70 min.\n✨ Extras: reconocimiento facial, lector de huella, diseño moderno y cómodo.",
+                        "img": "SGA36128"
                     }
+                
                 ]
             },
             {
@@ -584,6 +639,18 @@
                         "id": "XRN14PRPL256",
                         "specs": "¡El Xiaomi Redmi 14 Pro Plus 5G lleva la innovación y potencia a otro nivel! 🚀📱\n📱 Pantalla: 6.67” AMOLED con colores vibrantes y detalles nítidos para una experiencia visual envolvente.\n📸 Cámara principal: 50 MP + 50 MP + 12 MP, captura fotos impresionantes y graba en alta calidad.\n🤳 Cámara frontal: 32 MP, perfecta para selfies nítidas y videollamadas con gran claridad.\n🧠 Procesador: Qualcomm Snapdragon 7S Gen 3, diseñado para un rendimiento veloz en multitareas y gaming.\n📂 Almacenamiento: 256 GB de memoria interna, espacio de sobra para todas tus fotos, apps y archivos.\n🔋 Batería: 5110 mAh con carga ultrarrápida de 120W, energía lista en minutos.\n✨ Diseño: Elegante y seguro, con lector de huellas y desbloqueo facial.\n🆕 Extras: Conectividad 5G, Wi-Fi 6, Bluetooth 5.3, GPS y compatibilidad con VoLTE y VoWiFi para llamadas nítidas.",
                         "img": "XRN14PRPL256"
+                    },
+                    {
+                        "label": "Xiaomi Redmi 13 256GB",
+                        "id": "XR13256",
+                        "specs": "¡Redmi 13: cámara de 108 MP, gran pantalla de 6.79” y batería de 5030 mAh! 🚀📱\n📱 Pantalla FHD+ de 6.79\" con tasa de refresco AdaptiveSync de 90Hz: fluidez y buen brillo en una pantalla amplia con Corning Gorilla Glass.\n📸 Cámara principal de 108 MP + macro de 2 MP: sensor Samsung ISOCELL HM6 con zoom 3x y tecnología de pixel binning para mejores fotos.\n🤳 Cámara frontal de 13 MP con anillo de luz virtual y mejoras de software para selfies iluminadas.\n🧠 Procesador MediaTek Helio G91-Ultra y hasta 8 GB de RAM: desempeño equilibrado para uso diario y juegos.\n📂 Almacenamiento de hasta 256 GB, expandible hasta 1 TB.\n🔋 Batería de 5030 mAh con carga rápida de 33W: energía para todo el día y carga eficiente.\n💧 Resistencia IP53 y lector de huella lateral.",
+                        "img": "XR13256"
+                    },
+                    {
+                        "label": "Xiaomi Redmi A5 64GB",
+                        "id": "XRA564",
+                        "specs": "¡Redmi A5: rendimiento confiable, pantalla grande y batería para todo el día! 🚀📱\n📱 Pantalla IPS LCD de 6.88\" con resolución 1640×720 y tasa de refresco de 120Hz: ideal para contenido y juegos.\n📸 Cámara principal de 32 MP: fotos nítidas y coloridas en cualquier entorno.\n🤳 Cámara frontal de 8 MP: selfies y videollamadas con buena definición.\n🧠 Procesador Unisoc T7250 de 8 núcleos y hasta 6 GB de RAM (3 GB + 3 GB RAM Plus): multitarea fluida y eficiente.\n📂 64 GB de almacenamiento interno y expansión hasta 1 TB: guarda todo lo que necesites.\n🔋 Batería de 5200 mAh con carga rápida de 15W: más de un día de uso sin preocuparte por recargar.\n✨ Extras: reconocimiento facial, lector de huella, diseño curvo y liviano.",
+                        "img": "XRA564"
                     }
                 ]
             },
