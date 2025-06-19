@@ -2,23 +2,15 @@
     "chats": [
         {
             "id": "1",
-            "title": "Saludo Outbound Masculino",
-            "message": "¡Hola! 🙋🏻‍♂ Soy *{userName}*, asesor comercial de Renovaciones en Claro, América Móvil Perú SAC con RUC 20467534026 📱.\n🤩 Aprovecha nuestro canal WhatsApp y obtén un teléfono de última generación con precios exclusivos para ti. 😱 ¡Solo por ser cliente de Claro!\n*¿Estás interesado en algún equipo en específico?* o si gustas te puedo dar *una recomendación.*."
+            "title": "Saludos Outbound",
+            "message": "•OPCIÓN 1\n\n🔓 ¡Desbloqueaste un descuentazo! 😱\nHola, soy *{userName}* de Claro 👋  Aprovecha los precios increíbles que tenemos en equipos ¡Solo por tiempo limitado! ⏳\n¿Te interesa alguno en especial o te doy una recomendación? 👀\n\n•OPCIÓN 2\n\n🤑 ¡Ofertas que valen la pena! 📱✨\nTe saluda *{userName}* de Claro 👋 Esta semana tenemos descuentos en equipos solo para ti ¡Aprovecha hoy y renueva! 🎉\n¿Ya sabes cuál quieres o te ayudo a elegir? 😎\n\n•OPCIÓN 3 (con una intro de intriga)\n\n🤫 Esto no se lo contamos a todos ✨\nTe saluda *{userName}* de Claro 👋 Solo por esta semana tenemos descuentazos en equipos 📲 ¡Aprovecha hoy y renueva! 🔥\n¿Ya tienes un equipo en mente o te ayudo a elegir? 👀\n\n•OPCIÓN 4 (delivery)\n\n🚚💨 Envío GRATIS en equipos\nHola, soy *{userName}* de Claro 👋  Aprovecha los descuentos en equipos que tenemos para ti ¡Solo por tiempo limitado! ⏳\n¿Te interesa alguno en especial o te doy una recomendación? 👀"
+
         },
         {
             "id": "2",
-            "title": "Saludo Outbound Femenino",
-            "message": "¡Hola! 🙋🏻‍♀ Soy *{userName}*, asesora comercial de Renovaciones en Claro, América Móvil Perú SAC con RUC 20467534026 📱.\n🤩 Aprovecha nuestro canal WhatsApp y obtén un teléfono de última generación con precios exclusivos para ti. 😱 ¡Solo por ser cliente de Claro!\n*¿Estás interesado en algún equipo en específico?* o si gustas te puedo dar *una recomendación.*"
-        },
-        {
-            "id": "3",
-            "title": "Saludo Inbound Masculino",
-            "message": "¡Hola! Gracias por volver a comunicarte 🙋🏻‍♂ Soy *{userName}*, asesor comercial de Renovaciones en Claro, América Móvil Perú SAC con RUC 20467534026 📱 \n🤩 Aprovecha nuestro canal *WhatsApp* y obtén un teléfono de última generación con precios exclusivos para ti. 😱 *¡Solo por ser cliente de Claro!* \n*¿Estás interesado en algún equipo en específico?* o si gustas te puedo dar *una recomendación.*"
-        },
-        {
-            "id": "4",
-            "title": "Saludo Inbound Femenino",
-            "message": "¡Hola! Gracias por volver a comunicarte 🙋🏻‍♀ Soy *{userName}*, asesora comercial de Renovaciones en Claro, América Móvil Perú SAC con RUC 20467534026 📱 \n🤩 Aprovecha nuestro canal *WhatsApp* y obtén un teléfono de última generación con precios exclusivos para ti. 😱 *¡Solo por ser cliente de Claro!* \n*¿Estás interesada en algún equipo en específico?* o si gustas te puedo dar *una recomendación.*"
+            "title": "Saludos Inbound",
+            "message": "•OPCIÓN 1\n\n🔓 ¡Desbloqueaste un descuentazo! 😱\nHola, gracias por volver a comunicarte, soy *{userName}* de Claro 👋  Aprovecha los precios increíbles que tenemos en equipos ¡Solo por tiempo limitado! ⏳\n¿Te interesa alguno en especial o te doy una recomendación? 👀\n\n•OPCIÓN 2\n\n🤑 ¡Ofertas que valen la pena! 📱✨\nGracias por volver a comunicarte, te saluda *{userName}* de Claro 👋 Esta semana tenemos descuentos en equipos solo para ti ¡Aprovecha hoy y renueva! 🎉\n¿Ya sabes cuál quieres o te ayudo a elegir? 😎\n\n•OPCIÓN 3 (con una intro de intriga)\n\n🤫 Esto no se lo contamos a todos ✨\nGracias por volver a comunicarte, te saluda *{userName}* de Claro 👋 Solo por esta semana tenemos descuentazos en equipos 📲 ¡Aprovecha hoy y renueva! 🔥\n¿Ya tienes un equipo en mente o te ayudo a elegir? 👀\n\n•OPCIÓN 4 (delivery)\n\n🚚💨 Envío GRATIS en equipos\nHola, gracias por volver a comunicarte, soy *{userName}* de Claro 👋  Aprovecha los descuentos en equipos que tenemos para ti ¡Solo por tiempo limitado! ⏳\n¿Te interesa alguno en especial o te doy una recomendación? 👀"
+
         },
         {
             "id": "5",
@@ -1515,9 +1507,7 @@
             "label": "1. Saludos",
             "items": [
                 "1",
-                "2",
-                "3",
-                "4"
+                "2"
             ]
         },
         {
